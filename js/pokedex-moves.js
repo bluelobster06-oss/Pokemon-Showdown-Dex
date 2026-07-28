@@ -462,8 +462,9 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 		if (this.results) return this.results;
 		var results = [];
 		for (var pokemonid in BattleLearnsets) {
-			if (!BattlePokedex[pokemonid] || !BattleLearnsets[pokemonid]) continue;
-			if (BattlePokedex[pokemonid].isNonstandard || !BattleLearnsets[pokemonid].learnset) continue;
+			var pokemon = BattlePokedex[pokemonid];
+			if (!pokemon || !pokemon.abilities || !BattleLearnsets[pokemonid]) continue;
+			if (pokemon.isNonstandard || !BattleLearnsets[pokemonid].learnset) continue;
 			var sources = BattleLearnsets[pokemonid].learnset[moveid];
 			if (!sources) continue;
 			if (typeof sources === 'string') sources = [sources];
