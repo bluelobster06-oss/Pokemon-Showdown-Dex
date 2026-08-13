@@ -26,4 +26,12 @@ var Pokedex = Panels.App.extend({
 		}
 	}
 });
-var pokedex = new Pokedex();
+
+var rootPath = location.pathname;
+if (!rootPath.endsWith('/')) {
+	rootPath = rootPath.substring(0, rootPath.lastIndexOf('/') + 1);
+}
+if (typeof BattleSearch !== 'undefined') {
+	BattleSearch.urlRoot = rootPath;
+}
+var pokedex = new Pokedex({ root: rootPath });
