@@ -11,6 +11,7 @@
         color: "Green",
         evos: ["Ivysaur"],
         eggGroups: ["Monster", "Grass"],
+        tier: "LC"
     },
     ivysaur: {
         num: 2,
@@ -26,6 +27,7 @@
         evoLevel: 16,
         evos: ["Venusaur"],
         eggGroups: ["Monster", "Grass"],
+        tier: "NFE"
     },
     venusaur: {
         num: 3,
@@ -43,6 +45,7 @@
         otherFormes: ["Venusaur-Mega"],
         formeOrder: ["Venusaur", "Venusaur-Mega"],
         canGigantamax: "G-Max Vine Lash",
+        tier: "ZU"
     },
     venusaurmega: {
         num: 3,
@@ -58,6 +61,7 @@
         color: "Green",
         eggGroups: ["Monster", "Grass"],
         requiredItem: "Venusaurite",
+        isNonstandard: "Past"
     },
     venusaurgmax: {
         num: 3,
@@ -74,6 +78,7 @@
         eggGroups: ["Monster", "Grass"],
         changesFrom: "Venusaur",
         placeholderFor: "Venusaur",
+        isNonstandard: "Past"
     },
     charmander: {
         num: 4,
@@ -87,6 +92,7 @@
         color: "Red",
         evos: ["Charmeleon"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "LC"
     },
     charmeleon: {
         num: 5,
@@ -102,6 +108,7 @@
         evoLevel: 16,
         evos: ["Charizard"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "NFE"
     },
     charizard: {
         num: 6,
@@ -119,6 +126,7 @@
         otherFormes: ["Charizard-Mega-X", "Charizard-Mega-Y"],
         formeOrder: ["Charizard", "Charizard-Mega-X", "Charizard-Mega-Y"],
         canGigantamax: "G-Max Wildfire",
+        tier: "ZUBL"
     },
     charizardmegax: {
         num: 6,
@@ -134,6 +142,7 @@
         color: "Black",
         eggGroups: ["Monster", "Dragon"],
         requiredItem: "Charizardite X",
+        isNonstandard: "Past"
     },
     charizardmegay: {
         num: 6,
@@ -149,6 +158,7 @@
         color: "Red",
         eggGroups: ["Monster", "Dragon"],
         requiredItem: "Charizardite Y",
+        isNonstandard: "Past"
     },
     charizardgmax: {
         num: 6,
@@ -165,6 +175,7 @@
         eggGroups: ["Monster", "Dragon"],
         changesFrom: "Charizard",
         placeholderFor: "Charizard",
+        isNonstandard: "Past"
     },
     squirtle: {
         num: 7,
@@ -178,6 +189,7 @@
         color: "Blue",
         evos: ["Wartortle"],
         eggGroups: ["Monster", "Water 1"],
+        tier: "LC"
     },
     wartortle: {
         num: 8,
@@ -193,6 +205,7 @@
         evoLevel: 16,
         evos: ["Blastoise"],
         eggGroups: ["Monster", "Water 1"],
+        tier: "NFE"
     },
     blastoise: {
         num: 9,
@@ -210,6 +223,7 @@
         otherFormes: ["Blastoise-Mega"],
         formeOrder: ["Blastoise", "Blastoise-Mega"],
         canGigantamax: "G-Max Cannonade",
+        tier: "RUBL"
     },
     blastoisemega: {
         num: 9,
@@ -225,6 +239,7 @@
         color: "Blue",
         eggGroups: ["Monster", "Water 1"],
         requiredItem: "Blastoisinite",
+        isNonstandard: "Past"
     },
     blastoisegmax: {
         num: 9,
@@ -241,6 +256,7 @@
         eggGroups: ["Monster", "Water 1"],
         changesFrom: "Blastoise",
         placeholderFor: "Blastoise",
+        isNonstandard: "Past"
     },
     caterpie: {
         num: 10,
@@ -253,6 +269,7 @@
         color: "Green",
         evos: ["Metapod"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     metapod: {
         num: 11,
@@ -267,6 +284,7 @@
         evoLevel: 7,
         evos: ["Butterfree"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     butterfree: {
         num: 12,
@@ -281,6 +299,7 @@
         evoLevel: 10,
         eggGroups: ["Bug"],
         canGigantamax: "G-Max Befuddle",
+        isNonstandard: "Past"
     },
     butterfreegmax: {
         num: 12,
@@ -296,6 +315,7 @@
         eggGroups: ["Bug"],
         changesFrom: "Butterfree",
         placeholderFor: "Butterfree",
+        isNonstandard: "Past"
     },
     weedle: {
         num: 13,
@@ -308,6 +328,7 @@
         color: "Brown",
         evos: ["Kakuna"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     kakuna: {
         num: 14,
@@ -322,6 +343,7 @@
         evoLevel: 7,
         evos: ["Beedrill"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     beedrill: {
         num: 15,
@@ -337,6 +359,7 @@
         eggGroups: ["Bug"],
         otherFormes: ["Beedrill-Mega"],
         formeOrder: ["Beedrill", "Beedrill-Mega"],
+        isNonstandard: "Past"
     },
     beedrillmega: {
         num: 15,
@@ -351,6 +374,7 @@
         color: "Yellow",
         eggGroups: ["Bug"],
         requiredItem: "Beedrillite",
+        isNonstandard: "Past"
     },
     pidgey: {
         num: 16,
@@ -363,6 +387,7 @@
         color: "Brown",
         evos: ["Pidgeotto"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     pidgeotto: {
         num: 17,
@@ -377,6 +402,7 @@
         evoLevel: 18,
         evos: ["Pidgeot"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     pidgeot: {
         num: 18,
@@ -392,6 +418,7 @@
         eggGroups: ["Flying"],
         otherFormes: ["Pidgeot-Mega"],
         formeOrder: ["Pidgeot", "Pidgeot-Mega"],
+        isNonstandard: "Past"
     },
     pidgeotmega: {
         num: 18,
@@ -406,6 +433,7 @@
         color: "Brown",
         eggGroups: ["Flying"],
         requiredItem: "Pidgeotite",
+        isNonstandard: "Past"
     },
     rattata: {
         num: 19,
@@ -420,6 +448,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Rattata-Alola"],
         formeOrder: ["Rattata", "Rattata-Alola"],
+        isNonstandard: "Past"
     },
     rattataalola: {
         num: 19,
@@ -434,6 +463,7 @@
         color: "Black",
         evos: ["Raticate-Alola"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     raticate: {
         num: 20,
@@ -449,6 +479,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Raticate-Alola", "Raticate-Alola-Totem"],
         formeOrder: ["Raticate", "Raticate-Alola", "Raticate-Alola-Totem"],
+        isNonstandard: "Past"
     },
     raticatealola: {
         num: 20,
@@ -465,6 +496,7 @@
         evoLevel: 20,
         evoCondition: "at night",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     raticatealolatotem: {
         num: 20,
@@ -478,6 +510,7 @@
         weightkg: 105,
         color: "Black",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     spearow: {
         num: 21,
@@ -490,6 +523,7 @@
         color: "Brown",
         evos: ["Fearow"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     fearow: {
         num: 22,
@@ -503,6 +537,7 @@
         prevo: "Spearow",
         evoLevel: 20,
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     ekans: {
         num: 23,
@@ -515,6 +550,7 @@
         color: "Purple",
         evos: ["Arbok"],
         eggGroups: ["Field", "Dragon"],
+        tier: "LC"
     },
     arbok: {
         num: 24,
@@ -528,6 +564,7 @@
         prevo: "Ekans",
         evoLevel: 22,
         eggGroups: ["Field", "Dragon"],
+        tier: "ZU"
     },
     pikachu: {
         num: 25,
@@ -578,6 +615,7 @@
             "Pikachu-Cosplay"
         ],
         canGigantamax: "G-Max Volt Crash",
+        tier: "ZU"
     },
     pikachucosplay: {
         num: 25,
@@ -594,6 +632,7 @@
         tags: ["True Past"],
         eggGroups: ["Undiscovered"],
         gen: 6,
+        isNonstandard: "Past"
     },
     pikachurockstar: {
         num: 25,
@@ -611,6 +650,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
+        isNonstandard: "Past"
     },
     pikachubelle: {
         num: 25,
@@ -628,6 +668,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
+        isNonstandard: "Past"
     },
     pikachupopstar: {
         num: 25,
@@ -645,6 +686,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
+        isNonstandard: "Past"
     },
     pikachuphd: {
         num: 25,
@@ -662,6 +704,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
+        isNonstandard: "Past"
     },
     pikachulibre: {
         num: 25,
@@ -679,6 +722,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
+        isNonstandard: "Past"
     },
     pikachuoriginal: {
         num: 25,
@@ -694,6 +738,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
+        tier: "ZU"
     },
     pikachuhoenn: {
         num: 25,
@@ -709,6 +754,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
+        tier: "ZU"
     },
     pikachusinnoh: {
         num: 25,
@@ -724,6 +770,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
+        tier: "ZU"
     },
     pikachuunova: {
         num: 25,
@@ -739,6 +786,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
+        tier: "ZU"
     },
     pikachukalos: {
         num: 25,
@@ -754,6 +802,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
+        tier: "ZU"
     },
     pikachualola: {
         num: 25,
@@ -769,6 +818,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
+        tier: "ZU"
     },
     pikachupartner: {
         num: 25,
@@ -784,6 +834,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
+        tier: "ZU"
     },
     pikachustarter: {
         num: 25,
@@ -813,6 +864,7 @@
         eggGroups: ["Field", "Fairy"],
         changesFrom: "Pikachu",
         placeholderFor: "Pikachu",
+        isNonstandard: "Past"
     },
     pikachuworld: {
         num: 25,
@@ -828,6 +880,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 8,
+        tier: "ZU"
     },
     raichu: {
         num: 26,
@@ -844,6 +897,7 @@
         eggGroups: ["Field", "Fairy"],
         otherFormes: ["Raichu-Alola", "Raichu-Mega-X", "Raichu-Mega-Y"],
         formeOrder: ["Raichu", "Raichu-Alola", "Raichu-Mega-X", "Raichu-Mega-Y"],
+        tier: "ZU"
     },
     raichualola: {
         num: 26,
@@ -861,6 +915,7 @@
         evoItem: "Thunder Stone",
         evoRegion: "Alola",
         eggGroups: ["Field", "Fairy"],
+        tier: "ZU"
     },
     raichumegax: {
         num: 26,
@@ -907,6 +962,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Sandshrew-Alola"],
         formeOrder: ["Sandshrew", "Sandshrew-Alola"],
+        tier: "LC"
     },
     sandshrewalola: {
         num: 27,
@@ -921,6 +977,7 @@
         color: "White",
         evos: ["Sandslash-Alola"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     sandslash: {
         num: 28,
@@ -936,6 +993,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Sandslash-Alola"],
         formeOrder: ["Sandslash", "Sandslash-Alola"],
+        tier: "ZU"
     },
     sandslashalola: {
         num: 28,
@@ -952,6 +1010,7 @@
         evoType: "useItem",
         evoItem: "Ice Stone",
         eggGroups: ["Field"],
+        tier: "PU"
     },
     nidoranf: {
         num: 29,
@@ -965,6 +1024,7 @@
         color: "Blue",
         evos: ["Nidorina"],
         eggGroups: ["Monster", "Field"],
+        isNonstandard: "Past"
     },
     nidorina: {
         num: 30,
@@ -980,6 +1040,7 @@
         evoLevel: 16,
         evos: ["Nidoqueen"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     nidoqueen: {
         num: 31,
@@ -995,6 +1056,7 @@
         evoType: "useItem",
         evoItem: "Moon Stone",
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     nidoranm: {
         num: 32,
@@ -1009,6 +1071,7 @@
         evos: ["Nidorino"],
         eggGroups: ["Monster", "Field"],
         mother: "nidoranf",
+        isNonstandard: "Past"
     },
     nidorino: {
         num: 33,
@@ -1024,6 +1087,7 @@
         evoLevel: 16,
         evos: ["Nidoking"],
         eggGroups: ["Monster", "Field"],
+        isNonstandard: "Past"
     },
     nidoking: {
         num: 34,
@@ -1039,6 +1103,7 @@
         evoType: "useItem",
         evoItem: "Moon Stone",
         eggGroups: ["Monster", "Field"],
+        isNonstandard: "Past"
     },
     clefairy: {
         num: 35,
@@ -1054,6 +1119,7 @@
         evoType: "levelFriendship",
         evos: ["Clefable"],
         eggGroups: ["Fairy"],
+        tier: "NFE"
     },
     clefable: {
         num: 36,
@@ -1071,6 +1137,7 @@
         eggGroups: ["Fairy"],
         otherFormes: ["Clefable-Mega"],
         formeOrder: ["Clefable", "Clefable-Mega"],
+        tier: "OU"
     },
     clefablemega: {
         num: 36,
@@ -1103,6 +1170,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Vulpix-Alola"],
         formeOrder: ["Vulpix", "Vulpix-Alola"],
+        tier: "NFE"
     },
     vulpixalola: {
         num: 37,
@@ -1118,6 +1186,7 @@
         color: "White",
         evos: ["Ninetales-Alola"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     ninetales: {
         num: 38,
@@ -1135,6 +1204,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Ninetales-Alola"],
         formeOrder: ["Ninetales", "Ninetales-Alola"],
+        tier: "ZU"
     },
     ninetalesalola: {
         num: 38,
@@ -1152,6 +1222,7 @@
         evoType: "useItem",
         evoItem: "Ice Stone",
         eggGroups: ["Field"],
+        tier: "PU"
     },
     jigglypuff: {
         num: 39,
@@ -1167,6 +1238,7 @@
         evoType: "levelFriendship",
         evos: ["Wigglytuff"],
         eggGroups: ["Fairy"],
+        tier: "NFE"
     },
     wigglytuff: {
         num: 40,
@@ -1182,6 +1254,7 @@
         evoType: "useItem",
         evoItem: "Moon Stone",
         eggGroups: ["Fairy"],
+        tier: "ZU"
     },
     zubat: {
         num: 41,
@@ -1194,6 +1267,7 @@
         color: "Purple",
         evos: ["Golbat"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     golbat: {
         num: 42,
@@ -1208,6 +1282,7 @@
         evoLevel: 22,
         evos: ["Crobat"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     oddish: {
         num: 43,
@@ -1220,6 +1295,7 @@
         color: "Blue",
         evos: ["Gloom"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     gloom: {
         num: 44,
@@ -1234,6 +1310,7 @@
         evoLevel: 21,
         evos: ["Vileplume", "Bellossom"],
         eggGroups: ["Grass"],
+        tier: "NFE"
     },
     vileplume: {
         num: 45,
@@ -1248,6 +1325,7 @@
         evoType: "useItem",
         evoItem: "Leaf Stone",
         eggGroups: ["Grass"],
+        tier: "ZU"
     },
     paras: {
         num: 46,
@@ -1260,6 +1338,7 @@
         color: "Red",
         evos: ["Parasect"],
         eggGroups: ["Bug", "Grass"],
+        isNonstandard: "Past"
     },
     parasect: {
         num: 47,
@@ -1273,6 +1352,7 @@
         prevo: "Paras",
         evoLevel: 24,
         eggGroups: ["Bug", "Grass"],
+        isNonstandard: "Past"
     },
     venonat: {
         num: 48,
@@ -1285,6 +1365,7 @@
         color: "Purple",
         evos: ["Venomoth"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     venomoth: {
         num: 49,
@@ -1298,6 +1379,7 @@
         prevo: "Venonat",
         evoLevel: 31,
         eggGroups: ["Bug"],
+        tier: "ZUBL"
     },
     diglett: {
         num: 50,
@@ -1312,6 +1394,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Diglett-Alola"],
         formeOrder: ["Diglett", "Diglett-Alola"],
+        tier: "NFE"
     },
     diglettalola: {
         num: 50,
@@ -1326,6 +1409,7 @@
         color: "Brown",
         evos: ["Dugtrio-Alola"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     dugtrio: {
         num: 51,
@@ -1341,6 +1425,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Dugtrio-Alola"],
         formeOrder: ["Dugtrio", "Dugtrio-Alola"],
+        tier: "ZU"
     },
     dugtrioalola: {
         num: 51,
@@ -1356,6 +1441,7 @@
         prevo: "Diglett-Alola",
         evoLevel: 26,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     meowth: {
         num: 52,
@@ -1371,6 +1457,7 @@
         otherFormes: ["Meowth-Alola", "Meowth-Galar"],
         formeOrder: ["Meowth", "Meowth-Alola", "Meowth-Galar"],
         canGigantamax: "G-Max Gold Rush",
+        tier: "LC"
     },
     meowthalola: {
         num: 52,
@@ -1385,6 +1472,7 @@
         color: "Blue",
         evos: ["Persian-Alola"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     meowthgalar: {
         num: 52,
@@ -1399,6 +1487,7 @@
         color: "Brown",
         evos: ["Perrserker"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     meowthgmax: {
         num: 52,
@@ -1414,6 +1503,7 @@
         eggGroups: ["Field"],
         changesFrom: "Meowth",
         placeholderFor: "Meowth",
+        isNonstandard: "Past"
     },
     persian: {
         num: 53,
@@ -1429,6 +1519,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Persian-Alola"],
         formeOrder: ["Persian", "Persian-Alola"],
+        tier: "ZU"
     },
     persianalola: {
         num: 53,
@@ -1444,6 +1535,7 @@
         prevo: "Meowth-Alola",
         evoType: "levelFriendship",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     psyduck: {
         num: 54,
@@ -1456,6 +1548,7 @@
         color: "Yellow",
         evos: ["Golduck"],
         eggGroups: ["Water 1", "Field"],
+        tier: "LC"
     },
     golduck: {
         num: 55,
@@ -1469,6 +1562,7 @@
         prevo: "Psyduck",
         evoLevel: 33,
         eggGroups: ["Water 1", "Field"],
+        tier: "ZU"
     },
     mankey: {
         num: 56,
@@ -1481,6 +1575,7 @@
         color: "Brown",
         evos: ["Primeape"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     primeape: {
         num: 57,
@@ -1495,6 +1590,7 @@
         evoLevel: 28,
         evos: ["Annihilape"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     growlithe: {
         num: 58,
@@ -1510,6 +1606,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Growlithe-Hisui"],
         formeOrder: ["Growlithe", "Growlithe-Hisui"],
+        tier: "LC"
     },
     growlithehisui: {
         num: 58,
@@ -1525,6 +1622,7 @@
         color: "Brown",
         evos: ["Arcanine-Hisui"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     arcanine: {
         num: 59,
@@ -1542,6 +1640,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Arcanine-Hisui"],
         formeOrder: ["Arcanine", "Arcanine-Hisui"],
+        tier: "PU"
     },
     arcaninehisui: {
         num: 59,
@@ -1559,6 +1658,7 @@
         evoType: "useItem",
         evoItem: "Fire Stone",
         eggGroups: ["Field"],
+        tier: "UU"
     },
     poliwag: {
         num: 60,
@@ -1571,6 +1671,7 @@
         color: "Blue",
         evos: ["Poliwhirl"],
         eggGroups: ["Water 1"],
+        tier: "LC"
     },
     poliwhirl: {
         num: 61,
@@ -1585,6 +1686,7 @@
         evoLevel: 25,
         evos: ["Poliwrath", "Politoed"],
         eggGroups: ["Water 1"],
+        tier: "NFE"
     },
     poliwrath: {
         num: 62,
@@ -1599,6 +1701,7 @@
         evoType: "useItem",
         evoItem: "Water Stone",
         eggGroups: ["Water 1"],
+        tier: "ZU"
     },
     abra: {
         num: 63,
@@ -1612,6 +1715,7 @@
         color: "Brown",
         evos: ["Kadabra"],
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     kadabra: {
         num: 64,
@@ -1627,6 +1731,7 @@
         evoLevel: 16,
         evos: ["Alakazam"],
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     alakazam: {
         num: 65,
@@ -1643,6 +1748,7 @@
         eggGroups: ["Human-Like"],
         otherFormes: ["Alakazam-Mega"],
         formeOrder: ["Alakazam", "Alakazam-Mega"],
+        isNonstandard: "Past"
     },
     alakazammega: {
         num: 65,
@@ -1658,6 +1764,7 @@
         color: "Brown",
         eggGroups: ["Human-Like"],
         requiredItem: "Alakazite",
+        isNonstandard: "Past"
     },
     machop: {
         num: 66,
@@ -1671,6 +1778,7 @@
         color: "Gray",
         evos: ["Machoke"],
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     machoke: {
         num: 67,
@@ -1686,6 +1794,7 @@
         evoLevel: 28,
         evos: ["Machamp"],
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     machamp: {
         num: 68,
@@ -1701,6 +1810,7 @@
         evoType: "trade",
         eggGroups: ["Human-Like"],
         canGigantamax: "G-Max Chi Strike",
+        isNonstandard: "Past"
     },
     machampgmax: {
         num: 68,
@@ -1717,6 +1827,7 @@
         eggGroups: ["Human-Like"],
         changesFrom: "Machamp",
         placeholderFor: "Machamp",
+        isNonstandard: "Past"
     },
     bellsprout: {
         num: 69,
@@ -1729,6 +1840,7 @@
         color: "Green",
         evos: ["Weepinbell"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     weepinbell: {
         num: 70,
@@ -1743,6 +1855,7 @@
         evoLevel: 21,
         evos: ["Victreebel"],
         eggGroups: ["Grass"],
+        tier: "NFE"
     },
     victreebel: {
         num: 71,
@@ -1759,6 +1872,7 @@
         eggGroups: ["Grass"],
         otherFormes: ["Victreebel-Mega"],
         formeOrder: ["Victreebel", "Victreebel-Mega"],
+        tier: "ZU"
     },
     victreebelmega: {
         num: 71,
@@ -1787,6 +1901,7 @@
         color: "Blue",
         evos: ["Tentacruel"],
         eggGroups: ["Water 3"],
+        tier: "LC"
     },
     tentacruel: {
         num: 73,
@@ -1800,6 +1915,7 @@
         prevo: "Tentacool",
         evoLevel: 30,
         eggGroups: ["Water 3"],
+        tier: "PU"
     },
     geodude: {
         num: 74,
@@ -1814,6 +1930,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Geodude-Alola"],
         formeOrder: ["Geodude", "Geodude-Alola"],
+        tier: "LC"
     },
     geodudealola: {
         num: 74,
@@ -1828,6 +1945,7 @@
         color: "Gray",
         evos: ["Graveler-Alola"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     graveler: {
         num: 75,
@@ -1844,6 +1962,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Graveler-Alola"],
         formeOrder: ["Graveler", "Graveler-Alola"],
+        tier: "NFE"
     },
     graveleralola: {
         num: 75,
@@ -1860,6 +1979,7 @@
         evoLevel: 25,
         evos: ["Golem-Alola"],
         eggGroups: ["Mineral"],
+        tier: "NFE"
     },
     golem: {
         num: 76,
@@ -1875,6 +1995,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Golem-Alola"],
         formeOrder: ["Golem", "Golem-Alola"],
+        tier: "ZU"
     },
     golemalola: {
         num: 76,
@@ -1890,6 +2011,7 @@
         prevo: "Graveler-Alola",
         evoType: "trade",
         eggGroups: ["Mineral"],
+        tier: "ZU"
     },
     ponyta: {
         num: 77,
@@ -1904,6 +2026,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Ponyta-Galar"],
         formeOrder: ["Ponyta", "Ponyta-Galar"],
+        isNonstandard: "Past"
     },
     ponytagalar: {
         num: 77,
@@ -1918,6 +2041,7 @@
         color: "White",
         evos: ["Rapidash-Galar"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     rapidash: {
         num: 78,
@@ -1933,6 +2057,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Rapidash-Galar"],
         formeOrder: ["Rapidash", "Rapidash-Galar"],
+        isNonstandard: "Past"
     },
     rapidashgalar: {
         num: 78,
@@ -1948,6 +2073,7 @@
         prevo: "Ponyta-Galar",
         evoLevel: 40,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     slowpoke: {
         num: 79,
@@ -1962,6 +2088,7 @@
         eggGroups: ["Monster", "Water 1"],
         otherFormes: ["Slowpoke-Galar"],
         formeOrder: ["Slowpoke", "Slowpoke-Galar"],
+        tier: "LC"
     },
     slowpokegalar: {
         num: 79,
@@ -1976,6 +2103,7 @@
         color: "Pink",
         evos: ["Slowbro-Galar", "Slowking-Galar"],
         eggGroups: ["Monster", "Water 1"],
+        tier: "LC"
     },
     slowbro: {
         num: 80,
@@ -1991,6 +2119,7 @@
         eggGroups: ["Monster", "Water 1"],
         otherFormes: ["Slowbro-Mega", "Slowbro-Galar"],
         formeOrder: ["Slowbro", "Slowbro-Mega", "Slowbro-Galar"],
+        tier: "RU"
     },
     slowbromega: {
         num: 80,
@@ -2005,6 +2134,7 @@
         color: "Pink",
         eggGroups: ["Monster", "Water 1"],
         requiredItem: "Slowbronite",
+        isNonstandard: "Past"
     },
     slowbrogalar: {
         num: 80,
@@ -2021,6 +2151,7 @@
         evoType: "useItem",
         evoItem: "Galarica Cuff",
         eggGroups: ["Monster", "Water 1"],
+        tier: "PU"
     },
     magnemite: {
         num: 81,
@@ -2034,6 +2165,7 @@
         color: "Gray",
         evos: ["Magneton"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     magneton: {
         num: 82,
@@ -2049,6 +2181,7 @@
         evoLevel: 30,
         evos: ["Magnezone"],
         eggGroups: ["Mineral"],
+        tier: "ZU"
     },
     farfetchd: {
         num: 83,
@@ -2062,6 +2195,7 @@
         eggGroups: ["Flying", "Field"],
         otherFormes: ["Farfetchâ€™d-Galar"],
         formeOrder: ["Farfetchâ€™d", "Farfetchâ€™d-Galar"],
+        isNonstandard: "Past"
     },
     farfetchdgalar: {
         num: 83,
@@ -2076,6 +2210,7 @@
         color: "Brown",
         evos: ["Sirfetchâ€™d"],
         eggGroups: ["Flying", "Field"],
+        isNonstandard: "Past"
     },
     doduo: {
         num: 84,
@@ -2088,6 +2223,7 @@
         color: "Brown",
         evos: ["Dodrio"],
         eggGroups: ["Flying"],
+        tier: "LC"
     },
     dodrio: {
         num: 85,
@@ -2101,6 +2237,7 @@
         prevo: "Doduo",
         evoLevel: 31,
         eggGroups: ["Flying"],
+        tier: "ZU"
     },
     seel: {
         num: 86,
@@ -2113,6 +2250,7 @@
         color: "White",
         evos: ["Dewgong"],
         eggGroups: ["Water 1", "Field"],
+        tier: "LC"
     },
     dewgong: {
         num: 87,
@@ -2126,6 +2264,7 @@
         prevo: "Seel",
         evoLevel: 34,
         eggGroups: ["Water 1", "Field"],
+        tier: "ZU"
     },
     grimer: {
         num: 88,
@@ -2140,6 +2279,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Grimer-Alola"],
         formeOrder: ["Grimer", "Grimer-Alola"],
+        tier: "LC"
     },
     grimeralola: {
         num: 88,
@@ -2154,6 +2294,7 @@
         color: "Green",
         evos: ["Muk-Alola"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     muk: {
         num: 89,
@@ -2169,6 +2310,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Muk-Alola"],
         formeOrder: ["Muk", "Muk-Alola"],
+        tier: "ZU"
     },
     mukalola: {
         num: 89,
@@ -2184,6 +2326,7 @@
         prevo: "Grimer-Alola",
         evoLevel: 38,
         eggGroups: ["Amorphous"],
+        tier: "RU"
     },
     shellder: {
         num: 90,
@@ -2196,6 +2339,7 @@
         color: "Purple",
         evos: ["Cloyster"],
         eggGroups: ["Water 3"],
+        tier: "NFE"
     },
     cloyster: {
         num: 91,
@@ -2210,6 +2354,7 @@
         evoType: "useItem",
         evoItem: "Water Stone",
         eggGroups: ["Water 3"],
+        tier: "NUBL"
     },
     gastly: {
         num: 92,
@@ -2222,6 +2367,7 @@
         color: "Purple",
         evos: ["Haunter"],
         eggGroups: ["Amorphous"],
+        tier: "NFE"
     },
     haunter: {
         num: 93,
@@ -2236,6 +2382,7 @@
         evoLevel: 25,
         evos: ["Gengar"],
         eggGroups: ["Amorphous"],
+        tier: "NFE"
     },
     gengar: {
         num: 94,
@@ -2252,6 +2399,7 @@
         otherFormes: ["Gengar-Mega"],
         formeOrder: ["Gengar", "Gengar-Mega"],
         canGigantamax: "G-Max Terror",
+        tier: "RU"
     },
     gengarmega: {
         num: 94,
@@ -2266,6 +2414,7 @@
         color: "Purple",
         eggGroups: ["Amorphous"],
         requiredItem: "Gengarite",
+        isNonstandard: "Past"
     },
     gengargmax: {
         num: 94,
@@ -2281,6 +2430,7 @@
         eggGroups: ["Amorphous"],
         changesFrom: "Gengar",
         placeholderFor: "Gengar",
+        isNonstandard: "Past"
     },
     onix: {
         num: 95,
@@ -2293,6 +2443,7 @@
         color: "Gray",
         evos: ["Steelix"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     drowzee: {
         num: 96,
@@ -2305,6 +2456,7 @@
         color: "Yellow",
         evos: ["Hypno"],
         eggGroups: ["Human-Like"],
+        tier: "LC"
     },
     hypno: {
         num: 97,
@@ -2318,6 +2470,7 @@
         prevo: "Drowzee",
         evoLevel: 26,
         eggGroups: ["Human-Like"],
+        tier: "ZU"
     },
     krabby: {
         num: 98,
@@ -2330,6 +2483,7 @@
         color: "Red",
         evos: ["Kingler"],
         eggGroups: ["Water 3"],
+        isNonstandard: "Past"
     },
     kingler: {
         num: 99,
@@ -2344,6 +2498,7 @@
         evoLevel: 28,
         eggGroups: ["Water 3"],
         canGigantamax: "G-Max Foam Burst",
+        isNonstandard: "Past"
     },
     kinglergmax: {
         num: 99,
@@ -2359,6 +2514,7 @@
         eggGroups: ["Water 3"],
         changesFrom: "Kingler",
         placeholderFor: "Kingler",
+        isNonstandard: "Past"
     },
     voltorb: {
         num: 100,
@@ -2374,6 +2530,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Voltorb-Hisui"],
         formeOrder: ["Voltorb", "Voltorb-Hisui"],
+        tier: "LC"
     },
     voltorbhisui: {
         num: 100,
@@ -2389,6 +2546,7 @@
         color: "Red",
         evos: ["Electrode-Hisui"],
         eggGroups: ["Mineral"],
+        tier: "NFE"
     },
     electrode: {
         num: 101,
@@ -2405,6 +2563,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Electrode-Hisui"],
         formeOrder: ["Electrode", "Electrode-Hisui"],
+        tier: "ZU"
     },
     electrodehisui: {
         num: 101,
@@ -2422,6 +2581,7 @@
         evoType: "useItem",
         evoItem: "Leaf Stone",
         eggGroups: ["Mineral"],
+        tier: "ZUBL"
     },
     exeggcute: {
         num: 102,
@@ -2434,6 +2594,7 @@
         color: "Pink",
         evos: ["Exeggutor", "Exeggutor-Alola"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     exeggutor: {
         num: 103,
@@ -2450,6 +2611,7 @@
         eggGroups: ["Grass"],
         otherFormes: ["Exeggutor-Alola"],
         formeOrder: ["Exeggutor", "Exeggutor-Alola"],
+        tier: "ZU"
     },
     exeggutoralola: {
         num: 103,
@@ -2467,6 +2629,7 @@
         evoItem: "Leaf Stone",
         evoRegion: "Alola",
         eggGroups: ["Grass"],
+        tier: "ZU"
     },
     cubone: {
         num: 104,
@@ -2479,6 +2642,7 @@
         color: "Brown",
         evos: ["Marowak", "Marowak-Alola"],
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     marowak: {
         num: 105,
@@ -2494,6 +2658,7 @@
         eggGroups: ["Monster"],
         otherFormes: ["Marowak-Alola", "Marowak-Alola-Totem"],
         formeOrder: ["Marowak", "Marowak-Alola", "Marowak-Alola-Totem"],
+        isNonstandard: "Past"
     },
     marowakalola: {
         num: 105,
@@ -2511,6 +2676,7 @@
         evoCondition: "at night",
         evoRegion: "Alola",
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     marowakalolatotem: {
         num: 105,
@@ -2524,6 +2690,7 @@
         weightkg: 98,
         color: "Purple",
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     hitmonlee: {
         num: 106,
@@ -2539,6 +2706,7 @@
         evoLevel: 20,
         evoCondition: "with an Atk stat > its Def stat",
         eggGroups: ["Human-Like"],
+        tier: "PU"
     },
     hitmonchan: {
         num: 107,
@@ -2554,6 +2722,7 @@
         evoLevel: 20,
         evoCondition: "with an Atk stat < its Def stat",
         eggGroups: ["Human-Like"],
+        tier: "ZU"
     },
     lickitung: {
         num: 108,
@@ -2566,6 +2735,7 @@
         color: "Pink",
         evos: ["Lickilicky"],
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     koffing: {
         num: 109,
@@ -2578,6 +2748,7 @@
         color: "Purple",
         evos: ["Weezing", "Weezing-Galar"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     weezing: {
         num: 110,
@@ -2593,6 +2764,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Weezing-Galar"],
         formeOrder: ["Weezing", "Weezing-Galar"],
+        tier: "ZU"
     },
     weezinggalar: {
         num: 110,
@@ -2609,6 +2781,7 @@
         evoLevel: 35,
         evoRegion: "Galar",
         eggGroups: ["Amorphous"],
+        tier: "OU"
     },
     rhyhorn: {
         num: 111,
@@ -2621,6 +2794,7 @@
         color: "Gray",
         evos: ["Rhydon"],
         eggGroups: ["Monster", "Field"],
+        tier: "LC"
     },
     rhydon: {
         num: 112,
@@ -2635,6 +2809,7 @@
         evoLevel: 42,
         evos: ["Rhyperior"],
         eggGroups: ["Monster", "Field"],
+        tier: "PU"
     },
     chansey: {
         num: 113,
@@ -2653,6 +2828,7 @@
         evos: ["Blissey"],
         eggGroups: ["Fairy"],
         canHatch: true,
+        tier: "PU"
     },
     tangela: {
         num: 114,
@@ -2665,6 +2841,7 @@
         color: "Blue",
         evos: ["Tangrowth"],
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     kangaskhan: {
         num: 115,
@@ -2679,6 +2856,7 @@
         eggGroups: ["Monster"],
         otherFormes: ["Kangaskhan-Mega"],
         formeOrder: ["Kangaskhan", "Kangaskhan-Mega"],
+        isNonstandard: "Past"
     },
     kangaskhanmega: {
         num: 115,
@@ -2694,6 +2872,7 @@
         color: "Brown",
         eggGroups: ["Monster"],
         requiredItem: "Kangaskhanite",
+        isNonstandard: "Past"
     },
     horsea: {
         num: 116,
@@ -2706,6 +2885,7 @@
         color: "Blue",
         evos: ["Seadra"],
         eggGroups: ["Water 1", "Dragon"],
+        tier: "LC"
     },
     seadra: {
         num: 117,
@@ -2720,6 +2900,7 @@
         evoLevel: 32,
         evos: ["Kingdra"],
         eggGroups: ["Water 1", "Dragon"],
+        tier: "NFE"
     },
     goldeen: {
         num: 118,
@@ -2732,6 +2913,7 @@
         color: "Red",
         evos: ["Seaking"],
         eggGroups: ["Water 2"],
+        isNonstandard: "Past"
     },
     seaking: {
         num: 119,
@@ -2745,6 +2927,7 @@
         prevo: "Goldeen",
         evoLevel: 33,
         eggGroups: ["Water 2"],
+        isNonstandard: "Past"
     },
     staryu: {
         num: 120,
@@ -2758,6 +2941,7 @@
         color: "Brown",
         evos: ["Starmie"],
         eggGroups: ["Water 3"],
+        isNonstandard: "Past"
     },
     starmie: {
         num: 121,
@@ -2775,6 +2959,7 @@
         eggGroups: ["Water 3"],
         otherFormes: ["Starmie-Mega"],
         formeOrder: ["Starmie", "Starmie-Mega"],
+        isNonstandard: "Past"
     },
     starmiemega: {
         num: 121,
@@ -2809,6 +2994,7 @@
         canHatch: true,
         otherFormes: ["Mr. Mime-Galar"],
         formeOrder: ["Mr. Mime", "Mr. Mime-Galar"],
+        isNonstandard: "Past"
     },
     mrmimegalar: {
         num: 122,
@@ -2828,6 +3014,7 @@
         evos: ["Mr. Rime"],
         eggGroups: ["Human-Like"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     scyther: {
         num: 123,
@@ -2840,6 +3027,7 @@
         color: "Green",
         evos: ["Scizor", "Kleavor"],
         eggGroups: ["Bug"],
+        tier: "NU"
     },
     jynx: {
         num: 124,
@@ -2854,6 +3042,7 @@
         prevo: "Smoochum",
         evoLevel: 30,
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     electabuzz: {
         num: 125,
@@ -2869,6 +3058,7 @@
         evoLevel: 30,
         evos: ["Electivire"],
         eggGroups: ["Human-Like"],
+        tier: "NFE"
     },
     magmar: {
         num: 126,
@@ -2884,6 +3074,7 @@
         evoLevel: 30,
         evos: ["Magmortar"],
         eggGroups: ["Human-Like"],
+        tier: "NFE"
     },
     pinsir: {
         num: 127,
@@ -2897,6 +3088,7 @@
         eggGroups: ["Bug"],
         otherFormes: ["Pinsir-Mega"],
         formeOrder: ["Pinsir", "Pinsir-Mega"],
+        isNonstandard: "Past"
     },
     pinsirmega: {
         num: 127,
@@ -2911,6 +3103,7 @@
         color: "Brown",
         eggGroups: ["Bug"],
         requiredItem: "Pinsirite",
+        isNonstandard: "Past"
     },
     tauros: {
         num: 128,
@@ -2925,6 +3118,7 @@
         otherFormes: ["Tauros-Paldea-Combat", "Tauros-Paldea-Blaze", "Tauros-Paldea-Aqua"],
         formeOrder: ["Tauros", "Tauros-Paldea-Combat", "Tauros-Paldea-Blaze", "Tauros-Paldea-Aqua"],
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     taurospaldeacombat: {
         num: 128,
@@ -2939,6 +3133,7 @@
         weightkg: 115,
         color: "Black",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     taurospaldeablaze: {
         num: 128,
@@ -2953,6 +3148,7 @@
         weightkg: 85,
         color: "Black",
         eggGroups: ["Field"],
+        tier: "PU"
     },
     taurospaldeaaqua: {
         num: 128,
@@ -2967,6 +3163,7 @@
         weightkg: 110,
         color: "Black",
         eggGroups: ["Field"],
+        tier: "NU"
     },
     magikarp: {
         num: 129,
@@ -2979,6 +3176,7 @@
         color: "Red",
         evos: ["Gyarados"],
         eggGroups: ["Water 2", "Dragon"],
+        tier: "LC"
     },
     gyarados: {
         num: 130,
@@ -2994,6 +3192,7 @@
         eggGroups: ["Water 2", "Dragon"],
         otherFormes: ["Gyarados-Mega"],
         formeOrder: ["Gyarados", "Gyarados-Mega"],
+        tier: "RUBL"
     },
     gyaradosmega: {
         num: 130,
@@ -3008,6 +3207,7 @@
         color: "Blue",
         eggGroups: ["Water 2", "Dragon"],
         requiredItem: "Gyaradosite",
+        isNonstandard: "Past"
     },
     lapras: {
         num: 131,
@@ -3020,6 +3220,7 @@
         color: "Blue",
         eggGroups: ["Monster", "Water 1"],
         canGigantamax: "G-Max Resonance",
+        tier: "ZU"
     },
     laprasgmax: {
         num: 131,
@@ -3035,6 +3236,7 @@
         eggGroups: ["Monster", "Water 1"],
         changesFrom: "Lapras",
         placeholderFor: "Lapras",
+        isNonstandard: "Past"
     },
     ditto: {
         num: 132,
@@ -3047,6 +3249,7 @@
         weightkg: 4,
         color: "Purple",
         eggGroups: ["Ditto"],
+        tier: "ZU"
     },
     eevee: {
         num: 133,
@@ -3072,6 +3275,7 @@
         otherFormes: ["Eevee-Starter"],
         formeOrder: ["Eevee", "Eevee-Starter"],
         canGigantamax: "G-Max Cuddle",
+        tier: "LC"
     },
     eeveestarter: {
         num: 133,
@@ -3103,6 +3307,7 @@
         eggGroups: ["Field"],
         changesFrom: "Eevee",
         placeholderFor: "Eevee",
+        isNonstandard: "Past"
     },
     vaporeon: {
         num: 134,
@@ -3118,6 +3323,7 @@
         evoType: "useItem",
         evoItem: "Water Stone",
         eggGroups: ["Field"],
+        tier: "NU"
     },
     jolteon: {
         num: 135,
@@ -3133,6 +3339,7 @@
         evoType: "useItem",
         evoItem: "Thunder Stone",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     flareon: {
         num: 136,
@@ -3148,6 +3355,7 @@
         evoType: "useItem",
         evoItem: "Fire Stone",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     porygon: {
         num: 137,
@@ -3161,6 +3369,7 @@
         color: "Pink",
         evos: ["Porygon2"],
         eggGroups: ["Mineral"],
+        tier: "NFE"
     },
     omanyte: {
         num: 138,
@@ -3174,6 +3383,7 @@
         color: "Blue",
         evos: ["Omastar"],
         eggGroups: ["Water 1", "Water 3"],
+        isNonstandard: "Past"
     },
     omastar: {
         num: 139,
@@ -3188,6 +3398,7 @@
         prevo: "Omanyte",
         evoLevel: 40,
         eggGroups: ["Water 1", "Water 3"],
+        isNonstandard: "Past"
     },
     kabuto: {
         num: 140,
@@ -3201,6 +3412,7 @@
         color: "Brown",
         evos: ["Kabutops"],
         eggGroups: ["Water 1", "Water 3"],
+        isNonstandard: "Past"
     },
     kabutops: {
         num: 141,
@@ -3215,6 +3427,7 @@
         prevo: "Kabuto",
         evoLevel: 40,
         eggGroups: ["Water 1", "Water 3"],
+        isNonstandard: "Past"
     },
     aerodactyl: {
         num: 142,
@@ -3229,6 +3442,7 @@
         eggGroups: ["Flying"],
         otherFormes: ["Aerodactyl-Mega"],
         formeOrder: ["Aerodactyl", "Aerodactyl-Mega"],
+        isNonstandard: "Past"
     },
     aerodactylmega: {
         num: 142,
@@ -3244,6 +3458,7 @@
         color: "Purple",
         eggGroups: ["Flying"],
         requiredItem: "Aerodactylite",
+        isNonstandard: "Past"
     },
     snorlax: {
         num: 143,
@@ -3260,6 +3475,7 @@
         eggGroups: ["Monster"],
         canHatch: true,
         canGigantamax: "G-Max Replenish",
+        tier: "PU"
     },
     snorlaxgmax: {
         num: 143,
@@ -3276,6 +3492,7 @@
         eggGroups: ["Monster"],
         changesFrom: "Snorlax",
         placeholderFor: "Snorlax",
+        isNonstandard: "Past"
     },
     articuno: {
         num: 144,
@@ -3291,6 +3508,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Articuno-Galar"],
         formeOrder: ["Articuno", "Articuno-Galar"],
+        tier: "ZU"
     },
     articunogalar: {
         num: 144,
@@ -3305,6 +3523,7 @@
         weightkg: 50.9,
         color: "Purple",
         eggGroups: ["Undiscovered"],
+        tier: "NUBL"
     },
     zapdos: {
         num: 145,
@@ -3320,6 +3539,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Zapdos-Galar"],
         formeOrder: ["Zapdos", "Zapdos-Galar"],
+        tier: "OU"
     },
     zapdosgalar: {
         num: 145,
@@ -3334,6 +3554,7 @@
         weightkg: 58.2,
         color: "Yellow",
         eggGroups: ["Undiscovered"],
+        tier: "UU"
     },
     moltres: {
         num: 146,
@@ -3349,6 +3570,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Moltres-Galar"],
         formeOrder: ["Moltres", "Moltres-Galar"],
+        tier: "OU"
     },
     moltresgalar: {
         num: 146,
@@ -3363,6 +3585,7 @@
         weightkg: 66,
         color: "Red",
         eggGroups: ["Undiscovered"],
+        tier: "UUBL"
     },
     dratini: {
         num: 147,
@@ -3375,6 +3598,7 @@
         color: "Blue",
         evos: ["Dragonair"],
         eggGroups: ["Water 1", "Dragon"],
+        tier: "LC"
     },
     dragonair: {
         num: 148,
@@ -3389,6 +3613,7 @@
         evoLevel: 30,
         evos: ["Dragonite"],
         eggGroups: ["Water 1", "Dragon"],
+        tier: "NFE"
     },
     dragonite: {
         num: 149,
@@ -3404,6 +3629,7 @@
         eggGroups: ["Water 1", "Dragon"],
         otherFormes: ["Dragonite-Mega"],
         formeOrder: ["Dragonite", "Dragonite-Mega"],
+        tier: "OU"
     },
     dragonitemega: {
         num: 149,
@@ -3435,6 +3661,7 @@
         tags: ["Restricted Legendary"],
         otherFormes: ["Mewtwo-Mega-X", "Mewtwo-Mega-Y"],
         formeOrder: ["Mewtwo", "Mewtwo-Mega-X", "Mewtwo-Mega-Y"],
+        tier: "Uber"
     },
     mewtwomegax: {
         num: 150,
@@ -3450,6 +3677,7 @@
         color: "Purple",
         eggGroups: ["Undiscovered"],
         requiredItem: "Mewtwonite X",
+        isNonstandard: "Past"
     },
     mewtwomegay: {
         num: 150,
@@ -3465,6 +3693,7 @@
         color: "Purple",
         eggGroups: ["Undiscovered"],
         requiredItem: "Mewtwonite Y",
+        isNonstandard: "Past"
     },
     mew: {
         num: 151,
@@ -3478,6 +3707,7 @@
         color: "Pink",
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
+        tier: "RU"
     },
     chikorita: {
         num: 152,
@@ -3491,6 +3721,7 @@
         color: "Green",
         evos: ["Bayleef"],
         eggGroups: ["Monster", "Grass"],
+        tier: "LC"
     },
     bayleef: {
         num: 153,
@@ -3506,6 +3737,7 @@
         evoLevel: 16,
         evos: ["Meganium"],
         eggGroups: ["Monster", "Grass"],
+        tier: "NFE"
     },
     meganium: {
         num: 154,
@@ -3522,6 +3754,7 @@
         eggGroups: ["Monster", "Grass"],
         otherFormes: ["Meganium-Mega"],
         formeOrder: ["Meganium", "Meganium-Mega"],
+        tier: "ZU"
     },
     meganiummega: {
         num: 154,
@@ -3552,6 +3785,7 @@
         color: "Yellow",
         evos: ["Quilava"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     quilava: {
         num: 156,
@@ -3567,6 +3801,7 @@
         evoLevel: 14,
         evos: ["Typhlosion", "Typhlosion-Hisui"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     typhlosion: {
         num: 157,
@@ -3583,6 +3818,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Typhlosion-Hisui"],
         formeOrder: ["Typhlosion", "Typhlosion-Hisui"],
+        tier: "ZU"
     },
     typhlosionhisui: {
         num: 157,
@@ -3599,6 +3835,7 @@
         prevo: "Quilava",
         evoLevel: 36,
         eggGroups: ["Field"],
+        tier: "PU"
     },
     totodile: {
         num: 158,
@@ -3612,6 +3849,7 @@
         color: "Blue",
         evos: ["Croconaw"],
         eggGroups: ["Monster", "Water 1"],
+        tier: "LC"
     },
     croconaw: {
         num: 159,
@@ -3627,6 +3865,7 @@
         evoLevel: 18,
         evos: ["Feraligatr"],
         eggGroups: ["Monster", "Water 1"],
+        tier: "NFE"
     },
     feraligatr: {
         num: 160,
@@ -3643,6 +3882,7 @@
         eggGroups: ["Monster", "Water 1"],
         otherFormes: ["Feraligatr-Mega"],
         formeOrder: ["Feraligatr", "Feraligatr-Mega"],
+        tier: "NUBL"
     },
     feraligatrmega: {
         num: 160,
@@ -3672,6 +3912,7 @@
         color: "Brown",
         evos: ["Furret"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     furret: {
         num: 162,
@@ -3685,6 +3926,7 @@
         prevo: "Sentret",
         evoLevel: 15,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     hoothoot: {
         num: 163,
@@ -3697,6 +3939,7 @@
         color: "Brown",
         evos: ["Noctowl"],
         eggGroups: ["Flying"],
+        tier: "LC"
     },
     noctowl: {
         num: 164,
@@ -3710,6 +3953,7 @@
         prevo: "Hoothoot",
         evoLevel: 20,
         eggGroups: ["Flying"],
+        tier: "ZU"
     },
     ledyba: {
         num: 165,
@@ -3722,6 +3966,7 @@
         color: "Red",
         evos: ["Ledian"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     ledian: {
         num: 166,
@@ -3735,6 +3980,7 @@
         prevo: "Ledyba",
         evoLevel: 18,
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     spinarak: {
         num: 167,
@@ -3747,6 +3993,7 @@
         color: "Green",
         evos: ["Ariados"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     ariados: {
         num: 168,
@@ -3760,6 +4007,7 @@
         prevo: "Spinarak",
         evoLevel: 22,
         eggGroups: ["Bug"],
+        tier: "ZU"
     },
     crobat: {
         num: 169,
@@ -3773,6 +4021,7 @@
         prevo: "Golbat",
         evoType: "levelFriendship",
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     chinchou: {
         num: 170,
@@ -3785,6 +4034,7 @@
         color: "Blue",
         evos: ["Lanturn"],
         eggGroups: ["Water 2"],
+        tier: "LC"
     },
     lanturn: {
         num: 171,
@@ -3798,6 +4048,7 @@
         prevo: "Chinchou",
         evoLevel: 27,
         eggGroups: ["Water 2"],
+        tier: "PU"
     },
     pichu: {
         num: 172,
@@ -3813,6 +4064,7 @@
         canHatch: true,
         otherFormes: ["Pichu-Spiky-eared"],
         formeOrder: ["Pichu", "Pichu-Spiky-eared"],
+        tier: "LC"
     },
     pichuspikyeared: {
         num: 172,
@@ -3828,6 +4080,7 @@
         tags: ["True Past"],
         eggGroups: ["Undiscovered"],
         gen: 4,
+        isNonstandard: "Past"
     },
     cleffa: {
         num: 173,
@@ -3842,6 +4095,7 @@
         evos: ["Clefairy"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     igglybuff: {
         num: 174,
@@ -3856,6 +4110,7 @@
         evos: ["Jigglypuff"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     togepi: {
         num: 175,
@@ -3870,6 +4125,7 @@
         evos: ["Togetic"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     togetic: {
         num: 176,
@@ -3885,6 +4141,7 @@
         evoType: "levelFriendship",
         evos: ["Togekiss"],
         eggGroups: ["Flying", "Fairy"],
+        isNonstandard: "Past"
     },
     natu: {
         num: 177,
@@ -3897,6 +4154,7 @@
         color: "Green",
         evos: ["Xatu"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     xatu: {
         num: 178,
@@ -3910,6 +4168,7 @@
         prevo: "Natu",
         evoLevel: 25,
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     mareep: {
         num: 179,
@@ -3922,6 +4181,7 @@
         color: "White",
         evos: ["Flaaffy"],
         eggGroups: ["Monster", "Field"],
+        tier: "LC"
     },
     flaaffy: {
         num: 180,
@@ -3936,6 +4196,7 @@
         evoLevel: 15,
         evos: ["Ampharos"],
         eggGroups: ["Monster", "Field"],
+        tier: "NFE"
     },
     ampharos: {
         num: 181,
@@ -3951,6 +4212,7 @@
         eggGroups: ["Monster", "Field"],
         otherFormes: ["Ampharos-Mega"],
         formeOrder: ["Ampharos", "Ampharos-Mega"],
+        tier: "ZU"
     },
     ampharosmega: {
         num: 181,
@@ -3965,6 +4227,7 @@
         color: "Yellow",
         eggGroups: ["Monster", "Field"],
         requiredItem: "Ampharosite",
+        isNonstandard: "Past"
     },
     bellossom: {
         num: 182,
@@ -3979,6 +4242,7 @@
         evoType: "useItem",
         evoItem: "Sun Stone",
         eggGroups: ["Grass"],
+        tier: "ZUBL"
     },
     marill: {
         num: 183,
@@ -3994,6 +4258,7 @@
         evos: ["Azumarill"],
         eggGroups: ["Water 1", "Fairy"],
         canHatch: true,
+        tier: "NFE"
     },
     azumarill: {
         num: 184,
@@ -4007,6 +4272,7 @@
         prevo: "Marill",
         evoLevel: 18,
         eggGroups: ["Water 1", "Fairy"],
+        tier: "UU"
     },
     sudowoodo: {
         num: 185,
@@ -4022,6 +4288,7 @@
         evoMove: "Mimic",
         eggGroups: ["Mineral"],
         canHatch: true,
+        tier: "ZU"
     },
     politoed: {
         num: 186,
@@ -4036,6 +4303,7 @@
         evoType: "trade",
         evoItem: "King's Rock",
         eggGroups: ["Water 1"],
+        tier: "RU"
     },
     hoppip: {
         num: 187,
@@ -4048,6 +4316,7 @@
         color: "Pink",
         evos: ["Skiploom"],
         eggGroups: ["Fairy", "Grass"],
+        tier: "LC"
     },
     skiploom: {
         num: 188,
@@ -4062,6 +4331,7 @@
         evoLevel: 18,
         evos: ["Jumpluff"],
         eggGroups: ["Fairy", "Grass"],
+        tier: "NFE"
     },
     jumpluff: {
         num: 189,
@@ -4075,6 +4345,7 @@
         prevo: "Skiploom",
         evoLevel: 27,
         eggGroups: ["Fairy", "Grass"],
+        tier: "ZU"
     },
     aipom: {
         num: 190,
@@ -4087,6 +4358,7 @@
         color: "Purple",
         evos: ["Ambipom"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     sunkern: {
         num: 191,
@@ -4099,6 +4371,7 @@
         color: "Yellow",
         evos: ["Sunflora"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     sunflora: {
         num: 192,
@@ -4113,6 +4386,7 @@
         evoType: "useItem",
         evoItem: "Sun Stone",
         eggGroups: ["Grass"],
+        tier: "ZU"
     },
     yanma: {
         num: 193,
@@ -4125,6 +4399,7 @@
         color: "Red",
         evos: ["Yanmega"],
         eggGroups: ["Bug"],
+        tier: "NFE"
     },
     wooper: {
         num: 194,
@@ -4139,6 +4414,7 @@
         eggGroups: ["Water 1", "Field"],
         otherFormes: ["Wooper-Paldea"],
         formeOrder: ["Wooper", "Wooper-Paldea"],
+        tier: "LC"
     },
     wooperpaldea: {
         num: 194,
@@ -4153,6 +4429,7 @@
         color: "Brown",
         evos: ["Clodsire"],
         eggGroups: ["Water 1", "Field"],
+        tier: "LC"
     },
     quagsire: {
         num: 195,
@@ -4166,6 +4443,7 @@
         prevo: "Wooper",
         evoLevel: 20,
         eggGroups: ["Water 1", "Field"],
+        tier: "RU"
     },
     espeon: {
         num: 196,
@@ -4181,6 +4459,7 @@
         evoType: "levelFriendship",
         evoCondition: "during the day",
         eggGroups: ["Field"],
+        tier: "NU"
     },
     umbreon: {
         num: 197,
@@ -4196,6 +4475,7 @@
         evoType: "levelFriendship",
         evoCondition: "at night",
         eggGroups: ["Field"],
+        tier: "RU"
     },
     murkrow: {
         num: 198,
@@ -4208,6 +4488,7 @@
         color: "Black",
         evos: ["Honchkrow"],
         eggGroups: ["Flying"],
+        tier: "NFE"
     },
     slowking: {
         num: 199,
@@ -4224,6 +4505,7 @@
         eggGroups: ["Monster", "Water 1"],
         otherFormes: ["Slowking-Galar"],
         formeOrder: ["Slowking", "Slowking-Galar"],
+        tier: "UU"
     },
     slowkinggalar: {
         num: 199,
@@ -4240,6 +4522,7 @@
         evoType: "useItem",
         evoItem: "Galarica Wreath",
         eggGroups: ["Monster", "Water 1"],
+        tier: "OU"
     },
     misdreavus: {
         num: 200,
@@ -4252,6 +4535,7 @@
         color: "Gray",
         evos: ["Mismagius"],
         eggGroups: ["Amorphous"],
+        tier: "NFE"
     },
     unown: {
         num: 201,
@@ -4324,6 +4608,7 @@
             "Unown-Exclamation",
             "Unown-Question"
         ],
+        isNonstandard: "Past"
     },
     wobbuffet: {
         num: 202,
@@ -4338,6 +4623,7 @@
         evoLevel: 15,
         eggGroups: ["Amorphous"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     girafarig: {
         num: 203,
@@ -4350,6 +4636,7 @@
         color: "Yellow",
         evos: ["Farigiraf"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     pineco: {
         num: 204,
@@ -4362,6 +4649,7 @@
         color: "Gray",
         evos: ["Forretress"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     forretress: {
         num: 205,
@@ -4375,6 +4663,7 @@
         prevo: "Pineco",
         evoLevel: 31,
         eggGroups: ["Bug"],
+        tier: "RU"
     },
     dunsparce: {
         num: 206,
@@ -4387,6 +4676,7 @@
         color: "Yellow",
         evos: ["Dudunsparce", "Dudunsparce-Three-Segment"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     gligar: {
         num: 207,
@@ -4399,6 +4689,7 @@
         color: "Purple",
         evos: ["Gliscor"],
         eggGroups: ["Bug"],
+        tier: "NU"
     },
     steelix: {
         num: 208,
@@ -4415,6 +4706,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Steelix-Mega"],
         formeOrder: ["Steelix", "Steelix-Mega"],
+        isNonstandard: "Past"
     },
     steelixmega: {
         num: 208,
@@ -4429,6 +4721,7 @@
         color: "Gray",
         eggGroups: ["Mineral"],
         requiredItem: "Steelixite",
+        isNonstandard: "Past"
     },
     snubbull: {
         num: 209,
@@ -4442,6 +4735,7 @@
         color: "Pink",
         evos: ["Granbull"],
         eggGroups: ["Field", "Fairy"],
+        tier: "LC"
     },
     granbull: {
         num: 210,
@@ -4456,6 +4750,7 @@
         prevo: "Snubbull",
         evoLevel: 23,
         eggGroups: ["Field", "Fairy"],
+        tier: "ZU"
     },
     qwilfish: {
         num: 211,
@@ -4469,6 +4764,7 @@
         eggGroups: ["Water 2"],
         otherFormes: ["Qwilfish-Hisui"],
         formeOrder: ["Qwilfish", "Qwilfish-Hisui"],
+        tier: "PU"
     },
     qwilfishhisui: {
         num: 211,
@@ -4483,6 +4779,7 @@
         color: "Black",
         evos: ["Overqwil"],
         eggGroups: ["Water 2"],
+        tier: "PU"
     },
     scizor: {
         num: 212,
@@ -4499,6 +4796,7 @@
         eggGroups: ["Bug"],
         otherFormes: ["Scizor-Mega"],
         formeOrder: ["Scizor", "Scizor-Mega"],
+        tier: "UU"
     },
     scizormega: {
         num: 212,
@@ -4513,6 +4811,7 @@
         color: "Red",
         eggGroups: ["Bug"],
         requiredItem: "Scizorite",
+        isNonstandard: "Past"
     },
     shuckle: {
         num: 213,
@@ -4524,6 +4823,7 @@
         weightkg: 20.5,
         color: "Yellow",
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     heracross: {
         num: 214,
@@ -4537,6 +4837,7 @@
         eggGroups: ["Bug"],
         otherFormes: ["Heracross-Mega"],
         formeOrder: ["Heracross", "Heracross-Mega"],
+        tier: "PU"
     },
     heracrossmega: {
         num: 214,
@@ -4551,6 +4852,7 @@
         color: "Blue",
         eggGroups: ["Bug"],
         requiredItem: "Heracronite",
+        isNonstandard: "Past"
     },
     sneasel: {
         num: 215,
@@ -4565,6 +4867,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Sneasel-Hisui"],
         formeOrder: ["Sneasel", "Sneasel-Hisui"],
+        tier: "ZU"
     },
     sneaselhisui: {
         num: 215,
@@ -4579,6 +4882,7 @@
         color: "Gray",
         evos: ["Sneasler"],
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     teddiursa: {
         num: 216,
@@ -4591,6 +4895,7 @@
         color: "Brown",
         evos: ["Ursaring"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     ursaring: {
         num: 217,
@@ -4605,6 +4910,7 @@
         evoLevel: 30,
         evos: ["Ursaluna"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     slugma: {
         num: 218,
@@ -4617,6 +4923,7 @@
         color: "Red",
         evos: ["Magcargo"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     magcargo: {
         num: 219,
@@ -4630,6 +4937,7 @@
         prevo: "Slugma",
         evoLevel: 38,
         eggGroups: ["Amorphous"],
+        tier: "ZU"
     },
     swinub: {
         num: 220,
@@ -4642,6 +4950,7 @@
         color: "Brown",
         evos: ["Piloswine"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     piloswine: {
         num: 221,
@@ -4656,6 +4965,7 @@
         evoLevel: 33,
         evos: ["Mamoswine"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     corsola: {
         num: 222,
@@ -4670,6 +4980,7 @@
         eggGroups: ["Water 1", "Water 3"],
         otherFormes: ["Corsola-Galar"],
         formeOrder: ["Corsola", "Corsola-Galar"],
+        isNonstandard: "Past"
     },
     corsolagalar: {
         num: 222,
@@ -4685,6 +4996,7 @@
         color: "White",
         evos: ["Cursola"],
         eggGroups: ["Water 1", "Water 3"],
+        isNonstandard: "Past"
     },
     remoraid: {
         num: 223,
@@ -4697,6 +5009,7 @@
         color: "Gray",
         evos: ["Octillery"],
         eggGroups: ["Water 1", "Water 2"],
+        isNonstandard: "Past"
     },
     octillery: {
         num: 224,
@@ -4710,6 +5023,7 @@
         prevo: "Remoraid",
         evoLevel: 25,
         eggGroups: ["Water 1", "Water 2"],
+        isNonstandard: "Past"
     },
     delibird: {
         num: 225,
@@ -4721,6 +5035,7 @@
         weightkg: 16,
         color: "Red",
         eggGroups: ["Water 1", "Field"],
+        tier: "ZU"
     },
     mantine: {
         num: 226,
@@ -4736,6 +5051,7 @@
         evoCondition: "with a Remoraid in party",
         eggGroups: ["Water 1"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     skarmory: {
         num: 227,
@@ -4749,6 +5065,7 @@
         eggGroups: ["Flying"],
         otherFormes: ["Skarmory-Mega"],
         formeOrder: ["Skarmory", "Skarmory-Mega"],
+        tier: "UU"
     },
     skarmorymega: {
         num: 227,
@@ -4777,6 +5094,7 @@
         color: "Black",
         evos: ["Houndoom"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     houndoom: {
         num: 229,
@@ -4792,6 +5110,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Houndoom-Mega"],
         formeOrder: ["Houndoom", "Houndoom-Mega"],
+        tier: "ZU"
     },
     houndoommega: {
         num: 229,
@@ -4806,6 +5125,7 @@
         color: "Black",
         eggGroups: ["Field"],
         requiredItem: "Houndoominite",
+        isNonstandard: "Past"
     },
     kingdra: {
         num: 230,
@@ -4820,6 +5140,7 @@
         evoType: "trade",
         evoItem: "Dragon Scale",
         eggGroups: ["Water 1", "Dragon"],
+        tier: "ZUBL"
     },
     phanpy: {
         num: 231,
@@ -4832,6 +5153,7 @@
         color: "Blue",
         evos: ["Donphan"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     donphan: {
         num: 232,
@@ -4845,6 +5167,7 @@
         prevo: "Phanpy",
         evoLevel: 25,
         eggGroups: ["Field"],
+        tier: "UU"
     },
     porygon2: {
         num: 233,
@@ -4861,6 +5184,7 @@
         evoItem: "Up-Grade",
         evos: ["Porygon-Z"],
         eggGroups: ["Mineral"],
+        tier: "ZUBL"
     },
     stantler: {
         num: 234,
@@ -4873,6 +5197,7 @@
         color: "Brown",
         evos: ["Wyrdeer"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     smeargle: {
         num: 235,
@@ -4884,6 +5209,7 @@
         weightkg: 58,
         color: "White",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     tyrogue: {
         num: 236,
@@ -4898,6 +5224,7 @@
         evos: ["Hitmonlee", "Hitmonchan", "Hitmontop"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     hitmontop: {
         num: 237,
@@ -4913,6 +5240,7 @@
         evoLevel: 20,
         evoCondition: "with an Atk stat equal to its Def stat",
         eggGroups: ["Human-Like"],
+        tier: "ZU"
     },
     smoochum: {
         num: 238,
@@ -4927,6 +5255,7 @@
         evos: ["Jynx"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     elekid: {
         num: 239,
@@ -4941,6 +5270,7 @@
         evos: ["Electabuzz"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     magby: {
         num: 240,
@@ -4955,6 +5285,7 @@
         evos: ["Magmar"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "NFE"
     },
     miltank: {
         num: 241,
@@ -4967,6 +5298,7 @@
         weightkg: 75.5,
         color: "Pink",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     blissey: {
         num: 242,
@@ -4981,6 +5313,7 @@
         prevo: "Chansey",
         evoType: "levelFriendship",
         eggGroups: ["Fairy"],
+        tier: "RU"
     },
     raikou: {
         num: 243,
@@ -4994,6 +5327,7 @@
         color: "Yellow",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "NU"
     },
     entei: {
         num: 244,
@@ -5007,6 +5341,7 @@
         color: "Brown",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "RU"
     },
     suicune: {
         num: 245,
@@ -5020,6 +5355,7 @@
         color: "Blue",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "RU"
     },
     larvitar: {
         num: 246,
@@ -5032,6 +5368,7 @@
         color: "Green",
         evos: ["Pupitar"],
         eggGroups: ["Monster"],
+        tier: "LC"
     },
     pupitar: {
         num: 247,
@@ -5046,6 +5383,7 @@
         evoLevel: 30,
         evos: ["Tyranitar"],
         eggGroups: ["Monster"],
+        tier: "NFE"
     },
     tyranitar: {
         num: 248,
@@ -5061,6 +5399,7 @@
         eggGroups: ["Monster"],
         otherFormes: ["Tyranitar-Mega"],
         formeOrder: ["Tyranitar", "Tyranitar-Mega"],
+        tier: "UU"
     },
     tyranitarmega: {
         num: 248,
@@ -5075,6 +5414,7 @@
         color: "Green",
         eggGroups: ["Monster"],
         requiredItem: "Tyranitarite",
+        isNonstandard: "Past"
     },
     lugia: {
         num: 249,
@@ -5088,6 +5428,7 @@
         color: "White",
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     hooh: {
         num: 250,
@@ -5101,6 +5442,7 @@
         color: "Red",
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     celebi: {
         num: 251,
@@ -5114,6 +5456,7 @@
         color: "Green",
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     treecko: {
         num: 252,
@@ -5127,6 +5470,7 @@
         color: "Green",
         evos: ["Grovyle"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "LC"
     },
     grovyle: {
         num: 253,
@@ -5142,6 +5486,7 @@
         evoLevel: 16,
         evos: ["Sceptile"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "NFE"
     },
     sceptile: {
         num: 254,
@@ -5158,6 +5503,7 @@
         eggGroups: ["Monster", "Dragon"],
         otherFormes: ["Sceptile-Mega"],
         formeOrder: ["Sceptile", "Sceptile-Mega"],
+        tier: "ZU"
     },
     sceptilemega: {
         num: 254,
@@ -5173,6 +5519,7 @@
         color: "Green",
         eggGroups: ["Monster", "Dragon"],
         requiredItem: "Sceptilite",
+        isNonstandard: "Past"
     },
     torchic: {
         num: 255,
@@ -5186,6 +5533,7 @@
         color: "Red",
         evos: ["Combusken"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     combusken: {
         num: 256,
@@ -5201,6 +5549,7 @@
         evoLevel: 16,
         evos: ["Blaziken"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     blaziken: {
         num: 257,
@@ -5217,6 +5566,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Blaziken-Mega"],
         formeOrder: ["Blaziken", "Blaziken-Mega"],
+        tier: "UUBL"
     },
     blazikenmega: {
         num: 257,
@@ -5232,6 +5582,7 @@
         color: "Red",
         eggGroups: ["Field"],
         requiredItem: "Blazikenite",
+        isNonstandard: "Past"
     },
     mudkip: {
         num: 258,
@@ -5245,6 +5596,7 @@
         color: "Blue",
         evos: ["Marshtomp"],
         eggGroups: ["Monster", "Water 1"],
+        tier: "LC"
     },
     marshtomp: {
         num: 259,
@@ -5260,6 +5612,7 @@
         evoLevel: 16,
         evos: ["Swampert"],
         eggGroups: ["Monster", "Water 1"],
+        tier: "NFE"
     },
     swampert: {
         num: 260,
@@ -5276,6 +5629,7 @@
         eggGroups: ["Monster", "Water 1"],
         otherFormes: ["Swampert-Mega"],
         formeOrder: ["Swampert", "Swampert-Mega"],
+        tier: "NU"
     },
     swampertmega: {
         num: 260,
@@ -5291,6 +5645,7 @@
         color: "Blue",
         eggGroups: ["Monster", "Water 1"],
         requiredItem: "Swampertite",
+        isNonstandard: "Past"
     },
     poochyena: {
         num: 261,
@@ -5303,6 +5658,7 @@
         color: "Gray",
         evos: ["Mightyena"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     mightyena: {
         num: 262,
@@ -5316,6 +5672,7 @@
         prevo: "Poochyena",
         evoLevel: 18,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     zigzagoon: {
         num: 263,
@@ -5330,6 +5687,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Zigzagoon-Galar"],
         formeOrder: ["Zigzagoon", "Zigzagoon-Galar"],
+        isNonstandard: "Past"
     },
     zigzagoongalar: {
         num: 263,
@@ -5344,6 +5702,7 @@
         color: "White",
         evos: ["Linoone-Galar"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     linoone: {
         num: 264,
@@ -5359,6 +5718,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Linoone-Galar"],
         formeOrder: ["Linoone", "Linoone-Galar"],
+        isNonstandard: "Past"
     },
     linoonegalar: {
         num: 264,
@@ -5375,6 +5735,7 @@
         evoLevel: 20,
         evos: ["Obstagoon"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     wurmple: {
         num: 265,
@@ -5387,6 +5748,7 @@
         color: "Red",
         evos: ["Silcoon", "Cascoon"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     silcoon: {
         num: 266,
@@ -5401,6 +5763,7 @@
         evoLevel: 7,
         evos: ["Beautifly"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     beautifly: {
         num: 267,
@@ -5414,6 +5777,7 @@
         prevo: "Silcoon",
         evoLevel: 10,
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     cascoon: {
         num: 268,
@@ -5428,6 +5792,7 @@
         evoLevel: 7,
         evos: ["Dustox"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     dustox: {
         num: 269,
@@ -5441,6 +5806,7 @@
         prevo: "Cascoon",
         evoLevel: 10,
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     lotad: {
         num: 270,
@@ -5453,6 +5819,7 @@
         color: "Green",
         evos: ["Lombre"],
         eggGroups: ["Water 1", "Grass"],
+        tier: "LC"
     },
     lombre: {
         num: 271,
@@ -5467,6 +5834,7 @@
         evoLevel: 14,
         evos: ["Ludicolo"],
         eggGroups: ["Water 1", "Grass"],
+        tier: "NFE"
     },
     ludicolo: {
         num: 272,
@@ -5481,6 +5849,7 @@
         evoType: "useItem",
         evoItem: "Water Stone",
         eggGroups: ["Water 1", "Grass"],
+        tier: "ZU"
     },
     seedot: {
         num: 273,
@@ -5493,6 +5862,7 @@
         color: "Brown",
         evos: ["Nuzleaf"],
         eggGroups: ["Field", "Grass"],
+        tier: "LC"
     },
     nuzleaf: {
         num: 274,
@@ -5507,6 +5877,7 @@
         evoLevel: 14,
         evos: ["Shiftry"],
         eggGroups: ["Field", "Grass"],
+        tier: "NFE"
     },
     shiftry: {
         num: 275,
@@ -5521,6 +5892,7 @@
         evoType: "useItem",
         evoItem: "Leaf Stone",
         eggGroups: ["Field", "Grass"],
+        tier: "ZU"
     },
     taillow: {
         num: 276,
@@ -5533,6 +5905,7 @@
         color: "Blue",
         evos: ["Swellow"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     swellow: {
         num: 277,
@@ -5546,6 +5919,7 @@
         prevo: "Taillow",
         evoLevel: 22,
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     wingull: {
         num: 278,
@@ -5558,6 +5932,7 @@
         color: "White",
         evos: ["Pelipper"],
         eggGroups: ["Water 1", "Flying"],
+        tier: "LC"
     },
     pelipper: {
         num: 279,
@@ -5571,6 +5946,7 @@
         prevo: "Wingull",
         evoLevel: 25,
         eggGroups: ["Water 1", "Flying"],
+        tier: "UUBL"
     },
     ralts: {
         num: 280,
@@ -5583,6 +5959,7 @@
         color: "White",
         evos: ["Kirlia"],
         eggGroups: ["Human-Like", "Amorphous"],
+        tier: "LC"
     },
     kirlia: {
         num: 281,
@@ -5597,6 +5974,7 @@
         evoLevel: 20,
         evos: ["Gardevoir", "Gallade"],
         eggGroups: ["Human-Like", "Amorphous"],
+        tier: "NFE"
     },
     gardevoir: {
         num: 282,
@@ -5612,6 +5990,7 @@
         eggGroups: ["Human-Like", "Amorphous"],
         otherFormes: ["Gardevoir-Mega"],
         formeOrder: ["Gardevoir", "Gardevoir-Mega"],
+        tier: "RU"
     },
     gardevoirmega: {
         num: 282,
@@ -5626,6 +6005,7 @@
         color: "White",
         eggGroups: ["Amorphous"],
         requiredItem: "Gardevoirite",
+        isNonstandard: "Past"
     },
     surskit: {
         num: 283,
@@ -5638,6 +6018,7 @@
         color: "Blue",
         evos: ["Masquerain"],
         eggGroups: ["Water 1", "Bug"],
+        tier: "LC"
     },
     masquerain: {
         num: 284,
@@ -5651,6 +6032,7 @@
         prevo: "Surskit",
         evoLevel: 22,
         eggGroups: ["Water 1", "Bug"],
+        tier: "ZU"
     },
     shroomish: {
         num: 285,
@@ -5663,6 +6045,7 @@
         color: "Brown",
         evos: ["Breloom"],
         eggGroups: ["Fairy", "Grass"],
+        tier: "LC"
     },
     breloom: {
         num: 286,
@@ -5676,6 +6059,7 @@
         prevo: "Shroomish",
         evoLevel: 23,
         eggGroups: ["Fairy", "Grass"],
+        tier: "RU"
     },
     slakoth: {
         num: 287,
@@ -5688,6 +6072,7 @@
         color: "Brown",
         evos: ["Vigoroth"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     vigoroth: {
         num: 288,
@@ -5702,6 +6087,7 @@
         evoLevel: 18,
         evos: ["Slaking"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     slaking: {
         num: 289,
@@ -5715,6 +6101,7 @@
         prevo: "Vigoroth",
         evoLevel: 36,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     nincada: {
         num: 290,
@@ -5727,6 +6114,7 @@
         color: "Gray",
         evos: ["Ninjask", "Shedinja"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     ninjask: {
         num: 291,
@@ -5740,6 +6128,7 @@
         prevo: "Nincada",
         evoLevel: 20,
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     shedinja: {
         num: 292,
@@ -5755,6 +6144,7 @@
         prevo: "Nincada",
         evoLevel: 20,
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     whismur: {
         num: 293,
@@ -5767,6 +6157,7 @@
         color: "Pink",
         evos: ["Loudred"],
         eggGroups: ["Monster", "Field"],
+        isNonstandard: "Past"
     },
     loudred: {
         num: 294,
@@ -5781,6 +6172,7 @@
         evoLevel: 20,
         evos: ["Exploud"],
         eggGroups: ["Monster", "Field"],
+        isNonstandard: "Past"
     },
     exploud: {
         num: 295,
@@ -5794,6 +6186,7 @@
         prevo: "Loudred",
         evoLevel: 40,
         eggGroups: ["Monster", "Field"],
+        isNonstandard: "Past"
     },
     makuhita: {
         num: 296,
@@ -5807,6 +6200,7 @@
         color: "Yellow",
         evos: ["Hariyama"],
         eggGroups: ["Human-Like"],
+        tier: "LC"
     },
     hariyama: {
         num: 297,
@@ -5821,6 +6215,7 @@
         prevo: "Makuhita",
         evoLevel: 24,
         eggGroups: ["Human-Like"],
+        tier: "PU"
     },
     azurill: {
         num: 298,
@@ -5835,6 +6230,7 @@
         evos: ["Marill"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     nosepass: {
         num: 299,
@@ -5847,6 +6243,7 @@
         color: "Gray",
         evos: ["Probopass"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     skitty: {
         num: 300,
@@ -5860,6 +6257,7 @@
         color: "Pink",
         evos: ["Delcatty"],
         eggGroups: ["Field", "Fairy"],
+        isNonstandard: "Past"
     },
     delcatty: {
         num: 301,
@@ -5875,6 +6273,7 @@
         evoType: "useItem",
         evoItem: "Moon Stone",
         eggGroups: ["Field", "Fairy"],
+        isNonstandard: "Past"
     },
     sableye: {
         num: 302,
@@ -5888,6 +6287,7 @@
         eggGroups: ["Human-Like"],
         otherFormes: ["Sableye-Mega"],
         formeOrder: ["Sableye", "Sableye-Mega"],
+        tier: "ZU"
     },
     sableyemega: {
         num: 302,
@@ -5902,6 +6302,7 @@
         color: "Purple",
         eggGroups: ["Human-Like"],
         requiredItem: "Sablenite",
+        isNonstandard: "Past"
     },
     mawile: {
         num: 303,
@@ -5915,6 +6316,7 @@
         eggGroups: ["Field", "Fairy"],
         otherFormes: ["Mawile-Mega"],
         formeOrder: ["Mawile", "Mawile-Mega"],
+        isNonstandard: "Past"
     },
     mawilemega: {
         num: 303,
@@ -5929,6 +6331,7 @@
         color: "Black",
         eggGroups: ["Field", "Fairy"],
         requiredItem: "Mawilite",
+        isNonstandard: "Past"
     },
     aron: {
         num: 304,
@@ -5941,6 +6344,7 @@
         color: "Gray",
         evos: ["Lairon"],
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     lairon: {
         num: 305,
@@ -5955,6 +6359,7 @@
         evoLevel: 32,
         evos: ["Aggron"],
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     aggron: {
         num: 306,
@@ -5970,6 +6375,7 @@
         eggGroups: ["Monster"],
         otherFormes: ["Aggron-Mega"],
         formeOrder: ["Aggron", "Aggron-Mega"],
+        isNonstandard: "Past"
     },
     aggronmega: {
         num: 306,
@@ -5984,6 +6390,7 @@
         color: "Gray",
         eggGroups: ["Monster"],
         requiredItem: "Aggronite",
+        isNonstandard: "Past"
     },
     meditite: {
         num: 307,
@@ -5996,6 +6403,7 @@
         color: "Blue",
         evos: ["Medicham"],
         eggGroups: ["Human-Like"],
+        tier: "NFE"
     },
     medicham: {
         num: 308,
@@ -6011,6 +6419,7 @@
         eggGroups: ["Human-Like"],
         otherFormes: ["Medicham-Mega"],
         formeOrder: ["Medicham", "Medicham-Mega"],
+        tier: "ZU"
     },
     medichammega: {
         num: 308,
@@ -6025,6 +6434,7 @@
         color: "Red",
         eggGroups: ["Human-Like"],
         requiredItem: "Medichamite",
+        isNonstandard: "Past"
     },
     electrike: {
         num: 309,
@@ -6037,6 +6447,7 @@
         color: "Green",
         evos: ["Manectric"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     manectric: {
         num: 310,
@@ -6052,6 +6463,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Manectric-Mega"],
         formeOrder: ["Manectric", "Manectric-Mega"],
+        isNonstandard: "Past"
     },
     manectricmega: {
         num: 310,
@@ -6066,6 +6478,7 @@
         color: "Yellow",
         eggGroups: ["Field"],
         requiredItem: "Manectite",
+        isNonstandard: "Past"
     },
     plusle: {
         num: 311,
@@ -6077,6 +6490,7 @@
         weightkg: 4.2,
         color: "Yellow",
         eggGroups: ["Fairy"],
+        tier: "ZU"
     },
     minun: {
         num: 312,
@@ -6088,6 +6502,7 @@
         weightkg: 4.2,
         color: "Yellow",
         eggGroups: ["Fairy"],
+        tier: "ZU"
     },
     volbeat: {
         num: 313,
@@ -6101,6 +6516,7 @@
         color: "Gray",
         eggGroups: ["Bug", "Human-Like"],
         mother: "illumise",
+        tier: "ZU"
     },
     illumise: {
         num: 314,
@@ -6113,6 +6529,7 @@
         weightkg: 17.7,
         color: "Purple",
         eggGroups: ["Bug", "Human-Like"],
+        tier: "ZU"
     },
     roselia: {
         num: 315,
@@ -6129,6 +6546,7 @@
         evos: ["Roserade"],
         eggGroups: ["Fairy", "Grass"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     gulpin: {
         num: 316,
@@ -6141,6 +6559,7 @@
         color: "Green",
         evos: ["Swalot"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     swalot: {
         num: 317,
@@ -6154,6 +6573,7 @@
         prevo: "Gulpin",
         evoLevel: 26,
         eggGroups: ["Amorphous"],
+        tier: "ZU"
     },
     carvanha: {
         num: 318,
@@ -6166,6 +6586,7 @@
         color: "Red",
         evos: ["Sharpedo"],
         eggGroups: ["Water 2"],
+        isNonstandard: "Past"
     },
     sharpedo: {
         num: 319,
@@ -6181,6 +6602,7 @@
         eggGroups: ["Water 2"],
         otherFormes: ["Sharpedo-Mega"],
         formeOrder: ["Sharpedo", "Sharpedo-Mega"],
+        isNonstandard: "Past"
     },
     sharpedomega: {
         num: 319,
@@ -6195,6 +6617,7 @@
         color: "Blue",
         eggGroups: ["Water 2"],
         requiredItem: "Sharpedonite",
+        isNonstandard: "Past"
     },
     wailmer: {
         num: 320,
@@ -6207,6 +6630,7 @@
         color: "Blue",
         evos: ["Wailord"],
         eggGroups: ["Field", "Water 2"],
+        isNonstandard: "Past"
     },
     wailord: {
         num: 321,
@@ -6220,6 +6644,7 @@
         prevo: "Wailmer",
         evoLevel: 40,
         eggGroups: ["Field", "Water 2"],
+        isNonstandard: "Past"
     },
     numel: {
         num: 322,
@@ -6232,6 +6657,7 @@
         color: "Yellow",
         evos: ["Camerupt"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     camerupt: {
         num: 323,
@@ -6247,6 +6673,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Camerupt-Mega"],
         formeOrder: ["Camerupt", "Camerupt-Mega"],
+        tier: "ZU"
     },
     cameruptmega: {
         num: 323,
@@ -6261,6 +6688,7 @@
         color: "Red",
         eggGroups: ["Field"],
         requiredItem: "Cameruptite",
+        isNonstandard: "Past"
     },
     torkoal: {
         num: 324,
@@ -6272,6 +6700,7 @@
         weightkg: 80.4,
         color: "Brown",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     spoink: {
         num: 325,
@@ -6284,6 +6713,7 @@
         color: "Black",
         evos: ["Grumpig"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     grumpig: {
         num: 326,
@@ -6297,6 +6727,7 @@
         prevo: "Spoink",
         evoLevel: 32,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     spinda: {
         num: 327,
@@ -6308,6 +6739,7 @@
         weightkg: 5,
         color: "Brown",
         eggGroups: ["Field", "Human-Like"],
+        isNonstandard: "Past"
     },
     trapinch: {
         num: 328,
@@ -6320,6 +6752,7 @@
         color: "Brown",
         evos: ["Vibrava"],
         eggGroups: ["Bug", "Dragon"],
+        tier: "LC"
     },
     vibrava: {
         num: 329,
@@ -6334,6 +6767,7 @@
         evoLevel: 35,
         evos: ["Flygon"],
         eggGroups: ["Bug", "Dragon"],
+        tier: "NFE"
     },
     flygon: {
         num: 330,
@@ -6347,6 +6781,7 @@
         prevo: "Vibrava",
         evoLevel: 45,
         eggGroups: ["Bug", "Dragon"],
+        tier: "NU"
     },
     cacnea: {
         num: 331,
@@ -6359,6 +6794,7 @@
         color: "Green",
         evos: ["Cacturne"],
         eggGroups: ["Grass", "Human-Like"],
+        tier: "LC"
     },
     cacturne: {
         num: 332,
@@ -6372,6 +6808,7 @@
         prevo: "Cacnea",
         evoLevel: 32,
         eggGroups: ["Grass", "Human-Like"],
+        tier: "ZU"
     },
     swablu: {
         num: 333,
@@ -6384,6 +6821,7 @@
         color: "Blue",
         evos: ["Altaria"],
         eggGroups: ["Flying", "Dragon"],
+        tier: "LC"
     },
     altaria: {
         num: 334,
@@ -6399,6 +6837,7 @@
         eggGroups: ["Flying", "Dragon"],
         otherFormes: ["Altaria-Mega"],
         formeOrder: ["Altaria", "Altaria-Mega"],
+        tier: "NU"
     },
     altariamega: {
         num: 334,
@@ -6413,6 +6852,7 @@
         color: "Blue",
         eggGroups: ["Flying", "Dragon"],
         requiredItem: "Altarianite",
+        isNonstandard: "Past"
     },
     zangoose: {
         num: 335,
@@ -6424,6 +6864,7 @@
         weightkg: 40.3,
         color: "White",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     seviper: {
         num: 336,
@@ -6435,6 +6876,7 @@
         weightkg: 52.5,
         color: "Black",
         eggGroups: ["Field", "Dragon"],
+        tier: "ZU"
     },
     lunatone: {
         num: 337,
@@ -6447,6 +6889,7 @@
         weightkg: 168,
         color: "Yellow",
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     solrock: {
         num: 338,
@@ -6459,6 +6902,7 @@
         weightkg: 154,
         color: "Red",
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     barboach: {
         num: 339,
@@ -6471,6 +6915,7 @@
         color: "Gray",
         evos: ["Whiscash"],
         eggGroups: ["Water 2"],
+        tier: "LC"
     },
     whiscash: {
         num: 340,
@@ -6484,6 +6929,7 @@
         prevo: "Barboach",
         evoLevel: 30,
         eggGroups: ["Water 2"],
+        tier: "ZU"
     },
     corphish: {
         num: 341,
@@ -6496,6 +6942,7 @@
         color: "Red",
         evos: ["Crawdaunt"],
         eggGroups: ["Water 1", "Water 3"],
+        tier: "LC"
     },
     crawdaunt: {
         num: 342,
@@ -6509,6 +6956,7 @@
         prevo: "Corphish",
         evoLevel: 30,
         eggGroups: ["Water 1", "Water 3"],
+        tier: "RU"
     },
     baltoy: {
         num: 343,
@@ -6522,6 +6970,7 @@
         color: "Brown",
         evos: ["Claydol"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     claydol: {
         num: 344,
@@ -6536,6 +6985,7 @@
         prevo: "Baltoy",
         evoLevel: 36,
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     lileep: {
         num: 345,
@@ -6549,6 +6999,7 @@
         color: "Purple",
         evos: ["Cradily"],
         eggGroups: ["Water 3"],
+        isNonstandard: "Past"
     },
     cradily: {
         num: 346,
@@ -6563,6 +7014,7 @@
         prevo: "Lileep",
         evoLevel: 40,
         eggGroups: ["Water 3"],
+        isNonstandard: "Past"
     },
     anorith: {
         num: 347,
@@ -6576,6 +7028,7 @@
         color: "Gray",
         evos: ["Armaldo"],
         eggGroups: ["Water 3"],
+        isNonstandard: "Past"
     },
     armaldo: {
         num: 348,
@@ -6590,6 +7043,7 @@
         prevo: "Anorith",
         evoLevel: 40,
         eggGroups: ["Water 3"],
+        isNonstandard: "Past"
     },
     feebas: {
         num: 349,
@@ -6602,6 +7056,7 @@
         color: "Brown",
         evos: ["Milotic"],
         eggGroups: ["Water 1", "Dragon"],
+        tier: "LC"
     },
     milotic: {
         num: 350,
@@ -6616,6 +7071,7 @@
         evoType: "trade",
         evoItem: "Prism Scale",
         eggGroups: ["Water 1", "Dragon"],
+        tier: "PU"
     },
     castform: {
         num: 351,
@@ -6629,6 +7085,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         otherFormes: ["Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
         formeOrder: ["Castform", "Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
+        isNonstandard: "Past"
     },
     castformsunny: {
         num: 351,
@@ -6644,6 +7101,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         requiredAbility: "Forecast",
         battleOnly: "Castform",
+        isNonstandard: "Past"
     },
     castformrainy: {
         num: 351,
@@ -6659,6 +7117,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         requiredAbility: "Forecast",
         battleOnly: "Castform",
+        isNonstandard: "Past"
     },
     castformsnowy: {
         num: 351,
@@ -6674,6 +7133,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         requiredAbility: "Forecast",
         battleOnly: "Castform",
+        isNonstandard: "Past"
     },
     kecleon: {
         num: 352,
@@ -6685,6 +7145,7 @@
         weightkg: 22,
         color: "Green",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     shuppet: {
         num: 353,
@@ -6697,6 +7158,7 @@
         color: "Black",
         evos: ["Banette"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     banette: {
         num: 354,
@@ -6712,6 +7174,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Banette-Mega"],
         formeOrder: ["Banette", "Banette-Mega"],
+        tier: "ZU"
     },
     banettemega: {
         num: 354,
@@ -6726,6 +7189,7 @@
         color: "Black",
         eggGroups: ["Amorphous"],
         requiredItem: "Banettite",
+        isNonstandard: "Past"
     },
     duskull: {
         num: 355,
@@ -6738,6 +7202,7 @@
         color: "Black",
         evos: ["Dusclops"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     dusclops: {
         num: 356,
@@ -6752,6 +7217,7 @@
         evoLevel: 37,
         evos: ["Dusknoir"],
         eggGroups: ["Amorphous"],
+        tier: "NFE"
     },
     tropius: {
         num: 357,
@@ -6763,6 +7229,7 @@
         weightkg: 100,
         color: "Green",
         eggGroups: ["Monster", "Grass"],
+        tier: "ZU"
     },
     chimecho: {
         num: 358,
@@ -6780,6 +7247,7 @@
         canHatch: true,
         otherFormes: ["Chimecho-Mega"],
         formeOrder: ["Chimecho", "Chimecho-Mega"],
+        tier: "ZU"
     },
     chimechomega: {
         num: 358,
@@ -6809,6 +7277,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Absol-Mega", "Absol-Mega-Z"],
         formeOrder: ["Absol", "Absol-Mega", "Absol-Mega-Z"],
+        isNonstandard: "Past"
     },
     absolmega: {
         num: 359,
@@ -6823,6 +7292,7 @@
         color: "White",
         eggGroups: ["Field"],
         requiredItem: "Absolite",
+        isNonstandard: "Past"
     },
     absolmegaz: {
         num: 359,
@@ -6852,6 +7322,7 @@
         evos: ["Wobbuffet"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     snorunt: {
         num: 361,
@@ -6864,6 +7335,7 @@
         color: "Gray",
         evos: ["Glalie", "Froslass"],
         eggGroups: ["Fairy", "Mineral"],
+        tier: "LC"
     },
     glalie: {
         num: 362,
@@ -6879,6 +7351,7 @@
         eggGroups: ["Fairy", "Mineral"],
         otherFormes: ["Glalie-Mega"],
         formeOrder: ["Glalie", "Glalie-Mega"],
+        tier: "ZU"
     },
     glaliemega: {
         num: 362,
@@ -6893,6 +7366,7 @@
         color: "Gray",
         eggGroups: ["Fairy", "Mineral"],
         requiredItem: "Glalitite",
+        isNonstandard: "Past"
     },
     spheal: {
         num: 363,
@@ -6905,6 +7379,7 @@
         color: "Blue",
         evos: ["Sealeo"],
         eggGroups: ["Water 1", "Field"],
+        isNonstandard: "Past"
     },
     sealeo: {
         num: 364,
@@ -6919,6 +7394,7 @@
         evoLevel: 32,
         evos: ["Walrein"],
         eggGroups: ["Water 1", "Field"],
+        isNonstandard: "Past"
     },
     walrein: {
         num: 365,
@@ -6932,6 +7408,7 @@
         prevo: "Sealeo",
         evoLevel: 44,
         eggGroups: ["Water 1", "Field"],
+        isNonstandard: "Past"
     },
     clamperl: {
         num: 366,
@@ -6944,6 +7421,7 @@
         color: "Blue",
         evos: ["Huntail", "Gorebyss"],
         eggGroups: ["Water 1"],
+        isNonstandard: "Past"
     },
     huntail: {
         num: 367,
@@ -6958,6 +7436,7 @@
         evoType: "trade",
         evoItem: "Deep Sea Tooth",
         eggGroups: ["Water 1"],
+        isNonstandard: "Past"
     },
     gorebyss: {
         num: 368,
@@ -6972,6 +7451,7 @@
         evoType: "trade",
         evoItem: "Deep Sea Scale",
         eggGroups: ["Water 1"],
+        isNonstandard: "Past"
     },
     relicanth: {
         num: 369,
@@ -6984,6 +7464,7 @@
         weightkg: 23.4,
         color: "Gray",
         eggGroups: ["Water 1", "Water 2"],
+        isNonstandard: "Past"
     },
     luvdisc: {
         num: 370,
@@ -6996,6 +7477,7 @@
         weightkg: 8.7,
         color: "Pink",
         eggGroups: ["Water 2"],
+        tier: "ZU"
     },
     bagon: {
         num: 371,
@@ -7008,6 +7490,7 @@
         color: "Blue",
         evos: ["Shelgon"],
         eggGroups: ["Dragon"],
+        tier: "LC"
     },
     shelgon: {
         num: 372,
@@ -7022,6 +7505,7 @@
         evoLevel: 30,
         evos: ["Salamence"],
         eggGroups: ["Dragon"],
+        tier: "NFE"
     },
     salamence: {
         num: 373,
@@ -7037,6 +7521,7 @@
         eggGroups: ["Dragon"],
         otherFormes: ["Salamence-Mega"],
         formeOrder: ["Salamence", "Salamence-Mega"],
+        tier: "RUBL"
     },
     salamencemega: {
         num: 373,
@@ -7051,6 +7536,7 @@
         color: "Blue",
         eggGroups: ["Dragon"],
         requiredItem: "Salamencite",
+        isNonstandard: "Past"
     },
     beldum: {
         num: 374,
@@ -7064,6 +7550,7 @@
         color: "Blue",
         evos: ["Metang"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     metang: {
         num: 375,
@@ -7079,6 +7566,7 @@
         evoLevel: 20,
         evos: ["Metagross"],
         eggGroups: ["Mineral"],
+        tier: "NFE"
     },
     metagross: {
         num: 376,
@@ -7095,6 +7583,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Metagross-Mega"],
         formeOrder: ["Metagross", "Metagross-Mega"],
+        tier: "UU"
     },
     metagrossmega: {
         num: 376,
@@ -7110,6 +7599,7 @@
         color: "Blue",
         eggGroups: ["Mineral"],
         requiredItem: "Metagrossite",
+        isNonstandard: "Past"
     },
     regirock: {
         num: 377,
@@ -7123,6 +7613,7 @@
         color: "Brown",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "ZU"
     },
     regice: {
         num: 378,
@@ -7136,6 +7627,7 @@
         color: "Blue",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "ZU"
     },
     registeel: {
         num: 379,
@@ -7149,6 +7641,7 @@
         color: "Gray",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "RU"
     },
     latias: {
         num: 380,
@@ -7164,6 +7657,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Latias-Mega"],
         formeOrder: ["Latias", "Latias-Mega"],
+        tier: "UUBL"
     },
     latiasmega: {
         num: 380,
@@ -7179,6 +7673,7 @@
         color: "Purple",
         eggGroups: ["Undiscovered"],
         requiredItem: "Latiasite",
+        isNonstandard: "Past"
     },
     latios: {
         num: 381,
@@ -7194,6 +7689,7 @@
         tags: ["Sub-Legendary"],
         otherFormes: ["Latios-Mega"],
         formeOrder: ["Latios", "Latios-Mega"],
+        tier: "UU"
     },
     latiosmega: {
         num: 381,
@@ -7209,6 +7705,7 @@
         color: "Purple",
         eggGroups: ["Undiscovered"],
         requiredItem: "Latiosite",
+        isNonstandard: "Past"
     },
     kyogre: {
         num: 382,
@@ -7224,6 +7721,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Kyogre-Primal"],
         formeOrder: ["Kyogre", "Kyogre-Primal"],
+        tier: "Uber"
     },
     kyogreprimal: {
         num: 382,
@@ -7239,6 +7737,7 @@
         color: "Blue",
         eggGroups: ["Undiscovered"],
         requiredItem: "Blue Orb",
+        isNonstandard: "Past"
     },
     groudon: {
         num: 383,
@@ -7254,6 +7753,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Groudon-Primal"],
         formeOrder: ["Groudon", "Groudon-Primal"],
+        tier: "Uber"
     },
     groudonprimal: {
         num: 383,
@@ -7269,6 +7769,7 @@
         color: "Red",
         eggGroups: ["Undiscovered"],
         requiredItem: "Red Orb",
+        isNonstandard: "Past"
     },
     rayquaza: {
         num: 384,
@@ -7284,6 +7785,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Rayquaza-Mega"],
         formeOrder: ["Rayquaza", "Rayquaza-Mega"],
+        tier: "Uber"
     },
     rayquazamega: {
         num: 384,
@@ -7299,6 +7801,7 @@
         color: "Green",
         eggGroups: ["Undiscovered"],
         requiredMove: "Dragon Ascent",
+        isNonstandard: "Past"
     },
     jirachi: {
         num: 385,
@@ -7312,6 +7815,7 @@
         color: "Yellow",
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
+        tier: "RU"
     },
     deoxys: {
         num: 386,
@@ -7328,6 +7832,7 @@
         tags: ["Mythical"],
         otherFormes: ["Deoxys-Attack", "Deoxys-Defense", "Deoxys-Speed"],
         formeOrder: ["Deoxys", "Deoxys-Attack", "Deoxys-Defense", "Deoxys-Speed"],
+        tier: "Uber"
     },
     deoxysattack: {
         num: 386,
@@ -7343,6 +7848,7 @@
         color: "Red",
         eggGroups: ["Undiscovered"],
         changesFrom: "Deoxys",
+        tier: "Uber"
     },
     deoxysdefense: {
         num: 386,
@@ -7358,6 +7864,7 @@
         color: "Red",
         eggGroups: ["Undiscovered"],
         changesFrom: "Deoxys",
+        tier: "NUBL"
     },
     deoxysspeed: {
         num: 386,
@@ -7373,6 +7880,7 @@
         color: "Red",
         eggGroups: ["Undiscovered"],
         changesFrom: "Deoxys",
+        tier: "OU"
     },
     turtwig: {
         num: 387,
@@ -7386,6 +7894,7 @@
         color: "Green",
         evos: ["Grotle"],
         eggGroups: ["Monster", "Grass"],
+        tier: "LC"
     },
     grotle: {
         num: 388,
@@ -7401,6 +7910,7 @@
         evoLevel: 18,
         evos: ["Torterra"],
         eggGroups: ["Monster", "Grass"],
+        tier: "NFE"
     },
     torterra: {
         num: 389,
@@ -7415,6 +7925,7 @@
         prevo: "Grotle",
         evoLevel: 32,
         eggGroups: ["Monster", "Grass"],
+        tier: "RU"
     },
     chimchar: {
         num: 390,
@@ -7428,6 +7939,7 @@
         color: "Brown",
         evos: ["Monferno"],
         eggGroups: ["Field", "Human-Like"],
+        tier: "LC"
     },
     monferno: {
         num: 391,
@@ -7443,6 +7955,7 @@
         evoLevel: 14,
         evos: ["Infernape"],
         eggGroups: ["Field", "Human-Like"],
+        tier: "NFE"
     },
     infernape: {
         num: 392,
@@ -7457,6 +7970,7 @@
         prevo: "Monferno",
         evoLevel: 36,
         eggGroups: ["Field", "Human-Like"],
+        tier: "NU"
     },
     piplup: {
         num: 393,
@@ -7470,6 +7984,7 @@
         color: "Blue",
         evos: ["Prinplup"],
         eggGroups: ["Water 1", "Field"],
+        tier: "LC"
     },
     prinplup: {
         num: 394,
@@ -7485,6 +8000,7 @@
         evoLevel: 16,
         evos: ["Empoleon"],
         eggGroups: ["Water 1", "Field"],
+        tier: "NFE"
     },
     empoleon: {
         num: 395,
@@ -7499,6 +8015,7 @@
         prevo: "Prinplup",
         evoLevel: 36,
         eggGroups: ["Water 1", "Field"],
+        tier: "RU"
     },
     starly: {
         num: 396,
@@ -7511,6 +8028,7 @@
         color: "Brown",
         evos: ["Staravia"],
         eggGroups: ["Flying"],
+        tier: "LC"
     },
     staravia: {
         num: 397,
@@ -7525,6 +8043,7 @@
         evoLevel: 14,
         evos: ["Staraptor"],
         eggGroups: ["Flying"],
+        tier: "NFE"
     },
     staraptor: {
         num: 398,
@@ -7540,6 +8059,7 @@
         eggGroups: ["Flying"],
         otherFormes: ["Staraptor-Mega"],
         formeOrder: ["Staraptor", "Staraptor-Mega"],
+        tier: "NU"
     },
     staraptormega: {
         num: 398,
@@ -7568,6 +8088,7 @@
         color: "Brown",
         evos: ["Bibarel"],
         eggGroups: ["Water 1", "Field"],
+        isNonstandard: "Past"
     },
     bibarel: {
         num: 400,
@@ -7581,6 +8102,7 @@
         prevo: "Bidoof",
         evoLevel: 15,
         eggGroups: ["Water 1", "Field"],
+        isNonstandard: "Past"
     },
     kricketot: {
         num: 401,
@@ -7593,6 +8115,7 @@
         color: "Red",
         evos: ["Kricketune"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     kricketune: {
         num: 402,
@@ -7606,6 +8129,7 @@
         prevo: "Kricketot",
         evoLevel: 10,
         eggGroups: ["Bug"],
+        tier: "ZU"
     },
     shinx: {
         num: 403,
@@ -7618,6 +8142,7 @@
         color: "Blue",
         evos: ["Luxio"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     luxio: {
         num: 404,
@@ -7632,6 +8157,7 @@
         evoLevel: 15,
         evos: ["Luxray"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     luxray: {
         num: 405,
@@ -7645,6 +8171,7 @@
         prevo: "Luxio",
         evoLevel: 30,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     budew: {
         num: 406,
@@ -7658,6 +8185,7 @@
         evos: ["Roselia"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     roserade: {
         num: 407,
@@ -7672,6 +8200,7 @@
         evoType: "useItem",
         evoItem: "Shiny Stone",
         eggGroups: ["Fairy", "Grass"],
+        isNonstandard: "Past"
     },
     cranidos: {
         num: 408,
@@ -7685,6 +8214,7 @@
         color: "Blue",
         evos: ["Rampardos"],
         eggGroups: ["Monster"],
+        tier: "LC"
     },
     rampardos: {
         num: 409,
@@ -7699,6 +8229,7 @@
         prevo: "Cranidos",
         evoLevel: 30,
         eggGroups: ["Monster"],
+        tier: "ZU"
     },
     shieldon: {
         num: 410,
@@ -7712,6 +8243,7 @@
         color: "Gray",
         evos: ["Bastiodon"],
         eggGroups: ["Monster"],
+        tier: "LC"
     },
     bastiodon: {
         num: 411,
@@ -7726,6 +8258,7 @@
         prevo: "Shieldon",
         evoLevel: 30,
         eggGroups: ["Monster"],
+        tier: "ZU"
     },
     burmy: {
         num: 412,
@@ -7741,6 +8274,7 @@
         eggGroups: ["Bug"],
         cosmeticFormes: ["Burmy-Sandy", "Burmy-Trash"],
         formeOrder: ["Burmy", "Burmy-Sandy", "Burmy-Trash"],
+        isNonstandard: "Past"
     },
     burmysandy: {
         isCosmeticForme: true,
@@ -7772,6 +8306,7 @@
         eggGroups: ["Bug"],
         otherFormes: ["Wormadam-Sandy", "Wormadam-Trash"],
         formeOrder: ["Wormadam", "Wormadam-Sandy", "Wormadam-Trash"],
+        isNonstandard: "Past"
     },
     wormadamsandy: {
         num: 413,
@@ -7788,6 +8323,7 @@
         prevo: "Burmy",
         evoLevel: 20,
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     wormadamtrash: {
         num: 413,
@@ -7804,6 +8340,7 @@
         prevo: "Burmy",
         evoLevel: 20,
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     mothim: {
         num: 414,
@@ -7818,6 +8355,7 @@
         prevo: "Burmy",
         evoLevel: 20,
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     combee: {
         num: 415,
@@ -7831,6 +8369,7 @@
         color: "Yellow",
         evos: ["Vespiquen"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     vespiquen: {
         num: 416,
@@ -7845,6 +8384,7 @@
         prevo: "Combee",
         evoLevel: 21,
         eggGroups: ["Bug"],
+        tier: "ZU"
     },
     pachirisu: {
         num: 417,
@@ -7856,6 +8396,7 @@
         weightkg: 3.9,
         color: "White",
         eggGroups: ["Field", "Fairy"],
+        tier: "ZU"
     },
     buizel: {
         num: 418,
@@ -7868,6 +8409,7 @@
         color: "Brown",
         evos: ["Floatzel"],
         eggGroups: ["Water 1", "Field"],
+        tier: "LC"
     },
     floatzel: {
         num: 419,
@@ -7881,6 +8423,7 @@
         prevo: "Buizel",
         evoLevel: 26,
         eggGroups: ["Water 1", "Field"],
+        tier: "PU"
     },
     cherubi: {
         num: 420,
@@ -7893,6 +8436,7 @@
         color: "Pink",
         evos: ["Cherrim"],
         eggGroups: ["Fairy", "Grass"],
+        isNonstandard: "Past"
     },
     cherrim: {
         num: 421,
@@ -7909,6 +8453,7 @@
         eggGroups: ["Fairy", "Grass"],
         otherFormes: ["Cherrim-Sunshine"],
         formeOrder: ["Cherrim", "Cherrim-Sunshine"],
+        isNonstandard: "Past"
     },
     cherrimsunshine: {
         num: 421,
@@ -7924,6 +8469,7 @@
         eggGroups: ["Fairy", "Grass"],
         requiredAbility: "Flower Gift",
         battleOnly: "Cherrim",
+        isNonstandard: "Past"
     },
     shellos: {
         num: 422,
@@ -7939,6 +8485,7 @@
         eggGroups: ["Water 1", "Amorphous"],
         cosmeticFormes: ["Shellos-East"],
         formeOrder: ["Shellos", "Shellos-East"],
+        tier: "LC"
     },
     shelloseast: {
         isCosmeticForme: true,
@@ -7962,6 +8509,7 @@
         eggGroups: ["Water 1", "Amorphous"],
         cosmeticFormes: ["Gastrodon-East"],
         formeOrder: ["Gastrodon", "Gastrodon-East"],
+        tier: "RU"
     },
     gastrodoneast: {
         isCosmeticForme: true,
@@ -7983,6 +8531,7 @@
         evoType: "levelMove",
         evoMove: "Double Hit",
         eggGroups: ["Field"],
+        tier: "PU"
     },
     drifloon: {
         num: 425,
@@ -7995,6 +8544,7 @@
         color: "Purple",
         evos: ["Drifblim"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     drifblim: {
         num: 426,
@@ -8008,6 +8558,7 @@
         prevo: "Drifloon",
         evoLevel: 28,
         eggGroups: ["Amorphous"],
+        tier: "ZU"
     },
     buneary: {
         num: 427,
@@ -8020,6 +8571,7 @@
         color: "Brown",
         evos: ["Lopunny"],
         eggGroups: ["Field", "Human-Like"],
+        isNonstandard: "Past"
     },
     lopunny: {
         num: 428,
@@ -8035,6 +8587,7 @@
         eggGroups: ["Field", "Human-Like"],
         otherFormes: ["Lopunny-Mega"],
         formeOrder: ["Lopunny", "Lopunny-Mega"],
+        isNonstandard: "Past"
     },
     lopunnymega: {
         num: 428,
@@ -8049,6 +8602,7 @@
         color: "Brown",
         eggGroups: ["Field", "Human-Like"],
         requiredItem: "Lopunnite",
+        isNonstandard: "Past"
     },
     mismagius: {
         num: 429,
@@ -8063,6 +8617,7 @@
         evoType: "useItem",
         evoItem: "Dusk Stone",
         eggGroups: ["Amorphous"],
+        tier: "ZU"
     },
     honchkrow: {
         num: 430,
@@ -8077,6 +8632,7 @@
         evoType: "useItem",
         evoItem: "Dusk Stone",
         eggGroups: ["Flying"],
+        tier: "ZU"
     },
     glameow: {
         num: 431,
@@ -8090,6 +8646,7 @@
         color: "Gray",
         evos: ["Purugly"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     purugly: {
         num: 432,
@@ -8104,6 +8661,7 @@
         prevo: "Glameow",
         evoLevel: 38,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     chingling: {
         num: 433,
@@ -8117,6 +8675,7 @@
         evos: ["Chimecho"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     stunky: {
         num: 434,
@@ -8129,6 +8688,7 @@
         color: "Purple",
         evos: ["Skuntank"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     skuntank: {
         num: 435,
@@ -8142,6 +8702,7 @@
         prevo: "Stunky",
         evoLevel: 34,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     bronzor: {
         num: 436,
@@ -8155,6 +8716,7 @@
         color: "Green",
         evos: ["Bronzong"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     bronzong: {
         num: 437,
@@ -8169,6 +8731,7 @@
         prevo: "Bronzor",
         evoLevel: 33,
         eggGroups: ["Mineral"],
+        tier: "NU"
     },
     bonsly: {
         num: 438,
@@ -8182,6 +8745,7 @@
         evos: ["Sudowoodo"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     mimejr: {
         num: 439,
@@ -8195,6 +8759,7 @@
         evos: ["Mr. Mime", "Mr. Mime-Galar"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     happiny: {
         num: 440,
@@ -8209,6 +8774,7 @@
         evos: ["Chansey"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     chatot: {
         num: 441,
@@ -8220,6 +8786,7 @@
         weightkg: 1.9,
         color: "Black",
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     spiritomb: {
         num: 442,
@@ -8231,6 +8798,7 @@
         weightkg: 108,
         color: "Purple",
         eggGroups: ["Amorphous"],
+        tier: "ZU"
     },
     gible: {
         num: 443,
@@ -8243,6 +8811,7 @@
         color: "Blue",
         evos: ["Gabite"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "LC"
     },
     gabite: {
         num: 444,
@@ -8257,6 +8826,7 @@
         evoLevel: 24,
         evos: ["Garchomp"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "NFE"
     },
     garchomp: {
         num: 445,
@@ -8272,6 +8842,7 @@
         eggGroups: ["Monster", "Dragon"],
         otherFormes: ["Garchomp-Mega", "Garchomp-Mega-Z"],
         formeOrder: ["Garchomp", "Garchomp-Mega", "Garchomp-Mega-Z"],
+        tier: "UUBL"
     },
     garchompmega: {
         num: 445,
@@ -8286,6 +8857,7 @@
         color: "Blue",
         eggGroups: ["Monster", "Dragon"],
         requiredItem: "Garchompite",
+        isNonstandard: "Past"
     },
     garchompmegaz: {
         num: 445,
@@ -8316,6 +8888,7 @@
         evos: ["Snorlax"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     riolu: {
         num: 447,
@@ -8330,6 +8903,7 @@
         evos: ["Lucario"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     lucario: {
         num: 448,
@@ -8347,6 +8921,7 @@
         eggGroups: ["Field", "Human-Like"],
         otherFormes: ["Lucario-Mega", "Lucario-Mega-Z"],
         formeOrder: ["Lucario", "Lucario-Mega", "Lucario-Mega-Z"],
+        tier: "NUBL"
     },
     lucariomega: {
         num: 448,
@@ -8362,6 +8937,7 @@
         color: "Blue",
         eggGroups: ["Field", "Human-Like"],
         requiredItem: "Lucarionite",
+        isNonstandard: "Past"
     },
     lucariomegaz: {
         num: 448,
@@ -8391,6 +8967,7 @@
         color: "Brown",
         evos: ["Hippowdon"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     hippowdon: {
         num: 450,
@@ -8404,6 +8981,7 @@
         prevo: "Hippopotas",
         evoLevel: 34,
         eggGroups: ["Field"],
+        tier: "UU"
     },
     skorupi: {
         num: 451,
@@ -8416,6 +8994,7 @@
         color: "Purple",
         evos: ["Drapion"],
         eggGroups: ["Bug", "Water 3"],
+        isNonstandard: "Past"
     },
     drapion: {
         num: 452,
@@ -8429,6 +9008,7 @@
         prevo: "Skorupi",
         evoLevel: 40,
         eggGroups: ["Bug", "Water 3"],
+        isNonstandard: "Past"
     },
     croagunk: {
         num: 453,
@@ -8441,6 +9021,7 @@
         color: "Blue",
         evos: ["Toxicroak"],
         eggGroups: ["Human-Like"],
+        tier: "LC"
     },
     toxicroak: {
         num: 454,
@@ -8454,6 +9035,7 @@
         prevo: "Croagunk",
         evoLevel: 37,
         eggGroups: ["Human-Like"],
+        tier: "ZU"
     },
     carnivine: {
         num: 455,
@@ -8465,6 +9047,7 @@
         weightkg: 27,
         color: "Green",
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     finneon: {
         num: 456,
@@ -8477,6 +9060,7 @@
         color: "Blue",
         evos: ["Lumineon"],
         eggGroups: ["Water 2"],
+        tier: "LC"
     },
     lumineon: {
         num: 457,
@@ -8490,6 +9074,7 @@
         prevo: "Finneon",
         evoLevel: 31,
         eggGroups: ["Water 2"],
+        tier: "ZU"
     },
     mantyke: {
         num: 458,
@@ -8503,6 +9088,7 @@
         evos: ["Mantine"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        isNonstandard: "Past"
     },
     snover: {
         num: 459,
@@ -8515,6 +9101,7 @@
         color: "White",
         evos: ["Abomasnow"],
         eggGroups: ["Monster", "Grass"],
+        tier: "LC"
     },
     abomasnow: {
         num: 460,
@@ -8530,6 +9117,7 @@
         eggGroups: ["Monster", "Grass"],
         otherFormes: ["Abomasnow-Mega"],
         formeOrder: ["Abomasnow", "Abomasnow-Mega"],
+        tier: "ZU"
     },
     abomasnowmega: {
         num: 460,
@@ -8544,6 +9132,7 @@
         color: "White",
         eggGroups: ["Monster", "Grass"],
         requiredItem: "Abomasite",
+        isNonstandard: "Past"
     },
     weavile: {
         num: 461,
@@ -8559,6 +9148,7 @@
         evoItem: "Razor Claw",
         evoCondition: "at night",
         eggGroups: ["Field"],
+        tier: "UU"
     },
     magnezone: {
         num: 462,
@@ -8574,6 +9164,7 @@
         evoType: "useItem",
         evoItem: "Thunder Stone",
         eggGroups: ["Mineral"],
+        tier: "RU"
     },
     lickilicky: {
         num: 463,
@@ -8588,6 +9179,7 @@
         evoType: "levelMove",
         evoMove: "Rollout",
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     rhyperior: {
         num: 464,
@@ -8602,6 +9194,7 @@
         evoType: "trade",
         evoItem: "Protector",
         eggGroups: ["Monster", "Field"],
+        tier: "NU"
     },
     tangrowth: {
         num: 465,
@@ -8616,6 +9209,7 @@
         evoType: "levelMove",
         evoMove: "Ancient Power",
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     electivire: {
         num: 466,
@@ -8631,6 +9225,7 @@
         evoType: "trade",
         evoItem: "Electirizer",
         eggGroups: ["Human-Like"],
+        tier: "ZU"
     },
     magmortar: {
         num: 467,
@@ -8646,6 +9241,7 @@
         evoType: "trade",
         evoItem: "Magmarizer",
         eggGroups: ["Human-Like"],
+        tier: "ZU"
     },
     togekiss: {
         num: 468,
@@ -8661,6 +9257,7 @@
         evoType: "useItem",
         evoItem: "Shiny Stone",
         eggGroups: ["Flying", "Fairy"],
+        isNonstandard: "Past"
     },
     yanmega: {
         num: 469,
@@ -8675,6 +9272,7 @@
         evoType: "levelMove",
         evoMove: "Ancient Power",
         eggGroups: ["Bug"],
+        tier: "RU"
     },
     leafeon: {
         num: 470,
@@ -8690,6 +9288,7 @@
         evoType: "useItem",
         evoItem: "Leaf Stone",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     glaceon: {
         num: 471,
@@ -8705,6 +9304,7 @@
         evoType: "useItem",
         evoItem: "Ice Stone",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     gliscor: {
         num: 472,
@@ -8720,6 +9320,7 @@
         evoItem: "Razor Fang",
         evoCondition: "at night",
         eggGroups: ["Bug"],
+        tier: "OU"
     },
     mamoswine: {
         num: 473,
@@ -8734,6 +9335,7 @@
         evoType: "levelMove",
         evoMove: "Ancient Power",
         eggGroups: ["Field"],
+        tier: "UU"
     },
     porygonz: {
         num: 474,
@@ -8749,6 +9351,7 @@
         evoType: "trade",
         evoItem: "Dubious Disc",
         eggGroups: ["Mineral"],
+        tier: "RU"
     },
     gallade: {
         num: 475,
@@ -8766,6 +9369,7 @@
         eggGroups: ["Human-Like", "Amorphous"],
         otherFormes: ["Gallade-Mega"],
         formeOrder: ["Gallade", "Gallade-Mega"],
+        tier: "RU"
     },
     gallademega: {
         num: 475,
@@ -8781,6 +9385,7 @@
         color: "White",
         eggGroups: ["Amorphous"],
         requiredItem: "Galladite",
+        isNonstandard: "Past"
     },
     probopass: {
         num: 476,
@@ -8795,6 +9400,7 @@
         evoType: "levelExtra",
         evoCondition: "near a special magnetic field",
         eggGroups: ["Mineral"],
+        tier: "ZU"
     },
     dusknoir: {
         num: 477,
@@ -8809,6 +9415,7 @@
         evoType: "trade",
         evoItem: "Reaper Cloth",
         eggGroups: ["Amorphous"],
+        tier: "ZU"
     },
     froslass: {
         num: 478,
@@ -8826,6 +9433,7 @@
         eggGroups: ["Fairy", "Mineral"],
         otherFormes: ["Froslass-Mega"],
         formeOrder: ["Froslass", "Froslass-Mega"],
+        tier: "ZU"
     },
     froslassmega: {
         num: 478,
@@ -8857,6 +9465,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow"],
         formeOrder: ["Rotom", "Rotom-Heat", "Rotom-Wash", "Rotom-Frost", "Rotom-Fan", "Rotom-Mow"],
+        tier: "ZU"
     },
     rotomheat: {
         num: 479,
@@ -8872,6 +9481,7 @@
         color: "Red",
         eggGroups: ["Amorphous"],
         changesFrom: "Rotom",
+        tier: "PUBL"
     },
     rotomwash: {
         num: 479,
@@ -8887,6 +9497,7 @@
         color: "Red",
         eggGroups: ["Amorphous"],
         changesFrom: "Rotom",
+        tier: "UU"
     },
     rotomfrost: {
         num: 479,
@@ -8902,6 +9513,7 @@
         color: "Red",
         eggGroups: ["Amorphous"],
         changesFrom: "Rotom",
+        tier: "ZU"
     },
     rotomfan: {
         num: 479,
@@ -8917,6 +9529,7 @@
         color: "Red",
         eggGroups: ["Amorphous"],
         changesFrom: "Rotom",
+        tier: "ZU"
     },
     rotommow: {
         num: 479,
@@ -8932,6 +9545,7 @@
         color: "Red",
         eggGroups: ["Amorphous"],
         changesFrom: "Rotom",
+        tier: "PU"
     },
     uxie: {
         num: 480,
@@ -8945,6 +9559,7 @@
         color: "Yellow",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "NU"
     },
     mesprit: {
         num: 481,
@@ -8958,6 +9573,7 @@
         color: "Pink",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "ZU"
     },
     azelf: {
         num: 482,
@@ -8971,6 +9587,7 @@
         color: "Blue",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "NUBL"
     },
     dialga: {
         num: 483,
@@ -8986,6 +9603,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Dialga-Origin"],
         formeOrder: ["Dialga", "Dialga-Origin"],
+        tier: "Uber"
     },
     dialgaorigin: {
         num: 483,
@@ -9003,6 +9621,7 @@
         requiredItem: "Adamant Crystal",
         changesFrom: "Dialga",
         gen: 8,
+        tier: "Uber"
     },
     palkia: {
         num: 484,
@@ -9018,6 +9637,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Palkia-Origin"],
         formeOrder: ["Palkia", "Palkia-Origin"],
+        tier: "Uber"
     },
     palkiaorigin: {
         num: 484,
@@ -9035,6 +9655,7 @@
         requiredItem: "Lustrous Globe",
         changesFrom: "Palkia",
         gen: 8,
+        tier: "Uber"
     },
     heatran: {
         num: 485,
@@ -9049,6 +9670,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Heatran-Mega"],
         formeOrder: ["Heatran", "Heatran-Mega"],
+        tier: "UU"
     },
     heatranmega: {
         num: 485,
@@ -9079,6 +9701,7 @@
         color: "White",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "ZU"
     },
     giratina: {
         num: 487,
@@ -9095,6 +9718,7 @@
         tags: ["Restricted Legendary"],
         otherFormes: ["Giratina-Origin"],
         formeOrder: ["Giratina", "Giratina-Origin"],
+        tier: "Uber"
     },
     giratinaorigin: {
         num: 487,
@@ -9111,6 +9735,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Griseous Core",
         changesFrom: "Giratina",
+        tier: "Uber"
     },
     cresselia: {
         num: 488,
@@ -9124,6 +9749,7 @@
         color: "Yellow",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "NUBL"
     },
     phione: {
         num: 489,
@@ -9137,6 +9763,7 @@
         color: "Blue",
         tags: ["Mythical"],
         eggGroups: ["Water 1", "Fairy"],
+        tier: "ZU"
     },
     manaphy: {
         num: 490,
@@ -9150,6 +9777,7 @@
         color: "Blue",
         tags: ["Mythical"],
         eggGroups: ["Water 1", "Fairy"],
+        tier: "UUBL"
     },
     darkrai: {
         num: 491,
@@ -9165,6 +9793,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Darkrai-Mega"],
         formeOrder: ["Darkrai", "Darkrai-Mega"],
+        tier: "OU"
     },
     darkraimega: {
         num: 491,
@@ -9199,6 +9828,7 @@
         tags: ["Mythical"],
         otherFormes: ["Shaymin-Sky"],
         formeOrder: ["Shaymin", "Shaymin-Sky"],
+        tier: "PU"
     },
     shayminsky: {
         num: 492,
@@ -9214,6 +9844,7 @@
         color: "Green",
         eggGroups: ["Undiscovered"],
         changesFrom: "Shaymin",
+        tier: "Uber"
     },
     arceus: {
         num: 493,
@@ -9267,6 +9898,7 @@
             "Arceus-Dark",
             "Arceus-Fairy"
         ],
+        tier: "Uber"
     },
     arceusbug: {
         num: 493,
@@ -9553,6 +10185,7 @@
         color: "Yellow",
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     snivy: {
         num: 495,
@@ -9566,6 +10199,7 @@
         color: "Green",
         evos: ["Servine"],
         eggGroups: ["Field", "Grass"],
+        tier: "NFE"
     },
     servine: {
         num: 496,
@@ -9581,6 +10215,7 @@
         evoLevel: 17,
         evos: ["Serperior"],
         eggGroups: ["Field", "Grass"],
+        tier: "NFE"
     },
     serperior: {
         num: 497,
@@ -9595,6 +10230,7 @@
         prevo: "Servine",
         evoLevel: 36,
         eggGroups: ["Field", "Grass"],
+        tier: "RUBL"
     },
     tepig: {
         num: 498,
@@ -9608,6 +10244,7 @@
         color: "Red",
         evos: ["Pignite"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     pignite: {
         num: 499,
@@ -9623,6 +10260,7 @@
         evoLevel: 17,
         evos: ["Emboar"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     emboar: {
         num: 500,
@@ -9639,6 +10277,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Emboar-Mega"],
         formeOrder: ["Emboar", "Emboar-Mega"],
+        tier: "ZUBL"
     },
     emboarmega: {
         num: 500,
@@ -9669,6 +10308,7 @@
         color: "Blue",
         evos: ["Dewott"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     dewott: {
         num: 502,
@@ -9684,6 +10324,7 @@
         evoLevel: 17,
         evos: ["Samurott", "Samurott-Hisui"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     samurott: {
         num: 503,
@@ -9700,6 +10341,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Samurott-Hisui"],
         formeOrder: ["Samurott", "Samurott-Hisui"],
+        tier: "ZU"
     },
     samurotthisui: {
         num: 503,
@@ -9716,6 +10358,7 @@
         prevo: "Dewott",
         evoLevel: 36,
         eggGroups: ["Field"],
+        tier: "OU"
     },
     patrat: {
         num: 504,
@@ -9728,6 +10371,7 @@
         color: "Brown",
         evos: ["Watchog"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     watchog: {
         num: 505,
@@ -9741,6 +10385,7 @@
         prevo: "Patrat",
         evoLevel: 20,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     lillipup: {
         num: 506,
@@ -9753,6 +10398,7 @@
         color: "Brown",
         evos: ["Herdier"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     herdier: {
         num: 507,
@@ -9767,6 +10413,7 @@
         evoLevel: 16,
         evos: ["Stoutland"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     stoutland: {
         num: 508,
@@ -9780,6 +10427,7 @@
         prevo: "Herdier",
         evoLevel: 32,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     purrloin: {
         num: 509,
@@ -9792,6 +10440,7 @@
         color: "Purple",
         evos: ["Liepard"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     liepard: {
         num: 510,
@@ -9805,6 +10454,7 @@
         prevo: "Purrloin",
         evoLevel: 20,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     pansage: {
         num: 511,
@@ -9818,6 +10468,7 @@
         color: "Green",
         evos: ["Simisage"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     simisage: {
         num: 512,
@@ -9833,6 +10484,7 @@
         evoType: "useItem",
         evoItem: "Leaf Stone",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     pansear: {
         num: 513,
@@ -9846,6 +10498,7 @@
         color: "Red",
         evos: ["Simisear"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     simisear: {
         num: 514,
@@ -9861,6 +10514,7 @@
         evoType: "useItem",
         evoItem: "Fire Stone",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     panpour: {
         num: 515,
@@ -9874,6 +10528,7 @@
         color: "Blue",
         evos: ["Simipour"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     simipour: {
         num: 516,
@@ -9889,6 +10544,7 @@
         evoType: "useItem",
         evoItem: "Water Stone",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     munna: {
         num: 517,
@@ -9901,6 +10557,7 @@
         color: "Pink",
         evos: ["Musharna"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     musharna: {
         num: 518,
@@ -9915,6 +10572,7 @@
         evoType: "useItem",
         evoItem: "Moon Stone",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     pidove: {
         num: 519,
@@ -9927,6 +10585,7 @@
         color: "Gray",
         evos: ["Tranquill"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     tranquill: {
         num: 520,
@@ -9941,6 +10600,7 @@
         evoLevel: 21,
         evos: ["Unfezant"],
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     unfezant: {
         num: 521,
@@ -9954,6 +10614,7 @@
         prevo: "Tranquill",
         evoLevel: 32,
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     blitzle: {
         num: 522,
@@ -9966,6 +10627,7 @@
         color: "Black",
         evos: ["Zebstrika"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     zebstrika: {
         num: 523,
@@ -9979,6 +10641,7 @@
         prevo: "Blitzle",
         evoLevel: 27,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     roggenrola: {
         num: 524,
@@ -9991,6 +10654,7 @@
         color: "Blue",
         evos: ["Boldore"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     boldore: {
         num: 525,
@@ -10005,6 +10669,7 @@
         evoLevel: 25,
         evos: ["Gigalith"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     gigalith: {
         num: 526,
@@ -10018,6 +10683,7 @@
         prevo: "Boldore",
         evoType: "trade",
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     woobat: {
         num: 527,
@@ -10030,6 +10696,7 @@
         color: "Blue",
         evos: ["Swoobat"],
         eggGroups: ["Flying", "Field"],
+        isNonstandard: "Past"
     },
     swoobat: {
         num: 528,
@@ -10043,6 +10710,7 @@
         prevo: "Woobat",
         evoType: "levelFriendship",
         eggGroups: ["Flying", "Field"],
+        isNonstandard: "Past"
     },
     drilbur: {
         num: 529,
@@ -10055,6 +10723,7 @@
         color: "Gray",
         evos: ["Excadrill"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     excadrill: {
         num: 530,
@@ -10070,6 +10739,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Excadrill-Mega"],
         formeOrder: ["Excadrill", "Excadrill-Mega"],
+        tier: "UU"
     },
     excadrillmega: {
         num: 530,
@@ -10099,6 +10769,7 @@
         eggGroups: ["Fairy"],
         otherFormes: ["Audino-Mega"],
         formeOrder: ["Audino", "Audino-Mega"],
+        isNonstandard: "Past"
     },
     audinomega: {
         num: 531,
@@ -10113,6 +10784,7 @@
         color: "White",
         eggGroups: ["Fairy"],
         requiredItem: "Audinite",
+        isNonstandard: "Past"
     },
     timburr: {
         num: 532,
@@ -10126,6 +10798,7 @@
         color: "Gray",
         evos: ["Gurdurr"],
         eggGroups: ["Human-Like"],
+        tier: "LC"
     },
     gurdurr: {
         num: 533,
@@ -10141,6 +10814,7 @@
         evoLevel: 25,
         evos: ["Conkeldurr"],
         eggGroups: ["Human-Like"],
+        tier: "ZU"
     },
     conkeldurr: {
         num: 534,
@@ -10155,6 +10829,7 @@
         prevo: "Gurdurr",
         evoType: "trade",
         eggGroups: ["Human-Like"],
+        tier: "UU"
     },
     tympole: {
         num: 535,
@@ -10167,6 +10842,7 @@
         color: "Blue",
         evos: ["Palpitoad"],
         eggGroups: ["Water 1"],
+        isNonstandard: "Past"
     },
     palpitoad: {
         num: 536,
@@ -10181,6 +10857,7 @@
         evoLevel: 25,
         evos: ["Seismitoad"],
         eggGroups: ["Water 1"],
+        isNonstandard: "Past"
     },
     seismitoad: {
         num: 537,
@@ -10194,6 +10871,7 @@
         prevo: "Palpitoad",
         evoLevel: 36,
         eggGroups: ["Water 1"],
+        isNonstandard: "Past"
     },
     throh: {
         num: 538,
@@ -10206,6 +10884,7 @@
         weightkg: 55.5,
         color: "Red",
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     sawk: {
         num: 539,
@@ -10218,6 +10897,7 @@
         weightkg: 51,
         color: "Blue",
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     sewaddle: {
         num: 540,
@@ -10230,6 +10910,7 @@
         color: "Yellow",
         evos: ["Swadloon"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     swadloon: {
         num: 541,
@@ -10244,6 +10925,7 @@
         evoLevel: 20,
         evos: ["Leavanny"],
         eggGroups: ["Bug"],
+        tier: "NFE"
     },
     leavanny: {
         num: 542,
@@ -10257,6 +10939,7 @@
         prevo: "Swadloon",
         evoType: "levelFriendship",
         eggGroups: ["Bug"],
+        tier: "ZU"
     },
     venipede: {
         num: 543,
@@ -10269,6 +10952,7 @@
         color: "Red",
         evos: ["Whirlipede"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     whirlipede: {
         num: 544,
@@ -10283,6 +10967,7 @@
         evoLevel: 22,
         evos: ["Scolipede"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     scolipede: {
         num: 545,
@@ -10298,6 +10983,7 @@
         eggGroups: ["Bug"],
         otherFormes: ["Scolipede-Mega"],
         formeOrder: ["Scolipede", "Scolipede-Mega"],
+        isNonstandard: "Past"
     },
     scolipedemega: {
         num: 545,
@@ -10326,6 +11012,7 @@
         color: "Green",
         evos: ["Whimsicott"],
         eggGroups: ["Fairy", "Grass"],
+        tier: "LC"
     },
     whimsicott: {
         num: 547,
@@ -10340,6 +11027,7 @@
         evoType: "useItem",
         evoItem: "Sun Stone",
         eggGroups: ["Fairy", "Grass"],
+        tier: "ZU"
     },
     petilil: {
         num: 548,
@@ -10353,6 +11041,7 @@
         color: "Green",
         evos: ["Lilligant", "Lilligant-Hisui"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     lilligant: {
         num: 549,
@@ -10370,6 +11059,7 @@
         eggGroups: ["Grass"],
         otherFormes: ["Lilligant-Hisui"],
         formeOrder: ["Lilligant", "Lilligant-Hisui"],
+        tier: "ZU"
     },
     lilliganthisui: {
         num: 549,
@@ -10387,6 +11077,7 @@
         evoType: "useItem",
         evoItem: "Sun Stone",
         eggGroups: ["Grass"],
+        tier: "RUBL"
     },
     basculin: {
         num: 550,
@@ -10401,6 +11092,7 @@
         eggGroups: ["Water 2"],
         otherFormes: ["Basculin-Blue-Striped", "Basculin-White-Striped"],
         formeOrder: ["Basculin", "Basculin-Blue-Striped", "Basculin-White-Striped"],
+        tier: "ZU"
     },
     basculinbluestriped: {
         num: 550,
@@ -10441,6 +11133,7 @@
         color: "Brown",
         evos: ["Krokorok"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     krokorok: {
         num: 552,
@@ -10455,6 +11148,7 @@
         evoLevel: 29,
         evos: ["Krookodile"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     krookodile: {
         num: 553,
@@ -10468,6 +11162,7 @@
         prevo: "Krokorok",
         evoLevel: 40,
         eggGroups: ["Field"],
+        tier: "RU"
     },
     darumaka: {
         num: 554,
@@ -10482,6 +11177,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Darumaka-Galar"],
         formeOrder: ["Darumaka", "Darumaka-Galar"],
+        isNonstandard: "Past"
     },
     darumakagalar: {
         num: 554,
@@ -10496,6 +11192,7 @@
         color: "White",
         evos: ["Darmanitan-Galar"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     darmanitan: {
         num: 555,
@@ -10512,6 +11209,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Darmanitan-Zen", "Darmanitan-Galar", "Darmanitan-Galar-Zen"],
         formeOrder: ["Darmanitan", "Darmanitan-Zen", "Darmanitan-Galar", "Darmanitan-Galar-Zen"],
+        isNonstandard: "Past"
     },
     darmanitanzen: {
         num: 555,
@@ -10527,6 +11225,7 @@
         eggGroups: ["Field"],
         requiredAbility: "Zen Mode",
         battleOnly: "Darmanitan",
+        isNonstandard: "Past"
     },
     darmanitangalar: {
         num: 555,
@@ -10543,6 +11242,7 @@
         evoType: "useItem",
         evoItem: "Ice Stone",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     darmanitangalarzen: {
         num: 555,
@@ -10558,6 +11258,7 @@
         eggGroups: ["Field"],
         requiredAbility: "Zen Mode",
         battleOnly: "Darmanitan-Galar",
+        isNonstandard: "Past"
     },
     maractus: {
         num: 556,
@@ -10569,6 +11270,7 @@
         weightkg: 28,
         color: "Green",
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     dwebble: {
         num: 557,
@@ -10581,6 +11283,7 @@
         color: "Red",
         evos: ["Crustle"],
         eggGroups: ["Bug", "Mineral"],
+        isNonstandard: "Past"
     },
     crustle: {
         num: 558,
@@ -10594,6 +11297,7 @@
         prevo: "Dwebble",
         evoLevel: 34,
         eggGroups: ["Bug", "Mineral"],
+        isNonstandard: "Past"
     },
     scraggy: {
         num: 559,
@@ -10606,6 +11310,7 @@
         color: "Yellow",
         evos: ["Scrafty"],
         eggGroups: ["Field", "Dragon"],
+        tier: "NFE"
     },
     scrafty: {
         num: 560,
@@ -10621,6 +11326,7 @@
         eggGroups: ["Field", "Dragon"],
         otherFormes: ["Scrafty-Mega"],
         formeOrder: ["Scrafty", "Scrafty-Mega"],
+        tier: "PUBL"
     },
     scraftymega: {
         num: 560,
@@ -10648,6 +11354,7 @@
         weightkg: 14,
         color: "Black",
         eggGroups: ["Flying"],
+        isNonstandard: "Past"
     },
     yamask: {
         num: 562,
@@ -10662,6 +11369,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Yamask-Galar"],
         formeOrder: ["Yamask", "Yamask-Galar"],
+        isNonstandard: "Past"
     },
     yamaskgalar: {
         num: 562,
@@ -10676,6 +11384,7 @@
         color: "Black",
         evos: ["Runerigus"],
         eggGroups: ["Mineral", "Amorphous"],
+        isNonstandard: "Past"
     },
     cofagrigus: {
         num: 563,
@@ -10689,6 +11398,7 @@
         prevo: "Yamask",
         evoLevel: 34,
         eggGroups: ["Mineral", "Amorphous"],
+        isNonstandard: "Past"
     },
     tirtouga: {
         num: 564,
@@ -10702,6 +11412,7 @@
         color: "Blue",
         evos: ["Carracosta"],
         eggGroups: ["Water 1", "Water 3"],
+        isNonstandard: "Past"
     },
     carracosta: {
         num: 565,
@@ -10716,6 +11427,7 @@
         prevo: "Tirtouga",
         evoLevel: 37,
         eggGroups: ["Water 1", "Water 3"],
+        isNonstandard: "Past"
     },
     archen: {
         num: 566,
@@ -10729,6 +11441,7 @@
         color: "Yellow",
         evos: ["Archeops"],
         eggGroups: ["Flying", "Water 3"],
+        isNonstandard: "Past"
     },
     archeops: {
         num: 567,
@@ -10743,6 +11456,7 @@
         prevo: "Archen",
         evoLevel: 37,
         eggGroups: ["Flying", "Water 3"],
+        isNonstandard: "Past"
     },
     trubbish: {
         num: 568,
@@ -10755,6 +11469,7 @@
         color: "Green",
         evos: ["Garbodor"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     garbodor: {
         num: 569,
@@ -10769,6 +11484,7 @@
         evoLevel: 36,
         eggGroups: ["Mineral"],
         canGigantamax: "G-Max Malodor",
+        isNonstandard: "Past"
     },
     garbodorgmax: {
         num: 569,
@@ -10784,6 +11500,7 @@
         eggGroups: ["Mineral"],
         changesFrom: "Garbodor",
         placeholderFor: "Garbodor",
+        isNonstandard: "Past"
     },
     zorua: {
         num: 570,
@@ -10799,6 +11516,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Zorua-Hisui"],
         formeOrder: ["Zorua", "Zorua-Hisui"],
+        tier: "LC"
     },
     zoruahisui: {
         num: 570,
@@ -10814,6 +11532,7 @@
         color: "Gray",
         evos: ["Zoroark-Hisui"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     zoroark: {
         num: 571,
@@ -10830,6 +11549,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Zoroark-Hisui"],
         formeOrder: ["Zoroark", "Zoroark-Hisui"],
+        tier: "PU"
     },
     zoroarkhisui: {
         num: 571,
@@ -10846,6 +11566,7 @@
         prevo: "Zorua-Hisui",
         evoLevel: 30,
         eggGroups: ["Field"],
+        tier: "RUBL"
     },
     minccino: {
         num: 572,
@@ -10859,6 +11580,7 @@
         color: "Gray",
         evos: ["Cinccino"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     cinccino: {
         num: 573,
@@ -10874,6 +11596,7 @@
         evoType: "useItem",
         evoItem: "Shiny Stone",
         eggGroups: ["Field"],
+        tier: "NU"
     },
     gothita: {
         num: 574,
@@ -10887,6 +11610,7 @@
         color: "Purple",
         evos: ["Gothorita"],
         eggGroups: ["Human-Like"],
+        tier: "LC"
     },
     gothorita: {
         num: 575,
@@ -10902,6 +11626,7 @@
         evoLevel: 32,
         evos: ["Gothitelle"],
         eggGroups: ["Human-Like"],
+        tier: "NFE"
     },
     gothitelle: {
         num: 576,
@@ -10916,6 +11641,7 @@
         prevo: "Gothorita",
         evoLevel: 41,
         eggGroups: ["Human-Like"],
+        tier: "ZU"
     },
     solosis: {
         num: 577,
@@ -10928,6 +11654,7 @@
         color: "Green",
         evos: ["Duosion"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     duosion: {
         num: 578,
@@ -10942,6 +11669,7 @@
         evoLevel: 32,
         evos: ["Reuniclus"],
         eggGroups: ["Amorphous"],
+        tier: "NFE"
     },
     reuniclus: {
         num: 579,
@@ -10955,6 +11683,7 @@
         prevo: "Duosion",
         evoLevel: 41,
         eggGroups: ["Amorphous"],
+        tier: "NUBL"
     },
     ducklett: {
         num: 580,
@@ -10967,6 +11696,7 @@
         color: "Blue",
         evos: ["Swanna"],
         eggGroups: ["Water 1", "Flying"],
+        tier: "LC"
     },
     swanna: {
         num: 581,
@@ -10980,6 +11710,7 @@
         prevo: "Ducklett",
         evoLevel: 35,
         eggGroups: ["Water 1", "Flying"],
+        tier: "ZU"
     },
     vanillite: {
         num: 582,
@@ -10992,6 +11723,7 @@
         color: "White",
         evos: ["Vanillish"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     vanillish: {
         num: 583,
@@ -11006,6 +11738,7 @@
         evoLevel: 35,
         evos: ["Vanilluxe"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     vanilluxe: {
         num: 584,
@@ -11019,6 +11752,7 @@
         prevo: "Vanillish",
         evoLevel: 47,
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     deerling: {
         num: 585,
@@ -11034,6 +11768,7 @@
         eggGroups: ["Field"],
         cosmeticFormes: ["Deerling-Summer", "Deerling-Autumn", "Deerling-Winter"],
         formeOrder: ["Deerling", "Deerling-Summer", "Deerling-Autumn", "Deerling-Winter"],
+        tier: "LC"
     },
     deerlingsummer: {
         isCosmeticForme: true,
@@ -11071,6 +11806,7 @@
         eggGroups: ["Field"],
         cosmeticFormes: ["Sawsbuck-Summer", "Sawsbuck-Autumn", "Sawsbuck-Winter"],
         formeOrder: ["Sawsbuck", "Sawsbuck-Summer", "Sawsbuck-Autumn", "Sawsbuck-Winter"],
+        tier: "ZU"
     },
     emolga: {
         num: 587,
@@ -11082,6 +11818,7 @@
         weightkg: 5,
         color: "White",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     karrablast: {
         num: 588,
@@ -11094,6 +11831,7 @@
         color: "Blue",
         evos: ["Escavalier"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     escavalier: {
         num: 589,
@@ -11108,6 +11846,7 @@
         evoType: "trade",
         evoCondition: "with a Shelmet",
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     foongus: {
         num: 590,
@@ -11120,6 +11859,7 @@
         color: "White",
         evos: ["Amoonguss"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     amoonguss: {
         num: 591,
@@ -11133,6 +11873,7 @@
         prevo: "Foongus",
         evoLevel: 39,
         eggGroups: ["Grass"],
+        tier: "PU"
     },
     frillish: {
         num: 592,
@@ -11145,6 +11886,7 @@
         color: "White",
         evos: ["Jellicent"],
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     jellicent: {
         num: 593,
@@ -11158,6 +11900,7 @@
         prevo: "Frillish",
         evoLevel: 40,
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     alomomola: {
         num: 594,
@@ -11169,6 +11912,7 @@
         weightkg: 31.6,
         color: "Pink",
         eggGroups: ["Water 1", "Water 2"],
+        tier: "OU"
     },
     joltik: {
         num: 595,
@@ -11181,6 +11925,7 @@
         color: "Yellow",
         evos: ["Galvantula"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     galvantula: {
         num: 596,
@@ -11194,6 +11939,7 @@
         prevo: "Joltik",
         evoLevel: 36,
         eggGroups: ["Bug"],
+        tier: "PU"
     },
     ferroseed: {
         num: 597,
@@ -11206,6 +11952,7 @@
         color: "Gray",
         evos: ["Ferrothorn"],
         eggGroups: ["Grass", "Mineral"],
+        isNonstandard: "Past"
     },
     ferrothorn: {
         num: 598,
@@ -11219,6 +11966,7 @@
         prevo: "Ferroseed",
         evoLevel: 40,
         eggGroups: ["Grass", "Mineral"],
+        isNonstandard: "Past"
     },
     klink: {
         num: 599,
@@ -11232,6 +11980,7 @@
         color: "Gray",
         evos: ["Klang"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     klang: {
         num: 600,
@@ -11247,6 +11996,7 @@
         evoLevel: 38,
         evos: ["Klinklang"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     klinklang: {
         num: 601,
@@ -11261,6 +12011,7 @@
         prevo: "Klang",
         evoLevel: 49,
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     tynamo: {
         num: 602,
@@ -11273,6 +12024,7 @@
         color: "White",
         evos: ["Eelektrik"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     eelektrik: {
         num: 603,
@@ -11287,6 +12039,7 @@
         evoLevel: 39,
         evos: ["Eelektross"],
         eggGroups: ["Amorphous"],
+        tier: "NFE"
     },
     eelektross: {
         num: 604,
@@ -11303,6 +12056,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Eelektross-Mega"],
         formeOrder: ["Eelektross", "Eelektross-Mega"],
+        tier: "ZU"
     },
     eelektrossmega: {
         num: 604,
@@ -11331,6 +12085,7 @@
         color: "Blue",
         evos: ["Beheeyem"],
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     beheeyem: {
         num: 606,
@@ -11344,6 +12099,7 @@
         prevo: "Elgyem",
         evoLevel: 42,
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     litwick: {
         num: 607,
@@ -11356,6 +12112,7 @@
         color: "White",
         evos: ["Lampent"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     lampent: {
         num: 608,
@@ -11370,6 +12127,7 @@
         evoLevel: 41,
         evos: ["Chandelure"],
         eggGroups: ["Amorphous"],
+        tier: "NFE"
     },
     chandelure: {
         num: 609,
@@ -11386,6 +12144,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Chandelure-Mega"],
         formeOrder: ["Chandelure", "Chandelure-Mega"],
+        tier: "NU"
     },
     chandeluremega: {
         num: 609,
@@ -11414,6 +12173,7 @@
         color: "Green",
         evos: ["Fraxure"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "LC"
     },
     fraxure: {
         num: 611,
@@ -11428,6 +12188,7 @@
         evoLevel: 38,
         evos: ["Haxorus"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "NFE"
     },
     haxorus: {
         num: 612,
@@ -11441,6 +12202,7 @@
         prevo: "Fraxure",
         evoLevel: 48,
         eggGroups: ["Monster", "Dragon"],
+        tier: "RUBL"
     },
     cubchoo: {
         num: 613,
@@ -11453,6 +12215,7 @@
         color: "White",
         evos: ["Beartic"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     beartic: {
         num: 614,
@@ -11466,6 +12229,7 @@
         prevo: "Cubchoo",
         evoLevel: 37,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     cryogonal: {
         num: 615,
@@ -11478,6 +12242,7 @@
         weightkg: 148,
         color: "Blue",
         eggGroups: ["Mineral"],
+        tier: "ZU"
     },
     shelmet: {
         num: 616,
@@ -11490,6 +12255,7 @@
         color: "Red",
         evos: ["Accelgor"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     accelgor: {
         num: 617,
@@ -11504,6 +12270,7 @@
         evoType: "trade",
         evoCondition: "with a Karrablast",
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     stunfisk: {
         num: 618,
@@ -11517,6 +12284,7 @@
         eggGroups: ["Water 1", "Amorphous"],
         otherFormes: ["Stunfisk-Galar"],
         formeOrder: ["Stunfisk", "Stunfisk-Galar"],
+        isNonstandard: "Past"
     },
     stunfiskgalar: {
         num: 618,
@@ -11530,6 +12298,7 @@
         weightkg: 20.5,
         color: "Green",
         eggGroups: ["Water 1", "Amorphous"],
+        isNonstandard: "Past"
     },
     mienfoo: {
         num: 619,
@@ -11542,6 +12311,7 @@
         color: "Yellow",
         evos: ["Mienshao"],
         eggGroups: ["Field", "Human-Like"],
+        tier: "LC"
     },
     mienshao: {
         num: 620,
@@ -11555,6 +12325,7 @@
         prevo: "Mienfoo",
         evoLevel: 50,
         eggGroups: ["Field", "Human-Like"],
+        tier: "RUBL"
     },
     druddigon: {
         num: 621,
@@ -11566,6 +12337,7 @@
         weightkg: 139,
         color: "Red",
         eggGroups: ["Monster", "Dragon"],
+        isNonstandard: "Past"
     },
     golett: {
         num: 622,
@@ -11579,6 +12351,7 @@
         color: "Green",
         evos: ["Golurk"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     golurk: {
         num: 623,
@@ -11595,6 +12368,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Golurk-Mega"],
         formeOrder: ["Golurk", "Golurk-Mega"],
+        tier: "PU"
     },
     golurkmega: {
         num: 623,
@@ -11624,6 +12398,7 @@
         color: "Red",
         evos: ["Bisharp"],
         eggGroups: ["Human-Like"],
+        tier: "LC"
     },
     bisharp: {
         num: 625,
@@ -11638,6 +12413,7 @@
         evoLevel: 52,
         evos: ["Kingambit"],
         eggGroups: ["Human-Like"],
+        tier: "RU"
     },
     bouffalant: {
         num: 626,
@@ -11649,6 +12425,7 @@
         weightkg: 94.6,
         color: "Brown",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     rufflet: {
         num: 627,
@@ -11662,6 +12439,7 @@
         color: "White",
         evos: ["Braviary", "Braviary-Hisui"],
         eggGroups: ["Flying"],
+        tier: "NFE"
     },
     braviary: {
         num: 628,
@@ -11678,6 +12456,7 @@
         eggGroups: ["Flying"],
         otherFormes: ["Braviary-Hisui"],
         formeOrder: ["Braviary", "Braviary-Hisui"],
+        tier: "NU"
     },
     braviaryhisui: {
         num: 628,
@@ -11694,6 +12473,7 @@
         prevo: "Rufflet",
         evoLevel: 54,
         eggGroups: ["Flying"],
+        tier: "PU"
     },
     vullaby: {
         num: 629,
@@ -11707,6 +12487,7 @@
         color: "Brown",
         evos: ["Mandibuzz"],
         eggGroups: ["Flying"],
+        tier: "LC"
     },
     mandibuzz: {
         num: 630,
@@ -11721,6 +12502,7 @@
         prevo: "Vullaby",
         evoLevel: 54,
         eggGroups: ["Flying"],
+        tier: "UU"
     },
     heatmor: {
         num: 631,
@@ -11732,6 +12514,7 @@
         weightkg: 58,
         color: "Red",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     durant: {
         num: 632,
@@ -11743,6 +12526,7 @@
         weightkg: 33,
         color: "Gray",
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     deino: {
         num: 633,
@@ -11755,6 +12539,7 @@
         color: "Blue",
         evos: ["Zweilous"],
         eggGroups: ["Dragon"],
+        tier: "LC"
     },
     zweilous: {
         num: 634,
@@ -11769,6 +12554,7 @@
         evoLevel: 50,
         evos: ["Hydreigon"],
         eggGroups: ["Dragon"],
+        tier: "NFE"
     },
     hydreigon: {
         num: 635,
@@ -11782,6 +12568,7 @@
         prevo: "Zweilous",
         evoLevel: 64,
         eggGroups: ["Dragon"],
+        tier: "UU"
     },
     larvesta: {
         num: 636,
@@ -11794,6 +12581,7 @@
         color: "White",
         evos: ["Volcarona"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     volcarona: {
         num: 637,
@@ -11807,6 +12595,7 @@
         prevo: "Larvesta",
         evoLevel: 59,
         eggGroups: ["Bug"],
+        tier: "Uber"
     },
     cobalion: {
         num: 638,
@@ -11820,6 +12609,7 @@
         color: "Blue",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "UU"
     },
     terrakion: {
         num: 639,
@@ -11833,6 +12623,7 @@
         color: "Gray",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "RU"
     },
     virizion: {
         num: 640,
@@ -11846,6 +12637,7 @@
         color: "Green",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "ZU"
     },
     tornadus: {
         num: 641,
@@ -11862,6 +12654,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Tornadus-Therian"],
         formeOrder: ["Tornadus", "Tornadus-Therian"],
+        tier: "NU"
     },
     tornadustherian: {
         num: 641,
@@ -11877,6 +12670,7 @@
         color: "Green",
         eggGroups: ["Undiscovered"],
         changesFrom: "Tornadus",
+        tier: "OU"
     },
     thundurus: {
         num: 642,
@@ -11893,6 +12687,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Thundurus-Therian"],
         formeOrder: ["Thundurus", "Thundurus-Therian"],
+        tier: "RUBL"
     },
     thundurustherian: {
         num: 642,
@@ -11908,6 +12703,7 @@
         color: "Blue",
         eggGroups: ["Undiscovered"],
         changesFrom: "Thundurus",
+        tier: "UU"
     },
     reshiram: {
         num: 643,
@@ -11921,6 +12717,7 @@
         color: "White",
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     zekrom: {
         num: 644,
@@ -11934,6 +12731,7 @@
         color: "Black",
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     landorus: {
         num: 645,
@@ -11950,6 +12748,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Landorus-Therian"],
         formeOrder: ["Landorus", "Landorus-Therian"],
+        tier: "Uber"
     },
     landorustherian: {
         num: 645,
@@ -11965,6 +12764,7 @@
         color: "Brown",
         eggGroups: ["Undiscovered"],
         changesFrom: "Landorus",
+        tier: "OU"
     },
     kyurem: {
         num: 646,
@@ -11980,6 +12780,7 @@
         tags: ["Restricted Legendary"],
         otherFormes: ["Kyurem-Black", "Kyurem-White"],
         formeOrder: ["Kyurem", "Kyurem-White", "Kyurem-Black"],
+        tier: "OU"
     },
     kyuremblack: {
         num: 646,
@@ -11995,6 +12796,7 @@
         color: "Gray",
         eggGroups: ["Undiscovered"],
         changesFrom: "Kyurem",
+        tier: "Uber"
     },
     kyuremwhite: {
         num: 646,
@@ -12010,6 +12812,7 @@
         color: "Gray",
         eggGroups: ["Undiscovered"],
         changesFrom: "Kyurem",
+        tier: "Uber"
     },
     keldeo: {
         num: 647,
@@ -12026,6 +12829,7 @@
         tags: ["Mythical"],
         otherFormes: ["Keldeo-Resolute"],
         formeOrder: ["Keldeo", "Keldeo-Resolute"],
+        tier: "UU"
     },
     keldeoresolute: {
         num: 647,
@@ -12058,6 +12862,7 @@
         tags: ["Mythical"],
         otherFormes: ["Meloetta-Pirouette"],
         formeOrder: ["Meloetta", "Meloetta-Pirouette"],
+        tier: "NU"
     },
     meloettapirouette: {
         num: 648,
@@ -12089,6 +12894,7 @@
         tags: ["Mythical"],
         otherFormes: ["Genesect-Douse", "Genesect-Shock", "Genesect-Burn", "Genesect-Chill"],
         formeOrder: ["Genesect", "Genesect-Douse", "Genesect-Shock", "Genesect-Burn", "Genesect-Chill"],
+        isNonstandard: "Past"
     },
     genesectdouse: {
         num: 649,
@@ -12105,6 +12911,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Douse Drive",
         changesFrom: "Genesect",
+        isNonstandard: "Past"
     },
     genesectshock: {
         num: 649,
@@ -12121,6 +12928,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Shock Drive",
         changesFrom: "Genesect",
+        isNonstandard: "Past"
     },
     genesectburn: {
         num: 649,
@@ -12137,6 +12945,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Burn Drive",
         changesFrom: "Genesect",
+        isNonstandard: "Past"
     },
     genesectchill: {
         num: 649,
@@ -12153,6 +12962,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Chill Drive",
         changesFrom: "Genesect",
+        isNonstandard: "Past"
     },
     chespin: {
         num: 650,
@@ -12166,6 +12976,7 @@
         color: "Green",
         evos: ["Quilladin"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     quilladin: {
         num: 651,
@@ -12181,6 +12992,7 @@
         evoLevel: 16,
         evos: ["Chesnaught"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     chesnaught: {
         num: 652,
@@ -12197,6 +13009,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Chesnaught-Mega"],
         formeOrder: ["Chesnaught", "Chesnaught-Mega"],
+        tier: "RU"
     },
     chesnaughtmega: {
         num: 652,
@@ -12227,6 +13040,7 @@
         color: "Red",
         evos: ["Braixen"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     braixen: {
         num: 654,
@@ -12242,6 +13056,7 @@
         evoLevel: 16,
         evos: ["Delphox"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     delphox: {
         num: 655,
@@ -12258,6 +13073,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Delphox-Mega"],
         formeOrder: ["Delphox", "Delphox-Mega"],
+        tier: "PU"
     },
     delphoxmega: {
         num: 655,
@@ -12288,6 +13104,7 @@
         color: "Blue",
         evos: ["Frogadier"],
         eggGroups: ["Water 1"],
+        tier: "LC"
     },
     frogadier: {
         num: 657,
@@ -12303,6 +13120,7 @@
         evoLevel: 16,
         evos: ["Greninja"],
         eggGroups: ["Water 1"],
+        tier: "NFE"
     },
     greninja: {
         num: 658,
@@ -12319,6 +13137,7 @@
         eggGroups: ["Water 1"],
         otherFormes: ["Greninja-Bond", "Greninja-Ash", "Greninja-Mega"],
         formeOrder: ["Greninja", "Greninja-Bond", "Greninja-Ash", "Greninja-Mega"],
+        tier: "UU"
     },
     greninjabond: {
         num: 658,
@@ -12351,6 +13170,7 @@
         requiredAbility: "Battle Bond",
         battleOnly: "Greninja-Bond",
         gen: 7,
+        isNonstandard: "Past"
     },
     greninjamega: {
         num: 658,
@@ -12380,6 +13200,7 @@
         color: "Brown",
         evos: ["Diggersby"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     diggersby: {
         num: 660,
@@ -12393,6 +13214,7 @@
         prevo: "Bunnelby",
         evoLevel: 20,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     fletchling: {
         num: 661,
@@ -12405,6 +13227,7 @@
         color: "Red",
         evos: ["Fletchinder"],
         eggGroups: ["Flying"],
+        tier: "LC"
     },
     fletchinder: {
         num: 662,
@@ -12419,6 +13242,7 @@
         evoLevel: 17,
         evos: ["Talonflame"],
         eggGroups: ["Flying"],
+        tier: "NFE"
     },
     talonflame: {
         num: 663,
@@ -12432,6 +13256,7 @@
         prevo: "Fletchinder",
         evoLevel: 35,
         eggGroups: ["Flying"],
+        tier: "UU"
     },
     scatterbug: {
         num: 664,
@@ -12444,6 +13269,7 @@
         color: "Black",
         evos: ["Spewpa"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     spewpa: {
         num: 665,
@@ -12458,6 +13284,7 @@
         evoLevel: 9,
         evos: ["Vivillon", "Vivillon-Fancy"],
         eggGroups: ["Bug"],
+        tier: "NFE"
     },
     vivillon: {
         num: 666,
@@ -12514,6 +13341,7 @@
             "Vivillon-Fancy",
             "Vivillon-Pokeball"
         ],
+        tier: "ZU"
     },
     vivillonicysnow: {
         isCosmeticForme: true,
@@ -12674,6 +13502,7 @@
         color: "Brown",
         evos: ["Pyroar"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     pyroar: {
         num: 668,
@@ -12690,6 +13519,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Pyroar-Mega"],
         formeOrder: ["Pyroar", "Pyroar-Mega"],
+        tier: "ZU"
     },
     pyroarmega: {
         num: 668,
@@ -12729,6 +13559,7 @@
             "FlabeĚbeĚ-Blue",
             "FlabeĚbeĚ-White"
         ],
+        tier: "LC"
     },
     floette: {
         num: 670,
@@ -12756,6 +13587,7 @@
             "Floette-Eternal",
             "Floette-Mega"
         ],
+        tier: "NFE"
     },
     floetteeternal: {
         num: 670,
@@ -12770,6 +13602,7 @@
         weightkg: 0.9,
         color: "White",
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     floettemega: {
         num: 670,
@@ -12806,6 +13639,7 @@
         eggGroups: ["Fairy"],
         cosmeticFormes: ["Florges-Blue", "Florges-Orange", "Florges-White", "Florges-Yellow"],
         formeOrder: ["Florges", "Florges-Yellow", "Florges-Orange", "Florges-Blue", "Florges-White"],
+        tier: "PU"
     },
     skiddo: {
         num: 672,
@@ -12818,6 +13652,7 @@
         color: "Brown",
         evos: ["Gogoat"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     gogoat: {
         num: 673,
@@ -12831,6 +13666,7 @@
         prevo: "Skiddo",
         evoLevel: 32,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     pancham: {
         num: 674,
@@ -12843,6 +13679,7 @@
         color: "White",
         evos: ["Pangoro"],
         eggGroups: ["Field", "Human-Like"],
+        isNonstandard: "Past"
     },
     pangoro: {
         num: 675,
@@ -12857,6 +13694,7 @@
         evoLevel: 32,
         evoCondition: "with a Dark-type in the party",
         eggGroups: ["Field", "Human-Like"],
+        isNonstandard: "Past"
     },
     furfrou: {
         num: 676,
@@ -12892,6 +13730,7 @@
             "Furfrou-Kabuki",
             "Furfrou-Pharaoh"
         ],
+        isNonstandard: "Past"
     },
     espurr: {
         num: 677,
@@ -12904,6 +13743,7 @@
         color: "Gray",
         evos: ["Meowstic", "Meowstic-F"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     meowstic: {
         num: 678,
@@ -12921,6 +13761,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Meowstic-F", "Meowstic-M-Mega", "Meowstic-F-Mega"],
         formeOrder: ["Meowstic", "Meowstic-F", "Meowstic-M-Mega", "Meowstic-F-Mega"],
+        tier: "ZU"
     },
     meowsticf: {
         num: 678,
@@ -12985,6 +13826,7 @@
         color: "Brown",
         evos: ["Doublade"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     doublade: {
         num: 680,
@@ -12999,6 +13841,7 @@
         evoLevel: 35,
         evos: ["Aegislash"],
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     aegislash: {
         num: 681,
@@ -13016,6 +13859,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Aegislash-Blade"],
         formeOrder: ["Aegislash", "Aegislash-Blade"],
+        isNonstandard: "Past"
     },
     aegislashblade: {
         num: 681,
@@ -13031,6 +13875,7 @@
         eggGroups: ["Mineral"],
         requiredAbility: "Stance Change",
         battleOnly: "Aegislash",
+        isNonstandard: "Past"
     },
     spritzee: {
         num: 682,
@@ -13043,6 +13888,7 @@
         color: "Pink",
         evos: ["Aromatisse"],
         eggGroups: ["Fairy"],
+        isNonstandard: "Past"
     },
     aromatisse: {
         num: 683,
@@ -13057,6 +13903,7 @@
         evoType: "trade",
         evoItem: "Sachet",
         eggGroups: ["Fairy"],
+        isNonstandard: "Past"
     },
     swirlix: {
         num: 684,
@@ -13069,6 +13916,7 @@
         color: "White",
         evos: ["Slurpuff"],
         eggGroups: ["Fairy"],
+        isNonstandard: "Past"
     },
     slurpuff: {
         num: 685,
@@ -13083,6 +13931,7 @@
         evoType: "trade",
         evoItem: "Whipped Dream",
         eggGroups: ["Fairy"],
+        isNonstandard: "Past"
     },
     inkay: {
         num: 686,
@@ -13095,6 +13944,7 @@
         color: "Blue",
         evos: ["Malamar"],
         eggGroups: ["Water 1", "Water 2"],
+        tier: "LC"
     },
     malamar: {
         num: 687,
@@ -13111,6 +13961,7 @@
         eggGroups: ["Water 1", "Water 2"],
         otherFormes: ["Malamar-Mega"],
         formeOrder: ["Malamar", "Malamar-Mega"],
+        tier: "ZU"
     },
     malamarmega: {
         num: 687,
@@ -13139,6 +13990,7 @@
         color: "Brown",
         evos: ["Barbaracle"],
         eggGroups: ["Water 3"],
+        isNonstandard: "Past"
     },
     barbaracle: {
         num: 689,
@@ -13154,6 +14006,7 @@
         eggGroups: ["Water 3"],
         otherFormes: ["Barbaracle-Mega"],
         formeOrder: ["Barbaracle", "Barbaracle-Mega"],
+        isNonstandard: "Past"
     },
     barbaraclemega: {
         num: 689,
@@ -13182,6 +14035,7 @@
         color: "Brown",
         evos: ["Dragalge"],
         eggGroups: ["Water 1", "Dragon"],
+        tier: "LC"
     },
     dragalge: {
         num: 691,
@@ -13197,6 +14051,7 @@
         eggGroups: ["Water 1", "Dragon"],
         otherFormes: ["Dragalge-Mega"],
         formeOrder: ["Dragalge", "Dragalge-Mega"],
+        tier: "PUBL"
     },
     dragalgemega: {
         num: 691,
@@ -13225,6 +14080,7 @@
         color: "Blue",
         evos: ["Clawitzer"],
         eggGroups: ["Water 1", "Water 3"],
+        tier: "LC"
     },
     clawitzer: {
         num: 693,
@@ -13238,6 +14094,7 @@
         prevo: "Clauncher",
         evoLevel: 37,
         eggGroups: ["Water 1", "Water 3"],
+        tier: "ZU"
     },
     helioptile: {
         num: 694,
@@ -13250,6 +14107,7 @@
         color: "Yellow",
         evos: ["Heliolisk"],
         eggGroups: ["Monster", "Dragon"],
+        isNonstandard: "Past"
     },
     heliolisk: {
         num: 695,
@@ -13264,6 +14122,7 @@
         evoType: "useItem",
         evoItem: "Sun Stone",
         eggGroups: ["Monster", "Dragon"],
+        isNonstandard: "Past"
     },
     tyrunt: {
         num: 696,
@@ -13277,6 +14136,7 @@
         color: "Brown",
         evos: ["Tyrantrum"],
         eggGroups: ["Monster", "Dragon"],
+        isNonstandard: "Past"
     },
     tyrantrum: {
         num: 697,
@@ -13292,6 +14152,7 @@
         evoLevel: 39,
         evoCondition: "during the day",
         eggGroups: ["Monster", "Dragon"],
+        isNonstandard: "Past"
     },
     amaura: {
         num: 698,
@@ -13305,6 +14166,7 @@
         color: "Blue",
         evos: ["Aurorus"],
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     aurorus: {
         num: 699,
@@ -13320,6 +14182,7 @@
         evoLevel: 39,
         evoCondition: "at night",
         eggGroups: ["Monster"],
+        isNonstandard: "Past"
     },
     sylveon: {
         num: 700,
@@ -13335,6 +14198,7 @@
         evoType: "levelExtra",
         evoCondition: "with a Fairy-type move and two levels of Affection",
         eggGroups: ["Field"],
+        tier: "NU"
     },
     hawlucha: {
         num: 701,
@@ -13348,6 +14212,7 @@
         eggGroups: ["Flying", "Human-Like"],
         otherFormes: ["Hawlucha-Mega"],
         formeOrder: ["Hawlucha", "Hawlucha-Mega"],
+        tier: "RUBL"
     },
     hawluchamega: {
         num: 701,
@@ -13375,6 +14240,7 @@
         weightkg: 2.2,
         color: "Yellow",
         eggGroups: ["Field", "Fairy"],
+        tier: "ZU"
     },
     carbink: {
         num: 703,
@@ -13387,6 +14253,7 @@
         weightkg: 5.7,
         color: "Gray",
         eggGroups: ["Fairy", "Mineral"],
+        tier: "ZU"
     },
     goomy: {
         num: 704,
@@ -13399,6 +14266,7 @@
         color: "Purple",
         evos: ["Sliggoo", "Sliggoo-Hisui"],
         eggGroups: ["Dragon"],
+        tier: "LC"
     },
     sliggoo: {
         num: 705,
@@ -13415,6 +14283,7 @@
         eggGroups: ["Dragon"],
         otherFormes: ["Sliggoo-Hisui"],
         formeOrder: ["Sliggoo", "Sliggoo-Hisui"],
+        tier: "NFE"
     },
     sliggoohisui: {
         num: 705,
@@ -13431,6 +14300,7 @@
         evoLevel: 40,
         evos: ["Goodra-Hisui"],
         eggGroups: ["Dragon"],
+        tier: "NFE"
     },
     goodra: {
         num: 706,
@@ -13447,6 +14317,7 @@
         eggGroups: ["Dragon"],
         otherFormes: ["Goodra-Hisui"],
         formeOrder: ["Goodra", "Goodra-Hisui"],
+        tier: "NU"
     },
     goodrahisui: {
         num: 706,
@@ -13463,6 +14334,7 @@
         evoLevel: 50,
         evoCondition: "during rain",
         eggGroups: ["Dragon"],
+        tier: "RU"
     },
     klefki: {
         num: 707,
@@ -13474,6 +14346,7 @@
         weightkg: 3,
         color: "Gray",
         eggGroups: ["Mineral"],
+        tier: "NU"
     },
     phantump: {
         num: 708,
@@ -13486,6 +14359,7 @@
         color: "Brown",
         evos: ["Trevenant"],
         eggGroups: ["Grass", "Amorphous"],
+        tier: "LC"
     },
     trevenant: {
         num: 709,
@@ -13499,6 +14373,7 @@
         prevo: "Phantump",
         evoType: "trade",
         eggGroups: ["Grass", "Amorphous"],
+        tier: "ZU"
     },
     pumpkaboo: {
         num: 710,
@@ -13514,6 +14389,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Pumpkaboo-Small", "Pumpkaboo-Large", "Pumpkaboo-Super"],
         formeOrder: ["Pumpkaboo", "Pumpkaboo-Small", "Pumpkaboo-Large", "Pumpkaboo-Super"],
+        isNonstandard: "Past"
     },
     pumpkaboosmall: {
         num: 710,
@@ -13528,6 +14404,7 @@
         color: "Brown",
         evos: ["Gourgeist-Small"],
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     pumpkaboolarge: {
         num: 710,
@@ -13542,6 +14419,7 @@
         color: "Brown",
         evos: ["Gourgeist-Large"],
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     pumpkaboosuper: {
         num: 710,
@@ -13556,6 +14434,7 @@
         color: "Brown",
         evos: ["Gourgeist-Super"],
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     gourgeist: {
         num: 711,
@@ -13572,6 +14451,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Gourgeist-Small", "Gourgeist-Large", "Gourgeist-Super"],
         formeOrder: ["Gourgeist", "Gourgeist-Small", "Gourgeist-Large", "Gourgeist-Super"],
+        isNonstandard: "Past"
     },
     gourgeistsmall: {
         num: 711,
@@ -13587,6 +14467,7 @@
         prevo: "Pumpkaboo-Small",
         evoType: "trade",
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     gourgeistlarge: {
         num: 711,
@@ -13602,6 +14483,7 @@
         prevo: "Pumpkaboo-Large",
         evoType: "trade",
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     gourgeistsuper: {
         num: 711,
@@ -13617,6 +14499,7 @@
         prevo: "Pumpkaboo-Super",
         evoType: "trade",
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     bergmite: {
         num: 712,
@@ -13629,6 +14512,7 @@
         color: "Blue",
         evos: ["Avalugg", "Avalugg-Hisui"],
         eggGroups: ["Monster", "Mineral"],
+        tier: "LC"
     },
     avalugg: {
         num: 713,
@@ -13644,6 +14528,7 @@
         eggGroups: ["Monster", "Mineral"],
         otherFormes: ["Avalugg-Hisui"],
         formeOrder: ["Avalugg", "Avalugg-Hisui"],
+        tier: "NU"
     },
     avalugghisui: {
         num: 713,
@@ -13659,6 +14544,7 @@
         prevo: "Bergmite",
         evoLevel: 37,
         eggGroups: ["Monster", "Mineral"],
+        tier: "PU"
     },
     noibat: {
         num: 714,
@@ -13671,6 +14557,7 @@
         color: "Purple",
         evos: ["Noivern"],
         eggGroups: ["Flying", "Dragon"],
+        tier: "LC"
     },
     noivern: {
         num: 715,
@@ -13684,6 +14571,7 @@
         prevo: "Noibat",
         evoLevel: 48,
         eggGroups: ["Flying", "Dragon"],
+        tier: "RU"
     },
     xerneas: {
         num: 716,
@@ -13700,6 +14588,7 @@
         tags: ["Restricted Legendary"],
         otherFormes: ["Xerneas-Neutral"],
         formeOrder: ["Xerneas-Neutral", "Xerneas"],
+        isNonstandard: "Past"
     },
     xerneasneutral: {
         num: 716,
@@ -13728,6 +14617,7 @@
         color: "Red",
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     zygarde: {
         num: 718,
@@ -13751,6 +14641,7 @@
             "Zygarde-Complete",
             "Zygarde-Mega"
         ],
+        isNonstandard: "Past"
     },
     zygarde10: {
         num: 718,
@@ -13767,6 +14658,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Zygarde",
         gen: 7,
+        isNonstandard: "Past"
     },
     zygardecomplete: {
         num: 718,
@@ -13784,6 +14676,7 @@
         requiredAbility: "Power Construct",
         battleOnly: ["Zygarde", "Zygarde-10%"],
         gen: 7,
+        isNonstandard: "Past"
     },
     zygardemega: {
         num: 718,
@@ -13817,6 +14710,7 @@
         tags: ["Mythical"],
         otherFormes: ["Diancie-Mega"],
         formeOrder: ["Diancie", "Diancie-Mega"],
+        tier: "RU"
     },
     dianciemega: {
         num: 719,
@@ -13832,6 +14726,7 @@
         color: "Pink",
         eggGroups: ["Undiscovered"],
         requiredItem: "Diancite",
+        isNonstandard: "Past"
     },
     hoopa: {
         num: 720,
@@ -13848,6 +14743,7 @@
         tags: ["Mythical"],
         otherFormes: ["Hoopa-Unbound"],
         formeOrder: ["Hoopa", "Hoopa-Unbound"],
+        tier: "PU"
     },
     hoopaunbound: {
         num: 720,
@@ -13863,6 +14759,7 @@
         color: "Purple",
         eggGroups: ["Undiscovered"],
         changesFrom: "Hoopa",
+        tier: "UUBL"
     },
     volcanion: {
         num: 721,
@@ -13876,6 +14773,7 @@
         color: "Brown",
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
+        tier: "RUBL"
     },
     rowlet: {
         num: 722,
@@ -13889,6 +14787,7 @@
         color: "Brown",
         evos: ["Dartrix"],
         eggGroups: ["Flying"],
+        tier: "LC"
     },
     dartrix: {
         num: 723,
@@ -13904,6 +14803,7 @@
         evoLevel: 17,
         evos: ["Decidueye", "Decidueye-Hisui"],
         eggGroups: ["Flying"],
+        tier: "NFE"
     },
     decidueye: {
         num: 724,
@@ -13920,6 +14820,7 @@
         eggGroups: ["Flying"],
         otherFormes: ["Decidueye-Hisui"],
         formeOrder: ["Decidueye", "Decidueye-Hisui"],
+        tier: "NU"
     },
     decidueyehisui: {
         num: 724,
@@ -13936,6 +14837,7 @@
         prevo: "Dartrix",
         evoLevel: 36,
         eggGroups: ["Flying"],
+        tier: "PU"
     },
     litten: {
         num: 725,
@@ -13949,6 +14851,7 @@
         color: "Red",
         evos: ["Torracat"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     torracat: {
         num: 726,
@@ -13964,6 +14867,7 @@
         evoLevel: 17,
         evos: ["Incineroar"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     incineroar: {
         num: 727,
@@ -13978,6 +14882,7 @@
         prevo: "Torracat",
         evoLevel: 34,
         eggGroups: ["Field"],
+        tier: "NU"
     },
     popplio: {
         num: 728,
@@ -13991,6 +14896,7 @@
         color: "Blue",
         evos: ["Brionne"],
         eggGroups: ["Water 1", "Field"],
+        tier: "LC"
     },
     brionne: {
         num: 729,
@@ -14006,6 +14912,7 @@
         evoLevel: 17,
         evos: ["Primarina"],
         eggGroups: ["Water 1", "Field"],
+        tier: "NFE"
     },
     primarina: {
         num: 730,
@@ -14020,6 +14927,7 @@
         prevo: "Brionne",
         evoLevel: 34,
         eggGroups: ["Water 1", "Field"],
+        tier: "OU"
     },
     pikipek: {
         num: 731,
@@ -14032,6 +14940,7 @@
         color: "Black",
         evos: ["Trumbeak"],
         eggGroups: ["Flying"],
+        tier: "LC"
     },
     trumbeak: {
         num: 732,
@@ -14046,6 +14955,7 @@
         evoLevel: 14,
         evos: ["Toucannon"],
         eggGroups: ["Flying"],
+        tier: "NFE"
     },
     toucannon: {
         num: 733,
@@ -14059,6 +14969,7 @@
         prevo: "Trumbeak",
         evoLevel: 28,
         eggGroups: ["Flying"],
+        tier: "ZU"
     },
     yungoos: {
         num: 734,
@@ -14071,6 +14982,7 @@
         color: "Brown",
         evos: ["Gumshoos"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     gumshoos: {
         num: 735,
@@ -14087,6 +14999,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Gumshoos-Totem"],
         formeOrder: ["Gumshoos", "Gumshoos-Totem"],
+        tier: "ZU"
     },
     gumshoostotem: {
         num: 735,
@@ -14101,6 +15014,7 @@
         color: "Brown",
         tags: ["True Past"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     grubbin: {
         num: 736,
@@ -14113,6 +15027,7 @@
         color: "Gray",
         evos: ["Charjabug"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     charjabug: {
         num: 737,
@@ -14127,6 +15042,7 @@
         evoLevel: 20,
         evos: ["Vikavolt"],
         eggGroups: ["Bug"],
+        tier: "NFE"
     },
     vikavolt: {
         num: 738,
@@ -14143,6 +15059,7 @@
         eggGroups: ["Bug"],
         otherFormes: ["Vikavolt-Totem"],
         formeOrder: ["Vikavolt", "Vikavolt-Totem"],
+        tier: "ZU"
     },
     vikavolttotem: {
         num: 738,
@@ -14157,6 +15074,7 @@
         color: "Blue",
         tags: ["True Past"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     crabrawler: {
         num: 739,
@@ -14169,6 +15087,7 @@
         color: "Purple",
         evos: ["Crabominable"],
         eggGroups: ["Water 3"],
+        tier: "LC"
     },
     crabominable: {
         num: 740,
@@ -14185,6 +15104,7 @@
         eggGroups: ["Water 3"],
         otherFormes: ["Crabominable-Mega"],
         formeOrder: ["Crabominable", "Crabominable-Mega"],
+        tier: "ZU"
     },
     crabominablemega: {
         num: 740,
@@ -14216,6 +15136,7 @@
         eggGroups: ["Flying"],
         otherFormes: ["Oricorio-Pom-Pom", "Oricorio-Pa'u", "Oricorio-Sensu"],
         formeOrder: ["Oricorio", "Oricorio-Pom-Pom", "Oricorio-Pa'u", "Oricorio-Sensu"],
+        tier: "ZUBL"
     },
     oricoriopompom: {
         num: 741,
@@ -14231,6 +15152,7 @@
         color: "Yellow",
         eggGroups: ["Flying"],
         changesFrom: "Oricorio",
+        tier: "RUBL"
     },
     oricoriopau: {
         num: 741,
@@ -14246,6 +15168,7 @@
         color: "Pink",
         eggGroups: ["Flying"],
         changesFrom: "Oricorio",
+        tier: "ZUBL"
     },
     oricoriosensu: {
         num: 741,
@@ -14261,6 +15184,7 @@
         color: "Purple",
         eggGroups: ["Flying"],
         changesFrom: "Oricorio",
+        tier: "NUBL"
     },
     cutiefly: {
         num: 742,
@@ -14273,6 +15197,7 @@
         color: "Yellow",
         evos: ["Ribombee"],
         eggGroups: ["Bug", "Fairy"],
+        tier: "NFE"
     },
     ribombee: {
         num: 743,
@@ -14288,6 +15213,7 @@
         eggGroups: ["Bug", "Fairy"],
         otherFormes: ["Ribombee-Totem"],
         formeOrder: ["Ribombee", "Ribombee-Totem"],
+        tier: "RU"
     },
     ribombeetotem: {
         num: 743,
@@ -14302,6 +15228,7 @@
         color: "Yellow",
         tags: ["True Past"],
         eggGroups: ["Bug", "Fairy"],
+        isNonstandard: "Past"
     },
     rockruff: {
         num: 744,
@@ -14317,6 +15244,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Rockruff-Dusk"],
         formeOrder: ["Rockruff", "Rockruff-Dusk"],
+        tier: "LC"
     },
     rockruffdusk: {
         num: 744,
@@ -14331,6 +15259,7 @@
         color: "Brown",
         evos: ["Lycanroc-Dusk"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     lycanroc: {
         num: 745,
@@ -14348,6 +15277,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Lycanroc-Midnight", "Lycanroc-Dusk"],
         formeOrder: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk"],
+        tier: "ZU"
     },
     lycanrocmidnight: {
         num: 745,
@@ -14364,6 +15294,7 @@
         evoLevel: 25,
         evoCondition: "at night",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     lycanrocdusk: {
         num: 745,
@@ -14380,6 +15311,7 @@
         evoLevel: 25,
         evoCondition: "from a special Rockruff during the evening",
         eggGroups: ["Field"],
+        tier: "NUBL"
     },
     wishiwashi: {
         num: 746,
@@ -14394,6 +15326,7 @@
         eggGroups: ["Water 2"],
         otherFormes: ["Wishiwashi-School"],
         formeOrder: ["Wishiwashi", "Wishiwashi-School"],
+        isNonstandard: "Past"
     },
     wishiwashischool: {
         num: 746,
@@ -14409,6 +15342,7 @@
         eggGroups: ["Water 2"],
         requiredAbility: "Schooling",
         battleOnly: "Wishiwashi",
+        isNonstandard: "Past"
     },
     mareanie: {
         num: 747,
@@ -14421,6 +15355,7 @@
         color: "Blue",
         evos: ["Toxapex"],
         eggGroups: ["Water 1"],
+        tier: "LC"
     },
     toxapex: {
         num: 748,
@@ -14434,6 +15369,7 @@
         prevo: "Mareanie",
         evoLevel: 38,
         eggGroups: ["Water 1"],
+        tier: "UU"
     },
     mudbray: {
         num: 749,
@@ -14446,6 +15382,7 @@
         color: "Brown",
         evos: ["Mudsdale"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     mudsdale: {
         num: 750,
@@ -14459,6 +15396,7 @@
         prevo: "Mudbray",
         evoLevel: 30,
         eggGroups: ["Field"],
+        tier: "PU"
     },
     dewpider: {
         num: 751,
@@ -14471,6 +15409,7 @@
         color: "Green",
         evos: ["Araquanid"],
         eggGroups: ["Water 1", "Bug"],
+        tier: "LC"
     },
     araquanid: {
         num: 752,
@@ -14486,6 +15425,7 @@
         eggGroups: ["Water 1", "Bug"],
         otherFormes: ["Araquanid-Totem"],
         formeOrder: ["Araquanid", "Araquanid-Totem"],
+        tier: "PU"
     },
     araquanidtotem: {
         num: 752,
@@ -14500,6 +15440,7 @@
         color: "Green",
         tags: ["True Past"],
         eggGroups: ["Water 1", "Bug"],
+        isNonstandard: "Past"
     },
     fomantis: {
         num: 753,
@@ -14512,6 +15453,7 @@
         color: "Pink",
         evos: ["Lurantis"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     lurantis: {
         num: 754,
@@ -14528,6 +15470,7 @@
         eggGroups: ["Grass"],
         otherFormes: ["Lurantis-Totem"],
         formeOrder: ["Lurantis", "Lurantis-Totem"],
+        tier: "ZU"
     },
     lurantistotem: {
         num: 754,
@@ -14542,6 +15485,7 @@
         color: "Pink",
         tags: ["True Past"],
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     morelull: {
         num: 755,
@@ -14554,6 +15498,7 @@
         color: "Purple",
         evos: ["Shiinotic"],
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     shiinotic: {
         num: 756,
@@ -14567,6 +15512,7 @@
         prevo: "Morelull",
         evoLevel: 24,
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     salandit: {
         num: 757,
@@ -14580,6 +15526,7 @@
         color: "Black",
         evos: ["Salazzle"],
         eggGroups: ["Monster", "Dragon"],
+        tier: "LC"
     },
     salazzle: {
         num: 758,
@@ -14596,6 +15543,7 @@
         eggGroups: ["Monster", "Dragon"],
         otherFormes: ["Salazzle-Totem"],
         formeOrder: ["Salazzle", "Salazzle-Totem"],
+        tier: "PU"
     },
     salazzletotem: {
         num: 758,
@@ -14611,6 +15559,7 @@
         tags: ["True Past"],
         color: "Black",
         eggGroups: ["Monster", "Dragon"],
+        isNonstandard: "Past"
     },
     stufful: {
         num: 759,
@@ -14623,6 +15572,7 @@
         color: "Pink",
         evos: ["Bewear"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     bewear: {
         num: 760,
@@ -14636,6 +15586,7 @@
         prevo: "Stufful",
         evoLevel: 27,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     bounsweet: {
         num: 761,
@@ -14649,6 +15600,7 @@
         color: "Purple",
         evos: ["Steenee"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     steenee: {
         num: 762,
@@ -14664,6 +15616,7 @@
         evoLevel: 18,
         evos: ["Tsareena"],
         eggGroups: ["Grass"],
+        tier: "NFE"
     },
     tsareena: {
         num: 763,
@@ -14679,6 +15632,7 @@
         evoType: "levelMove",
         evoMove: "Stomp",
         eggGroups: ["Grass"],
+        tier: "NU"
     },
     comfey: {
         num: 764,
@@ -14691,6 +15645,7 @@
         weightkg: 0.3,
         color: "Green",
         eggGroups: ["Grass"],
+        tier: "RU"
     },
     oranguru: {
         num: 765,
@@ -14702,6 +15657,7 @@
         weightkg: 76,
         color: "White",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     passimian: {
         num: 766,
@@ -14713,6 +15669,7 @@
         weightkg: 82.8,
         color: "White",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     wimpod: {
         num: 767,
@@ -14725,6 +15682,7 @@
         color: "Gray",
         evos: ["Golisopod"],
         eggGroups: ["Bug", "Water 3"],
+        isNonstandard: "Past"
     },
     golisopod: {
         num: 768,
@@ -14740,6 +15698,7 @@
         eggGroups: ["Bug", "Water 3"],
         otherFormes: ["Golisopod-Mega"],
         formeOrder: ["Golisopod", "Golisopod-Mega"],
+        isNonstandard: "Past"
     },
     golisopodmega: {
         num: 768,
@@ -14768,6 +15727,7 @@
         color: "Brown",
         evos: ["Palossand"],
         eggGroups: ["Amorphous"],
+        tier: "LC"
     },
     palossand: {
         num: 770,
@@ -14781,6 +15741,7 @@
         prevo: "Sandygast",
         evoLevel: 42,
         eggGroups: ["Amorphous"],
+        tier: "PU"
     },
     pyukumuku: {
         num: 771,
@@ -14792,6 +15753,7 @@
         weightkg: 1.2,
         color: "Black",
         eggGroups: ["Water 1"],
+        isNonstandard: "Past"
     },
     typenull: {
         num: 772,
@@ -14806,6 +15768,7 @@
         tags: ["Sub-Legendary"],
         evos: ["Silvally"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     silvally: {
         num: 773,
@@ -14861,6 +15824,7 @@
             "Silvally-Dark",
             "Silvally-Fairy"
         ],
+        isNonstandard: "Past"
     },
     silvallybug: {
         num: 773,
@@ -14877,6 +15841,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Bug Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallydark: {
         num: 773,
@@ -14893,6 +15858,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Dark Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallydragon: {
         num: 773,
@@ -14909,6 +15875,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Dragon Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyelectric: {
         num: 773,
@@ -14925,6 +15892,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Electric Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyfairy: {
         num: 773,
@@ -14941,6 +15909,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Fairy Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyfighting: {
         num: 773,
@@ -14957,6 +15926,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Fighting Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyfire: {
         num: 773,
@@ -14973,6 +15943,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Fire Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyflying: {
         num: 773,
@@ -14989,6 +15960,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Flying Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyghost: {
         num: 773,
@@ -15005,6 +15977,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Ghost Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallygrass: {
         num: 773,
@@ -15021,6 +15994,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Grass Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyground: {
         num: 773,
@@ -15037,6 +16011,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Ground Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyice: {
         num: 773,
@@ -15053,6 +16028,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Ice Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallypoison: {
         num: 773,
@@ -15069,6 +16045,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Poison Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallypsychic: {
         num: 773,
@@ -15085,6 +16062,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Psychic Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallyrock: {
         num: 773,
@@ -15101,6 +16079,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Rock Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallysteel: {
         num: 773,
@@ -15117,6 +16096,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Steel Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     silvallywater: {
         num: 773,
@@ -15133,6 +16113,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Water Memory",
         changesFrom: "Silvally",
+        isNonstandard: "Past"
     },
     minior: {
         num: 774,
@@ -15171,6 +16152,7 @@
             "Minior-Indigo",
             "Minior-Violet"
         ],
+        tier: "ZU"
     },
     miniororange: {
         isCosmeticForme: true,
@@ -15240,6 +16222,7 @@
         weightkg: 19.9,
         color: "Blue",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     turtonator: {
         num: 776,
@@ -15251,6 +16234,7 @@
         weightkg: 212,
         color: "Red",
         eggGroups: ["Monster", "Dragon"],
+        isNonstandard: "Past"
     },
     togedemaru: {
         num: 777,
@@ -15264,6 +16248,7 @@
         eggGroups: ["Field", "Fairy"],
         otherFormes: ["Togedemaru-Totem"],
         formeOrder: ["Togedemaru", "Togedemaru-Totem"],
+        isNonstandard: "Past"
     },
     togedemarutotem: {
         num: 777,
@@ -15278,6 +16263,7 @@
         color: "Gray",
         tags: ["True Past"],
         eggGroups: ["Field", "Fairy"],
+        isNonstandard: "Past"
     },
     mimikyu: {
         num: 778,
@@ -15292,6 +16278,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Mimikyu-Busted", "Mimikyu-Totem", "Mimikyu-Busted-Totem"],
         formeOrder: ["Mimikyu", "Mimikyu-Busted", "Mimikyu-Totem", "Mimikyu-Busted-Totem"],
+        tier: "RU"
     },
     mimikyubusted: {
         num: 778,
@@ -15321,6 +16308,7 @@
         color: "Yellow",
         tags: ["True Past"],
         eggGroups: ["Amorphous"],
+        isNonstandard: "Past"
     },
     mimikyubustedtotem: {
         num: 778,
@@ -15336,6 +16324,7 @@
         eggGroups: ["Amorphous"],
         requiredAbility: "Disguise",
         battleOnly: "Mimikyu-Totem",
+        isNonstandard: "Past"
     },
     bruxish: {
         num: 779,
@@ -15347,6 +16336,7 @@
         weightkg: 19,
         color: "Pink",
         eggGroups: ["Water 2"],
+        tier: "PU"
     },
     drampa: {
         num: 780,
@@ -15360,6 +16350,7 @@
         eggGroups: ["Monster", "Dragon"],
         otherFormes: ["Drampa-Mega"],
         formeOrder: ["Drampa", "Drampa-Mega"],
+        isNonstandard: "Past"
     },
     drampamega: {
         num: 780,
@@ -15388,6 +16379,7 @@
         weightkg: 210,
         color: "Green",
         eggGroups: ["Mineral"],
+        isNonstandard: "Past"
     },
     jangmoo: {
         num: 782,
@@ -15400,6 +16392,7 @@
         color: "Gray",
         evos: ["Hakamo-o"],
         eggGroups: ["Dragon"],
+        tier: "LC"
     },
     hakamoo: {
         num: 783,
@@ -15414,6 +16407,7 @@
         evoLevel: 35,
         evos: ["Kommo-o"],
         eggGroups: ["Dragon"],
+        tier: "NFE"
     },
     kommoo: {
         num: 784,
@@ -15429,6 +16423,7 @@
         eggGroups: ["Dragon"],
         otherFormes: ["Kommo-o-Totem"],
         formeOrder: ["Kommo-o", "Kommo-o-Totem"],
+        tier: "UUBL"
     },
     kommoototem: {
         num: 784,
@@ -15443,6 +16438,7 @@
         color: "Gray",
         tags: ["True Past"],
         eggGroups: ["Dragon"],
+        isNonstandard: "Past"
     },
     tapukoko: {
         num: 785,
@@ -15456,6 +16452,7 @@
         color: "Yellow",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     tapulele: {
         num: 786,
@@ -15469,6 +16466,7 @@
         color: "Pink",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     tapubulu: {
         num: 787,
@@ -15482,6 +16480,7 @@
         color: "Red",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     tapufini: {
         num: 788,
@@ -15495,6 +16494,7 @@
         color: "Purple",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     cosmog: {
         num: 789,
@@ -15509,6 +16509,7 @@
         evos: ["Cosmoem"],
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "LC"
     },
     cosmoem: {
         num: 790,
@@ -15525,6 +16526,7 @@
         evoLevel: 43,
         evos: ["Solgaleo", "Lunala"],
         eggGroups: ["Undiscovered"],
+        tier: "NFE"
     },
     solgaleo: {
         num: 791,
@@ -15540,6 +16542,7 @@
         prevo: "Cosmoem",
         evoLevel: 53,
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     lunala: {
         num: 792,
@@ -15555,6 +16558,7 @@
         prevo: "Cosmoem",
         evoLevel: 53,
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     nihilego: {
         num: 793,
@@ -15568,6 +16572,7 @@
         color: "White",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     buzzwole: {
         num: 794,
@@ -15581,6 +16586,7 @@
         color: "Red",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     pheromosa: {
         num: 795,
@@ -15594,6 +16600,7 @@
         color: "White",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     xurkitree: {
         num: 796,
@@ -15607,6 +16614,7 @@
         color: "Black",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     celesteela: {
         num: 797,
@@ -15620,6 +16628,7 @@
         color: "Green",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     kartana: {
         num: 798,
@@ -15633,6 +16642,7 @@
         color: "White",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     guzzlord: {
         num: 799,
@@ -15646,6 +16656,7 @@
         color: "Black",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     necrozma: {
         num: 800,
@@ -15661,6 +16672,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Necrozma-Dusk-Mane", "Necrozma-Dawn-Wings", "Necrozma-Ultra"],
         formeOrder: ["Necrozma", "Necrozma-Dusk-Mane", "Necrozma-Dawn-Wings", "Necrozma-Ultra"],
+        tier: "RU"
     },
     necrozmaduskmane: {
         num: 800,
@@ -15676,6 +16688,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         changesFrom: "Necrozma",
+        tier: "Uber"
     },
     necrozmadawnwings: {
         num: 800,
@@ -15691,6 +16704,7 @@
         color: "Blue",
         eggGroups: ["Undiscovered"],
         changesFrom: "Necrozma",
+        tier: "Uber"
     },
     necrozmaultra: {
         num: 800,
@@ -15707,6 +16721,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Ultranecrozium Z",
         battleOnly: ["Necrozma-Dawn-Wings", "Necrozma-Dusk-Mane"],
+        isNonstandard: "Past"
     },
     magearna: {
         num: 801,
@@ -15722,6 +16737,7 @@
         tags: ["Mythical"],
         otherFormes: ["Magearna-Original", "Magearna-Mega", "Magearna-Original-Mega"],
         formeOrder: ["Magearna", "Magearna-Original", "Magearna-Mega", "Magearna-Original-Mega"],
+        tier: "Uber"
     },
     magearnaoriginal: {
         num: 801,
@@ -15784,6 +16800,7 @@
         color: "Gray",
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     poipole: {
         num: 803,
@@ -15798,6 +16815,7 @@
         tags: ["Ultra Beast"],
         evos: ["Naganadel"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     naganadel: {
         num: 804,
@@ -15814,6 +16832,7 @@
         evoType: "levelMove",
         evoMove: "Dragon Pulse",
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     stakataka: {
         num: 805,
@@ -15827,6 +16846,7 @@
         color: "Gray",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     blacephalon: {
         num: 806,
@@ -15840,6 +16860,7 @@
         color: "White",
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     zeraora: {
         num: 807,
@@ -15855,6 +16876,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Zeraora-Mega"],
         formeOrder: ["Zeraora", "Zeraora-Mega"],
+        isNonstandard: "Past"
     },
     zeraoramega: {
         num: 807,
@@ -15886,6 +16908,7 @@
         color: "Gray",
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     melmetal: {
         num: 809,
@@ -15900,6 +16923,7 @@
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
         canGigantamax: "G-Max Meltdown",
+        isNonstandard: "Past"
     },
     melmetalgmax: {
         num: 809,
@@ -15916,6 +16940,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Melmetal",
         placeholderFor: "Melmetal",
+        isNonstandard: "Past"
     },
     grookey: {
         num: 810,
@@ -15929,6 +16954,7 @@
         color: "Green",
         evos: ["Thwackey"],
         eggGroups: ["Field", "Grass"],
+        tier: "LC"
     },
     thwackey: {
         num: 811,
@@ -15944,6 +16970,7 @@
         evoLevel: 16,
         evos: ["Rillaboom"],
         eggGroups: ["Field", "Grass"],
+        tier: "NFE"
     },
     rillaboom: {
         num: 812,
@@ -15959,6 +16986,7 @@
         evoLevel: 35,
         eggGroups: ["Field", "Grass"],
         canGigantamax: "G-Max Drum Solo",
+        tier: "OU"
     },
     rillaboomgmax: {
         num: 812,
@@ -15975,6 +17003,7 @@
         eggGroups: ["Field", "Grass"],
         changesFrom: "Rillaboom",
         placeholderFor: "Rillaboom",
+        isNonstandard: "Past"
     },
     scorbunny: {
         num: 813,
@@ -15988,6 +17017,7 @@
         color: "White",
         evos: ["Raboot"],
         eggGroups: ["Field", "Human-Like"],
+        tier: "LC"
     },
     raboot: {
         num: 814,
@@ -16003,6 +17033,7 @@
         evoLevel: 16,
         evos: ["Cinderace"],
         eggGroups: ["Field", "Human-Like"],
+        tier: "NFE"
     },
     cinderace: {
         num: 815,
@@ -16018,6 +17049,7 @@
         evoLevel: 35,
         eggGroups: ["Field", "Human-Like"],
         canGigantamax: "G-Max Fireball",
+        tier: "OU"
     },
     cinderacegmax: {
         num: 815,
@@ -16034,6 +17066,7 @@
         eggGroups: ["Field", "Human-Like"],
         changesFrom: "Cinderace",
         placeholderFor: "Cinderace",
+        isNonstandard: "Past"
     },
     sobble: {
         num: 816,
@@ -16047,6 +17080,7 @@
         color: "Blue",
         evos: ["Drizzile"],
         eggGroups: ["Water 1", "Field"],
+        tier: "LC"
     },
     drizzile: {
         num: 817,
@@ -16062,6 +17096,7 @@
         evoLevel: 16,
         evos: ["Inteleon"],
         eggGroups: ["Water 1", "Field"],
+        tier: "NFE"
     },
     inteleon: {
         num: 818,
@@ -16077,6 +17112,7 @@
         evoLevel: 35,
         eggGroups: ["Water 1", "Field"],
         canGigantamax: "G-Max Hydrosnipe",
+        tier: "PUBL"
     },
     inteleongmax: {
         num: 818,
@@ -16093,6 +17129,7 @@
         eggGroups: ["Water 1", "Field"],
         changesFrom: "Inteleon",
         placeholderFor: "Inteleon",
+        isNonstandard: "Past"
     },
     skwovet: {
         num: 819,
@@ -16105,6 +17142,7 @@
         color: "Brown",
         evos: ["Greedent"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     greedent: {
         num: 820,
@@ -16118,6 +17156,7 @@
         prevo: "Skwovet",
         evoLevel: 24,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     rookidee: {
         num: 821,
@@ -16130,6 +17169,7 @@
         color: "Blue",
         evos: ["Corvisquire"],
         eggGroups: ["Flying"],
+        tier: "LC"
     },
     corvisquire: {
         num: 822,
@@ -16144,6 +17184,7 @@
         evoLevel: 18,
         evos: ["Corviknight"],
         eggGroups: ["Flying"],
+        tier: "NFE"
     },
     corviknight: {
         num: 823,
@@ -16158,6 +17199,7 @@
         evoLevel: 38,
         eggGroups: ["Flying"],
         canGigantamax: "G-Max Wind Rage",
+        tier: "OU"
     },
     corviknightgmax: {
         num: 823,
@@ -16173,6 +17215,7 @@
         eggGroups: ["Flying"],
         changesFrom: "Corviknight",
         placeholderFor: "Corviknight",
+        isNonstandard: "Past"
     },
     blipbug: {
         num: 824,
@@ -16185,6 +17228,7 @@
         color: "Blue",
         evos: ["Dottler"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     dottler: {
         num: 825,
@@ -16199,6 +17243,7 @@
         evoLevel: 10,
         evos: ["Orbeetle"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     orbeetle: {
         num: 826,
@@ -16213,6 +17258,7 @@
         evoLevel: 30,
         eggGroups: ["Bug"],
         canGigantamax: "G-Max Gravitas",
+        isNonstandard: "Past"
     },
     orbeetlegmax: {
         num: 826,
@@ -16228,6 +17274,7 @@
         eggGroups: ["Bug"],
         changesFrom: "Orbeetle",
         placeholderFor: "Orbeetle",
+        isNonstandard: "Past"
     },
     nickit: {
         num: 827,
@@ -16240,6 +17287,7 @@
         color: "Brown",
         evos: ["Thievul"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     thievul: {
         num: 828,
@@ -16253,6 +17301,7 @@
         prevo: "Nickit",
         evoLevel: 18,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     gossifleur: {
         num: 829,
@@ -16265,6 +17314,7 @@
         color: "Green",
         evos: ["Eldegoss"],
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     eldegoss: {
         num: 830,
@@ -16278,6 +17328,7 @@
         prevo: "Gossifleur",
         evoLevel: 20,
         eggGroups: ["Grass"],
+        isNonstandard: "Past"
     },
     wooloo: {
         num: 831,
@@ -16290,6 +17341,7 @@
         color: "White",
         evos: ["Dubwool"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     dubwool: {
         num: 832,
@@ -16303,6 +17355,7 @@
         prevo: "Wooloo",
         evoLevel: 24,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     chewtle: {
         num: 833,
@@ -16315,6 +17368,7 @@
         color: "Green",
         evos: ["Drednaw"],
         eggGroups: ["Monster", "Water 1"],
+        tier: "LC"
     },
     drednaw: {
         num: 834,
@@ -16329,6 +17383,7 @@
         evoLevel: 22,
         eggGroups: ["Monster", "Water 1"],
         canGigantamax: "G-Max Stonesurge",
+        tier: "NUBL"
     },
     drednawgmax: {
         num: 834,
@@ -16344,6 +17399,7 @@
         eggGroups: ["Monster", "Water 1"],
         changesFrom: "Drednaw",
         placeholderFor: "Drednaw",
+        isNonstandard: "Past"
     },
     yamper: {
         num: 835,
@@ -16356,6 +17412,7 @@
         color: "Yellow",
         evos: ["Boltund"],
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     boltund: {
         num: 836,
@@ -16369,6 +17426,7 @@
         prevo: "Yamper",
         evoLevel: 25,
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     rolycoly: {
         num: 837,
@@ -16381,6 +17439,7 @@
         color: "Black",
         evos: ["Carkol"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     carkol: {
         num: 838,
@@ -16395,6 +17454,7 @@
         evoLevel: 18,
         evos: ["Coalossal"],
         eggGroups: ["Mineral"],
+        tier: "NFE"
     },
     coalossal: {
         num: 839,
@@ -16409,6 +17469,7 @@
         evoLevel: 34,
         eggGroups: ["Mineral"],
         canGigantamax: "G-Max Volcalith",
+        tier: "PU"
     },
     coalossalgmax: {
         num: 839,
@@ -16424,6 +17485,7 @@
         eggGroups: ["Mineral"],
         changesFrom: "Coalossal",
         placeholderFor: "Coalossal",
+        isNonstandard: "Past"
     },
     applin: {
         num: 840,
@@ -16436,6 +17498,7 @@
         color: "Green",
         evos: ["Flapple", "Appletun", "Dipplin"],
         eggGroups: ["Grass", "Dragon"],
+        tier: "LC"
     },
     flapple: {
         num: 841,
@@ -16451,6 +17514,7 @@
         evoItem: "Tart Apple",
         eggGroups: ["Grass", "Dragon"],
         canGigantamax: "G-Max Tartness",
+        tier: "ZU"
     },
     flapplegmax: {
         num: 841,
@@ -16466,6 +17530,7 @@
         eggGroups: ["Grass", "Dragon"],
         changesFrom: "Flapple",
         placeholderFor: "Flapple",
+        isNonstandard: "Past"
     },
     appletun: {
         num: 842,
@@ -16481,6 +17546,7 @@
         evoItem: "Sweet Apple",
         eggGroups: ["Grass", "Dragon"],
         canGigantamax: "G-Max Sweetness",
+        tier: "ZU"
     },
     appletungmax: {
         num: 842,
@@ -16496,6 +17562,7 @@
         eggGroups: ["Grass", "Dragon"],
         changesFrom: "Appletun",
         placeholderFor: "Appletun",
+        isNonstandard: "Past"
     },
     silicobra: {
         num: 843,
@@ -16508,6 +17575,7 @@
         color: "Green",
         evos: ["Sandaconda"],
         eggGroups: ["Field", "Dragon"],
+        tier: "LC"
     },
     sandaconda: {
         num: 844,
@@ -16522,6 +17590,7 @@
         evoLevel: 36,
         eggGroups: ["Field", "Dragon"],
         canGigantamax: "G-Max Sandblast",
+        tier: "ZU"
     },
     sandacondagmax: {
         num: 844,
@@ -16537,6 +17606,7 @@
         eggGroups: ["Field", "Dragon"],
         changesFrom: "Sandaconda",
         placeholderFor: "Sandaconda",
+        isNonstandard: "Past"
     },
     cramorant: {
         num: 845,
@@ -16550,6 +17620,7 @@
         eggGroups: ["Water 1", "Flying"],
         otherFormes: ["Cramorant-Gulping", "Cramorant-Gorging"],
         formeOrder: ["Cramorant", "Cramorant-Gulping", "Cramorant-Gorging"],
+        tier: "PU"
     },
     cramorantgulping: {
         num: 845,
@@ -16592,6 +17663,7 @@
         color: "Brown",
         evos: ["Barraskewda"],
         eggGroups: ["Water 2"],
+        tier: "LC"
     },
     barraskewda: {
         num: 847,
@@ -16605,6 +17677,7 @@
         prevo: "Arrokuda",
         evoLevel: 26,
         eggGroups: ["Water 2"],
+        tier: "RU"
     },
     toxel: {
         num: 848,
@@ -16618,6 +17691,7 @@
         evos: ["Toxtricity", "Toxtricity-Low-Key"],
         eggGroups: ["Undiscovered"],
         canHatch: true,
+        tier: "LC"
     },
     toxtricity: {
         num: 849,
@@ -16635,6 +17709,7 @@
         otherFormes: ["Toxtricity-Low-Key"],
         formeOrder: ["Toxtricity", "Toxtricity-Low-Key"],
         canGigantamax: "G-Max Stun Shock",
+        tier: "RU"
     },
     toxtricitylowkey: {
         num: 849,
@@ -16666,6 +17741,7 @@
         eggGroups: ["Human-Like"],
         changesFrom: "Toxtricity",
         placeholderFor: "Toxtricity",
+        isNonstandard: "Past"
     },
     toxtricitylowkeygmax: {
         num: 849,
@@ -16682,6 +17758,7 @@
         battleOnly: "Toxtricity-Low-Key",
         changesFrom: "Toxtricity-Low-Key",
         placeholderFor: "Toxtricity-Low-Key",
+        isNonstandard: "Past"
     },
     sizzlipede: {
         num: 850,
@@ -16694,6 +17771,7 @@
         color: "Red",
         evos: ["Centiskorch"],
         eggGroups: ["Bug"],
+        isNonstandard: "Past"
     },
     centiskorch: {
         num: 851,
@@ -16708,6 +17786,7 @@
         evoLevel: 28,
         eggGroups: ["Bug"],
         canGigantamax: "G-Max Centiferno",
+        isNonstandard: "Past"
     },
     centiskorchgmax: {
         num: 851,
@@ -16723,6 +17802,7 @@
         eggGroups: ["Bug"],
         changesFrom: "Centiskorch",
         placeholderFor: "Centiskorch",
+        isNonstandard: "Past"
     },
     clobbopus: {
         num: 852,
@@ -16735,6 +17815,7 @@
         color: "Brown",
         evos: ["Grapploct"],
         eggGroups: ["Water 1", "Human-Like"],
+        isNonstandard: "Past"
     },
     grapploct: {
         num: 853,
@@ -16749,6 +17830,7 @@
         evoType: "levelMove",
         evoMove: "Taunt",
         eggGroups: ["Water 1", "Human-Like"],
+        isNonstandard: "Past"
     },
     sinistea: {
         num: 854,
@@ -16765,6 +17847,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Sinistea-Antique"],
         formeOrder: ["Sinistea", "Sinistea-Antique"],
+        tier: "LC"
     },
     sinisteaantique: {
         num: 854,
@@ -16798,6 +17881,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Polteageist-Antique"],
         formeOrder: ["Polteageist", "Polteageist-Antique"],
+        tier: "UUBL"
     },
     polteageistantique: {
         num: 855,
@@ -16828,6 +17912,7 @@
         color: "Pink",
         evos: ["Hattrem"],
         eggGroups: ["Fairy"],
+        tier: "LC"
     },
     hattrem: {
         num: 857,
@@ -16843,6 +17928,7 @@
         evoLevel: 32,
         evos: ["Hatterene"],
         eggGroups: ["Fairy"],
+        tier: "NFE"
     },
     hatterene: {
         num: 858,
@@ -16858,6 +17944,7 @@
         evoLevel: 42,
         eggGroups: ["Fairy"],
         canGigantamax: "G-Max Smite",
+        tier: "OU"
     },
     hatterenegmax: {
         num: 858,
@@ -16874,6 +17961,7 @@
         eggGroups: ["Fairy"],
         changesFrom: "Hatterene",
         placeholderFor: "Hatterene",
+        isNonstandard: "Past"
     },
     impidimp: {
         num: 859,
@@ -16887,6 +17975,7 @@
         color: "Pink",
         evos: ["Morgrem"],
         eggGroups: ["Fairy", "Human-Like"],
+        tier: "LC"
     },
     morgrem: {
         num: 860,
@@ -16902,6 +17991,7 @@
         evoLevel: 32,
         evos: ["Grimmsnarl"],
         eggGroups: ["Fairy", "Human-Like"],
+        tier: "NFE"
     },
     grimmsnarl: {
         num: 861,
@@ -16917,6 +18007,7 @@
         evoLevel: 42,
         eggGroups: ["Fairy", "Human-Like"],
         canGigantamax: "G-Max Snooze",
+        tier: "PU"
     },
     grimmsnarlgmax: {
         num: 861,
@@ -16933,6 +18024,7 @@
         eggGroups: ["Fairy", "Human-Like"],
         changesFrom: "Grimmsnarl",
         placeholderFor: "Grimmsnarl",
+        isNonstandard: "Past"
     },
     obstagoon: {
         num: 862,
@@ -16947,6 +18039,7 @@
         evoLevel: 35,
         evoCondition: "at night",
         eggGroups: ["Field"],
+        isNonstandard: "Past"
     },
     perrserker: {
         num: 863,
@@ -16960,6 +18053,7 @@
         prevo: "Meowth-Galar",
         evoLevel: 28,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     cursola: {
         num: 864,
@@ -16974,6 +18068,7 @@
         prevo: "Corsola-Galar",
         evoLevel: 38,
         eggGroups: ["Water 1", "Water 3"],
+        isNonstandard: "Past"
     },
     sirfetchd: {
         num: 865,
@@ -16988,6 +18083,7 @@
         evoType: "other",
         evoCondition: "Land 3 critical hits in 1 battle",
         eggGroups: ["Flying", "Field"],
+        isNonstandard: "Past"
     },
     mrrime: {
         num: 866,
@@ -17001,6 +18097,7 @@
         prevo: "Mr. Mime-Galar",
         evoLevel: 42,
         eggGroups: ["Human-Like"],
+        isNonstandard: "Past"
     },
     runerigus: {
         num: 867,
@@ -17015,6 +18112,7 @@
         evoType: "other",
         evoCondition: "Have 49+ HP lost and walk under stone sculpture in Dusty Bowl",
         eggGroups: ["Mineral", "Amorphous"],
+        isNonstandard: "Past"
     },
     milcery: {
         num: 868,
@@ -17028,6 +18126,7 @@
         color: "White",
         evos: ["Alcremie"],
         eggGroups: ["Fairy", "Amorphous"],
+        tier: "LC"
     },
     alcremie: {
         num: 869,
@@ -17066,6 +18165,7 @@
             "Alcremie-Rainbow-Swirl"
         ],
         canGigantamax: "G-Max Finale",
+        tier: "ZUBL"
     },
     alcremierubycream: {
         isCosmeticForme: true,
@@ -17131,6 +18231,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         changesFrom: "Alcremie",
         placeholderFor: "Alcremie",
+        isNonstandard: "Past"
     },
     falinks: {
         num: 870,
@@ -17145,6 +18246,7 @@
         eggGroups: ["Fairy", "Mineral"],
         otherFormes: ["Falinks-Mega"],
         formeOrder: ["Falinks", "Falinks-Mega"],
+        tier: "ZU"
     },
     falinksmega: {
         num: 870,
@@ -17173,6 +18275,7 @@
         weightkg: 1,
         color: "Purple",
         eggGroups: ["Water 1", "Amorphous"],
+        tier: "ZU"
     },
     snom: {
         num: 872,
@@ -17185,6 +18288,7 @@
         color: "White",
         evos: ["Frosmoth"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     frosmoth: {
         num: 873,
@@ -17199,6 +18303,7 @@
         evoType: "levelFriendship",
         evoCondition: "at night",
         eggGroups: ["Bug"],
+        tier: "ZUBL"
     },
     stonjourner: {
         num: 874,
@@ -17210,6 +18315,7 @@
         weightkg: 520,
         color: "Gray",
         eggGroups: ["Mineral"],
+        tier: "ZU"
     },
     eiscue: {
         num: 875,
@@ -17224,6 +18330,7 @@
         eggGroups: ["Water 1", "Field"],
         otherFormes: ["Eiscue-Noice"],
         formeOrder: ["Eiscue", "Eiscue-Noice"],
+        tier: "ZU"
     },
     eiscuenoice: {
         num: 875,
@@ -17255,6 +18362,7 @@
         otherFormes: ["Indeedee-F"],
         formeOrder: ["Indeedee", "Indeedee-F"],
         mother: "indeedeef",
+        tier: "PUBL"
     },
     indeedeef: {
         num: 876,
@@ -17269,6 +18377,7 @@
         weightkg: 28,
         color: "Purple",
         eggGroups: ["Fairy"],
+        tier: "ZU"
     },
     morpeko: {
         num: 877,
@@ -17283,6 +18392,7 @@
         eggGroups: ["Field", "Fairy"],
         otherFormes: ["Morpeko-Hangry"],
         formeOrder: ["Morpeko", "Morpeko-Hangry"],
+        tier: "ZU"
     },
     morpekohangry: {
         num: 877,
@@ -17310,6 +18420,7 @@
         color: "Yellow",
         evos: ["Copperajah"],
         eggGroups: ["Field", "Mineral"],
+        tier: "LC"
     },
     copperajah: {
         num: 879,
@@ -17324,6 +18435,7 @@
         evoLevel: 34,
         eggGroups: ["Field", "Mineral"],
         canGigantamax: "G-Max Steelsurge",
+        tier: "NU"
     },
     copperajahgmax: {
         num: 879,
@@ -17339,6 +18451,7 @@
         eggGroups: ["Field", "Mineral"],
         changesFrom: "Copperajah",
         placeholderFor: "Copperajah",
+        isNonstandard: "Past"
     },
     dracozolt: {
         num: 880,
@@ -17351,6 +18464,7 @@
         weightkg: 190,
         color: "Green",
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     arctozolt: {
         num: 881,
@@ -17363,6 +18477,7 @@
         weightkg: 150,
         color: "Blue",
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     dracovish: {
         num: 882,
@@ -17375,6 +18490,7 @@
         weightkg: 215,
         color: "Green",
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     arctovish: {
         num: 883,
@@ -17387,6 +18503,7 @@
         weightkg: 175,
         color: "Blue",
         eggGroups: ["Undiscovered"],
+        isNonstandard: "Past"
     },
     duraludon: {
         num: 884,
@@ -17400,6 +18517,7 @@
         evos: ["Archaludon"],
         eggGroups: ["Mineral", "Dragon"],
         canGigantamax: "G-Max Depletion",
+        tier: "NU"
     },
     duraludongmax: {
         num: 884,
@@ -17415,6 +18533,7 @@
         eggGroups: ["Mineral", "Dragon"],
         changesFrom: "Duraludon",
         placeholderFor: "Duraludon",
+        isNonstandard: "Past"
     },
     dreepy: {
         num: 885,
@@ -17427,6 +18546,7 @@
         color: "Green",
         evos: ["Drakloak"],
         eggGroups: ["Amorphous", "Dragon"],
+        tier: "LC"
     },
     drakloak: {
         num: 886,
@@ -17441,6 +18561,7 @@
         evoLevel: 50,
         evos: ["Dragapult"],
         eggGroups: ["Amorphous", "Dragon"],
+        tier: "NFE"
     },
     dragapult: {
         num: 887,
@@ -17454,6 +18575,7 @@
         prevo: "Drakloak",
         evoLevel: 60,
         eggGroups: ["Amorphous", "Dragon"],
+        tier: "OU"
     },
     zacian: {
         num: 888,
@@ -17471,6 +18593,7 @@
         otherFormes: ["Zacian-Crowned"],
         formeOrder: ["Zacian", "Zacian-Crowned"],
         cannotDynamax: true,
+        tier: "Uber"
     },
     zaciancrowned: {
         num: 888,
@@ -17488,6 +18611,7 @@
         requiredItem: "Rusted Sword",
         battleOnly: "Zacian",
         cannotDynamax: true,
+        tier: "Uber"
     },
     zamazenta: {
         num: 889,
@@ -17505,6 +18629,7 @@
         otherFormes: ["Zamazenta-Crowned"],
         formeOrder: ["Zamazenta", "Zamazenta-Crowned"],
         cannotDynamax: true,
+        tier: "OU"
     },
     zamazentacrowned: {
         num: 889,
@@ -17522,6 +18647,7 @@
         requiredItem: "Rusted Shield",
         battleOnly: "Zamazenta",
         cannotDynamax: true,
+        tier: "Uber"
     },
     eternatus: {
         num: 890,
@@ -17538,6 +18664,7 @@
         otherFormes: ["Eternatus-Eternamax"],
         formeOrder: ["Eternatus", "Eternatus-Eternamax"],
         cannotDynamax: true,
+        tier: "Uber"
     },
     eternatuseternamax: {
         num: 890,
@@ -17554,6 +18681,7 @@
         tags: ["Past Unobtainable"],
         eggGroups: ["Undiscovered"],
         cannotDynamax: true,
+        isNonstandard: "Past"
     },
     kubfu: {
         num: 891,
@@ -17568,6 +18696,7 @@
         tags: ["Sub-Legendary"],
         evos: ["Urshifu", "Urshifu-Rapid-Strike"],
         eggGroups: ["Undiscovered"],
+        tier: "NFE"
     },
     urshifu: {
         num: 892,
@@ -17588,6 +18717,7 @@
         otherFormes: ["Urshifu-Rapid-Strike"],
         formeOrder: ["Urshifu", "Urshifu-Rapid-Strike"],
         canGigantamax: "G-Max One Blow",
+        tier: "Uber"
     },
     urshifurapidstrike: {
         num: 892,
@@ -17606,6 +18736,7 @@
         evoCondition: "Defeat the Rapid Strike Tower",
         eggGroups: ["Undiscovered"],
         canGigantamax: "G-Max Rapid Flow",
+        tier: "Uber"
     },
     urshifugmax: {
         num: 892,
@@ -17622,6 +18753,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Urshifu",
         placeholderFor: "Urshifu",
+        isNonstandard: "Past"
     },
     urshifurapidstrikegmax: {
         num: 892,
@@ -17639,6 +18771,7 @@
         battleOnly: "Urshifu-Rapid-Strike",
         changesFrom: "Urshifu-Rapid-Strike",
         placeholderFor: "Urshifu-Rapid-Strike",
+        isNonstandard: "Past"
     },
     zarude: {
         num: 893,
@@ -17654,6 +18787,7 @@
         tags: ["Mythical"],
         otherFormes: ["Zarude-Dada"],
         formeOrder: ["Zarude", "Zarude-Dada"],
+        tier: "UUBL"
     },
     zarudedada: {
         num: 893,
@@ -17681,6 +18815,7 @@
         color: "Yellow",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "RU"
     },
     regidrago: {
         num: 895,
@@ -17694,6 +18829,7 @@
         color: "Green",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "NUBL"
     },
     glastrier: {
         num: 896,
@@ -17707,6 +18843,7 @@
         color: "White",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "ZUBL"
     },
     spectrier: {
         num: 897,
@@ -17720,6 +18857,7 @@
         color: "Black",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     calyrex: {
         num: 898,
@@ -17735,6 +18873,7 @@
         tags: ["Restricted Legendary"],
         otherFormes: ["Calyrex-Ice", "Calyrex-Shadow"],
         formeOrder: ["Calyrex", "Calyrex-Ice", "Calyrex-Shadow"],
+        tier: "ZU"
     },
     calyrexice: {
         num: 898,
@@ -17750,6 +18889,7 @@
         color: "White",
         eggGroups: ["Undiscovered"],
         changesFrom: "Calyrex",
+        tier: "Uber"
     },
     calyrexshadow: {
         num: 898,
@@ -17765,6 +18905,7 @@
         color: "Black",
         eggGroups: ["Undiscovered"],
         changesFrom: "Calyrex",
+        tier: "AG"
     },
     wyrdeer: {
         num: 899,
@@ -17779,6 +18920,7 @@
         evoType: "other",
         evoCondition: "Use Agile style Psyshield Bash 20 times",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     kleavor: {
         num: 900,
@@ -17793,6 +18935,7 @@
         evoType: "useItem",
         evoCondition: "Black Augurite",
         eggGroups: ["Bug"],
+        tier: "RU"
     },
     ursaluna: {
         num: 901,
@@ -17809,6 +18952,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Ursaluna-Bloodmoon"],
         formeOrder: ["Ursaluna", "Ursaluna-Bloodmoon"],
+        tier: "UUBL"
     },
     ursalunabloodmoon: {
         num: 901,
@@ -17824,6 +18968,7 @@
         color: "Brown",
         eggGroups: ["Field"],
         gen: 9,
+        tier: "Uber"
     },
     basculegion: {
         num: 902,
@@ -17842,6 +18987,7 @@
         eggGroups: ["Water 2"],
         otherFormes: ["Basculegion-F"],
         formeOrder: ["Basculegion", "Basculegion-F"],
+        tier: "NU"
     },
     basculegionf: {
         num: 902,
@@ -17859,6 +19005,7 @@
         evoType: "other",
         evoCondition: "Receive 294+ recoil without fainting",
         eggGroups: ["Water 2"],
+        tier: "RU"
     },
     sneasler: {
         num: 903,
@@ -17874,6 +19021,7 @@
         evoItem: "Razor Claw",
         evoCondition: "during the day",
         eggGroups: ["Field"],
+        tier: "Uber"
     },
     overqwil: {
         num: 904,
@@ -17888,6 +19036,7 @@
         evoType: "other",
         evoCondition: "Use Strong style Barb Barrage 20 times",
         eggGroups: ["Water 2"],
+        tier: "NU"
     },
     enamorus: {
         num: 905,
@@ -17904,6 +19053,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Enamorus-Therian"],
         formeOrder: ["Enamorus", "Enamorus-Therian"],
+        tier: "OU"
     },
     enamorustherian: {
         num: 905,
@@ -17919,6 +19069,7 @@
         color: "Pink",
         eggGroups: ["Undiscovered"],
         changesFrom: "Enamorus",
+        tier: "RUBL"
     },
     sprigatito: {
         num: 906,
@@ -17932,6 +19083,7 @@
         color: "Green",
         evos: ["Floragato"],
         eggGroups: ["Field", "Grass"],
+        tier: "LC"
     },
     floragato: {
         num: 907,
@@ -17947,6 +19099,7 @@
         evoLevel: 16,
         evos: ["Meowscarada"],
         eggGroups: ["Field", "Grass"],
+        tier: "NFE"
     },
     meowscarada: {
         num: 908,
@@ -17961,6 +19114,7 @@
         prevo: "Floragato",
         evoLevel: 36,
         eggGroups: ["Field", "Grass"],
+        tier: "UUBL"
     },
     fuecoco: {
         num: 909,
@@ -17974,6 +19128,7 @@
         color: "Red",
         evos: ["Crocalor"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     crocalor: {
         num: 910,
@@ -17989,6 +19144,7 @@
         evoLevel: 16,
         evos: ["Skeledirge"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     skeledirge: {
         num: 911,
@@ -18003,6 +19159,7 @@
         prevo: "Crocalor",
         evoLevel: 36,
         eggGroups: ["Field"],
+        tier: "UU"
     },
     quaxly: {
         num: 912,
@@ -18016,6 +19173,7 @@
         color: "Blue",
         evos: ["Quaxwell"],
         eggGroups: ["Flying", "Water 1"],
+        tier: "LC"
     },
     quaxwell: {
         num: 913,
@@ -18031,6 +19189,7 @@
         evoLevel: 16,
         evos: ["Quaquaval"],
         eggGroups: ["Flying", "Water 1"],
+        tier: "NFE"
     },
     quaquaval: {
         num: 914,
@@ -18045,6 +19204,7 @@
         prevo: "Quaxwell",
         evoLevel: 36,
         eggGroups: ["Flying", "Water 1"],
+        tier: "UUBL"
     },
     lechonk: {
         num: 915,
@@ -18057,6 +19217,7 @@
         color: "Gray",
         evos: ["Oinkologne", "Oinkologne-F"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     oinkologne: {
         num: 916,
@@ -18074,6 +19235,7 @@
         otherFormes: ["Oinkologne-F"],
         formeOrder: ["Oinkologne", "Oinkologne-F"],
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     oinkolognef: {
         num: 916,
@@ -18090,6 +19252,7 @@
         prevo: "Lechonk",
         evoLevel: 18,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     tarountula: {
         num: 917,
@@ -18102,6 +19265,7 @@
         color: "White",
         evos: ["Spidops"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     spidops: {
         num: 918,
@@ -18115,6 +19279,7 @@
         prevo: "Tarountula",
         evoLevel: 15,
         eggGroups: ["Bug"],
+        tier: "ZU"
     },
     nymble: {
         num: 919,
@@ -18127,6 +19292,7 @@
         color: "Gray",
         evos: ["Lokix"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     lokix: {
         num: 920,
@@ -18140,6 +19306,7 @@
         prevo: "Nymble",
         evoLevel: 24,
         eggGroups: ["Bug"],
+        tier: "UU"
     },
     pawmi: {
         num: 921,
@@ -18152,6 +19319,7 @@
         color: "Yellow",
         evos: ["Pawmo"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     pawmo: {
         num: 922,
@@ -18166,6 +19334,7 @@
         evoLevel: 18,
         evos: ["Pawmot"],
         eggGroups: ["Field"],
+        tier: "NFE"
     },
     pawmot: {
         num: 923,
@@ -18180,6 +19349,7 @@
         evoType: "other",
         evoCondition: "walk 1000 steps in Let's Go",
         eggGroups: ["Field"],
+        tier: "PU"
     },
     tandemaus: {
         num: 924,
@@ -18193,6 +19363,7 @@
         color: "White",
         evos: ["Maushold", "Maushold-Four"],
         eggGroups: ["Field", "Fairy"],
+        tier: "LC"
     },
     maushold: {
         num: 925,
@@ -18210,6 +19381,7 @@
         otherFormes: ["Maushold-Four"],
         formeOrder: ["Maushold", "Maushold-Four"],
         eggGroups: ["Field", "Fairy"],
+        tier: "RU"
     },
     mausholdfour: {
         num: 925,
@@ -18238,6 +19410,7 @@
         color: "Yellow",
         evos: ["Dachsbun"],
         eggGroups: ["Field", "Mineral"],
+        tier: "LC"
     },
     dachsbun: {
         num: 927,
@@ -18251,6 +19424,7 @@
         prevo: "Fidough",
         evoLevel: 26,
         eggGroups: ["Field", "Mineral"],
+        tier: "ZU"
     },
     smoliv: {
         num: 928,
@@ -18263,6 +19437,7 @@
         color: "Green",
         evos: ["Dolliv"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     dolliv: {
         num: 929,
@@ -18277,6 +19452,7 @@
         evoLevel: 25,
         evos: ["Arboliva"],
         eggGroups: ["Grass"],
+        tier: "NFE"
     },
     arboliva: {
         num: 930,
@@ -18290,6 +19466,7 @@
         prevo: "Dolliv",
         evoLevel: 35,
         eggGroups: ["Grass"],
+        tier: "ZU"
     },
     squawkabilly: {
         num: 931,
@@ -18304,6 +19481,7 @@
         otherFormes: ["Squawkabilly-Blue", "Squawkabilly-Yellow", "Squawkabilly-White"],
         formeOrder: ["Squawkabilly", "Squawkabilly-Blue", "Squawkabilly-Yellow", "Squawkabilly-White"],
         eggGroups: ["Flying"],
+        tier: "ZU"
     },
     squawkabillyblue: {
         num: 931,
@@ -18355,6 +19533,7 @@
         color: "Brown",
         evos: ["Naclstack"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     naclstack: {
         num: 933,
@@ -18369,6 +19548,7 @@
         evoLevel: 24,
         evos: ["Garganacl"],
         eggGroups: ["Mineral"],
+        tier: "NFE"
     },
     garganacl: {
         num: 934,
@@ -18382,6 +19562,7 @@
         prevo: "Naclstack",
         evoLevel: 38,
         eggGroups: ["Mineral"],
+        tier: "OU"
     },
     charcadet: {
         num: 935,
@@ -18394,6 +19575,7 @@
         color: "Red",
         evos: ["Armarouge", "Ceruledge"],
         eggGroups: ["Human-Like"],
+        tier: "LC"
     },
     armarouge: {
         num: 936,
@@ -18408,6 +19590,7 @@
         evoType: "useItem",
         evoItem: "Auspicious Armor",
         eggGroups: ["Human-Like"],
+        tier: "RUBL"
     },
     ceruledge: {
         num: 937,
@@ -18422,6 +19605,7 @@
         evoType: "useItem",
         evoItem: "Malicious Armor",
         eggGroups: ["Human-Like"],
+        tier: "OU"
     },
     tadbulb: {
         num: 938,
@@ -18434,6 +19618,7 @@
         color: "Yellow",
         evos: ["Bellibolt"],
         eggGroups: ["Water 1"],
+        tier: "LC"
     },
     bellibolt: {
         num: 939,
@@ -18448,6 +19633,7 @@
         evoType: "useItem",
         evoItem: "Thunder Stone",
         eggGroups: ["Water 1"],
+        tier: "NU"
     },
     wattrel: {
         num: 940,
@@ -18460,6 +19646,7 @@
         color: "Black",
         evos: ["Kilowattrel"],
         eggGroups: ["Water 1", "Flying"],
+        tier: "LC"
     },
     kilowattrel: {
         num: 941,
@@ -18473,6 +19660,7 @@
         prevo: "Wattrel",
         evoLevel: 25,
         eggGroups: ["Water 1", "Flying"],
+        tier: "PU"
     },
     maschiff: {
         num: 942,
@@ -18485,6 +19673,7 @@
         color: "Brown",
         evos: ["Mabosstiff"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     mabosstiff: {
         num: 943,
@@ -18498,6 +19687,7 @@
         prevo: "Maschiff",
         evoLevel: 30,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     shroodle: {
         num: 944,
@@ -18510,6 +19700,7 @@
         color: "Gray",
         evos: ["Grafaiai"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     grafaiai: {
         num: 945,
@@ -18523,6 +19714,7 @@
         prevo: "Shroodle",
         evoLevel: 28,
         eggGroups: ["Field"],
+        tier: "NU"
     },
     bramblin: {
         num: 946,
@@ -18535,6 +19727,7 @@
         color: "Brown",
         evos: ["Brambleghast"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     brambleghast: {
         num: 947,
@@ -18549,6 +19742,7 @@
         evoType: "other",
         evoCondition: "Walk 1000 steps in Let's Go",
         eggGroups: ["Grass"],
+        tier: "NU"
     },
     toedscool: {
         num: 948,
@@ -18561,6 +19755,7 @@
         color: "Yellow",
         evos: ["Toedscruel"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     toedscruel: {
         num: 949,
@@ -18574,6 +19769,7 @@
         prevo: "Toedscool",
         evoLevel: 30,
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     klawf: {
         num: 950,
@@ -18585,6 +19781,7 @@
         weightkg: 79,
         color: "Red",
         eggGroups: ["Water 3"],
+        tier: "ZU"
     },
     capsakid: {
         num: 951,
@@ -18597,6 +19794,7 @@
         color: "Green",
         evos: ["Scovillain"],
         eggGroups: ["Grass"],
+        tier: "LC"
     },
     scovillain: {
         num: 952,
@@ -18613,6 +19811,7 @@
         eggGroups: ["Grass"],
         otherFormes: ["Scovillain-Mega"],
         formeOrder: ["Scovillain", "Scovillain-Mega"],
+        tier: "ZU"
     },
     scovillainmega: {
         num: 952,
@@ -18640,6 +19839,7 @@
         color: "Brown",
         evos: ["Rabsca"],
         eggGroups: ["Bug"],
+        tier: "LC"
     },
     rabsca: {
         num: 954,
@@ -18654,6 +19854,7 @@
         evoType: "other",
         evoCondition: "walk 1000 steps in Let's Go",
         eggGroups: ["Bug"],
+        tier: "ZU"
     },
     flittle: {
         num: 955,
@@ -18666,6 +19867,7 @@
         color: "Yellow",
         evos: ["Espathra"],
         eggGroups: ["Flying"],
+        tier: "NFE"
     },
     espathra: {
         num: 956,
@@ -18679,6 +19881,7 @@
         prevo: "Flittle",
         evoLevel: 35,
         eggGroups: ["Flying"],
+        tier: "Uber"
     },
     tinkatink: {
         num: 957,
@@ -18692,6 +19895,7 @@
         color: "Pink",
         evos: ["Tinkatuff"],
         eggGroups: ["Fairy"],
+        tier: "LC"
     },
     tinkatuff: {
         num: 958,
@@ -18707,6 +19911,7 @@
         evoLevel: 24,
         evos: ["Tinkaton"],
         eggGroups: ["Fairy"],
+        tier: "NFE"
     },
     tinkaton: {
         num: 959,
@@ -18721,6 +19926,7 @@
         prevo: "Tinkatuff",
         evoLevel: 38,
         eggGroups: ["Fairy"],
+        tier: "UU"
     },
     wiglett: {
         num: 960,
@@ -18733,6 +19939,7 @@
         color: "White",
         evos: ["Wugtrio"],
         eggGroups: ["Water 3"],
+        tier: "LC"
     },
     wugtrio: {
         num: 961,
@@ -18746,6 +19953,7 @@
         prevo: "Wiglett",
         evoLevel: 26,
         eggGroups: ["Water 3"],
+        tier: "ZU"
     },
     bombirdier: {
         num: 962,
@@ -18757,6 +19965,7 @@
         weightkg: 42.9,
         color: "White",
         eggGroups: ["Flying"],
+        tier: "PU"
     },
     finizen: {
         num: 963,
@@ -18769,6 +19978,7 @@
         color: "Blue",
         evos: ["Palafin"],
         eggGroups: ["Field", "Water 2"],
+        tier: "LC"
     },
     palafin: {
         num: 964,
@@ -18785,6 +19995,7 @@
         otherFormes: ["Palafin-Hero"],
         formeOrder: ["Palafin", "Palafin-Hero"],
         eggGroups: ["Field", "Water 2"],
+        tier: "Uber"
     },
     palafinhero: {
         num: 964,
@@ -18812,6 +20023,7 @@
         color: "Gray",
         evos: ["Revavroom"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     revavroom: {
         num: 966,
@@ -18825,6 +20037,7 @@
         prevo: "Varoom",
         evoLevel: 40,
         eggGroups: ["Mineral"],
+        tier: "UU"
     },
     cyclizar: {
         num: 967,
@@ -18836,6 +20049,7 @@
         weightkg: 63,
         color: "Green",
         eggGroups: ["Field"],
+        tier: "RU"
     },
     orthworm: {
         num: 968,
@@ -18847,6 +20061,7 @@
         weightkg: 310,
         color: "Pink",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     glimmet: {
         num: 969,
@@ -18859,6 +20074,7 @@
         color: "Blue",
         evos: ["Glimmora"],
         eggGroups: ["Mineral"],
+        tier: "LC"
     },
     glimmora: {
         num: 970,
@@ -18874,6 +20090,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Glimmora-Mega"],
         formeOrder: ["Glimmora", "Glimmora-Mega"],
+        tier: "OU"
     },
     glimmoramega: {
         num: 970,
@@ -18901,6 +20118,7 @@
         color: "White",
         evos: ["Houndstone"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     houndstone: {
         num: 972,
@@ -18915,6 +20133,7 @@
         evoLevel: 30,
         evoCondition: "at night",
         eggGroups: ["Field"],
+        tier: "NU"
     },
     flamigo: {
         num: 973,
@@ -18926,6 +20145,7 @@
         weightkg: 37,
         color: "Pink",
         eggGroups: ["Flying"],
+        tier: "NU"
     },
     cetoddle: {
         num: 974,
@@ -18938,6 +20158,7 @@
         color: "White",
         evos: ["Cetitan"],
         eggGroups: ["Field"],
+        tier: "LC"
     },
     cetitan: {
         num: 975,
@@ -18952,6 +20173,7 @@
         evoType: "useItem",
         evoItem: "Ice Stone",
         eggGroups: ["Field"],
+        tier: "NUBL"
     },
     veluza: {
         num: 976,
@@ -18963,6 +20185,7 @@
         weightkg: 90,
         color: "Gray",
         eggGroups: ["Water 2"],
+        tier: "ZU"
     },
     dondozo: {
         num: 977,
@@ -18974,6 +20197,7 @@
         weightkg: 220,
         color: "Blue",
         eggGroups: ["Water 2"],
+        tier: "OU"
     },
     tatsugiri: {
         num: 978,
@@ -19001,6 +20225,7 @@
             "Tatsugiri-Droopy-Mega",
             "Tatsugiri-Stretchy-Mega"
         ],
+        tier: "PU"
     },
     tatsugiridroopy: {
         num: 978,
@@ -19089,6 +20314,7 @@
         evoType: "other",
         evoCondition: "Use Rage Fist 20 times and level-up",
         eggGroups: ["Field"],
+        tier: "Uber"
     },
     clodsire: {
         num: 980,
@@ -19102,6 +20328,7 @@
         prevo: "Wooper-Paldea",
         evoLevel: 20,
         eggGroups: ["Water 1", "Field"],
+        tier: "UU"
     },
     farigiraf: {
         num: 981,
@@ -19116,6 +20343,7 @@
         evoType: "levelMove",
         evoMove: "Twin Beam",
         eggGroups: ["Field"],
+        tier: "ZU"
     },
     dudunsparce: {
         num: 982,
@@ -19133,6 +20361,7 @@
         otherFormes: ["Dudunsparce-Three-Segment"],
         formeOrder: ["Dudunsparce", "Dudunsparce-Three-Segment"],
         eggGroups: ["Field"],
+        tier: "NU"
     },
     dudunsparcethreesegment: {
         num: 982,
@@ -19163,6 +20392,7 @@
         evoType: "other",
         evoCondition: "Defeat 3 Bisharp leading Pawniard and level-up",
         eggGroups: ["Human-Like"],
+        tier: "OU"
     },
     greattusk: {
         num: 984,
@@ -19176,6 +20406,7 @@
         color: "Purple",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     screamtail: {
         num: 985,
@@ -19189,6 +20420,7 @@
         color: "Pink",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "NU"
     },
     brutebonnet: {
         num: 986,
@@ -19202,6 +20434,7 @@
         color: "White",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "ZU"
     },
     fluttermane: {
         num: 987,
@@ -19215,6 +20448,7 @@
         color: "Gray",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     slitherwing: {
         num: 988,
@@ -19228,6 +20462,7 @@
         color: "White",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "UU"
     },
     sandyshocks: {
         num: 989,
@@ -19241,6 +20476,7 @@
         color: "Gray",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "UU"
     },
     irontreads: {
         num: 990,
@@ -19254,6 +20490,7 @@
         color: "Gray",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     ironbundle: {
         num: 991,
@@ -19267,6 +20504,7 @@
         color: "Red",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     ironhands: {
         num: 992,
@@ -19280,6 +20518,7 @@
         color: "Gray",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "UUBL"
     },
     ironjugulis: {
         num: 993,
@@ -19293,6 +20532,7 @@
         color: "Blue",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "UU"
     },
     ironmoth: {
         num: 994,
@@ -19306,6 +20546,7 @@
         color: "White",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     ironthorns: {
         num: 995,
@@ -19319,6 +20560,7 @@
         color: "Green",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "NUBL"
     },
     frigibax: {
         num: 996,
@@ -19331,6 +20573,7 @@
         color: "Gray",
         evos: ["Arctibax"],
         eggGroups: ["Dragon", "Mineral"],
+        tier: "LC"
     },
     arctibax: {
         num: 997,
@@ -19345,6 +20588,7 @@
         evoLevel: 35,
         evos: ["Baxcalibur"],
         eggGroups: ["Dragon", "Mineral"],
+        tier: "NFE"
     },
     baxcalibur: {
         num: 998,
@@ -19360,6 +20604,7 @@
         eggGroups: ["Dragon", "Mineral"],
         otherFormes: ["Baxcalibur-Mega"],
         formeOrder: ["Baxcalibur", "Baxcalibur-Mega"],
+        tier: "Uber"
     },
     baxcaliburmega: {
         num: 998,
@@ -19391,6 +20636,7 @@
         otherFormes: ["Gimmighoul-Roaming"],
         formeOrder: ["Gimmighoul", "Gimmighoul-Roaming"],
         eggGroups: ["Undiscovered"],
+        tier: "LC"
     },
     gimmighoulroaming: {
         num: 999,
@@ -19406,6 +20652,7 @@
         color: "Gray",
         evos: ["Gholdengo"],
         eggGroups: ["Undiscovered"],
+        tier: "LC"
     },
     gholdengo: {
         num: 1000,
@@ -19421,6 +20668,7 @@
         evoType: "other",
         evoCondition: "Level up with 999 Coins in the bag",
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     wochien: {
         num: 1001,
@@ -19434,6 +20682,7 @@
         color: "Brown",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "PU"
     },
     chienpao: {
         num: 1002,
@@ -19447,6 +20696,7 @@
         color: "White",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     tinglu: {
         num: 1003,
@@ -19460,6 +20710,7 @@
         color: "Brown",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     chiyu: {
         num: 1004,
@@ -19473,6 +20724,7 @@
         color: "Red",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     roaringmoon: {
         num: 1005,
@@ -19486,6 +20738,7 @@
         color: "Blue",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     ironvaliant: {
         num: 1006,
@@ -19499,6 +20752,7 @@
         color: "White",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     koraidon: {
         num: 1007,
@@ -19512,6 +20766,7 @@
         color: "Red",
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     miraidon: {
         num: 1008,
@@ -19525,6 +20780,7 @@
         color: "Purple",
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "AG"
     },
     walkingwake: {
         num: 1009,
@@ -19538,6 +20794,7 @@
         color: "Blue",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     ironleaves: {
         num: 1010,
@@ -19551,6 +20808,7 @@
         color: "Green",
         tags: ["Paradox"],
         eggGroups: ["Undiscovered"],
+        tier: "RUBL"
     },
     dipplin: {
         num: 1011,
@@ -19566,6 +20824,7 @@
         evoType: "useItem",
         evoItem: "Syrupy Apple",
         eggGroups: ["Grass", "Dragon"],
+        tier: "NFE"
     },
     poltchageist: {
         num: 1012,
@@ -19582,6 +20841,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Poltchageist-Artisan"],
         formeOrder: ["Poltchageist", "Poltchageist-Artisan"],
+        tier: "LC"
     },
     poltchageistartisan: {
         num: 1012,
@@ -19615,6 +20875,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Sinistcha-Masterpiece"],
         formeOrder: ["Sinistcha", "Sinistcha-Masterpiece"],
+        tier: "UU"
     },
     sinistchamasterpiece: {
         num: 1013,
@@ -19645,6 +20906,7 @@
         color: "Black",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "UUBL"
     },
     munkidori: {
         num: 1015,
@@ -19658,6 +20920,7 @@
         color: "Black",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "NU"
     },
     fezandipiti: {
         num: 1016,
@@ -19671,6 +20934,7 @@
         color: "Black",
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
+        tier: "UU"
     },
     ogerpon: {
         num: 1017,
@@ -19705,6 +20969,7 @@
             "Ogerpon-Cornerstone-Tera"
         ],
         requiredTeraType: "Grass",
+        tier: "OU"
     },
     ogerponwellspring: {
         num: 1017,
@@ -19722,6 +20987,7 @@
         requiredItem: "Wellspring Mask",
         changesFrom: "Ogerpon",
         requiredTeraType: "Water",
+        tier: "OU"
     },
     ogerponhearthflame: {
         num: 1017,
@@ -19739,6 +21005,7 @@
         requiredItem: "Hearthflame Mask",
         changesFrom: "Ogerpon",
         requiredTeraType: "Fire",
+        tier: "Uber"
     },
     ogerponcornerstone: {
         num: 1017,
@@ -19756,6 +21023,7 @@
         requiredItem: "Cornerstone Mask",
         changesFrom: "Ogerpon",
         requiredTeraType: "Rock",
+        tier: "UUBL"
     },
     ogerpontealtera: {
         num: 1017,
@@ -19837,6 +21105,7 @@
         evoType: "useItem",
         evoItem: "Metal Alloy",
         eggGroups: ["Mineral", "Dragon"],
+        tier: "Uber"
     },
     hydrapple: {
         num: 1019,
@@ -19851,6 +21120,7 @@
         evoType: "levelMove",
         evoMove: "Dragon Cheer",
         eggGroups: ["Grass", "Dragon"],
+        tier: "UU"
     },
     gougingfire: {
         num: 1020,
@@ -19863,6 +21133,7 @@
         weightkg: 590,
         color: "Brown",
         eggGroups: ["Undiscovered"],
+        tier: "Uber"
     },
     ragingbolt: {
         num: 1021,
@@ -19875,6 +21146,7 @@
         weightkg: 480,
         color: "Yellow",
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     ironboulder: {
         num: 1022,
@@ -19887,6 +21159,7 @@
         weightkg: 162.5,
         color: "Gray",
         eggGroups: ["Undiscovered"],
+        tier: "UUBL"
     },
     ironcrown: {
         num: 1023,
@@ -19899,6 +21172,7 @@
         weightkg: 156,
         color: "Blue",
         eggGroups: ["Undiscovered"],
+        tier: "UUBL"
     },
     terapagos: {
         num: 1024,
@@ -19914,6 +21188,7 @@
         otherFormes: ["Terapagos-Terastal", "Terapagos-Stellar"],
         formeOrder: ["Terapagos", "Terapagos-Terastal", "Terapagos-Stellar"],
         requiredTeraType: "Stellar",
+        tier: "Uber"
     },
     terapagosterastal: {
         num: 1024,
@@ -19944,6 +21219,7 @@
         eggGroups: ["Undiscovered"],
         battleOnly: "Terapagos",
         requiredTeraType: "Stellar",
+        tier: "Uber"
     },
     pecharunt: {
         num: 1025,
@@ -19957,6 +21233,7 @@
         color: "Purple",
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
+        tier: "OU"
     },
     missingno: {
         num: 0,

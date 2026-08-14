@@ -247,11 +247,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         if (pastGenChanges) buf += '</dl>';
 
         // learnset
-        if (window.BattleLearnsets && BattleLearnsets[id] && BattleLearnsets[id].eventData) {
-            buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button" value="details">Flavor</button></li><li><button class="button nav-last" value="events">Events</button></li></ul>';
-        } else {
-            buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button nav-last" value="details">Flavor</button></li></ul>';
-        }
+        buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button nav-last" value="details">Flavor</button></li></ul>';
         buf += '<ul class="utilichart nokbd">';
         buf += '<li class="resultheader"><h3>Level-up</h3></li>';
 
@@ -352,9 +348,6 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
                 break;
             case 'details':
                 this.renderDetails();
-                break;
-            case 'events':
-                this.renderEvents();
                 break;
         }
     },
@@ -600,58 +593,6 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
             buf += '<li class="resultheader"><h3>Gen 1 Sprites</h3></li>';
             buf += '<li class="content"><table class="sprites"><tr><td><img src="' + Dex.resourcePrefix + 'sprites/gen1/' + pokemon.spriteid + '.png" /></td>';
             buf += '<table class="sprites"><tr><td><img src="' + Dex.resourcePrefix + 'sprites/gen1-back/' + pokemon.spriteid + '.png" /></td>';
-        }
-
-        this.$('.utilichart').html(buf);
-    },
-    renderEvents: function () {
-        var pokemon = Dex.species.get(this.id);
-        var events = BattleLearnsets[this.id].eventData;
-        var buf = '';
-
-        buf += '<li class="resultheader"><h3>Events</h3></li>';
-        for (var i = 0; i < events.length; i++) {
-            var event = events[i];
-            buf += '<li><dl><dt>Gen ' + event.generation + ' event:</dt><dd><small>';
-            buf += pokemon.name;
-            if (event.gender) buf += ' (' + event.gender + ')';
-            buf += '<br />';
-            if (event.abilities) {
-                buf += 'Ability: ' + event.abilities.map(function (ability) {
-                    return '<a href="/abilities/' + ability + '" class="subtle" data-target="push">' + Dex.abilities.get(ability).name + '</a>';
-                }).join(' or ') + '<br />';
-            } else if (event.isHidden && pokemon.abilities['H']) {
-                buf += 'Ability: <a href="/abilities/' + toID(pokemon.abilities['H']) + '" class="subtle" data-target="push">' + pokemon.abilities['H'] + '</a><br />';
-            }
-            if (event.level) buf += 'Level: ' + event.level + '<br />';
-            if (event.shiny === true) buf += 'Shiny: Yes<br />';
-            if (event.nature) buf += event.nature + ' Nature<br />';
-            if (event.ivs) {
-                buf += 'IVs: ';
-                var firstIV = true;
-                for (var iv in event.ivs) {
-                    if (!firstIV) buf += ' / ';
-                    buf += '' + event.ivs[iv] + ' ' + BattleStatNames[iv];
-                    firstIV = false;
-                }
-                buf += '<br />';
-            }
-            if (event.moves) {
-                for (var j = 0; j < event.moves.length; j++) {
-                    var move = Dex.moves.get(event.moves[j]);
-                    buf += '- <a href="/moves/' + move.id + '" class="subtle" data-target="push">' + move.name + '</a><br />';
-                }
-            }
-            if (event.perfectIVs) {
-                buf += '(at least ' + event.perfectIVs + ' perfect IVs)<br />';
-            }
-            if (event.shiny === 1) {
-                buf += '(this event can be Shiny)<br />';
-            }
-            if (!event.shiny) {
-                buf += '(this event cannot be Shiny)<br />';
-            }
-            buf += '</small></dd></dl></li>';
         }
 
         this.$('.utilichart').html(buf);
