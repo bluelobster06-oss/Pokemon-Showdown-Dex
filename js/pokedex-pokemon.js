@@ -8,7 +8,6 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         var buf = '<div class="pfx-body dexentry">';
 
         buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-        buf += '<a href="/tiers/' + toID(pokemon.tier) + '" data-target="push" class="tier">' + pokemon.tier + '</a>';
         buf += '<h1>';
         if (pokemon.forme) {
             buf += '<a href="/pokemon/' + id + '" data-target="push" class="subtle">' + pokemon.baseSpecies + '<small>-' + pokemon.forme + '</small></a>';
@@ -23,8 +22,6 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
                 buf += '<div class="warning">A <strong>glitch Pok&eacute;mon</strong> from Red/Blue/Yellow.</div>';
             } else if (id.substr(0, 8) === 'pokestar') {
                 buf += '<div class="warning">A Pok&eacute;mon from <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9star_Studios" target="_blank"><strong>Pok&eacute;star Studios</strong> in Black 2 and White 2</a>.</div>';
-            } else if (pokemon.isNonstandard === 'Past') {
-                buf += '<div class="warning">Only usable in <strong>past generations</strong> and National Dex formats.</div>';
             } else if (pokemon.isNonstandard === 'LGPE') {
                 buf += '<div class="warning">Pok&eacute;mon <strong>Let\'s Go, Pikachu! and Let\'s Go, Eevee!</strong> only.</div>';
             } else if (pokemon.isNonstandard === 'Gigantamax') {
