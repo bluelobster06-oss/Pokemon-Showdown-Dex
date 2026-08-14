@@ -13531,7 +13531,8 @@ exports.BattlePokedex = {
         color: "Brown",
         evos: ["Diggersby"],
         eggGroups: ["Field"],
-        tier: "LC",
+        tier: "Illegal",
+        isNonstandard: "Past"
     },
     diggersby: {
         num: 660,
@@ -13545,7 +13546,8 @@ exports.BattlePokedex = {
         prevo: "Bunnelby",
         evoLevel: 20,
         eggGroups: ["Field"],
-        tier: "OU",
+        tier: "Illegal",
+        isNonstandard: "Past"
     },
     fletchling: {
         num: 661,
