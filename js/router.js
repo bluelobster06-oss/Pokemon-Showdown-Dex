@@ -35,7 +35,3 @@ if (typeof BattleSearch !== 'undefined') {
     BattleSearch.urlRoot = rootPath;
 }
 var pokedex = new Pokedex({ root: rootPath });
-
-if (window.location.pathname === "/" || window.location.pathname === "/Pokemon-Showdown-Dex/" || window.location.pathname === "/Pokemon-Showdown-Dex") {
-    window.location.replace(window.location.origin + "/Pokemon-Showdown-Dex/#/");
-}

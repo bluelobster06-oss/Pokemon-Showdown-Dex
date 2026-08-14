@@ -19,28 +19,9 @@
     <!--[if lte IE 6]><style> li.tree { height: 1px; } </style><![endif]-->
     <!--[if IE 7]><style> li.tree { zoom: 1; } </style><![endif]-->
 
-    <script>
-        (function () {
-            var path = window.location.pathname;
-            var repoName = "Pokemon-Showdown-Dex"; // change only if needed
-            var isGitHubPages = /github\.io/i.test(location.hostname);
-
-            if (isGitHubPages) {
-                var base = path.replace(/\/+$/, "");
-                var repoBase = "/" + repoName;
-
-                if (base === "" || base === repoBase || base === "/") {
-                    window.location.replace(repoBase + "/#/");
-                }
-            }
-        })();
-    </script>
-
 </head>
 
 <body>
-
-    <script src="js/pokedex.js"></script>
 
     <div class="pfx-topbar">
         <div class="header">
