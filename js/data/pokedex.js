@@ -13546,6 +13546,7 @@ exports.BattlePokedex = {
         prevo: "Bunnelby",
         evoLevel: 20,
         eggGroups: ["Field"],
+        tier: "Illegal",
         isNonstandard: "Past"
     },
     fletchling: {
