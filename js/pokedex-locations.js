@@ -1,82 +1,121 @@
-var LOCATION_TAGS = ['Grass', 'Gift', 'Old Rod', 'Good Rod', 'Surf', 'Nighttime Only', 'Daytime Only'];
+var LOCATION_TABLES = ['All', 'Grass', 'Gift', 'Old Rod', 'Good Rod', 'Surf', 'Rock Smash'];
+var LOCATION_TIMES = ['Any time', 'Nighttime Only', 'Daytime Only'];
 
 var PokedexLocationsPanel = Panels.Panel.extend({
     minWidth: 639,
     maxWidth: 639,
     events: {
-        'click .tabbar button': 'selectTab',
-        'click button.location-filter': 'toggleFilter',
-        'click button.location-sort': 'setSort'
+        'click .tabbar button': 'selectTab'
     },
     initialize: function () {
-        this.filters = [];
+        var buf = '<div class="pfx-body locations-panel">';
+        buf += this.renderTabs();
+        buf += '<h2>Locations</h2><ul class="location-list">';
+        for (var id in PokedexLocations) {
+            buf += '<li><a href="/locations/' + id + '" data-target="push">' + Dex.escapeHTML(PokedexLocations[id].name) + '</a></li>';
+        }
+        buf += '</ul></div>';
+        this.html(buf);
+    },
+    renderTabs: function () {
+        return '<h1><a href="/" data-target="replace">Pok&eacute;dex</a></h1>' +
+            '<ul class="tabbar centered" style="margin-bottom:18px"><li><button class="button nav-first" value="">Search</button></li><li><button class="button" value="pokemon/">Pok&eacute;mon</button></li><li><button class="button" value="moves/">Moves</button></li><li><button class="button nav-last cur" value="locations/">Locations</button></li></ul>';
+    },
+    selectTab: function (e) {
+        e.preventDefault();
+        this.app.go(e.currentTarget.value, this, true);
+    }
+});
+
+var PokedexLocationPanel = PokedexResultPanel.extend({
+    minWidth: 639,
+    maxWidth: 639,
+    events: {
+        'click .tabbar button': 'selectTab',
+        'click button.location-cycle': 'cycleOption'
+    },
+    initialize: function (locationID) {
+        this.locationID = toID(locationID);
+        this.location = PokedexLocations[this.locationID];
         this.sortDirection = 'desc';
-        this.locationID = (this.fragment || '').replace(/^locations\/?/, '').split('/')[0];
+        this.tableIndex = 0;
+        this.timeIndex = 0;
+        this.shortTitle = this.location ? this.location.name : 'Locations';
         this.render();
     },
     selectTab: function (e) {
+        e.preventDefault();
         this.app.go(e.currentTarget.value, this, true);
     },
-    toggleFilter: function (e) {
-        var tag = $(e.currentTarget).val();
-        var index = this.filters.indexOf(tag);
-        if (index >= 0) this.filters.splice(index, 1);
-        else this.filters.push(tag);
-        this.renderEncounters();
-    },
-    setSort: function (e) {
-        this.sortDirection = $(e.currentTarget).val();
-        this.renderEncounters();
+    cycleOption: function (e) {
+        var option = $(e.currentTarget).data('option');
+        if (option === 'rate') this.sortDirection = this.sortDirection === 'desc' ? 'asc' : 'desc';
+        if (option === 'table') this.tableIndex = (this.tableIndex + 1) % LOCATION_TABLES.length;
+        if (option === 'time') this.timeIndex = (this.timeIndex + 1) % LOCATION_TIMES.length;
+        this.render();
     },
     render: function () {
-        var fragment = this.fragment || '';
-        var buf = '<div class="pfx-body locations-panel">';
-        buf += '<h1><a href="/" data-target="replace">Pok&eacute;dex</a></h1>';
-        buf += '<ul class="tabbar centered" style="margin-bottom:18px"><li><button class="button nav-first" value="">Search</button></li><li><button class="button" value="pokemon/">Pok&eacute;mon</button></li><li><button class="button" value="moves/">Moves</button></li><li><button class="button nav-last cur" value="locations/">Locations</button></li></ul>';
-        if (!this.locationID || !PokedexLocations[this.locationID]) {
-            buf += '<h2>Locations</h2><ul class="location-list">';
-            for (var id in PokedexLocations) {
-                buf += '<li><a href="/locations/' + id + '" data-target="push">' + Dex.escapeHTML(PokedexLocations[id].name) + '</a></li>';
-            }
-            buf += '</ul>';
-        } else {
-            var location = PokedexLocations[this.locationID];
-            buf += '<p><a href="/locations/" data-target="replace">&larr; All locations</a></p>';
-            buf += '<h2>' + Dex.escapeHTML(location.name) + '</h2>';
-            buf += '<div class="location-controls"><strong>Filter:</strong> ';
-            for (var i = 0; i < LOCATION_TAGS.length; i++) buf += '<button class="button location-filter" value="' + LOCATION_TAGS[i] + '">' + LOCATION_TAGS[i] + '</button> ';
-            buf += '<br /><strong>Encounter rate:</strong> <button class="button location-sort" value="desc">Highest first</button> <button class="button location-sort" value="asc">Lowest first</button></div>';
-            buf += '<ul class="utilichart location-encounters"></ul>';
+        if (!this.location) {
+            this.html('<div class="pfx-body"><p>Location not found.</p></div>');
+            return;
         }
+        var buf = '<div class="pfx-body locations-panel dexentry">';
+        buf += '<a href="/locations/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Locations</a>';
+        buf += '<h1>' + Dex.escapeHTML(this.location.name) + '</h1>';
+        buf += '<ul class="utilichart location-encounters">' + this.renderEncounters() + '</ul>';
         buf += '</div>';
-        this.$el.html(buf);
-        if (this.locationID && PokedexLocations[this.locationID]) this.renderEncounters();
+        this.html(buf);
     },
     renderEncounters: function () {
-        var location = PokedexLocations[this.locationID];
-        var encounters = location.encounters.slice();
-        var filters = this.filters;
+        var encounters = this.location.encounters.slice();
+        var table = LOCATION_TABLES[this.tableIndex];
+        var time = LOCATION_TIMES[this.timeIndex];
         encounters = encounters.filter(function (encounter) {
-            return filters.every(function (tag) { return encounter.tags.indexOf(tag) >= 0; });
+            if (table !== 'All' && encounter.tags.indexOf(table) < 0) return false;
+            if (time !== 'Any time' && encounter.tags.indexOf(time) < 0) return false;
+            return true;
         });
         encounters.sort(function (a, b) {
             return this.sortDirection === 'asc' ? a.rate - b.rate : b.rate - a.rate;
         }.bind(this));
-        this.$('.location-filter').each(function () {
-            $(this).toggleClass('cur', filters.indexOf($(this).val()) >= 0);
-        });
-        this.$('.location-sort').each(function () {
-            $(this).toggleClass('cur', $(this).val() === this.sortDirection);
-        }.bind(this));
-        var buf = '<li class="resultheader"><h3>Encounters</h3><span>Rate</span><span>Level</span></li>';
-        if (!encounters.length) buf += '<li class="notfound"><em>No encounters match these filters.</em></li>';
+
+        var buf = '<li class="resultheader location-header"><h3>Encounters</h3><strong class="location-sort-label">Sort:</strong>';
+        buf += '<button class="location-cycle rate-cycle" data-option="rate">Rate %</button>';
+        buf += '<button class="location-cycle table-cycle" data-option="table">Table</button>';
+        buf += '<button class="location-cycle time-cycle" data-option="time">Time of Day</button>';
+        buf += '<span class="location-level-label">Level</span></li>';
+        if (!encounters.length) return buf + '<li class="notfound"><em>No encounters match these filters.</em></li>';
         for (var i = 0; i < encounters.length; i++) {
             var encounter = encounters[i];
-            var pokemon = Dex.species.get(encounter.pokemon);
-            var tags = encounter.tags.map(function (tag) { return '<span class="location-tag">' + Dex.escapeHTML(tag) + '</span>'; }).join(' ');
+            var encounterTable = this.getEncounterTable(encounter);
+            var encounterTime = this.getEncounterTime(encounter);
             var level = encounter.minLevel === encounter.maxLevel ? 'Lv. ' + encounter.minLevel : 'Lv. ' + encounter.minLevel + '&ndash;' + encounter.maxLevel;
-            buf += '<li class="location-encounter"><div class="location-tags">' + tags + '</div><a href="/pokemon/' + pokemon.id + '" data-target="push"><span class="picon" style="' + Dex.getPokemonIcon(pokemon) + '"></span>' + Dex.escapeHTML(pokemon.name) + '</a><span class="encounter-rate">' + encounter.rate + '%</span><span class="encounter-level">' + level + '</span></li>';
+            buf += '<li class="location-encounter"><div class="encounter-pokemon">' + this.renderPokemonButton(encounter) + '</div><div class="encounter-details"><span class="encounter-sort-spacer"></span><span class="encounter-rate">' + encounter.rate + '%</span><span class="encounter-table">' + this.renderMarker('table', encounterTable) + encounterTable + '</span><span class="encounter-time">' + this.renderMarker('time', encounterTime) + encounterTime + '</span><span class="encounter-level">' + level + '</span></div></li>';
         }
-        this.$('.location-encounters').html(buf);
+        return buf;
+    },
+    getEncounterTable: function (encounter) {
+        for (var i = 1; i < LOCATION_TABLES.length; i++) {
+            if (encounter.tags.indexOf(LOCATION_TABLES[i]) >= 0) return LOCATION_TABLES[i];
+        }
+        return '&ndash;';
+    },
+    getEncounterTime: function (encounter) {
+        if (encounter.tags.indexOf('Nighttime Only') >= 0) return 'Nighttime Only';
+        if (encounter.tags.indexOf('Daytime Only') >= 0) return 'Daytime Only';
+        return '&ndash;';
+    },
+    renderMarker: function (group, name) {
+        var icon = window.PokedexLocationIcons && PokedexLocationIcons[group] && PokedexLocationIcons[group][name];
+        if (!icon) return '';
+        return '<img class="location-marker-icon" src="' + Dex.escapeHTML(icon) + '" alt="" /> ';
+    },
+    renderPokemonButton: function (encounter) {
+        var pokemon = typeof BattlePokedex !== 'undefined' && BattlePokedex[encounter.pokemon];
+        if (pokemon && typeof BattleSearch !== 'undefined' && BattleSearch.renderPokemonRow) {
+
+            return BattleSearch.renderPokemonRow(pokemon).replace(/^<li[^>]*>/, '').replace(/<\/li>\s*$/, '');
+        }
+        return '<a class="location-pokemon-fallback" href="/pokemon/' + encounter.pokemon + '" data-target="push">' + Dex.escapeHTML(encounter.name || encounter.pokemon) + '</a>';
     }
 });

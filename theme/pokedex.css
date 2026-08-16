@@ -163,6 +163,10 @@
 .dexentry .movetag {
 	padding-left: 18px;
 }
+.pokemon-encounters {
+	float: right;
+	margin: -30px 0 8px 8px;
+}
 .movetag small {
 	font-size: 9pt;
 	font-weight: normal;
@@ -370,54 +374,99 @@ table.evos .arrow abbr {
 	font-weight: bold;
 	text-decoration: none;
 }
-.location-controls {
-	margin: 12px 0;
-	line-height: 2.4;
-}
-.location-controls .button {
-	margin: 0 2px 3px 0;
-}
-.location-encounters .resultheader {
-	display: grid;
-	grid-template-columns: 1fr 65px 70px;
+.location-encounters .location-header {
+	display: flex;
 	align-items: center;
-}
-.location-encounters .resultheader h3 {
 	margin: 0;
+	padding: 0;
+	background: #d8d8d8;
 }
-.location-encounters .resultheader span,
-.encounter-rate,
-.encounter-level {
-	text-align: right;
-}
-.location-encounter {
-	display: grid;
-	grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) 65px 70px;
+.location-encounters .location-header h3 {
+	display: flex;
+	flex: 1 1 auto;
 	align-items: center;
-	min-height: 38px;
+	margin: 0;
+	padding: 6px 10px;
+	background: #d9e6f2;
+	border: 1px solid #a7b1ba;
+	white-space: nowrap;
+}
+.location-sort-label,
+.encounter-sort-spacer {
+	box-sizing: border-box;
+	flex: 0 0 58px;
+	width: 58px;
+}
+.location-sort-label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 0;
+	background: #d8d8d8;
+	font: bold 10pt Verdana, Helvetica, Arial, sans-serif;
+}
+.location-encounters .location-cycle,
+.location-level-label {
+	box-sizing: border-box;
+	flex: 0 0 auto;
+	padding: 6px 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	color: #222;
+	font: 10pt Verdana, Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.location-encounters .location-cycle:hover { background: #ececec; }
+.rate-cycle, .encounter-rate { width: 55px; }
+.table-cycle, .encounter-table { width: 84px; }
+.time-cycle, .encounter-time { width: 105px; }
+.location-level-label, .encounter-level { width: 70px; }
+.encounter-rate, .encounter-table, .encounter-time, .encounter-level {
+	text-align: center;
+}
+.location-encounters .location-encounter {
+	display: block;
 	border-bottom: 1px solid #ddd;
 }
-.location-encounter > a {
+.location-encounters .encounter-pokemon {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 3px 6px;
+}
+.location-encounters .encounter-pokemon > a {
+	display: block;
+	min-height: 27px;
+	box-sizing: border-box;
+}
+.location-encounters .encounter-details {
+	display: flex;
+	align-items: center;
+	width: 372px;
+	min-height: 26px;
+	margin: 0 0 3px auto;
+}
+.location-pokemon-fallback {
+	display: block;
+	padding: 5px 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #f8f8f8;
 	color: #222;
 	font-weight: bold;
 	text-decoration: none;
 }
-.location-tags {
-	padding: 4px 6px 4px 0;
-}
-.location-tag {
-	display: inline-block;
-	margin: 1px 2px 1px 0;
-	padding: 1px 4px;
-	border-radius: 3px;
-	background: #dfe8f3;
-	color: #44566c;
-	font-size: 10px;
-	font-weight: bold;
+.location-marker-icon {
+	max-width: 18px;
+	max-height: 18px;
+	vertical-align: middle;
 }
 @media (max-width: 520px) {
-	.location-encounter { grid-template-columns: 1fr 60px 62px; }
-	.location-tags { grid-column: 1 / -1; }
+	.location-sort-label, .encounter-sort-spacer { display: none; }
+	.table-cycle, .time-cycle, .location-level-label { display: none; }
+	.location-encounters .location-encounter { padding: 5px 0; }
+	.location-encounters .encounter-details { width: auto; }
+	.encounter-table, .encounter-time { display: none; }
 }
 
 .type {

@@ -16,6 +16,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         }
         if (pokemon.num > 0) buf += ' <code>#' + pokemon.num + '</code>';
         buf += '</h1>';
+        buf += '<button class="button pokemon-encounters" type="button">Encounters</button>';
 
         if (pokemon.isNonstandard) {
             if (id === 'missingno') {
@@ -278,7 +279,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         for (var i = 0, len = moves.length; i < len; i++) {
             var move = BattleMovedex[moves[i].substr(5)];
             if (move) {
-                var desc = moves[i].substr(1, 3) === '001' || moves[i].substr(1, 3) === '000' ? '&ndash;' : '<small>L</small>' + (parseInt(moves[i].substr(1, 3), 10) || '?');
+                var desc = moves[i].substr(1, 3) === '000' ? 'Evo' : (moves[i].substr(1, 3) === '001' ? '&ndash;' : '<small>L</small>' + (parseInt(moves[i].substr(1, 3), 10) || '?'));
                 buf += BattleSearch.renderTaggedMoveRow(move, desc);
             }
         }
@@ -292,6 +293,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
     },
     events: {
         'click .tabbar button': 'selectTab',
+        'click button.pokemon-encounters': 'renderEncounters',
         'input input[name=level]': 'updateLevel',
         'keyup input[name=level]': 'updateLevel',
         'change input[name=level]': 'updateLevel',
@@ -473,15 +475,15 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
                 switch (last) {
                     case 'a': // level-up move
                         if (lastChanged) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
-                        desc = moves[i].substr(1, 3) === '001' || moves[i].substr(1, 3) === '000' ? '&ndash;' : '<small>L</small>' + (Number(moves[i].substr(1, 3)) || '?');
+                        desc = moves[i].substr(1, 3) === '000' ? 'Evo' : (moves[i].substr(1, 3) === '001' ? '&ndash;' : '<small>L</small>' + (Number(moves[i].substr(1, 3)) || '?'));
                         break;
                     case 'b': // prevo1 level-up move
                         if (lastChanged) buf += '<li class="resultheader"><h3>Level-up from ' + BattlePokedex[prevo1].name + '</h3></li>';
-                        desc = moves[i].substr(1, 3) === '001' || moves[i].substr(1, 3) === '000' ? '&ndash;' : '<small>L</small>' + (Number(moves[i].substr(1, 3)) || '?');
+                        desc = moves[i].substr(1, 3) === '000' ? 'Evo' : (moves[i].substr(1, 3) === '001' ? '&ndash;' : '<small>L</small>' + (Number(moves[i].substr(1, 3)) || '?'));
                         break;
                     case 'c': // prevo2 level-up move
                         if (lastChanged) buf += '<li class="resultheader"><h3>Level-up from ' + BattlePokedex[prevo2].name + '</h3></li>';
-                        desc = moves[i].substr(1, 3) === '001' || moves[i].substr(1, 3) === '000' ? '&ndash;' : '<small>L</small>' + (Number(moves[i].substr(1, 3)) || '?');
+                        desc = moves[i].substr(1, 3) === '000' ? 'Evo' : (moves[i].substr(1, 3) === '001' ? '&ndash;' : '<small>L</small>' + (Number(moves[i].substr(1, 3)) || '?'));
                         break;
                     case 'd': // tm/hm
                         if (lastChanged) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
@@ -513,6 +515,35 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
                         break;
                 }
                 buf += BattleSearch.renderTaggedMoveRow(move, desc);
+            }
+        }
+        this.$('.utilichart').html(buf);
+    },
+    renderEncounters: function () {
+        this.$('.tabbar button').removeClass('cur');
+        this.$('.pokemon-encounters').addClass('cur');
+        var locations = {};
+        if (window.PokedexLocations) {
+            for (var locationID in PokedexLocations) {
+                var location = PokedexLocations[locationID];
+                for (var i = 0; i < location.encounters.length; i++) {
+                    if (toID(location.encounters[i].pokemon) === this.id) {
+                        locations[locationID] = location.name;
+                        break;
+                    }
+                }
+            }
+        }
+        var locationIDs = Object.keys(locations).sort(function (a, b) {
+            return locations[a].localeCompare(locations[b]);
+        });
+        var buf = '<li class="resultheader"><h3>Encounters</h3></li>';
+        if (!locationIDs.length) {
+            buf += '<li class="content"><p>This Pok&eacute;mon is unobtainable to the player.</p></li>';
+        } else {
+            for (var j = 0; j < locationIDs.length; j++) {
+                var id = locationIDs[j];
+                buf += '<li><a href="/locations/' + id + '" data-target="push">' + Dex.escapeHTML(locations[id]) + '</a></li>';
             }
         }
         this.$('.utilichart').html(buf);
