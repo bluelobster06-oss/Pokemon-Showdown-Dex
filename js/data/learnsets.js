@@ -64673,7 +64673,6 @@ exports.BattleLearnsets = {
     diggersby: {
         learnset: {
             laserfocus: ["9L6"],
-            payback: ["9L8"],
             headbutt: ["9L15"],
             agility: ["9L1"],
             bounce: ["9L42"],
