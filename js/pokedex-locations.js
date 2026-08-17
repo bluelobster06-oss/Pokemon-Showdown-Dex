@@ -38,8 +38,8 @@ var PokedexLocationPanel = PokedexResultPanel.extend({
         this.locationID = toID(locationID);
         this.location = PokedexLocations[this.locationID];
         this.sortDirection = 'desc';
-        this.tableIndex = 0;
-        this.timeIndex = 0;
+        this.tableIndex = -1;
+        this.timeIndex = -1;
         this.shortTitle = this.location ? this.location.name : 'Locations';
         this.render();
     },
@@ -50,8 +50,14 @@ var PokedexLocationPanel = PokedexResultPanel.extend({
     cycleOption: function (e) {
         var option = $(e.currentTarget).data('option');
         if (option === 'rate') this.sortDirection = this.sortDirection === 'desc' ? 'asc' : 'desc';
-        if (option === 'table') this.tableIndex = (this.tableIndex + 1) % LOCATION_TABLES.length;
-        if (option === 'time') this.timeIndex = (this.timeIndex + 1) % LOCATION_TIMES.length;
+        if (option === 'table') {
+            var tables = this.getAvailableTables();
+            if (tables.length) this.tableIndex = this.tableIndex >= tables.length - 1 ? -1 : this.tableIndex + 1;
+        }
+        if (option === 'time') {
+            var times = this.getAvailableTimes();
+            if (times.length) this.timeIndex = this.timeIndex >= times.length - 1 ? -1 : this.timeIndex + 1;
+        }
         this.render();
     },
     render: function () {
@@ -68,8 +74,8 @@ var PokedexLocationPanel = PokedexResultPanel.extend({
     },
     renderEncounters: function () {
         var encounters = this.location.encounters.slice();
-        var table = LOCATION_TABLES[this.tableIndex];
-        var time = LOCATION_TIMES[this.timeIndex];
+        var table = this.getSelectedTable();
+        var time = this.getSelectedTime();
         encounters = encounters.filter(function (encounter) {
             if (table !== 'All' && encounter.tags.indexOf(table) < 0) return false;
             if (time !== 'Any time' && encounter.tags.indexOf(time) < 0) return false;
@@ -80,9 +86,9 @@ var PokedexLocationPanel = PokedexResultPanel.extend({
         }.bind(this));
 
         var buf = '<li class="resultheader location-header"><h3>Encounters</h3><strong class="location-sort-label">Sort:</strong>';
-        buf += '<button class="location-cycle rate-cycle" data-option="rate">Rate %</button>';
-        buf += '<button class="location-cycle table-cycle" data-option="table">Table</button>';
-        buf += '<button class="location-cycle time-cycle" data-option="time">Time of Day</button>';
+        buf += '<button class="location-cycle rate-cycle" data-option="rate">Rate %<small>' + this.getRateLabel() + '</small></button>';
+        buf += '<button class="location-cycle table-cycle" data-option="table">Table<small>' + Dex.escapeHTML(table) + '</small></button>';
+        buf += '<button class="location-cycle time-cycle" data-option="time">Time of Day<small>' + Dex.escapeHTML(time) + '</small></button>';
         buf += '<span class="location-level-label">Level</span></li>';
         if (!encounters.length) return buf + '<li class="notfound"><em>No encounters match these filters.</em></li>';
         for (var i = 0; i < encounters.length; i++) {
@@ -93,6 +99,43 @@ var PokedexLocationPanel = PokedexResultPanel.extend({
             buf += '<li class="location-encounter"><div class="encounter-pokemon">' + this.renderPokemonButton(encounter) + '</div><div class="encounter-details"><span class="encounter-sort-spacer"></span><span class="encounter-rate">' + encounter.rate + '%</span><span class="encounter-table">' + this.renderMarker('table', encounterTable) + encounterTable + '</span><span class="encounter-time">' + this.renderMarker('time', encounterTime) + encounterTime + '</span><span class="encounter-level">' + level + '</span></div></li>';
         }
         return buf;
+    },
+    getAvailableTables: function () {
+        var tables = [];
+        for (var i = 1; i < LOCATION_TABLES.length; i++) {
+            var table = LOCATION_TABLES[i];
+            for (var j = 0; j < this.location.encounters.length; j++) {
+                if (this.location.encounters[j].tags.indexOf(table) >= 0) {
+                    tables.push(table);
+                    break;
+                }
+            }
+        }
+        return tables;
+    },
+    getAvailableTimes: function () {
+        var times = [];
+        for (var i = 1; i < LOCATION_TIMES.length; i++) {
+            var time = LOCATION_TIMES[i];
+            for (var j = 0; j < this.location.encounters.length; j++) {
+                if (this.location.encounters[j].tags.indexOf(time) >= 0) {
+                    times.push(time);
+                    break;
+                }
+            }
+        }
+        return times;
+    },
+    getSelectedTable: function () {
+        var tables = this.getAvailableTables();
+        return this.tableIndex >= 0 && tables[this.tableIndex] ? tables[this.tableIndex] : 'All';
+    },
+    getSelectedTime: function () {
+        var times = this.getAvailableTimes();
+        return this.timeIndex >= 0 && times[this.timeIndex] ? times[this.timeIndex] : 'Any time';
+    },
+    getRateLabel: function () {
+        return this.sortDirection === 'desc' ? 'Highest' : 'Lowest';
     },
     getEncounterTable: function (encounter) {
         for (var i = 1; i < LOCATION_TABLES.length; i++) {

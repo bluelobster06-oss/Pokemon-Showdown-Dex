@@ -62,7 +62,7 @@
         eggGroups: ["Monster", "Grass"],
         requiredItem: "Venusaurite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     venusaurgmax: {
         num: 3,
@@ -80,7 +80,7 @@
         changesFrom: "Venusaur",
         placeholderFor: "Venusaur",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     charmander: {
         num: 4,
@@ -145,7 +145,7 @@
         eggGroups: ["Monster", "Dragon"],
         requiredItem: "Charizardite X",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     charizardmegay: {
         num: 6,
@@ -162,7 +162,7 @@
         eggGroups: ["Monster", "Dragon"],
         requiredItem: "Charizardite Y",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     charizardgmax: {
         num: 6,
@@ -180,7 +180,7 @@
         changesFrom: "Charizard",
         placeholderFor: "Charizard",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     squirtle: {
         num: 7,
@@ -245,7 +245,7 @@
         eggGroups: ["Monster", "Water 1"],
         requiredItem: "Blastoisinite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     blastoisegmax: {
         num: 9,
@@ -263,7 +263,7 @@
         changesFrom: "Blastoise",
         placeholderFor: "Blastoise",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     caterpie: {
         num: 10,
@@ -277,7 +277,7 @@
         evos: ["Metapod"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     metapod: {
         num: 11,
@@ -293,7 +293,7 @@
         evos: ["Butterfree"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     butterfree: {
         num: 12,
@@ -309,7 +309,7 @@
         eggGroups: ["Bug"],
         canGigantamax: "G-Max Befuddle",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     butterfreegmax: {
         num: 12,
@@ -326,7 +326,7 @@
         changesFrom: "Butterfree",
         placeholderFor: "Butterfree",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     weedle: {
         num: 13,
@@ -340,7 +340,7 @@
         evos: ["Kakuna"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kakuna: {
         num: 14,
@@ -356,7 +356,7 @@
         evos: ["Beedrill"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     beedrill: {
         num: 15,
@@ -373,7 +373,7 @@
         otherFormes: ["Beedrill-Mega"],
         formeOrder: ["Beedrill", "Beedrill-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     beedrillmega: {
         num: 15,
@@ -389,7 +389,7 @@
         eggGroups: ["Bug"],
         requiredItem: "Beedrillite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pidgey: {
         num: 16,
@@ -403,7 +403,7 @@
         evos: ["Pidgeotto"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pidgeotto: {
         num: 17,
@@ -419,7 +419,7 @@
         evos: ["Pidgeot"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pidgeot: {
         num: 18,
@@ -436,7 +436,7 @@
         otherFormes: ["Pidgeot-Mega"],
         formeOrder: ["Pidgeot", "Pidgeot-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pidgeotmega: {
         num: 18,
@@ -452,7 +452,7 @@
         eggGroups: ["Flying"],
         requiredItem: "Pidgeotite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rattata: {
         num: 19,
@@ -468,7 +468,7 @@
         otherFormes: ["Rattata-Alola"],
         formeOrder: ["Rattata", "Rattata-Alola"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rattataalola: {
         num: 19,
@@ -484,7 +484,7 @@
         evos: ["Raticate-Alola"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     raticate: {
         num: 20,
@@ -501,7 +501,7 @@
         otherFormes: ["Raticate-Alola", "Raticate-Alola-Totem"],
         formeOrder: ["Raticate", "Raticate-Alola", "Raticate-Alola-Totem"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     raticatealola: {
         num: 20,
@@ -519,7 +519,7 @@
         evoCondition: "at night",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     raticatealolatotem: {
         num: 20,
@@ -534,7 +534,7 @@
         color: "Black",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     spearow: {
         num: 21,
@@ -548,7 +548,7 @@
         evos: ["Fearow"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     fearow: {
         num: 22,
@@ -563,7 +563,7 @@
         evoLevel: 20,
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     ekans: {
         num: 23,
@@ -659,7 +659,7 @@
         eggGroups: ["Undiscovered"],
         gen: 6,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pikachurockstar: {
         num: 25,
@@ -678,7 +678,7 @@
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pikachubelle: {
         num: 25,
@@ -697,7 +697,7 @@
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pikachupopstar: {
         num: 25,
@@ -716,7 +716,7 @@
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pikachuphd: {
         num: 25,
@@ -735,7 +735,7 @@
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pikachulibre: {
         num: 25,
@@ -754,7 +754,7 @@
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pikachuoriginal: {
         num: 25,
@@ -898,7 +898,7 @@
         changesFrom: "Pikachu",
         placeholderFor: "Pikachu",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pikachuworld: {
         num: 25,
@@ -1061,7 +1061,7 @@
         evos: ["Nidorina"],
         eggGroups: ["Monster", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     nidorina: {
         num: 30,
@@ -1078,7 +1078,7 @@
         evos: ["Nidoqueen"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     nidoqueen: {
         num: 31,
@@ -1095,7 +1095,7 @@
         evoItem: "Moon Stone",
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     nidoranm: {
         num: 32,
@@ -1111,7 +1111,7 @@
         eggGroups: ["Monster", "Field"],
         mother: "nidoranf",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     nidorino: {
         num: 33,
@@ -1128,7 +1128,7 @@
         evos: ["Nidoking"],
         eggGroups: ["Monster", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     nidoking: {
         num: 34,
@@ -1145,7 +1145,7 @@
         evoItem: "Moon Stone",
         eggGroups: ["Monster", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     clefairy: {
         num: 35,
@@ -1311,7 +1311,7 @@
         evos: ["Golbat"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     golbat: {
         num: 42,
@@ -1327,7 +1327,7 @@
         evos: ["Crobat"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     oddish: {
         num: 43,
@@ -1384,7 +1384,7 @@
         evos: ["Parasect"],
         eggGroups: ["Bug", "Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     parasect: {
         num: 47,
@@ -1399,7 +1399,7 @@
         evoLevel: 24,
         eggGroups: ["Bug", "Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     venonat: {
         num: 48,
@@ -1551,7 +1551,7 @@
         changesFrom: "Meowth",
         placeholderFor: "Meowth",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     persian: {
         num: 53,
@@ -1764,7 +1764,7 @@
         evos: ["Kadabra"],
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kadabra: {
         num: 64,
@@ -1781,7 +1781,7 @@
         evos: ["Alakazam"],
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     alakazam: {
         num: 65,
@@ -1799,7 +1799,7 @@
         otherFormes: ["Alakazam-Mega"],
         formeOrder: ["Alakazam", "Alakazam-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     alakazammega: {
         num: 65,
@@ -1816,7 +1816,7 @@
         eggGroups: ["Human-Like"],
         requiredItem: "Alakazite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     machop: {
         num: 66,
@@ -1831,7 +1831,7 @@
         evos: ["Machoke"],
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     machoke: {
         num: 67,
@@ -1848,7 +1848,7 @@
         evos: ["Machamp"],
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     machamp: {
         num: 68,
@@ -1865,7 +1865,7 @@
         eggGroups: ["Human-Like"],
         canGigantamax: "G-Max Chi Strike",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     machampgmax: {
         num: 68,
@@ -1883,7 +1883,7 @@
         changesFrom: "Machamp",
         placeholderFor: "Machamp",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     bellsprout: {
         num: 69,
@@ -2084,7 +2084,7 @@
         otherFormes: ["Ponyta-Galar"],
         formeOrder: ["Ponyta", "Ponyta-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     ponytagalar: {
         num: 77,
@@ -2100,7 +2100,7 @@
         evos: ["Rapidash-Galar"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rapidash: {
         num: 78,
@@ -2117,7 +2117,7 @@
         otherFormes: ["Rapidash-Galar"],
         formeOrder: ["Rapidash", "Rapidash-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rapidashgalar: {
         num: 78,
@@ -2134,7 +2134,7 @@
         evoLevel: 40,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     slowpoke: {
         num: 79,
@@ -2196,7 +2196,7 @@
         eggGroups: ["Monster", "Water 1"],
         requiredItem: "Slowbronite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     slowbrogalar: {
         num: 80,
@@ -2258,7 +2258,7 @@
         otherFormes: ["Farfetch’d-Galar"],
         formeOrder: ["Farfetch’d", "Farfetch’d-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     farfetchdgalar: {
         num: 83,
@@ -2274,7 +2274,7 @@
         evos: ["Sirfetch’d"],
         eggGroups: ["Flying", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     doduo: {
         num: 84,
@@ -2479,7 +2479,7 @@
         eggGroups: ["Amorphous"],
         requiredItem: "Gengarite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     gengargmax: {
         num: 94,
@@ -2496,7 +2496,7 @@
         changesFrom: "Gengar",
         placeholderFor: "Gengar",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     onix: {
         num: 95,
@@ -2510,7 +2510,7 @@
         evos: ["Steelix"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     drowzee: {
         num: 96,
@@ -2551,7 +2551,7 @@
         evos: ["Kingler"],
         eggGroups: ["Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kingler: {
         num: 99,
@@ -2567,7 +2567,7 @@
         eggGroups: ["Water 3"],
         canGigantamax: "G-Max Foam Burst",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kinglergmax: {
         num: 99,
@@ -2584,7 +2584,7 @@
         changesFrom: "Kingler",
         placeholderFor: "Kingler",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     voltorb: {
         num: 100,
@@ -2713,7 +2713,7 @@
         evos: ["Marowak", "Marowak-Alola"],
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     marowak: {
         num: 105,
@@ -2730,7 +2730,7 @@
         otherFormes: ["Marowak-Alola", "Marowak-Alola-Totem"],
         formeOrder: ["Marowak", "Marowak-Alola", "Marowak-Alola-Totem"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     marowakalola: {
         num: 105,
@@ -2749,7 +2749,7 @@
         evoRegion: "Alola",
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     marowakalolatotem: {
         num: 105,
@@ -2764,7 +2764,7 @@
         color: "Purple",
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     hitmonlee: {
         num: 106,
@@ -2810,7 +2810,7 @@
         evos: ["Lickilicky"],
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     koffing: {
         num: 109,
@@ -2917,7 +2917,7 @@
         evos: ["Tangrowth"],
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kangaskhan: {
         num: 115,
@@ -2933,7 +2933,7 @@
         otherFormes: ["Kangaskhan-Mega"],
         formeOrder: ["Kangaskhan", "Kangaskhan-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kangaskhanmega: {
         num: 115,
@@ -2950,7 +2950,7 @@
         eggGroups: ["Monster"],
         requiredItem: "Kangaskhanite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     horsea: {
         num: 116,
@@ -2992,7 +2992,7 @@
         evos: ["Seaking"],
         eggGroups: ["Water 2"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     seaking: {
         num: 119,
@@ -3007,7 +3007,7 @@
         evoLevel: 33,
         eggGroups: ["Water 2"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     staryu: {
         num: 120,
@@ -3022,7 +3022,7 @@
         evos: ["Starmie"],
         eggGroups: ["Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     starmie: {
         num: 121,
@@ -3041,7 +3041,7 @@
         otherFormes: ["Starmie-Mega"],
         formeOrder: ["Starmie", "Starmie-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     starmiemega: {
         num: 121,
@@ -3078,7 +3078,7 @@
         otherFormes: ["Mr. Mime-Galar"],
         formeOrder: ["Mr. Mime", "Mr. Mime-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mrmimegalar: {
         num: 122,
@@ -3099,7 +3099,7 @@
         eggGroups: ["Human-Like"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     scyther: {
         num: 123,
@@ -3128,7 +3128,7 @@
         evoLevel: 30,
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     electabuzz: {
         num: 125,
@@ -3175,7 +3175,7 @@
         otherFormes: ["Pinsir-Mega"],
         formeOrder: ["Pinsir", "Pinsir-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pinsirmega: {
         num: 127,
@@ -3191,7 +3191,7 @@
         eggGroups: ["Bug"],
         requiredItem: "Pinsirite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tauros: {
         num: 128,
@@ -3296,7 +3296,7 @@
         eggGroups: ["Water 2", "Dragon"],
         requiredItem: "Gyaradosite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lapras: {
         num: 131,
@@ -3326,7 +3326,7 @@
         changesFrom: "Lapras",
         placeholderFor: "Lapras",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     ditto: {
         num: 132,
@@ -3399,7 +3399,7 @@
         changesFrom: "Eevee",
         placeholderFor: "Eevee",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     vaporeon: {
         num: 134,
@@ -3476,7 +3476,7 @@
         evos: ["Omastar"],
         eggGroups: ["Water 1", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     omastar: {
         num: 139,
@@ -3492,7 +3492,7 @@
         evoLevel: 40,
         eggGroups: ["Water 1", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kabuto: {
         num: 140,
@@ -3507,7 +3507,7 @@
         evos: ["Kabutops"],
         eggGroups: ["Water 1", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kabutops: {
         num: 141,
@@ -3523,7 +3523,7 @@
         evoLevel: 40,
         eggGroups: ["Water 1", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aerodactyl: {
         num: 142,
@@ -3539,7 +3539,7 @@
         otherFormes: ["Aerodactyl-Mega"],
         formeOrder: ["Aerodactyl", "Aerodactyl-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aerodactylmega: {
         num: 142,
@@ -3556,7 +3556,7 @@
         eggGroups: ["Flying"],
         requiredItem: "Aerodactylite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     snorlax: {
         num: 143,
@@ -3591,7 +3591,7 @@
         changesFrom: "Snorlax",
         placeholderFor: "Snorlax",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     articuno: {
         num: 144,
@@ -3778,7 +3778,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Mewtwonite X",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mewtwomegay: {
         num: 150,
@@ -3795,7 +3795,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Mewtwonite Y",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mew: {
         num: 151,
@@ -4071,7 +4071,7 @@
         evos: ["Ledian"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     ledian: {
         num: 166,
@@ -4086,7 +4086,7 @@
         evoLevel: 18,
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     spinarak: {
         num: 167,
@@ -4128,7 +4128,7 @@
         evoType: "levelFriendship",
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     chinchou: {
         num: 170,
@@ -4188,7 +4188,7 @@
         eggGroups: ["Undiscovered"],
         gen: 4,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cleffa: {
         num: 173,
@@ -4234,7 +4234,7 @@
         eggGroups: ["Undiscovered"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     togetic: {
         num: 176,
@@ -4251,7 +4251,7 @@
         evos: ["Togekiss"],
         eggGroups: ["Flying", "Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     natu: {
         num: 177,
@@ -4265,7 +4265,7 @@
         evos: ["Xatu"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     xatu: {
         num: 178,
@@ -4280,7 +4280,7 @@
         evoLevel: 25,
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mareep: {
         num: 179,
@@ -4340,7 +4340,7 @@
         eggGroups: ["Monster", "Field"],
         requiredItem: "Ampharosite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     bellossom: {
         num: 182,
@@ -4722,7 +4722,7 @@
             "Unown-Question"
         ],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wobbuffet: {
         num: 202,
@@ -4738,7 +4738,7 @@
         eggGroups: ["Amorphous"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     girafarig: {
         num: 203,
@@ -4822,7 +4822,7 @@
         otherFormes: ["Steelix-Mega"],
         formeOrder: ["Steelix", "Steelix-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     steelixmega: {
         num: 208,
@@ -4838,7 +4838,7 @@
         eggGroups: ["Mineral"],
         requiredItem: "Steelixite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     snubbull: {
         num: 209,
@@ -4929,7 +4929,7 @@
         eggGroups: ["Bug"],
         requiredItem: "Scizorite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     shuckle: {
         num: 213,
@@ -4942,7 +4942,7 @@
         color: "Yellow",
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     heracross: {
         num: 214,
@@ -4972,7 +4972,7 @@
         eggGroups: ["Bug"],
         requiredItem: "Heracronite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sneasel: {
         num: 215,
@@ -5101,7 +5101,7 @@
         otherFormes: ["Corsola-Galar"],
         formeOrder: ["Corsola", "Corsola-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     corsolagalar: {
         num: 222,
@@ -5118,7 +5118,7 @@
         evos: ["Cursola"],
         eggGroups: ["Water 1", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     remoraid: {
         num: 223,
@@ -5132,7 +5132,7 @@
         evos: ["Octillery"],
         eggGroups: ["Water 1", "Water 2"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     octillery: {
         num: 224,
@@ -5147,7 +5147,7 @@
         evoLevel: 25,
         eggGroups: ["Water 1", "Water 2"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     delibird: {
         num: 225,
@@ -5176,7 +5176,7 @@
         eggGroups: ["Water 1"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     skarmory: {
         num: 227,
@@ -5252,7 +5252,7 @@
         eggGroups: ["Field"],
         requiredItem: "Houndoominite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kingdra: {
         num: 230,
@@ -5383,7 +5383,7 @@
         eggGroups: ["Undiscovered"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     elekid: {
         num: 239,
@@ -5427,7 +5427,7 @@
         color: "Pink",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     blissey: {
         num: 242,
@@ -5544,7 +5544,7 @@
         eggGroups: ["Monster"],
         requiredItem: "Tyranitarite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lugia: {
         num: 249,
@@ -5587,7 +5587,7 @@
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     treecko: {
         num: 252,
@@ -5651,7 +5651,7 @@
         eggGroups: ["Monster", "Dragon"],
         requiredItem: "Sceptilite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     torchic: {
         num: 255,
@@ -5715,7 +5715,7 @@
         eggGroups: ["Field"],
         requiredItem: "Blazikenite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mudkip: {
         num: 258,
@@ -5779,7 +5779,7 @@
         eggGroups: ["Monster", "Water 1"],
         requiredItem: "Swampertite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     poochyena: {
         num: 261,
@@ -5822,7 +5822,7 @@
         otherFormes: ["Zigzagoon-Galar"],
         formeOrder: ["Zigzagoon", "Zigzagoon-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zigzagoongalar: {
         num: 263,
@@ -5838,7 +5838,7 @@
         evos: ["Linoone-Galar"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     linoone: {
         num: 264,
@@ -5855,7 +5855,7 @@
         otherFormes: ["Linoone-Galar"],
         formeOrder: ["Linoone", "Linoone-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     linoonegalar: {
         num: 264,
@@ -5873,7 +5873,7 @@
         evos: ["Obstagoon"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wurmple: {
         num: 265,
@@ -5887,7 +5887,7 @@
         evos: ["Silcoon", "Cascoon"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silcoon: {
         num: 266,
@@ -5903,7 +5903,7 @@
         evos: ["Beautifly"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     beautifly: {
         num: 267,
@@ -5918,7 +5918,7 @@
         evoLevel: 10,
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cascoon: {
         num: 268,
@@ -5934,7 +5934,7 @@
         evos: ["Dustox"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     dustox: {
         num: 269,
@@ -5949,7 +5949,7 @@
         evoLevel: 10,
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lotad: {
         num: 270,
@@ -6049,7 +6049,7 @@
         evos: ["Swellow"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     swellow: {
         num: 277,
@@ -6064,7 +6064,7 @@
         evoLevel: 22,
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wingull: {
         num: 278,
@@ -6151,7 +6151,7 @@
         eggGroups: ["Amorphous"],
         requiredItem: "Gardevoirite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     surskit: {
         num: 283,
@@ -6261,7 +6261,7 @@
         evos: ["Ninjask", "Shedinja"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     ninjask: {
         num: 291,
@@ -6276,7 +6276,7 @@
         evoLevel: 20,
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     shedinja: {
         num: 292,
@@ -6293,7 +6293,7 @@
         evoLevel: 20,
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     whismur: {
         num: 293,
@@ -6307,7 +6307,7 @@
         evos: ["Loudred"],
         eggGroups: ["Monster", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     loudred: {
         num: 294,
@@ -6323,7 +6323,7 @@
         evos: ["Exploud"],
         eggGroups: ["Monster", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     exploud: {
         num: 295,
@@ -6338,7 +6338,7 @@
         evoLevel: 40,
         eggGroups: ["Monster", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     makuhita: {
         num: 296,
@@ -6410,7 +6410,7 @@
         evos: ["Delcatty"],
         eggGroups: ["Field", "Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     delcatty: {
         num: 301,
@@ -6427,7 +6427,7 @@
         evoItem: "Moon Stone",
         eggGroups: ["Field", "Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sableye: {
         num: 302,
@@ -6457,7 +6457,7 @@
         eggGroups: ["Human-Like"],
         requiredItem: "Sablenite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mawile: {
         num: 303,
@@ -6472,7 +6472,7 @@
         otherFormes: ["Mawile-Mega"],
         formeOrder: ["Mawile", "Mawile-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mawilemega: {
         num: 303,
@@ -6488,7 +6488,7 @@
         eggGroups: ["Field", "Fairy"],
         requiredItem: "Mawilite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aron: {
         num: 304,
@@ -6502,7 +6502,7 @@
         evos: ["Lairon"],
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lairon: {
         num: 305,
@@ -6518,7 +6518,7 @@
         evos: ["Aggron"],
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aggron: {
         num: 306,
@@ -6535,7 +6535,7 @@
         otherFormes: ["Aggron-Mega"],
         formeOrder: ["Aggron", "Aggron-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aggronmega: {
         num: 306,
@@ -6551,7 +6551,7 @@
         eggGroups: ["Monster"],
         requiredItem: "Aggronite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     meditite: {
         num: 307,
@@ -6596,7 +6596,7 @@
         eggGroups: ["Human-Like"],
         requiredItem: "Medichamite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     electrike: {
         num: 309,
@@ -6610,7 +6610,7 @@
         evos: ["Manectric"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     manectric: {
         num: 310,
@@ -6627,7 +6627,7 @@
         otherFormes: ["Manectric-Mega"],
         formeOrder: ["Manectric", "Manectric-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     manectricmega: {
         num: 310,
@@ -6643,7 +6643,7 @@
         eggGroups: ["Field"],
         requiredItem: "Manectite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     plusle: {
         num: 311,
@@ -6712,7 +6712,7 @@
         eggGroups: ["Fairy", "Grass"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     gulpin: {
         num: 316,
@@ -6753,7 +6753,7 @@
         evos: ["Sharpedo"],
         eggGroups: ["Water 2"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sharpedo: {
         num: 319,
@@ -6770,7 +6770,7 @@
         otherFormes: ["Sharpedo-Mega"],
         formeOrder: ["Sharpedo", "Sharpedo-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sharpedomega: {
         num: 319,
@@ -6786,7 +6786,7 @@
         eggGroups: ["Water 2"],
         requiredItem: "Sharpedonite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wailmer: {
         num: 320,
@@ -6800,7 +6800,7 @@
         evos: ["Wailord"],
         eggGroups: ["Field", "Water 2"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wailord: {
         num: 321,
@@ -6815,7 +6815,7 @@
         evoLevel: 40,
         eggGroups: ["Field", "Water 2"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     numel: {
         num: 322,
@@ -6860,7 +6860,7 @@
         eggGroups: ["Field"],
         requiredItem: "Cameruptite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     torkoal: {
         num: 324,
@@ -6912,7 +6912,7 @@
         color: "Brown",
         eggGroups: ["Field", "Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     trapinch: {
         num: 328,
@@ -7026,7 +7026,7 @@
         eggGroups: ["Flying", "Dragon"],
         requiredItem: "Altarianite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zangoose: {
         num: 335,
@@ -7064,7 +7064,7 @@
         color: "Yellow",
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     solrock: {
         num: 338,
@@ -7078,7 +7078,7 @@
         color: "Red",
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     barboach: {
         num: 339,
@@ -7147,7 +7147,7 @@
         evos: ["Claydol"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     claydol: {
         num: 344,
@@ -7163,7 +7163,7 @@
         evoLevel: 36,
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lileep: {
         num: 345,
@@ -7178,7 +7178,7 @@
         evos: ["Cradily"],
         eggGroups: ["Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cradily: {
         num: 346,
@@ -7194,7 +7194,7 @@
         evoLevel: 40,
         eggGroups: ["Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     anorith: {
         num: 347,
@@ -7209,7 +7209,7 @@
         evos: ["Armaldo"],
         eggGroups: ["Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     armaldo: {
         num: 348,
@@ -7225,7 +7225,7 @@
         evoLevel: 40,
         eggGroups: ["Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     feebas: {
         num: 349,
@@ -7268,7 +7268,7 @@
         otherFormes: ["Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
         formeOrder: ["Castform", "Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     castformsunny: {
         num: 351,
@@ -7284,7 +7284,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         requiredAbility: "Forecast",
         battleOnly: "Castform",
-        isNonstandard: "Past"
+
     },
     castformrainy: {
         num: 351,
@@ -7300,7 +7300,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         requiredAbility: "Forecast",
         battleOnly: "Castform",
-        isNonstandard: "Past"
+
     },
     castformsnowy: {
         num: 351,
@@ -7316,7 +7316,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         requiredAbility: "Forecast",
         battleOnly: "Castform",
-        isNonstandard: "Past"
+
     },
     kecleon: {
         num: 352,
@@ -7329,7 +7329,7 @@
         color: "Green",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     shuppet: {
         num: 353,
@@ -7374,7 +7374,7 @@
         eggGroups: ["Amorphous"],
         requiredItem: "Banettite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     duskull: {
         num: 355,
@@ -7464,7 +7464,7 @@
         otherFormes: ["Absol-Mega", "Absol-Mega-Z"],
         formeOrder: ["Absol", "Absol-Mega", "Absol-Mega-Z"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     absolmega: {
         num: 359,
@@ -7480,7 +7480,7 @@
         eggGroups: ["Field"],
         requiredItem: "Absolite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     absolmegaz: {
         num: 359,
@@ -7512,7 +7512,7 @@
         eggGroups: ["Undiscovered"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     snorunt: {
         num: 361,
@@ -7557,7 +7557,7 @@
         eggGroups: ["Fairy", "Mineral"],
         requiredItem: "Glalitite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     spheal: {
         num: 363,
@@ -7571,7 +7571,7 @@
         evos: ["Sealeo"],
         eggGroups: ["Water 1", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sealeo: {
         num: 364,
@@ -7587,7 +7587,7 @@
         evos: ["Walrein"],
         eggGroups: ["Water 1", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     walrein: {
         num: 365,
@@ -7602,7 +7602,7 @@
         evoLevel: 44,
         eggGroups: ["Water 1", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     clamperl: {
         num: 366,
@@ -7616,7 +7616,7 @@
         evos: ["Huntail", "Gorebyss"],
         eggGroups: ["Water 1"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     huntail: {
         num: 367,
@@ -7632,7 +7632,7 @@
         evoItem: "Deep Sea Tooth",
         eggGroups: ["Water 1"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     gorebyss: {
         num: 368,
@@ -7648,7 +7648,7 @@
         evoItem: "Deep Sea Scale",
         eggGroups: ["Water 1"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     relicanth: {
         num: 369,
@@ -7662,7 +7662,7 @@
         color: "Gray",
         eggGroups: ["Water 1", "Water 2"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     luvdisc: {
         num: 370,
@@ -7735,7 +7735,7 @@
         eggGroups: ["Dragon"],
         requiredItem: "Salamencite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     beldum: {
         num: 374,
@@ -7799,7 +7799,7 @@
         eggGroups: ["Mineral"],
         requiredItem: "Metagrossite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     regirock: {
         num: 377,
@@ -7874,7 +7874,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Latiasite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     latios: {
         num: 381,
@@ -7907,7 +7907,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Latiosite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kyogre: {
         num: 382,
@@ -7940,7 +7940,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Blue Orb",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     groudon: {
         num: 383,
@@ -7973,7 +7973,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Red Orb",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rayquaza: {
         num: 384,
@@ -8006,7 +8006,7 @@
         eggGroups: ["Undiscovered"],
         requiredMove: "Dragon Ascent",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     jirachi: {
         num: 385,
@@ -8295,7 +8295,7 @@
         evos: ["Bibarel"],
         eggGroups: ["Water 1", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     bibarel: {
         num: 400,
@@ -8310,7 +8310,7 @@
         evoLevel: 15,
         eggGroups: ["Water 1", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kricketot: {
         num: 401,
@@ -8394,7 +8394,7 @@
         eggGroups: ["Undiscovered"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     roserade: {
         num: 407,
@@ -8410,7 +8410,7 @@
         evoItem: "Shiny Stone",
         eggGroups: ["Fairy", "Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cranidos: {
         num: 408,
@@ -8485,7 +8485,7 @@
         cosmeticFormes: ["Burmy-Sandy", "Burmy-Trash"],
         formeOrder: ["Burmy", "Burmy-Sandy", "Burmy-Trash"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     burmysandy: {
         isCosmeticForme: true,
@@ -8518,7 +8518,7 @@
         otherFormes: ["Wormadam-Sandy", "Wormadam-Trash"],
         formeOrder: ["Wormadam", "Wormadam-Sandy", "Wormadam-Trash"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wormadamsandy: {
         num: 413,
@@ -8536,7 +8536,7 @@
         evoLevel: 20,
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wormadamtrash: {
         num: 413,
@@ -8554,7 +8554,7 @@
         evoLevel: 20,
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mothim: {
         num: 414,
@@ -8570,7 +8570,7 @@
         evoLevel: 20,
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     combee: {
         num: 415,
@@ -8652,7 +8652,7 @@
         evos: ["Cherrim"],
         eggGroups: ["Fairy", "Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cherrim: {
         num: 421,
@@ -8670,7 +8670,7 @@
         otherFormes: ["Cherrim-Sunshine"],
         formeOrder: ["Cherrim", "Cherrim-Sunshine"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cherrimsunshine: {
         num: 421,
@@ -8686,7 +8686,7 @@
         eggGroups: ["Fairy", "Grass"],
         requiredAbility: "Flower Gift",
         battleOnly: "Cherrim",
-        isNonstandard: "Past"
+
     },
     shellos: {
         num: 422,
@@ -8789,7 +8789,7 @@
         evos: ["Lopunny"],
         eggGroups: ["Field", "Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lopunny: {
         num: 428,
@@ -8806,7 +8806,7 @@
         otherFormes: ["Lopunny-Mega"],
         formeOrder: ["Lopunny", "Lopunny-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lopunnymega: {
         num: 428,
@@ -8822,7 +8822,7 @@
         eggGroups: ["Field", "Human-Like"],
         requiredItem: "Lopunnite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mismagius: {
         num: 429,
@@ -8867,7 +8867,7 @@
         evos: ["Purugly"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     purugly: {
         num: 432,
@@ -8883,7 +8883,7 @@
         evoLevel: 38,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     chingling: {
         num: 433,
@@ -8982,7 +8982,7 @@
         eggGroups: ["Undiscovered"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     happiny: {
         num: 440,
@@ -9010,7 +9010,7 @@
         color: "Black",
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     spiritomb: {
         num: 442,
@@ -9082,7 +9082,7 @@
         eggGroups: ["Monster", "Dragon"],
         requiredItem: "Garchompite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     garchompmegaz: {
         num: 445,
@@ -9164,7 +9164,7 @@
         eggGroups: ["Field", "Human-Like"],
         requiredItem: "Lucarionite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lucariomegaz: {
         num: 448,
@@ -9223,7 +9223,7 @@
         evos: ["Drapion"],
         eggGroups: ["Bug", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     drapion: {
         num: 452,
@@ -9238,7 +9238,7 @@
         evoLevel: 40,
         eggGroups: ["Bug", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     croagunk: {
         num: 453,
@@ -9278,7 +9278,7 @@
         color: "Green",
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     finneon: {
         num: 456,
@@ -9320,7 +9320,7 @@
         eggGroups: ["Undiscovered"],
         canHatch: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     snover: {
         num: 459,
@@ -9365,7 +9365,7 @@
         eggGroups: ["Monster", "Grass"],
         requiredItem: "Abomasite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     weavile: {
         num: 461,
@@ -9413,7 +9413,7 @@
         evoMove: "Rollout",
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rhyperior: {
         num: 464,
@@ -9444,7 +9444,7 @@
         evoMove: "Ancient Power",
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     electivire: {
         num: 466,
@@ -9493,7 +9493,7 @@
         evoItem: "Shiny Stone",
         eggGroups: ["Flying", "Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     yanmega: {
         num: 469,
@@ -9622,7 +9622,7 @@
         eggGroups: ["Amorphous"],
         requiredItem: "Galladite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     probopass: {
         num: 476,
@@ -10426,7 +10426,7 @@
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     snivy: {
         num: 495,
@@ -10614,7 +10614,7 @@
         evos: ["Watchog"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     watchog: {
         num: 505,
@@ -10629,7 +10629,7 @@
         evoLevel: 20,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     lillipup: {
         num: 506,
@@ -10643,7 +10643,7 @@
         evos: ["Herdier"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     herdier: {
         num: 507,
@@ -10659,7 +10659,7 @@
         evos: ["Stoutland"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     stoutland: {
         num: 508,
@@ -10674,7 +10674,7 @@
         evoLevel: 32,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     purrloin: {
         num: 509,
@@ -10688,7 +10688,7 @@
         evos: ["Liepard"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     liepard: {
         num: 510,
@@ -10703,7 +10703,7 @@
         evoLevel: 20,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pansage: {
         num: 511,
@@ -10718,7 +10718,7 @@
         evos: ["Simisage"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     simisage: {
         num: 512,
@@ -10735,7 +10735,7 @@
         evoItem: "Leaf Stone",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pansear: {
         num: 513,
@@ -10750,7 +10750,7 @@
         evos: ["Simisear"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     simisear: {
         num: 514,
@@ -10767,7 +10767,7 @@
         evoItem: "Fire Stone",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     panpour: {
         num: 515,
@@ -10782,7 +10782,7 @@
         evos: ["Simipour"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     simipour: {
         num: 516,
@@ -10799,7 +10799,7 @@
         evoItem: "Water Stone",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     munna: {
         num: 517,
@@ -10813,7 +10813,7 @@
         evos: ["Musharna"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     musharna: {
         num: 518,
@@ -10829,7 +10829,7 @@
         evoItem: "Moon Stone",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pidove: {
         num: 519,
@@ -10843,7 +10843,7 @@
         evos: ["Tranquill"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tranquill: {
         num: 520,
@@ -10859,7 +10859,7 @@
         evos: ["Unfezant"],
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     unfezant: {
         num: 521,
@@ -10874,7 +10874,7 @@
         evoLevel: 32,
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     blitzle: {
         num: 522,
@@ -10915,7 +10915,7 @@
         evos: ["Boldore"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     boldore: {
         num: 525,
@@ -10931,7 +10931,7 @@
         evos: ["Gigalith"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     gigalith: {
         num: 526,
@@ -10946,7 +10946,7 @@
         evoType: "trade",
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     woobat: {
         num: 527,
@@ -10960,7 +10960,7 @@
         evos: ["Swoobat"],
         eggGroups: ["Flying", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     swoobat: {
         num: 528,
@@ -10975,7 +10975,7 @@
         evoType: "levelFriendship",
         eggGroups: ["Flying", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     drilbur: {
         num: 529,
@@ -11036,7 +11036,7 @@
         otherFormes: ["Audino-Mega"],
         formeOrder: ["Audino", "Audino-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     audinomega: {
         num: 531,
@@ -11052,7 +11052,7 @@
         eggGroups: ["Fairy"],
         requiredItem: "Audinite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     timburr: {
         num: 532,
@@ -11111,7 +11111,7 @@
         evos: ["Palpitoad"],
         eggGroups: ["Water 1"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     palpitoad: {
         num: 536,
@@ -11127,7 +11127,7 @@
         evos: ["Seismitoad"],
         eggGroups: ["Water 1"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     seismitoad: {
         num: 537,
@@ -11142,7 +11142,7 @@
         evoLevel: 36,
         eggGroups: ["Water 1"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     throh: {
         num: 538,
@@ -11156,7 +11156,7 @@
         color: "Red",
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sawk: {
         num: 539,
@@ -11170,7 +11170,7 @@
         color: "Blue",
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sewaddle: {
         num: 540,
@@ -11226,7 +11226,7 @@
         evos: ["Whirlipede"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     whirlipede: {
         num: 544,
@@ -11242,7 +11242,7 @@
         evos: ["Scolipede"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     scolipede: {
         num: 545,
@@ -11259,7 +11259,7 @@
         otherFormes: ["Scolipede-Mega"],
         formeOrder: ["Scolipede", "Scolipede-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     scolipedemega: {
         num: 545,
@@ -11455,7 +11455,7 @@
         otherFormes: ["Darumaka-Galar"],
         formeOrder: ["Darumaka", "Darumaka-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     darumakagalar: {
         num: 554,
@@ -11471,7 +11471,7 @@
         evos: ["Darmanitan-Galar"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     darmanitan: {
         num: 555,
@@ -11489,7 +11489,7 @@
         otherFormes: ["Darmanitan-Zen", "Darmanitan-Galar", "Darmanitan-Galar-Zen"],
         formeOrder: ["Darmanitan", "Darmanitan-Zen", "Darmanitan-Galar", "Darmanitan-Galar-Zen"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     darmanitanzen: {
         num: 555,
@@ -11505,7 +11505,7 @@
         eggGroups: ["Field"],
         requiredAbility: "Zen Mode",
         battleOnly: "Darmanitan",
-        isNonstandard: "Past"
+
     },
     darmanitangalar: {
         num: 555,
@@ -11523,7 +11523,7 @@
         evoItem: "Ice Stone",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     darmanitangalarzen: {
         num: 555,
@@ -11539,7 +11539,7 @@
         eggGroups: ["Field"],
         requiredAbility: "Zen Mode",
         battleOnly: "Darmanitan-Galar",
-        isNonstandard: "Past"
+
     },
     maractus: {
         num: 556,
@@ -11552,7 +11552,7 @@
         color: "Green",
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     dwebble: {
         num: 557,
@@ -11566,7 +11566,7 @@
         evos: ["Crustle"],
         eggGroups: ["Bug", "Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     crustle: {
         num: 558,
@@ -11581,7 +11581,7 @@
         evoLevel: 34,
         eggGroups: ["Bug", "Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     scraggy: {
         num: 559,
@@ -11640,7 +11640,7 @@
         color: "Black",
         eggGroups: ["Flying"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     yamask: {
         num: 562,
@@ -11656,7 +11656,7 @@
         otherFormes: ["Yamask-Galar"],
         formeOrder: ["Yamask", "Yamask-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     yamaskgalar: {
         num: 562,
@@ -11672,7 +11672,7 @@
         evos: ["Runerigus"],
         eggGroups: ["Mineral", "Amorphous"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cofagrigus: {
         num: 563,
@@ -11687,7 +11687,7 @@
         evoLevel: 34,
         eggGroups: ["Mineral", "Amorphous"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tirtouga: {
         num: 564,
@@ -11702,7 +11702,7 @@
         evos: ["Carracosta"],
         eggGroups: ["Water 1", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     carracosta: {
         num: 565,
@@ -11718,7 +11718,7 @@
         evoLevel: 37,
         eggGroups: ["Water 1", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     archen: {
         num: 566,
@@ -11733,7 +11733,7 @@
         evos: ["Archeops"],
         eggGroups: ["Flying", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     archeops: {
         num: 567,
@@ -11749,7 +11749,7 @@
         evoLevel: 37,
         eggGroups: ["Flying", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     trubbish: {
         num: 568,
@@ -11763,7 +11763,7 @@
         evos: ["Garbodor"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     garbodor: {
         num: 569,
@@ -11779,7 +11779,7 @@
         eggGroups: ["Mineral"],
         canGigantamax: "G-Max Malodor",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     garbodorgmax: {
         num: 569,
@@ -11796,7 +11796,7 @@
         changesFrom: "Garbodor",
         placeholderFor: "Garbodor",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zorua: {
         num: 570,
@@ -12020,7 +12020,7 @@
         evos: ["Vanillish"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     vanillish: {
         num: 583,
@@ -12036,7 +12036,7 @@
         evos: ["Vanilluxe"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     vanilluxe: {
         num: 584,
@@ -12051,7 +12051,7 @@
         evoLevel: 47,
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     deerling: {
         num: 585,
@@ -12118,7 +12118,7 @@
         color: "White",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     karrablast: {
         num: 588,
@@ -12132,7 +12132,7 @@
         evos: ["Escavalier"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     escavalier: {
         num: 589,
@@ -12148,7 +12148,7 @@
         evoCondition: "with a Shelmet",
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     foongus: {
         num: 590,
@@ -12189,7 +12189,7 @@
         evos: ["Jellicent"],
         eggGroups: ["Amorphous"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     jellicent: {
         num: 593,
@@ -12204,7 +12204,7 @@
         evoLevel: 40,
         eggGroups: ["Amorphous"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     alomomola: {
         num: 594,
@@ -12257,7 +12257,7 @@
         evos: ["Ferrothorn"],
         eggGroups: ["Grass", "Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     ferrothorn: {
         num: 598,
@@ -12272,7 +12272,7 @@
         evoLevel: 40,
         eggGroups: ["Grass", "Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     klink: {
         num: 599,
@@ -12287,7 +12287,7 @@
         evos: ["Klang"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     klang: {
         num: 600,
@@ -12304,7 +12304,7 @@
         evos: ["Klinklang"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     klinklang: {
         num: 601,
@@ -12320,7 +12320,7 @@
         evoLevel: 49,
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tynamo: {
         num: 602,
@@ -12396,7 +12396,7 @@
         evos: ["Beheeyem"],
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     beheeyem: {
         num: 606,
@@ -12411,7 +12411,7 @@
         evoLevel: 42,
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     litwick: {
         num: 607,
@@ -12569,7 +12569,7 @@
         evos: ["Accelgor"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     accelgor: {
         num: 617,
@@ -12585,7 +12585,7 @@
         evoCondition: "with a Karrablast",
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     stunfisk: {
         num: 618,
@@ -12600,7 +12600,7 @@
         otherFormes: ["Stunfisk-Galar"],
         formeOrder: ["Stunfisk", "Stunfisk-Galar"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     stunfiskgalar: {
         num: 618,
@@ -12615,7 +12615,7 @@
         color: "Green",
         eggGroups: ["Water 1", "Amorphous"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mienfoo: {
         num: 619,
@@ -12655,7 +12655,7 @@
         color: "Red",
         eggGroups: ["Monster", "Dragon"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     golett: {
         num: 622,
@@ -12745,7 +12745,7 @@
         color: "Brown",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rufflet: {
         num: 627,
@@ -12835,7 +12835,7 @@
         color: "Red",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     durant: {
         num: 632,
@@ -12848,7 +12848,7 @@
         color: "Gray",
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     deino: {
         num: 633,
@@ -13217,7 +13217,7 @@
         otherFormes: ["Genesect-Douse", "Genesect-Shock", "Genesect-Burn", "Genesect-Chill"],
         formeOrder: ["Genesect", "Genesect-Douse", "Genesect-Shock", "Genesect-Burn", "Genesect-Chill"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     genesectdouse: {
         num: 649,
@@ -13235,7 +13235,7 @@
         requiredItem: "Douse Drive",
         changesFrom: "Genesect",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     genesectshock: {
         num: 649,
@@ -13253,7 +13253,7 @@
         requiredItem: "Shock Drive",
         changesFrom: "Genesect",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     genesectburn: {
         num: 649,
@@ -13271,7 +13271,7 @@
         requiredItem: "Burn Drive",
         changesFrom: "Genesect",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     genesectchill: {
         num: 649,
@@ -13289,7 +13289,7 @@
         requiredItem: "Chill Drive",
         changesFrom: "Genesect",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     chespin: {
         num: 650,
@@ -13500,7 +13500,7 @@
         battleOnly: "Greninja-Bond",
         gen: 7,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     greninjamega: {
         num: 658,
@@ -13532,7 +13532,7 @@
         evos: ["Diggersby"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     diggersby: {
         num: 660,
@@ -13547,7 +13547,7 @@
         evoLevel: 20,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     fletchling: {
         num: 661,
@@ -13937,7 +13937,7 @@
         color: "White",
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     floettemega: {
         num: 670,
@@ -14016,7 +14016,7 @@
         evos: ["Pangoro"],
         eggGroups: ["Field", "Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pangoro: {
         num: 675,
@@ -14032,7 +14032,7 @@
         evoCondition: "with a Dark-type in the party",
         eggGroups: ["Field", "Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     furfrou: {
         num: 676,
@@ -14069,7 +14069,7 @@
             "Furfrou-Pharaoh"
         ],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     espurr: {
         num: 677,
@@ -14168,7 +14168,7 @@
         evos: ["Doublade"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     doublade: {
         num: 680,
@@ -14184,7 +14184,7 @@
         evos: ["Aegislash"],
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aegislash: {
         num: 681,
@@ -14203,7 +14203,7 @@
         otherFormes: ["Aegislash-Blade"],
         formeOrder: ["Aegislash", "Aegislash-Blade"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aegislashblade: {
         num: 681,
@@ -14219,7 +14219,7 @@
         eggGroups: ["Mineral"],
         requiredAbility: "Stance Change",
         battleOnly: "Aegislash",
-        isNonstandard: "Past"
+
     },
     spritzee: {
         num: 682,
@@ -14233,7 +14233,7 @@
         evos: ["Aromatisse"],
         eggGroups: ["Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aromatisse: {
         num: 683,
@@ -14249,7 +14249,7 @@
         evoItem: "Sachet",
         eggGroups: ["Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     swirlix: {
         num: 684,
@@ -14263,7 +14263,7 @@
         evos: ["Slurpuff"],
         eggGroups: ["Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     slurpuff: {
         num: 685,
@@ -14279,7 +14279,7 @@
         evoItem: "Whipped Dream",
         eggGroups: ["Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     inkay: {
         num: 686,
@@ -14340,7 +14340,7 @@
         evos: ["Barbaracle"],
         eggGroups: ["Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     barbaracle: {
         num: 689,
@@ -14357,7 +14357,7 @@
         otherFormes: ["Barbaracle-Mega"],
         formeOrder: ["Barbaracle", "Barbaracle-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     barbaraclemega: {
         num: 689,
@@ -14461,7 +14461,7 @@
         evos: ["Heliolisk"],
         eggGroups: ["Monster", "Dragon"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     heliolisk: {
         num: 695,
@@ -14477,7 +14477,7 @@
         evoItem: "Sun Stone",
         eggGroups: ["Monster", "Dragon"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tyrunt: {
         num: 696,
@@ -14492,7 +14492,7 @@
         evos: ["Tyrantrum"],
         eggGroups: ["Monster", "Dragon"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tyrantrum: {
         num: 697,
@@ -14509,7 +14509,7 @@
         evoCondition: "during the day",
         eggGroups: ["Monster", "Dragon"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     amaura: {
         num: 698,
@@ -14524,7 +14524,7 @@
         evos: ["Aurorus"],
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     aurorus: {
         num: 699,
@@ -14541,7 +14541,7 @@
         evoCondition: "at night",
         eggGroups: ["Monster"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sylveon: {
         num: 700,
@@ -14750,7 +14750,7 @@
         otherFormes: ["Pumpkaboo-Small", "Pumpkaboo-Large", "Pumpkaboo-Super"],
         formeOrder: ["Pumpkaboo", "Pumpkaboo-Small", "Pumpkaboo-Large", "Pumpkaboo-Super"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pumpkaboosmall: {
         num: 710,
@@ -14765,7 +14765,7 @@
         color: "Brown",
         evos: ["Gourgeist-Small"],
         eggGroups: ["Amorphous"],
-        isNonstandard: "Past"
+
     },
     pumpkaboolarge: {
         num: 710,
@@ -14780,7 +14780,7 @@
         color: "Brown",
         evos: ["Gourgeist-Large"],
         eggGroups: ["Amorphous"],
-        isNonstandard: "Past"
+
     },
     pumpkaboosuper: {
         num: 710,
@@ -14795,7 +14795,7 @@
         color: "Brown",
         evos: ["Gourgeist-Super"],
         eggGroups: ["Amorphous"],
-        isNonstandard: "Past"
+
     },
     gourgeist: {
         num: 711,
@@ -14813,7 +14813,7 @@
         otherFormes: ["Gourgeist-Small", "Gourgeist-Large", "Gourgeist-Super"],
         formeOrder: ["Gourgeist", "Gourgeist-Small", "Gourgeist-Large", "Gourgeist-Super"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     gourgeistsmall: {
         num: 711,
@@ -14829,7 +14829,7 @@
         prevo: "Pumpkaboo-Small",
         evoType: "trade",
         eggGroups: ["Amorphous"],
-        isNonstandard: "Past"
+
     },
     gourgeistlarge: {
         num: 711,
@@ -14845,7 +14845,7 @@
         prevo: "Pumpkaboo-Large",
         evoType: "trade",
         eggGroups: ["Amorphous"],
-        isNonstandard: "Past"
+
     },
     gourgeistsuper: {
         num: 711,
@@ -14861,7 +14861,7 @@
         prevo: "Pumpkaboo-Super",
         evoType: "trade",
         eggGroups: ["Amorphous"],
-        isNonstandard: "Past"
+
     },
     bergmite: {
         num: 712,
@@ -14951,7 +14951,7 @@
         otherFormes: ["Xerneas-Neutral"],
         formeOrder: ["Xerneas-Neutral", "Xerneas"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     xerneasneutral: {
         num: 716,
@@ -14982,7 +14982,7 @@
         tags: ["Restricted Legendary"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zygarde: {
         num: 718,
@@ -15007,7 +15007,7 @@
             "Zygarde-Mega"
         ],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zygarde10: {
         num: 718,
@@ -15025,7 +15025,7 @@
         changesFrom: "Zygarde",
         gen: 7,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zygardecomplete: {
         num: 718,
@@ -15044,7 +15044,7 @@
         battleOnly: ["Zygarde", "Zygarde-10%"],
         gen: 7,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zygardemega: {
         num: 718,
@@ -15096,7 +15096,7 @@
         eggGroups: ["Undiscovered"],
         requiredItem: "Diancite",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     hoopa: {
         num: 720,
@@ -15385,7 +15385,7 @@
         tags: ["True Past"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     grubbin: {
         num: 736,
@@ -15446,7 +15446,7 @@
         tags: ["True Past"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     crabrawler: {
         num: 739,
@@ -15602,7 +15602,7 @@
         tags: ["True Past"],
         eggGroups: ["Bug", "Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rockruff: {
         num: 744,
@@ -15701,7 +15701,7 @@
         otherFormes: ["Wishiwashi-School"],
         formeOrder: ["Wishiwashi", "Wishiwashi-School"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wishiwashischool: {
         num: 746,
@@ -15717,7 +15717,7 @@
         eggGroups: ["Water 2"],
         requiredAbility: "Schooling",
         battleOnly: "Wishiwashi",
-        isNonstandard: "Past"
+
     },
     mareanie: {
         num: 747,
@@ -15816,7 +15816,7 @@
         tags: ["True Past"],
         eggGroups: ["Water 1", "Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     fomantis: {
         num: 753,
@@ -15862,7 +15862,7 @@
         tags: ["True Past"],
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     morelull: {
         num: 755,
@@ -15876,7 +15876,7 @@
         evos: ["Shiinotic"],
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     shiinotic: {
         num: 756,
@@ -15891,7 +15891,7 @@
         evoLevel: 24,
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     salandit: {
         num: 757,
@@ -15939,7 +15939,7 @@
         color: "Black",
         eggGroups: ["Monster", "Dragon"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     stufful: {
         num: 759,
@@ -15953,7 +15953,7 @@
         evos: ["Bewear"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     bewear: {
         num: 760,
@@ -15968,7 +15968,7 @@
         evoLevel: 27,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     bounsweet: {
         num: 761,
@@ -16065,7 +16065,7 @@
         evos: ["Golisopod"],
         eggGroups: ["Bug", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     golisopod: {
         num: 768,
@@ -16082,7 +16082,7 @@
         otherFormes: ["Golisopod-Mega"],
         formeOrder: ["Golisopod", "Golisopod-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     golisopodmega: {
         num: 768,
@@ -16139,7 +16139,7 @@
         color: "Black",
         eggGroups: ["Water 1"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     typenull: {
         num: 772,
@@ -16155,7 +16155,7 @@
         evos: ["Silvally"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvally: {
         num: 773,
@@ -16212,7 +16212,7 @@
             "Silvally-Fairy"
         ],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallybug: {
         num: 773,
@@ -16230,7 +16230,7 @@
         requiredItem: "Bug Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallydark: {
         num: 773,
@@ -16248,7 +16248,7 @@
         requiredItem: "Dark Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallydragon: {
         num: 773,
@@ -16266,7 +16266,7 @@
         requiredItem: "Dragon Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyelectric: {
         num: 773,
@@ -16284,7 +16284,7 @@
         requiredItem: "Electric Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyfairy: {
         num: 773,
@@ -16302,7 +16302,7 @@
         requiredItem: "Fairy Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyfighting: {
         num: 773,
@@ -16320,7 +16320,7 @@
         requiredItem: "Fighting Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyfire: {
         num: 773,
@@ -16338,7 +16338,7 @@
         requiredItem: "Fire Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyflying: {
         num: 773,
@@ -16356,7 +16356,7 @@
         requiredItem: "Flying Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyghost: {
         num: 773,
@@ -16374,7 +16374,7 @@
         requiredItem: "Ghost Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallygrass: {
         num: 773,
@@ -16392,7 +16392,7 @@
         requiredItem: "Grass Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyground: {
         num: 773,
@@ -16410,7 +16410,7 @@
         requiredItem: "Ground Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyice: {
         num: 773,
@@ -16428,7 +16428,7 @@
         requiredItem: "Ice Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallypoison: {
         num: 773,
@@ -16446,7 +16446,7 @@
         requiredItem: "Poison Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallypsychic: {
         num: 773,
@@ -16464,7 +16464,7 @@
         requiredItem: "Psychic Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallyrock: {
         num: 773,
@@ -16482,7 +16482,7 @@
         requiredItem: "Rock Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallysteel: {
         num: 773,
@@ -16500,7 +16500,7 @@
         requiredItem: "Steel Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silvallywater: {
         num: 773,
@@ -16518,7 +16518,7 @@
         requiredItem: "Water Memory",
         changesFrom: "Silvally",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     minior: {
         num: 774,
@@ -16640,7 +16640,7 @@
         color: "Red",
         eggGroups: ["Monster", "Dragon"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     togedemaru: {
         num: 777,
@@ -16655,7 +16655,7 @@
         otherFormes: ["Togedemaru-Totem"],
         formeOrder: ["Togedemaru", "Togedemaru-Totem"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     togedemarutotem: {
         num: 777,
@@ -16671,7 +16671,7 @@
         tags: ["True Past"],
         eggGroups: ["Field", "Fairy"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mimikyu: {
         num: 778,
@@ -16717,7 +16717,7 @@
         tags: ["True Past"],
         eggGroups: ["Amorphous"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mimikyubustedtotem: {
         num: 778,
@@ -16734,7 +16734,7 @@
         requiredAbility: "Disguise",
         battleOnly: "Mimikyu-Totem",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     bruxish: {
         num: 779,
@@ -16761,7 +16761,7 @@
         otherFormes: ["Drampa-Mega"],
         formeOrder: ["Drampa", "Drampa-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     drampamega: {
         num: 780,
@@ -16792,7 +16792,7 @@
         color: "Green",
         eggGroups: ["Mineral"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     jangmoo: {
         num: 782,
@@ -16852,7 +16852,7 @@
         tags: ["True Past"],
         eggGroups: ["Dragon"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tapukoko: {
         num: 785,
@@ -16867,7 +16867,7 @@
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tapulele: {
         num: 786,
@@ -16882,7 +16882,7 @@
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tapubulu: {
         num: 787,
@@ -16897,7 +16897,7 @@
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     tapufini: {
         num: 788,
@@ -16912,7 +16912,7 @@
         tags: ["Sub-Legendary"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cosmog: {
         num: 789,
@@ -16991,7 +16991,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     buzzwole: {
         num: 794,
@@ -17006,7 +17006,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     pheromosa: {
         num: 795,
@@ -17021,7 +17021,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     xurkitree: {
         num: 796,
@@ -17036,7 +17036,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     celesteela: {
         num: 797,
@@ -17051,7 +17051,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kartana: {
         num: 798,
@@ -17066,7 +17066,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     guzzlord: {
         num: 799,
@@ -17081,7 +17081,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     necrozma: {
         num: 800,
@@ -17147,7 +17147,7 @@
         requiredItem: "Ultranecrozium Z",
         battleOnly: ["Necrozma-Dawn-Wings", "Necrozma-Dusk-Mane"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     magearna: {
         num: 801,
@@ -17229,7 +17229,7 @@
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     poipole: {
         num: 803,
@@ -17245,7 +17245,7 @@
         evos: ["Naganadel"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     naganadel: {
         num: 804,
@@ -17263,7 +17263,7 @@
         evoMove: "Dragon Pulse",
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     stakataka: {
         num: 805,
@@ -17278,7 +17278,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     blacephalon: {
         num: 806,
@@ -17293,7 +17293,7 @@
         tags: ["Ultra Beast"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zeraora: {
         num: 807,
@@ -17310,7 +17310,7 @@
         otherFormes: ["Zeraora-Mega"],
         formeOrder: ["Zeraora", "Zeraora-Mega"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zeraoramega: {
         num: 807,
@@ -17344,7 +17344,7 @@
         tags: ["Mythical"],
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     melmetal: {
         num: 809,
@@ -17360,7 +17360,7 @@
         eggGroups: ["Undiscovered"],
         canGigantamax: "G-Max Meltdown",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     melmetalgmax: {
         num: 809,
@@ -17378,7 +17378,7 @@
         changesFrom: "Melmetal",
         placeholderFor: "Melmetal",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     grookey: {
         num: 810,
@@ -17442,7 +17442,7 @@
         changesFrom: "Rillaboom",
         placeholderFor: "Rillaboom",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     scorbunny: {
         num: 813,
@@ -17506,7 +17506,7 @@
         changesFrom: "Cinderace",
         placeholderFor: "Cinderace",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sobble: {
         num: 816,
@@ -17570,7 +17570,7 @@
         changesFrom: "Inteleon",
         placeholderFor: "Inteleon",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     skwovet: {
         num: 819,
@@ -17657,7 +17657,7 @@
         changesFrom: "Corviknight",
         placeholderFor: "Corviknight",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     blipbug: {
         num: 824,
@@ -17671,7 +17671,7 @@
         evos: ["Dottler"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     dottler: {
         num: 825,
@@ -17687,7 +17687,7 @@
         evos: ["Orbeetle"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     orbeetle: {
         num: 826,
@@ -17703,7 +17703,7 @@
         eggGroups: ["Bug"],
         canGigantamax: "G-Max Gravitas",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     orbeetlegmax: {
         num: 826,
@@ -17720,7 +17720,7 @@
         changesFrom: "Orbeetle",
         placeholderFor: "Orbeetle",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     nickit: {
         num: 827,
@@ -17734,7 +17734,7 @@
         evos: ["Thievul"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     thievul: {
         num: 828,
@@ -17749,7 +17749,7 @@
         evoLevel: 18,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     gossifleur: {
         num: 829,
@@ -17763,7 +17763,7 @@
         evos: ["Eldegoss"],
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     eldegoss: {
         num: 830,
@@ -17778,7 +17778,7 @@
         evoLevel: 20,
         eggGroups: ["Grass"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     wooloo: {
         num: 831,
@@ -17792,7 +17792,7 @@
         evos: ["Dubwool"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     dubwool: {
         num: 832,
@@ -17807,7 +17807,7 @@
         evoLevel: 24,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     chewtle: {
         num: 833,
@@ -17852,7 +17852,7 @@
         changesFrom: "Drednaw",
         placeholderFor: "Drednaw",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     yamper: {
         num: 835,
@@ -17866,7 +17866,7 @@
         evos: ["Boltund"],
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     boltund: {
         num: 836,
@@ -17881,7 +17881,7 @@
         evoLevel: 25,
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     rolycoly: {
         num: 837,
@@ -17941,7 +17941,7 @@
         changesFrom: "Coalossal",
         placeholderFor: "Coalossal",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     applin: {
         num: 840,
@@ -17987,7 +17987,7 @@
         changesFrom: "Flapple",
         placeholderFor: "Flapple",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     appletun: {
         num: 842,
@@ -18020,7 +18020,7 @@
         changesFrom: "Appletun",
         placeholderFor: "Appletun",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     silicobra: {
         num: 843,
@@ -18065,7 +18065,7 @@
         changesFrom: "Sandaconda",
         placeholderFor: "Sandaconda",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     cramorant: {
         num: 845,
@@ -18201,7 +18201,7 @@
         changesFrom: "Toxtricity",
         placeholderFor: "Toxtricity",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     toxtricitylowkeygmax: {
         num: 849,
@@ -18219,7 +18219,7 @@
         changesFrom: "Toxtricity-Low-Key",
         placeholderFor: "Toxtricity-Low-Key",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sizzlipede: {
         num: 850,
@@ -18233,7 +18233,7 @@
         evos: ["Centiskorch"],
         eggGroups: ["Bug"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     centiskorch: {
         num: 851,
@@ -18249,7 +18249,7 @@
         eggGroups: ["Bug"],
         canGigantamax: "G-Max Centiferno",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     centiskorchgmax: {
         num: 851,
@@ -18266,7 +18266,7 @@
         changesFrom: "Centiskorch",
         placeholderFor: "Centiskorch",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     clobbopus: {
         num: 852,
@@ -18280,7 +18280,7 @@
         evos: ["Grapploct"],
         eggGroups: ["Water 1", "Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     grapploct: {
         num: 853,
@@ -18296,7 +18296,7 @@
         evoMove: "Taunt",
         eggGroups: ["Water 1", "Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sinistea: {
         num: 854,
@@ -18428,7 +18428,7 @@
         changesFrom: "Hatterene",
         placeholderFor: "Hatterene",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     impidimp: {
         num: 859,
@@ -18492,7 +18492,7 @@
         changesFrom: "Grimmsnarl",
         placeholderFor: "Grimmsnarl",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     obstagoon: {
         num: 862,
@@ -18508,7 +18508,7 @@
         evoCondition: "at night",
         eggGroups: ["Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     perrserker: {
         num: 863,
@@ -18538,7 +18538,7 @@
         evoLevel: 38,
         eggGroups: ["Water 1", "Water 3"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     sirfetchd: {
         num: 865,
@@ -18554,7 +18554,7 @@
         evoCondition: "Land 3 critical hits in 1 battle",
         eggGroups: ["Flying", "Field"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     mrrime: {
         num: 866,
@@ -18569,7 +18569,7 @@
         evoLevel: 42,
         eggGroups: ["Human-Like"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     runerigus: {
         num: 867,
@@ -18585,7 +18585,7 @@
         evoCondition: "Have 49+ HP lost and walk under stone sculpture in Dusty Bowl",
         eggGroups: ["Mineral", "Amorphous"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     milcery: {
         num: 868,
@@ -18705,7 +18705,7 @@
         changesFrom: "Alcremie",
         placeholderFor: "Alcremie",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     falinks: {
         num: 870,
@@ -18927,7 +18927,7 @@
         changesFrom: "Copperajah",
         placeholderFor: "Copperajah",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     dracozolt: {
         num: 880,
@@ -18941,7 +18941,7 @@
         color: "Green",
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     arctozolt: {
         num: 881,
@@ -18955,7 +18955,7 @@
         color: "Blue",
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     dracovish: {
         num: 882,
@@ -18969,7 +18969,7 @@
         color: "Green",
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     arctovish: {
         num: 883,
@@ -18983,7 +18983,7 @@
         color: "Blue",
         eggGroups: ["Undiscovered"],
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     duraludon: {
         num: 884,
@@ -19014,7 +19014,7 @@
         changesFrom: "Duraludon",
         placeholderFor: "Duraludon",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     dreepy: {
         num: 885,
@@ -19163,7 +19163,7 @@
         eggGroups: ["Undiscovered"],
         cannotDynamax: true,
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     kubfu: {
         num: 891,
@@ -19236,7 +19236,7 @@
         changesFrom: "Urshifu",
         placeholderFor: "Urshifu",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     urshifurapidstrikegmax: {
         num: 892,
@@ -19255,7 +19255,7 @@
         changesFrom: "Urshifu-Rapid-Strike",
         placeholderFor: "Urshifu-Rapid-Strike",
         tier: "Illegal",
-        isNonstandard: "Past"
+
     },
     zarude: {
         num: 893,

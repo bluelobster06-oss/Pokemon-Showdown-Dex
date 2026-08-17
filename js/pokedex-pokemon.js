@@ -252,18 +252,10 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         buf += '<ul class="utilichart nokbd">';
         buf += '<li class="resultheader"><h3>Level-up</h3></li>';
 
-        var learnset = BattleLearnsets[id] && BattleLearnsets[id].learnset;
-        if (!learnset && BattleLearnsets[toID(pokemon.baseSpecies)]) {
-            learnset = BattleLearnsets[toID(pokemon.baseSpecies)].learnset;
-        }
+        var learnset = this.getLearnset(pokemon);
 
-        /** The most recent generation this pokemon has appeared in */
+        /** ROM-hack learnsets are authored for the current generation. */
         var mostRecentGen = Dex.gen;
-        var pastGenPoke = pokemon;
-        for (; mostRecentGen > 7; mostRecentGen--) {
-            if (pastGenPoke.isNonstandard !== 'Past') break;
-            pastGenPoke = Dex.forGen(mostRecentGen - 1).species.get(pastGenPoke.id);
-        }
         var moves = [];
         for (var moveid in learnset) {
             var sources = learnset[moveid];
@@ -355,23 +347,14 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
     },
     renderFullLearnset: function () {
         var pokemon = Dex.species.get(this.id);
-        var learnset = BattleLearnsets[this.id] && BattleLearnsets[this.id].learnset;
-        if (!learnset) learnset = BattleLearnsets[toID(pokemon.baseSpecies)].learnset;
-        if (pokemon.changesFrom) {
-            learnset = $.extend({}, learnset, BattleLearnsets[toID(pokemon.changesFrom)].learnset);
-        }
+        var learnset = this.getLearnset(pokemon);
 
         // learnset
         var buf = '';
         var moves = [];
         var shownMoves = {};
-        /** The most recent generation this pokemon has appeared in */
+        /** ROM-hack learnsets are authored for the current generation. */
         var mostRecentGen = Dex.gen;
-        var pastGenPoke = pokemon;
-        for (; mostRecentGen > 7; mostRecentGen--) {
-            if (pastGenPoke.isNonstandard !== 'Past') break;
-            pastGenPoke = Dex.forGen(mostRecentGen - 1).species.get(pastGenPoke.id);
-        }
         mostRecentGen = '' + mostRecentGen;
         for (var moveid in learnset) {
             var sources = learnset[moveid];
@@ -519,23 +502,49 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         }
         this.$('.utilichart').html(buf);
     },
+    getLearnset: function (pokemon) {
+        var baseID = toID(pokemon.baseSpecies);
+        // Mega forms use their regular form's learnset exactly. This excludes
+        // Gmax forms, which have a different forme name.
+        if (pokemon.forme && pokemon.forme.substr(0, 4) === 'Mega' && BattleLearnsets[baseID]) {
+            return BattleLearnsets[baseID].learnset || {};
+        }
+        var learnset = BattleLearnsets[this.id] && BattleLearnsets[this.id].learnset;
+        if (!learnset && BattleLearnsets[baseID]) learnset = BattleLearnsets[baseID].learnset;
+        if (pokemon.changesFrom && BattleLearnsets[toID(pokemon.changesFrom)]) {
+            learnset = $.extend({}, learnset, BattleLearnsets[toID(pokemon.changesFrom)].learnset);
+        }
+        return learnset || {};
+    },
     renderEncounters: function () {
         this.$('.tabbar button').removeClass('cur');
         this.$('.pokemon-encounters').addClass('cur');
         var locations = {};
+        var encounterSpecies = [{id: this.id, from: ''}];
+        var prevo = Dex.species.get(this.id);
+        while (prevo.prevo) {
+            prevo = Dex.species.get(prevo.prevo);
+            encounterSpecies.push({id: prevo.id, from: prevo.name});
+        }
         if (window.PokedexLocations) {
             for (var locationID in PokedexLocations) {
                 var location = PokedexLocations[locationID];
                 for (var i = 0; i < location.encounters.length; i++) {
-                    if (toID(location.encounters[i].pokemon) === this.id) {
-                        locations[locationID] = location.name;
-                        break;
+                    var encounterID = toID(location.encounters[i].pokemon);
+                    for (var j = 0; j < encounterSpecies.length; j++) {
+                        if (encounterID !== encounterSpecies[j].id) continue;
+                        if (!locations[locationID]) locations[locationID] = {name: location.name, direct: false, prevoNames: []};
+                        if (!encounterSpecies[j].from) {
+                            locations[locationID].direct = true;
+                        } else if (locations[locationID].prevoNames.indexOf(encounterSpecies[j].from) < 0) {
+                            locations[locationID].prevoNames.push(encounterSpecies[j].from);
+                        }
                     }
                 }
             }
         }
         var locationIDs = Object.keys(locations).sort(function (a, b) {
-            return locations[a].localeCompare(locations[b]);
+            return locations[a].name.localeCompare(locations[b].name);
         });
         var buf = '<li class="resultheader"><h3>Encounters</h3></li>';
         if (!locationIDs.length) {
@@ -543,7 +552,14 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         } else {
             for (var j = 0; j < locationIDs.length; j++) {
                 var id = locationIDs[j];
-                buf += '<li><a href="/locations/' + id + '" data-target="push">' + Dex.escapeHTML(locations[id]) + '</a></li>';
+                var locationEntry = locations[id];
+                var label = locationEntry.name;
+                if (!locationEntry.direct && locationEntry.prevoNames.length) {
+                    label += ' &ndash; from ' + locationEntry.prevoNames.map(function (name) {
+                        return Dex.escapeHTML(name);
+                    }).join(' / ');
+                }
+                buf += '<li><a href="/locations/' + id + '" data-target="push">' + label + '</a></li>';
             }
         }
         this.$('.utilichart').html(buf);
