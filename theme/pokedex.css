@@ -432,12 +432,15 @@ table.evos .arrow abbr {
 	text-align: center;
 }
 .location-encounters .location-encounter {
-	display: block;
+	display: flex;
+	align-items: center;
+	min-height: 38px;
 	border-bottom: 1px solid #ddd;
 }
 .location-encounters .encounter-pokemon {
 	box-sizing: border-box;
-	width: 100%;
+	flex: 1 1 auto;
+	min-width: 0;
 	padding: 3px 6px;
 }
 .location-encounters .encounter-pokemon > a {
@@ -445,14 +448,8 @@ table.evos .arrow abbr {
 	min-height: 27px;
 	box-sizing: border-box;
 }
-.location-encounters .encounter-details {
-	display: flex;
-	align-items: center;
-	width: 372px;
-	min-height: 26px;
-	margin: 0 0 3px auto;
-}
-.location-pokemon-fallback {
+
+.location-pokemon-button {
 	display: block;
 	padding: 5px 8px;
 	border: 1px solid #ccc;
@@ -471,8 +468,200 @@ table.evos .arrow abbr {
 	.location-sort-label, .encounter-sort-spacer { display: none; }
 	.table-cycle, .time-cycle, .location-level-label { display: none; }
 	.location-encounters .location-encounter { padding: 5px 0; }
-	.location-encounters .encounter-details { width: auto; }
 	.encounter-table, .encounter-time { display: none; }
+}
+
+/* Dark mode */
+html.dark-mode,
+html.dark-mode body {
+	background: #121820;
+	color: #e7edf4;
+}
+.dark-mode .pfx-topbar {
+	background: #202c39;
+	border-color: #52677d;
+	text-shadow: none;
+}
+.dark-mode .pfx-panel {
+	background: #17212b;
+	border-color: #52677d;
+	box-shadow: inset 2px 2px 2px rgba(0,0,0,.35);
+}
+.dark-mode .pfx-body,
+.dark-mode .dexentry h1,
+.dark-mode .dexentry h2,
+.dark-mode .dexentry h3,
+.dark-mode .pokedex h1 a {
+	color: #edf3f9;
+}
+.dark-mode a { color: #91c6ff; }
+.dark-mode .button {
+	color: #edf3f9;
+	border-color: #5b7085;
+	background: #2c3b4b;
+	background: linear-gradient(#3b4d60, #263544);
+	box-shadow: 0 1px 2px rgba(0,0,0,.35), inset 0 -1px 2px rgba(255,255,255,.08);
+	text-shadow: none;
+}
+.dark-mode .button:hover {
+	color: #fff;
+	border-color: #86a6c4;
+	background: #41566b;
+}
+.dark-mode .button.cur,
+.dark-mode .button.cur:hover,
+.dark-mode .button:disabled,
+.dark-mode .button:disabled:hover {
+	color: #b8c4d0;
+	background: #17212b;
+}
+.dark-mode .tabbar:after {
+	background: #17212b;
+	border-color: #52677d;
+}
+.dark-mode .textbox,
+.dark-mode input,
+.dark-mode select {
+	background: #111922;
+	border-color: #5b7085;
+	color: #edf3f9;
+}
+.dark-mode .utilichart a.active,
+.dark-mode .utilichart a.active:hover,
+.dark-mode .utilichart.nokbd a:hover {
+	border-color: #52677d;
+	background: #263544;
+}
+.dark-mode .utilichart a.sel,
+.dark-mode .utilichart a.sel:hover,
+.dark-mode .utilichart a.cur,
+.dark-mode .utilichart a.cur:hover {
+	border-color: #6e849a;
+	background: #334657;
+}
+.dark-mode .utilichart .notfound em,
+.dark-mode .dexentry h1 code,
+.dark-mode .dexentry .tier,
+.dark-mode .dexentry .minor {
+	color: #b7c4d0;
+}
+.dark-mode .pfx-backbutton,
+.dark-mode .location-list a,
+.dark-mode .location-pokemon-button {
+	background: #263544;
+	border-color: #5b7085;
+	color: #edf3f9;
+}
+.dark-mode .location-encounters .location-header,
+.dark-mode .location-sort-label {
+	background: #2c3b4b;
+	color: #edf3f9;
+}
+.dark-mode .location-encounters .location-header h3 {
+	background: #2a4054;
+	border-color: #5b7085;
+	color: #fff;
+}
+.dark-mode .location-encounters .location-cycle,
+.dark-mode .location-level-label {
+	background: #2c3b4b;
+	color: #edf3f9;
+}
+.dark-mode .location-encounters .location-cycle:hover { background: #41566b; }
+.dark-mode .location-encounters .location-encounter { border-color: #344758; }
+.dark-mode .location-marker-icon { filter: brightness(1.12); }
+.dark-mode .pfx-go-left,
+.dark-mode .pfx-go-right {
+	background-color: #17212b;
+	border-color: #52677d;
+}
+.dark-mode .pfx-go-left:hover,
+.dark-mode .pfx-go-right:hover { background-color: #263544; }
+.dark-mode .pfx-go-left:active,
+.dark-mode .pfx-go-right:active { background-color: #334657; }
+
+.dark-mode,
+.dark-mode * {
+	scrollbar-color: #5b7085 #17212b;
+}
+.dark-mode ::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+.dark-mode ::-webkit-scrollbar-track { background: #17212b; }
+.dark-mode ::-webkit-scrollbar-thumb {
+	background: #5b7085;
+	border: 2px solid #17212b;
+	border-radius: 8px;
+}
+.dark-mode ::-webkit-scrollbar-thumb:hover { background: #718ba5; }
+
+/* Search result lists are styled by the hosted utilichart stylesheet. */
+.dark-mode .utilichart,
+.dark-mode .utilichart li,
+.dark-mode .utilichart a,
+.dark-mode .utilichart .pokemonname,
+.dark-mode .utilichart .movename,
+.dark-mode .utilichart .itemname,
+.dark-mode .utilichart .abilityname,
+.dark-mode .utilichart .col {
+	color: #edf3f9;
+}
+.dark-mode .utilichart small,
+.dark-mode .utilichart .label,
+.dark-mode .utilichart .minor {
+	color: #b7c4d0;
+}
+.dark-mode .utilichart .resultheader,
+.dark-mode .utilichart .sortrow {
+	background: #2a4054;
+	border-color: #5b7085;
+	color: #fff;
+}
+.dark-mode .utilichart .resultheader h3 {
+	background: #d9e6f2;
+	color: #17212b;
+}
+.dark-mode .utilichart .sortrow,
+.dark-mode .utilichart .sortcol { color: #fff; }
+.dark-mode .utilichart .sortcol:hover { background: #41566b; }
+.dark-mode .utilichart .result {
+	border-color: #344758;
+}
+
+.romhack-changes {
+	clear: both;
+	margin: 10px 6px 0;
+	border: 1px solid #a7b1ba;
+	background: #f8f8f8;
+}
+.romhack-changes h3 {
+	margin: 0;
+	padding: 4px 8px;
+	background: #d9e6f2;
+	color: #17212b;
+	font-size: 10pt;
+}
+.romhack-changes section { padding: 4px 8px; }
+.romhack-changes h4 {
+	margin: 0;
+	font-size: 9pt;
+}
+.romhack-changes ul {
+	margin: 1px 0 0;
+	padding: 0;
+	list-style: none;
+	font-size: 9pt;
+}
+.romhack-changes li { margin: 1px 0; }
+.dark-mode .romhack-changes {
+	border-color: #5b7085;
+	background: #1c2834;
+	color: #edf3f9;
+}
+.dark-mode .romhack-changes h3 {
+	background: #d9e6f2;
+	color: #17212b;
 }
 
 .type {
@@ -507,6 +696,11 @@ a.subtle:hover {
 	color: #8195b8;
 	text-decoration: underline;
 }
+.dark-mode .dexentry h1 a.subtle,
+.dark-mode .dexentry a.subtle {
+	color: #edf3f9;
+}
+.dark-mode .dexentry a.subtle:hover { color: #91c6ff; }
 
 .type.normal{background-color:#8A8A59;background:linear-gradient(#A8A878,#8A8A59);border-color:#79794E;}
 .type.fire{background-color:#F08030;background:linear-gradient(#F08030,#DD6610);border-color:#B4530D;}

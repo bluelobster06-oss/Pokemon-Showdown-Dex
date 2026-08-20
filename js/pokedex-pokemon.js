@@ -247,6 +247,8 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         }
         if (pastGenChanges) buf += '</dl>';
 
+        buf += this.renderRomhackChanges(pokemon);
+
         // learnset
         buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button nav-last" value="details">Flavor</button></li></ul>';
         buf += '<ul class="utilichart nokbd">';
@@ -516,15 +518,130 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         }
         return learnset || {};
     },
+    getBaselineLearnset: function (pokemon) {
+        var learnsets = window.RomhackBaselineLearnsets;
+        if (!learnsets) return {};
+        var baseID = toID(pokemon.baseSpecies);
+        if (pokemon.forme && pokemon.forme.substr(0, 4) === 'Mega' && learnsets[baseID]) {
+            return learnsets[baseID].learnset || {};
+        }
+        var learnset = learnsets[this.id] && learnsets[this.id].learnset;
+        if (!learnset && learnsets[baseID]) learnset = learnsets[baseID].learnset;
+        if (pokemon.changesFrom && learnsets[toID(pokemon.changesFrom)]) {
+            learnset = $.extend({}, learnset, learnsets[toID(pokemon.changesFrom)].learnset);
+        }
+        return learnset || {};
+    },
+    renderRomhackChanges: function (pokemon) {
+        var baselinePokedex = window.RomhackBaselinePokedex;
+        if (!baselinePokedex) return '';
+        var original = baselinePokedex[this.id];
+        if (!original) return '';
+
+        var sections = [];
+        var typeAbilityChanges = [];
+        var oldTypes = (original.types || []).join(' / ');
+        var newTypes = (pokemon.types || []).join(' / ');
+        if (oldTypes !== newTypes) {
+            typeAbilityChanges.push('<li><strong>Types:</strong> ' + Dex.escapeHTML(oldTypes || 'None') + ' <i class="fa fa-long-arrow-right"></i> ' + Dex.escapeHTML(newTypes || 'None') + '</li>');
+        }
+        var abilityLabels = { '0': 'Ability 1', '1': 'Ability 2', H: 'Hidden Ability' };
+        for (var slot in abilityLabels) {
+            var oldAbility = original.abilities && original.abilities[slot] || 'None';
+            var newAbility = pokemon.abilities && pokemon.abilities[slot] || 'None';
+            if (oldAbility !== newAbility) {
+                typeAbilityChanges.push('<li><strong>' + abilityLabels[slot] + ':</strong> ' + Dex.escapeHTML(oldAbility) + ' <i class="fa fa-long-arrow-right"></i> ' + Dex.escapeHTML(newAbility) + '</li>');
+            }
+        }
+        if (typeAbilityChanges.length) sections.push('<section><h4>Types &amp; Abilities</h4><ul>' + typeAbilityChanges.join('') + '</ul></section>');
+
+        var statChanges = [];
+        var statLabels = { hp: 'HP', atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
+        for (var stat in statLabels) {
+            var oldStat = original.baseStats && original.baseStats[stat];
+            var newStat = pokemon.baseStats && pokemon.baseStats[stat];
+            if (oldStat !== newStat) {
+                statChanges.push('<li><strong>' + statLabels[stat] + ':</strong> ' + oldStat + ' <i class="fa fa-long-arrow-right"></i> ' + newStat + '</li>');
+            }
+        }
+        if (statChanges.length) sections.push('<section><h4>Stat Changes</h4><ul>' + statChanges.join('') + '</ul></section>');
+
+        var originalLearnset = this.getBaselineLearnset(pokemon);
+        var currentLearnset = this.getLearnset(pokemon);
+        var moveGroups = {
+            level: [],
+            tm: [],
+            tutor: [],
+            egg: [],
+            event: []
+        };
+        var groupedMoves = {
+            level: {},
+            tm: {},
+            tutor: {},
+            egg: {},
+            event: {}
+        };
+        var currentGen = '' + Dex.gen;
+        for (var moveid in currentLearnset) {
+            if (originalLearnset[moveid]) continue;
+            var move = BattleMovedex[moveid];
+            if (!move) continue;
+            var sources = currentLearnset[moveid];
+            if (typeof sources === 'string') sources = [sources];
+            for (var i = 0; i < sources.length; i++) {
+                var source = sources[i];
+                if (source.charAt(0) !== currentGen) continue;
+                var sourceType = source.charAt(1);
+                var group = sourceType === 'L' ? 'level' : sourceType === 'M' ? 'tm' : sourceType === 'T' ? 'tutor' : sourceType === 'E' ? 'egg' : sourceType === 'S' ? 'event' : '';
+                if (!group || groupedMoves[group][moveid]) continue;
+                groupedMoves[group][moveid] = true;
+                moveGroups[group].push({
+                    id: moveid,
+                    name: move.name,
+                    level: sourceType === 'L' ? parseInt(source.substr(2), 10) || 0 : 0
+                });
+            }
+        }
+        var newMoveLines = [];
+        var groupOrder = [
+            { id: 'level', label: 'Level-Up' },
+            { id: 'tm', label: 'TM/HM' },
+            { id: 'tutor', label: 'Tutor' },
+            { id: 'egg', label: 'Egg' },
+            { id: 'event', label: 'Event' }
+        ];
+        for (var i = 0; i < groupOrder.length; i++) {
+            var groupInfo = groupOrder[i];
+            var groupMoves = moveGroups[groupInfo.id];
+            if (!groupMoves.length) continue;
+            groupMoves.sort(function (a, b) {
+                if (groupInfo.id === 'level' && a.level !== b.level) return a.level - b.level;
+                return a.name.localeCompare(b.name);
+            });
+            var moveNames = [];
+            for (var j = 0; j < groupMoves.length; j++) {
+                var addedMove = groupMoves[j];
+                var moveName = Dex.escapeHTML(addedMove.name);
+                if (groupInfo.id === 'level') moveName += addedMove.level ? ' Lv. ' + addedMove.level : ' upon evolution';
+                moveNames.push(moveName);
+            }
+            newMoveLines.push('<li><strong>' + groupInfo.label + ':</strong> ' + moveNames.join(', ') + '</li>');
+        }
+        if (newMoveLines.length) sections.push('<section><h4>New Moves</h4><ul>' + newMoveLines.join('') + '</ul></section>');
+
+        if (!sections.length) return '';
+        return '<div class="romhack-changes"><h3>HC Changes</h3>' + sections.join('') + '</div>';
+    },
     renderEncounters: function () {
         this.$('.tabbar button').removeClass('cur');
         this.$('.pokemon-encounters').addClass('cur');
         var locations = {};
-        var encounterSpecies = [{id: this.id, from: ''}];
+        var encounterSpecies = [{ id: this.id, from: '' }];
         var prevo = Dex.species.get(this.id);
         while (prevo.prevo) {
             prevo = Dex.species.get(prevo.prevo);
-            encounterSpecies.push({id: prevo.id, from: prevo.name});
+            encounterSpecies.push({ id: prevo.id, from: prevo.name });
         }
         if (window.PokedexLocations) {
             for (var locationID in PokedexLocations) {
@@ -533,7 +650,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
                     var encounterID = toID(location.encounters[i].pokemon);
                     for (var j = 0; j < encounterSpecies.length; j++) {
                         if (encounterID !== encounterSpecies[j].id) continue;
-                        if (!locations[locationID]) locations[locationID] = {name: location.name, direct: false, prevoNames: []};
+                        if (!locations[locationID]) locations[locationID] = { name: location.name, direct: false, prevoNames: [] };
                         if (!encounterSpecies[j].from) {
                             locations[locationID].direct = true;
                         } else if (locations[locationID].prevoNames.indexOf(encounterSpecies[j].from) < 0) {

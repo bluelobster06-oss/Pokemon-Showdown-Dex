@@ -6,6 +6,31 @@ Dex.escapeHTML = function (str, jsEscapeToo) {
 	return str;
 };
 
+var PokedexDarkMode = {
+	storageKey: 'pokedex-dark-mode',
+	apply: function (enabled) {
+		$('html').toggleClass('dark-mode', enabled);
+		$('.dark-mode-toggle').text(enabled ? 'Light mode' : 'Dark mode').attr('aria-pressed', enabled ? 'true' : 'false');
+		try {
+			window.localStorage.setItem(this.storageKey, enabled ? 'true' : 'false');
+		} catch (e) {}
+	},
+	initialize: function () {
+		var enabled = false;
+		try {
+			enabled = window.localStorage.getItem(this.storageKey) === 'true';
+		} catch (e) {}
+		this.apply(enabled);
+		$(document).on('click', '.dark-mode-toggle', function () {
+			PokedexDarkMode.apply(!$('html').hasClass('dark-mode'));
+		});
+	}
+};
+
+$(function () {
+	PokedexDarkMode.initialize();
+});
+
 var Topbar = Panels.Topbar.extend({
 	height: 51
 });

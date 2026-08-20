@@ -22,6 +22,7 @@ var PokedexSearchPanel = Panels.Panel.extend({
 		if (fragment === 'moves') fragment = 'moves/';
 		if (fragment === 'pokemon') fragment = 'pokemon/';
 		if (questionIndex >= 0) fragment = fragment.slice(0, questionIndex);
+		this.isMoveSearch = fragment === 'moves/';
 		var buf = '<div class="pfx-body"><form class="pokedex">';
 		var $oldSearchbox = this.$('.searchbox');
 		var oldSelectionStart = $oldSearchbox[0] && $oldSearchbox[0].selectionStart || 0;
@@ -258,7 +259,9 @@ var PokedexSearchPanel = Panels.Panel.extend({
 		if (!this.search) return;
 		if (!val) val = '';
 		this.updateFilters();
-		if (!this.search.find(val)) return;
+		var found = this.search.find(val);
+		var foundLocalMove = this.appendLocalMoveMatches(val);
+		if (!found && !foundLocalMove) return;
 		if (this.search.q || this.search.filters) {
 			this.$('.pokedex').addClass('aboveresults');
 			this.activeLink = this.search.el.getElementsByTagName('a')[0];
@@ -267,6 +270,20 @@ var PokedexSearchPanel = Panels.Panel.extend({
 			this.$('.pokedex').removeClass('aboveresults');
 			this.activeLink = null;
 		}
+	},
+	appendLocalMoveMatches: function(val) {
+		// The hosted search index only contains official moves. Add matching
+		// local entries so ROM-hack moves from js/data/moves.js are searchable.
+		var query = toID(val);
+		if (!this.isMoveSearch || this.search.filters || !query) return false;
+		var found = false;
+		for (var moveid in BattleMovedex) {
+			if (moveid.indexOf(query) < 0) continue;
+			if ($(this.search.el).find('a[href$="/moves/' + moveid + '"]').length) continue;
+			$(this.search.el).append(BattleSearch.renderMoveRow(BattleMovedex[moveid]));
+			found = true;
+		}
+		return found;
 	},
 	checkExactMatch: function() {
 		if (this.search && this.search.exactMatch && this.search.q !== 'metronome' && this.search.q !== 'psychic') {

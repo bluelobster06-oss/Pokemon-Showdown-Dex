@@ -96,7 +96,7 @@ var PokedexLocationPanel = PokedexResultPanel.extend({
             var encounterTable = this.getEncounterTable(encounter);
             var encounterTime = this.getEncounterTime(encounter);
             var level = encounter.minLevel === encounter.maxLevel ? 'Lv. ' + encounter.minLevel : 'Lv. ' + encounter.minLevel + '&ndash;' + encounter.maxLevel;
-            buf += '<li class="location-encounter"><div class="encounter-pokemon">' + this.renderPokemonButton(encounter) + '</div><div class="encounter-details"><span class="encounter-sort-spacer"></span><span class="encounter-rate">' + encounter.rate + '%</span><span class="encounter-table">' + this.renderMarker('table', encounterTable) + encounterTable + '</span><span class="encounter-time">' + this.renderMarker('time', encounterTime) + encounterTime + '</span><span class="encounter-level">' + level + '</span></div></li>';
+            buf += '<li class="location-encounter"><div class="encounter-pokemon">' + this.renderPokemonButton(encounter) + '</div><span class="encounter-sort-spacer"></span><span class="encounter-rate">' + encounter.rate + '%</span><span class="encounter-table">' + this.renderMarker('table', encounterTable) + encounterTable + '</span><span class="encounter-time">' + this.renderMarker('time', encounterTime) + encounterTime + '</span><span class="encounter-level">' + level + '</span></li>';
         }
         return buf;
     },
@@ -155,10 +155,7 @@ var PokedexLocationPanel = PokedexResultPanel.extend({
     },
     renderPokemonButton: function (encounter) {
         var pokemon = typeof BattlePokedex !== 'undefined' && BattlePokedex[encounter.pokemon];
-        if (pokemon && typeof BattleSearch !== 'undefined' && BattleSearch.renderPokemonRow) {
-
-            return BattleSearch.renderPokemonRow(pokemon).replace(/^<li[^>]*>/, '').replace(/<\/li>\s*$/, '');
-        }
-        return '<a class="location-pokemon-fallback" href="/pokemon/' + encounter.pokemon + '" data-target="push">' + Dex.escapeHTML(encounter.name || encounter.pokemon) + '</a>';
+        var name = encounter.name || (pokemon && pokemon.name) || encounter.pokemon;
+        return '<a class="location-pokemon-button" href="/pokemon/' + encounter.pokemon + '" data-target="push"><span class="picon" style="' + Dex.getPokemonIcon(encounter.pokemon) + '"></span>' + Dex.escapeHTML(name) + '</a>';
     }
 });

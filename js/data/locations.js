@@ -8,8 +8,8 @@ var PokedexLocationIcons = {
         'Rock Smash': '/images/RockSmash.png'
     },
     time: {
-        'Nighttime Only': '',
-        'Daytime Only': ''
+        'Nighttime Only': '/images/MoonRR.png',
+        'Daytime Only': '/images/SunRR.png'
     }
 };
 
@@ -38,6 +38,7 @@ var PokedexLocations = {
             { pokemon: 'ducklett', name: 'Ducklett', rate: 15, minLevel: 2, maxLevel: 5, tags: ['Old Rod', 'Daytime Only'] },
             { pokemon: 'psyduck', name: 'Psyduck', rate: 15, minLevel: 2, maxLevel: 5, tags: ['Old Rod'] },
             { pokemon: 'surskit', name: 'Surskit', rate: 10, minLevel: 2, maxLevel: 5, tags: ['Old Rod', 'Nighttime Only'] },
+            { pokemon: 'goldeen', name: 'Goldeen', rate: 5, minLevel: 2, maxLevel: 5, tags: ['Old Rod'] },
             { pokemon: 'gyarados', name: 'Gyarados', rate: 5, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
         ]
     },
