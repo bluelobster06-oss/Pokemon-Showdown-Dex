@@ -424,11 +424,10 @@ table.evos .arrow abbr {
 	line-height: 12px;
 }
 .location-encounters .location-cycle:hover { background: #ececec; }
-.rate-cycle, .encounter-rate { width: 55px; }
-.table-cycle, .encounter-table { width: 84px; }
-.time-cycle, .encounter-time { width: 105px; }
-.location-level-label, .encounter-level { width: 70px; }
-.encounter-rate, .encounter-table, .encounter-time, .encounter-level {
+.rate-cycle, .encounter-rate { width: 70px; }
+.time-cycle, .encounter-time { width: 125px; }
+.location-level-label, .encounter-level { width: 80px; }
+.encounter-rate, .encounter-time, .encounter-level {
 	text-align: center;
 }
 .location-encounters .location-encounter {
@@ -437,27 +436,87 @@ table.evos .arrow abbr {
 	min-height: 38px;
 	border-bottom: 1px solid #ddd;
 }
+.location-encounters .location-table-header {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #b7c7d6;
+	border-bottom: 1px solid #a2b4c5;
+	background: #dbe7f2;
+}
+.location-encounters .location-table-header h3 {
+	margin: 0;
+	padding: 4px 10px;
+	font-size: 9.5pt;
+	font-weight: bold;
+	color: #17212b;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
 .location-encounters .encounter-pokemon {
 	box-sizing: border-box;
 	flex: 1 1 auto;
 	min-width: 0;
 	padding: 3px 6px;
 }
-.location-encounters .encounter-pokemon > a {
-	display: block;
-	min-height: 27px;
-	box-sizing: border-box;
-}
-
+.location-encounters .encounter-pokemon > a.location-pokemon-button,
 .location-pokemon-button {
-	display: block;
-	padding: 5px 8px;
+	display: flex;
+	align-items: center;
+	padding: 2px 8px 2px 4px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	background: #f8f8f8;
 	color: #222;
 	font-weight: bold;
 	text-decoration: none;
+	height: 30px;
+	min-height: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+.encounter-pokemon-name {
+	margin-left: 2px;
+	margin-right: 6px;
+	line-height: 24px;
+	white-space: nowrap;
+}
+.encounter-held-items {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	margin-left: 2px;
+	flex-shrink: 0;
+}
+.encounter-held-item-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, 0.05);
+	cursor: help;
+	position: relative;
+	vertical-align: middle;
+	transition: transform 0.12s ease-in-out, background 0.12s ease;
+}
+.encounter-held-item-badge:hover {
+	transform: scale(1.18);
+	background: rgba(0, 0, 0, 0.12);
+}
+.encounter-held-item-icon {
+	max-width: 18px;
+	max-height: 18px;
+	object-fit: contain;
+	display: block;
+}
+.encounter-held-item-sprite.itemicon {
+	transform: scale(0.75);
+	transform-origin: center center;
+	margin: -3px;
 }
 .location-marker-icon {
 	max-width: 18px;
@@ -547,10 +606,17 @@ html.dark-mode body {
 }
 .dark-mode .pfx-backbutton,
 .dark-mode .location-list a,
-.dark-mode .location-pokemon-button {
+.dark-mode .location-pokemon-button,
+.dark-mode .location-encounters .encounter-pokemon > a,
+.dark-mode .location-encounters .encounter-pokemon > a.location-pokemon-button {
 	background: #263544;
 	border-color: #5b7085;
 	color: #edf3f9;
+}
+.dark-mode .location-pokemon-button:hover,
+.dark-mode .location-encounters .encounter-pokemon > a:hover {
+	background: #334657;
+	border-color: #6e849a;
 }
 .dark-mode .location-encounters .location-header,
 .dark-mode .location-sort-label {
@@ -568,6 +634,20 @@ html.dark-mode body {
 	color: #edf3f9;
 }
 .dark-mode .location-encounters .location-cycle:hover { background: #41566b; }
+.dark-mode .location-encounters .location-table-header {
+	background: #1c2834;
+	border-color: #344758;
+}
+.dark-mode .location-encounters .location-table-header h3 {
+	background: #253545;
+	color: #dbe7f3;
+}
+.dark-mode .encounter-held-item-badge {
+	background: rgba(255, 255, 255, 0.08);
+}
+.dark-mode .encounter-held-item-badge:hover {
+	background: rgba(255, 255, 255, 0.18);
+}
 .dark-mode .location-encounters .location-encounter { border-color: #344758; }
 .dark-mode .location-marker-icon { filter: brightness(1.12); }
 .dark-mode .pfx-go-left,
