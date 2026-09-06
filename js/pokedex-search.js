@@ -31,7 +31,8 @@ var PokedexSearchPanel = Panels.Panel.extend({
 		buf += '<ul class="tabbar centered" style="margin-bottom: 18px"><li><button class="button nav-first' + (fragment === '' ? ' cur' : '') + '" value="">Search</button></li>';
 		buf += '<li><button class="button' + (fragment === 'pokemon/' ? ' cur' : '') + '" value="pokemon/">Pok&eacute;mon</button></li>';
 		buf += '<li><button class="button' + (fragment === 'moves/' ? ' cur' : '') + '" value="moves/">Moves</button></li>';
-		buf += '<li><button class="button nav-last" value="locations/">Locations</button></li></ul>';
+		buf += '<li><button class="button" value="locations/">Locations</button></li>';
+		buf += '<li><button class="button nav-last" value="changes/">Changes</button></li></ul>';
 		buf += '<div class="searchboxwrapper"><input class="textbox searchbox" type="search" name="q" value="' + Dex.escapeHTML($oldSearchbox.val() || '') + '" autocomplete="off" placeholder="Search Pok&eacute;mon, moves, abilities, items, types, or more" /></div>';
 		if (fragment === '') {
 			buf += '<p class="buttonbar"><button class="button"><i class="fa fa-search" aria-hidden="true"></i> <strong>Pok&eacute;dex Search</strong></button> <button name="lucky" class="button">I\'m Feeling Lucky</button></p>';
@@ -259,9 +260,7 @@ var PokedexSearchPanel = Panels.Panel.extend({
 		if (!this.search) return;
 		if (!val) val = '';
 		this.updateFilters();
-		var found = this.search.find(val);
-		var foundLocalMove = this.appendLocalMoveMatches(val);
-		if (!found && !foundLocalMove) return;
+		if (!this.search.find(val)) return;
 		if (this.search.q || this.search.filters) {
 			this.$('.pokedex').addClass('aboveresults');
 			this.activeLink = this.search.el.getElementsByTagName('a')[0];
@@ -270,20 +269,6 @@ var PokedexSearchPanel = Panels.Panel.extend({
 			this.$('.pokedex').removeClass('aboveresults');
 			this.activeLink = null;
 		}
-	},
-	appendLocalMoveMatches: function(val) {
-		// The hosted search index only contains official moves. Add matching
-		// local entries so ROM-hack moves from js/data/moves.js are searchable.
-		var query = toID(val);
-		if (!this.isMoveSearch || this.search.filters || !query) return false;
-		var found = false;
-		for (var moveid in BattleMovedex) {
-			if (moveid.indexOf(query) < 0) continue;
-			if ($(this.search.el).find('a[href$="/moves/' + moveid + '"]').length) continue;
-			$(this.search.el).append(BattleSearch.renderMoveRow(BattleMovedex[moveid]));
-			found = true;
-		}
-		return found;
 	},
 	checkExactMatch: function() {
 		if (this.search && this.search.exactMatch && this.search.q !== 'metronome' && this.search.q !== 'psychic') {

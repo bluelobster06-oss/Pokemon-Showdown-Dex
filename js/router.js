@@ -14,7 +14,10 @@ var Pokedex = Panels.App.extend({
         'articles/:article': PokedexArticlePanel,
         'locations': PokedexLocationsPanel,
         'locations/': PokedexLocationsPanel,
+        'locations/:location/areas/:area': PokedexLocationAreaPanel,
         'locations/:location': PokedexLocationPanel,
+        'changes': PokedexChangesPanel,
+        'changes/': PokedexChangesPanel,
 
         '': PokedexSearchPanel,
         'pokemon/': PokedexSearchPanel,

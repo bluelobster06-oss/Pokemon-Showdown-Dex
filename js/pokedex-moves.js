@@ -60,7 +60,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			buf += '<dl class="powerentry"><dt>Base power:</dt> <dd><strong>'+(move.basePower||'&mdash;')+'</strong></dd></dl>';
 		}
 		buf += '<dl class="accuracyentry"><dt>Accuracy:</dt> <dd>'+(move.accuracy && move.accuracy!==true?move.accuracy+'%':'&mdash;')+'</dd></dl>';
-		buf += '<dl class="ppentry"><dt>PP:</dt> <dd>'+(move.pp)+(move.pp>1 ? ' <small class="minor">(max: '+(8/5*move.pp)+')</small>' : '')+'</dd>';
+		buf += '<dl class="ppentry"><dt>PP:</dt> <dd>'+(move.pp)+(move.pp>1 ? ' <small class="minor">(max: '+this.getMaxPP(move.pp)+')</small>' : '')+'</dd>';
 		buf += '</dl><div style="clear:left;padding-top:1px"></div>';
 
 		if (move.isZ) {
@@ -139,16 +139,21 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 		if ('wind' in move.flags) {
 			buf += '<p class="movetag"><a href="/tags/wind" data-target="push">&#x2713; Wind</a> <small>(interacts with <a class="subtle" href="/abilities/windpower" data-target="push">Wind Power</a> and <a class="subtle" href="/abilities/windrider" data-target="push">Wind Rider</a>)</small></p>';
 		}
+		if ('striker' in move.flags || 'kicking' in move.flags) {
+			buf += '<p class="movetag"><a href="/tags/kicking" data-target="push">&#x2713; Kicking</a> <small>(boosted by <a class="subtle" href="/abilities/striker" data-target="push">Striker</a>)</small></p>';
+		}
 
 		if (move.target === 'allAdjacent') {
-			buf += '<p class="movetag"><small>In Doubles, hits all adjacent Pokémon (including allies)</small></p>';
+			buf += '<p class="movetag"><a href="/tags/fieldwide" data-target="push">&#x2713; Field-wide</a> <small>(in Doubles, hits all adjacent Pok&eacute;mon)</small></p>';
 		} else if (move.target === 'allAdjacentFoes') {
-			buf += '<p class="movetag"><small>In Doubles, hits all adjacent foes</small></p>';
+			buf += '<p class="movetag"><a href="/tags/spread" data-target="push">&#x2713; Spread</a> <small>(in Doubles, hits all adjacent foes)</small></p>';
 		} else if (move.target === 'randomNormal') {
 			buf += '<p class="movetag"><small>In Doubles, hits a random foe (you can\'t choose its target)</small></p>';
 		} else if (move.target === 'adjacentAllyOrSelf') {
 			buf += '<p class="movetag"><small>In Doubles, can be used either on the user or an adjacent ally</small></p>';
 		}
+
+		buf += this.renderRomhackChanges(move);
 
 		// Z-Move
 		var zMoveTable = {
@@ -313,7 +318,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 
 		// getting it
 		// warning: excessive trickiness
-		var leftPanel = this.app.panels[this.app.panels.length - 2];
+		var leftPanel = this.app && this.app.panels && this.app.panels[this.app.panels.length - 2];
 		if (leftPanel && leftPanel.fragment.slice(0, 8) === 'pokemon/') {
 			var pokemon = Dex.species.get(leftPanel.id);
 			var learnset = BattleLearnsets[pokemon.id] && BattleLearnsets[pokemon.id].learnset;
@@ -574,7 +579,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 				desc = results[i].substr(1,3) === '001' || results[i].substr(1,3) === '000' ? '&ndash;' : '<small>L</small>'+(parseInt(results[i].substr(1,3), 10) || '?');
 				break;
 			case 'b': // tm/hm
-				desc = '<img src="//' + Config.routes.client + '/sprites/itemicons/tm-normal.png" style="margin-top:-3px;opacity:.7" width="24" height="24" alt="M" />';
+				desc = '<span class="itemicon" style="margin-top:-3px;display:inline-block;' + (Dex.getTMIcon ? Dex.getTMIcon(this.move && this.move.type) : Dex.getItemIcon({ spritenum: 721 })) + '"></span>';
 				break;
 			case 'c': // tutor
 				desc = '<img src="//' + Config.routes.client + '/sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />';
@@ -651,5 +656,59 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 				self.renderUpdateDistribution(true);
 			}, 1000);
 		}
+	},
+	renderRomhackChanges: function (move) {
+		var baselineMoves = window.RomhackBaselineMoves;
+		if (!baselineMoves) return '';
+		var original = baselineMoves[this.id];
+		if (!original) return '';
+
+		var changes = [];
+
+		if (original.basePower !== move.basePower) {
+			changes.push('<li><strong>Base Power:</strong> ' + (original.basePower || '&mdash;') + ' <i class="fa fa-long-arrow-right"></i> ' + (move.basePower || '&mdash;') + '</li>');
+		}
+
+		if (original.accuracy !== move.accuracy) {
+			var origAcc = (original.accuracy && original.accuracy !== true ? original.accuracy + '%' : (original.accuracy === true ? 'nevermiss' : '&mdash;'));
+			var newAcc = (move.accuracy && move.accuracy !== true ? move.accuracy + '%' : (move.accuracy === true ? 'nevermiss' : '&mdash;'));
+			changes.push('<li><strong>Accuracy:</strong> ' + origAcc + ' <i class="fa fa-long-arrow-right"></i> ' + newAcc + '</li>');
+		}
+
+		if (original.pp !== move.pp) {
+			changes.push('<li><strong>PP:</strong> ' + original.pp + ' <i class="fa fa-long-arrow-right"></i> ' + move.pp + '</li>');
+		}
+
+		if (original.type !== move.type) {
+			changes.push('<li><strong>Type:</strong> ' + Dex.escapeHTML(original.type) + ' <i class="fa fa-long-arrow-right"></i> ' + Dex.escapeHTML(move.type) + '</li>');
+		}
+
+		if (original.category !== move.category) {
+			changes.push('<li><strong>Category:</strong> ' + Dex.escapeHTML(original.category) + ' <i class="fa fa-long-arrow-right"></i> ' + Dex.escapeHTML(move.category) + '</li>');
+		}
+
+		if (original.priority !== move.priority) {
+			changes.push('<li><strong>Priority:</strong> ' + original.priority + ' <i class="fa fa-long-arrow-right"></i> ' + move.priority + '</li>');
+		}
+
+		var origDesc = (original.shortDesc || original.desc || '').trim();
+		var newDesc = (move.shortDesc || move.desc || '').trim();
+		if (origDesc && newDesc && origDesc !== newDesc) {
+			changes.push('<li>' + Dex.escapeHTML(origDesc) + ' <i class="fa fa-long-arrow-right"></i> ' + Dex.escapeHTML(newDesc) + '</li>');
+		}
+
+		if (!changes.length) return '';
+		return '<div class="romhack-changes"><h3>HC Changes</h3><ul>' + changes.join('') + '</ul></div>';
+	},
+	getMaxPP: function (pp) {
+		if (!pp || pp <= 1) return pp;
+		var rawMax = pp * 1.6;
+		var frac = Math.round((rawMax - Math.floor(rawMax)) * 10) / 10;
+		if (frac >= 0.8) {
+			return Math.ceil(rawMax);
+		} else {
+			return Math.floor(rawMax);
+		}
 	}
 });
+

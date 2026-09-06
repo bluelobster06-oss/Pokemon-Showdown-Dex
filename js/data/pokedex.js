@@ -79,7 +79,7 @@
         eggGroups: ["Monster", "Grass"],
         changesFrom: "Venusaur",
         placeholderFor: "Venusaur",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     charmander: {
@@ -179,7 +179,7 @@
         eggGroups: ["Monster", "Dragon"],
         changesFrom: "Charizard",
         placeholderFor: "Charizard",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     squirtle: {
@@ -262,7 +262,7 @@
         eggGroups: ["Monster", "Water 1"],
         changesFrom: "Blastoise",
         placeholderFor: "Blastoise",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     caterpie: {
@@ -325,7 +325,7 @@
         eggGroups: ["Bug"],
         changesFrom: "Butterfree",
         placeholderFor: "Butterfree",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     weedle: {
@@ -641,7 +641,7 @@
             "Pikachu-Cosplay"
         ],
         canGigantamax: "G-Max Volt Crash",
-        tier: "ZU"
+        tier: "HCOU"
     },
     pikachucosplay: {
         num: 25,
@@ -677,7 +677,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     pikachubelle: {
@@ -696,7 +696,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     pikachupopstar: {
@@ -715,7 +715,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     pikachuphd: {
@@ -734,7 +734,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     pikachulibre: {
@@ -753,7 +753,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Pikachu-Cosplay",
         gen: 6,
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     pikachuoriginal: {
@@ -770,7 +770,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
-        tier: "ZU"
+        tier: "Unob"
     },
     pikachuhoenn: {
         num: 25,
@@ -786,7 +786,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
-        tier: "ZU"
+        tier: "Unob"
     },
     pikachusinnoh: {
         num: 25,
@@ -802,7 +802,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
-        tier: "ZU"
+        tier: "Unob"
     },
     pikachuunova: {
         num: 25,
@@ -818,7 +818,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
-        tier: "ZU"
+        tier: "Unob"
     },
     pikachukalos: {
         num: 25,
@@ -834,7 +834,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
-        tier: "ZU"
+        tier: "Unob"
     },
     pikachualola: {
         num: 25,
@@ -850,7 +850,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
-        tier: "ZU"
+        tier: "Unob"
     },
     pikachupartner: {
         num: 25,
@@ -866,7 +866,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 7,
-        tier: "ZU"
+        tier: "Unob"
     },
     pikachustarter: {
         num: 25,
@@ -880,8 +880,8 @@
         weightkg: 6,
         color: "Yellow",
         eggGroups: ["Undiscovered"],
-        tier: "Illegal",
-        isNonstandard: "LGPE"
+        tier: "Unob",
+        isNonstandard: "Unob"
     },
     pikachugmax: {
         num: 25,
@@ -897,7 +897,7 @@
         eggGroups: ["Field", "Fairy"],
         changesFrom: "Pikachu",
         placeholderFor: "Pikachu",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     pikachuworld: {
@@ -914,7 +914,7 @@
         color: "Yellow",
         eggGroups: ["Undiscovered"],
         gen: 8,
-        tier: "ZU"
+        tier: "Unob"
     },
     raichu: {
         num: 26,
@@ -931,7 +931,7 @@
         eggGroups: ["Field", "Fairy"],
         otherFormes: ["Raichu-Alola", "Raichu-Mega-X", "Raichu-Mega-Y"],
         formeOrder: ["Raichu", "Raichu-Alola", "Raichu-Mega-X", "Raichu-Mega-Y"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     raichualola: {
         num: 26,
@@ -949,7 +949,7 @@
         evoItem: "Thunder Stone",
         evoRegion: "Alola",
         eggGroups: ["Field", "Fairy"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     raichumegax: {
         num: 26,
@@ -965,8 +965,7 @@
         eggGroups: ["Field", "Fairy"],
         requiredItem: "Raichunite X",
         gen: 9,
-        tier: "Illegal",
-        isNonstandard: "Future"
+        tier: "HCOU",
     },
     raichumegay: {
         num: 26,
@@ -982,8 +981,7 @@
         eggGroups: ["Field", "Fairy"],
         requiredItem: "Raichunite Y",
         gen: 9,
-        tier: "Illegal",
-        isNonstandard: "Future"
+        tier: "HCOU",
     },
     sandshrew: {
         num: 27,
@@ -1054,13 +1052,13 @@
         types: ["Poison"],
         gender: "F",
         baseStats: { hp: 55, atk: 47, def: 52, spa: 40, spd: 40, spe: 41 },
-        abilities: { "0": "Poison Point", "1": "Rivalry", H: "Hustle" },
+        abilities: { "0": "Guts", H: "Rivalry" },
         heightm: 0.4,
         weightkg: 7,
         color: "Blue",
         evos: ["Nidorina"],
         eggGroups: ["Monster", "Field"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     nidorina: {
@@ -1069,7 +1067,7 @@
         types: ["Poison"],
         gender: "F",
         baseStats: { hp: 70, atk: 62, def: 67, spa: 55, spd: 55, spe: 56 },
-        abilities: { "0": "Poison Point", "1": "Rivalry", H: "Hustle" },
+        abilities: { "0": "Guts", H: "Rivalry" },
         heightm: 0.8,
         weightkg: 20,
         color: "Blue",
@@ -1077,7 +1075,7 @@
         evoLevel: 16,
         evos: ["Nidoqueen"],
         eggGroups: ["Undiscovered"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     nidoqueen: {
@@ -1086,7 +1084,7 @@
         types: ["Poison", "Ground"],
         gender: "F",
         baseStats: { hp: 90, atk: 92, def: 87, spa: 75, spd: 85, spe: 76 },
-        abilities: { "0": "Poison Point", "1": "Rivalry", H: "Sheer Force" },
+        abilities: { "0": "Guts", H: "Rivalry" },
         heightm: 1.3,
         weightkg: 60,
         color: "Blue",
@@ -1094,7 +1092,7 @@
         evoType: "useItem",
         evoItem: "Moon Stone",
         eggGroups: ["Undiscovered"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     nidoranm: {
@@ -1103,14 +1101,14 @@
         types: ["Poison"],
         gender: "M",
         baseStats: { hp: 46, atk: 57, def: 40, spa: 40, spd: 40, spe: 50 },
-        abilities: { "0": "Poison Point", "1": "Rivalry", H: "Hustle" },
+        abilities: { "0": "Sheer Force", H: "Rivalry" },
         heightm: 0.5,
         weightkg: 9,
         color: "Purple",
         evos: ["Nidorino"],
         eggGroups: ["Monster", "Field"],
         mother: "nidoranf",
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     nidorino: {
@@ -1119,7 +1117,7 @@
         types: ["Poison"],
         gender: "M",
         baseStats: { hp: 61, atk: 72, def: 57, spa: 55, spd: 55, spe: 65 },
-        abilities: { "0": "Poison Point", "1": "Rivalry", H: "Hustle" },
+        abilities: { "0": "Sheer Force", H: "Rivalry" },
         heightm: 0.9,
         weightkg: 19.5,
         color: "Purple",
@@ -1127,7 +1125,7 @@
         evoLevel: 16,
         evos: ["Nidoking"],
         eggGroups: ["Monster", "Field"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     nidoking: {
@@ -1136,7 +1134,7 @@
         types: ["Poison", "Ground"],
         gender: "M",
         baseStats: { hp: 81, atk: 102, def: 77, spa: 85, spd: 75, spe: 85 },
-        abilities: { "0": "Poison Point", "1": "Rivalry", H: "Sheer Force" },
+        abilities: { "0": "Sheer Force", H: "Rivalry" },
         heightm: 1.4,
         weightkg: 62,
         color: "Purple",
@@ -1144,7 +1142,7 @@
         evoType: "useItem",
         evoItem: "Moon Stone",
         eggGroups: ["Monster", "Field"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     clefairy: {
@@ -1550,7 +1548,7 @@
         eggGroups: ["Field"],
         changesFrom: "Meowth",
         placeholderFor: "Meowth",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     persian: {
@@ -1590,7 +1588,7 @@
         name: "Psyduck",
         types: ["Water"],
         baseStats: { hp: 50, atk: 52, def: 48, spa: 65, spd: 50, spe: 55 },
-        abilities: { "0": "Damp", "1": "Cloud Nine", H: "Swift Swim" },
+        abilities: { "0": "Damp", "1": "Thick Fat", H: "Swift Swim" },
         heightm: 0.8,
         weightkg: 19.6,
         color: "Yellow",
@@ -1601,7 +1599,7 @@
     golduck: {
         num: 55,
         name: "Golduck",
-        types: ["Water"],
+        types: ["Water", "Psychic"],
         baseStats: { hp: 80, atk: 82, def: 78, spa: 95, spd: 80, spe: 85 },
         abilities: { "0": "Damp", "1": "Cloud Nine", H: "Swift Swim" },
         heightm: 1.7,
@@ -1882,7 +1880,7 @@
         eggGroups: ["Human-Like"],
         changesFrom: "Machamp",
         placeholderFor: "Machamp",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     bellsprout: {
@@ -2495,7 +2493,7 @@
         eggGroups: ["Amorphous"],
         changesFrom: "Gengar",
         placeholderFor: "Gengar",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     onix: {
@@ -2583,7 +2581,7 @@
         eggGroups: ["Water 3"],
         changesFrom: "Kingler",
         placeholderFor: "Kingler",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     voltorb: {
@@ -2745,7 +2743,7 @@
         color: "Purple",
         prevo: "Cubone",
         evoLevel: 28,
-        evoCondition: "at night",
+        evoCondition: "at night in Lost Islands/Grove of Dreams",
         evoRegion: "Alola",
         eggGroups: ["Monster"],
         tier: "Illegal",
@@ -2985,7 +2983,7 @@
         name: "Goldeen",
         types: ["Water"],
         baseStats: { hp: 45, atk: 67, def: 60, spa: 35, spd: 50, spe: 63 },
-        abilities: { "0": "Swift Swim", "1": "Water Veil", H: "Lightning Rod" },
+        abilities: { "0": "Swift Swim", "1": "Regenerator", H: "Lightning Rod" },
         heightm: 0.6,
         weightkg: 15,
         color: "Red",
@@ -2999,7 +2997,7 @@
         name: "Seaking",
         types: ["Water"],
         baseStats: { hp: 80, atk: 92, def: 65, spa: 65, spd: 80, spe: 68 },
-        abilities: { "0": "Swift Swim", "1": "Water Veil", H: "Lightning Rod" },
+        abilities: { "0": "Swift Swim", "1": "Regenerator", H: "Lightning Rod" },
         heightm: 1.3,
         weightkg: 39,
         color: "Red",
@@ -3325,7 +3323,7 @@
         eggGroups: ["Monster", "Water 1"],
         changesFrom: "Lapras",
         placeholderFor: "Lapras",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     ditto: {
@@ -3398,7 +3396,7 @@
         eggGroups: ["Field"],
         changesFrom: "Eevee",
         placeholderFor: "Eevee",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     vaporeon: {
@@ -3590,7 +3588,7 @@
         eggGroups: ["Monster"],
         changesFrom: "Snorlax",
         placeholderFor: "Snorlax",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     articuno: {
@@ -3728,7 +3726,7 @@
         eggGroups: ["Water 1", "Dragon"],
         otherFormes: ["Dragonite-Mega"],
         formeOrder: ["Dragonite", "Dragonite-Mega"],
-        tier: "OU"
+        tier: "HCOU"
     },
     dragonitemega: {
         num: 149,
@@ -3744,7 +3742,7 @@
         eggGroups: ["Water 1", "Dragon"],
         requiredItem: "Dragoninite",
         gen: 9,
-        tier: "Illegal",
+        tier: "HCOU",
         isNonstandard: "Future"
     },
     mewtwo: {
@@ -3761,7 +3759,7 @@
         tags: ["Restricted Legendary"],
         otherFormes: ["Mewtwo-Mega-X", "Mewtwo-Mega-Y"],
         formeOrder: ["Mewtwo", "Mewtwo-Mega-X", "Mewtwo-Mega-Y"],
-        tier: "Uber"
+        tier: "Unob"
     },
     mewtwomegax: {
         num: 150,
@@ -3777,7 +3775,7 @@
         color: "Purple",
         eggGroups: ["Undiscovered"],
         requiredItem: "Mewtwonite X",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     mewtwomegay: {
@@ -3794,7 +3792,7 @@
         color: "Purple",
         eggGroups: ["Undiscovered"],
         requiredItem: "Mewtwonite Y",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     mew: {
@@ -4010,7 +4008,7 @@
         name: "Sentret",
         types: ["Normal"],
         baseStats: { hp: 35, atk: 46, def: 34, spa: 35, spd: 45, spe: 20 },
-        abilities: { "0": "Run Away", "1": "Keen Eye", H: "Frisk" },
+        abilities: { "0": "Run Away", "1": "Soundproof", H: "Adrenaline" },
         heightm: 0.8,
         weightkg: 6,
         color: "Brown",
@@ -4021,9 +4019,9 @@
     furret: {
         num: 162,
         name: "Furret",
-        types: ["Normal"],
+        types: ["Normal", "Ground"],
         baseStats: { hp: 85, atk: 76, def: 64, spa: 45, spd: 55, spe: 90 },
-        abilities: { "0": "Run Away", "1": "Keen Eye", H: "Frisk" },
+        abilities: { "0": "Run Away", "1": "Soundproof", H: "Adrenaline" },
         heightm: 1.8,
         weightkg: 32.5,
         color: "Brown",
@@ -4043,12 +4041,12 @@
         color: "Brown",
         evos: ["Noctowl"],
         eggGroups: ["Flying"],
-        tier: "LC"
+        tier: "HCOU"
     },
     noctowl: {
         num: 164,
         name: "Noctowl",
-        types: ["Normal", "Flying"],
+        types: ["Psychic", "Flying"],
         baseStats: { hp: 100, atk: 50, def: 50, spa: 86, spd: 96, spe: 70 },
         abilities: { "0": "Insomnia", "1": "Keen Eye", H: "Tinted Lens" },
         heightm: 1.6,
@@ -4057,14 +4055,14 @@
         prevo: "Hoothoot",
         evoLevel: 20,
         eggGroups: ["Flying"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     ledyba: {
         num: 165,
         name: "Ledyba",
         types: ["Bug", "Flying"],
         baseStats: { hp: 40, atk: 20, def: 30, spa: 40, spd: 80, spe: 55 },
-        abilities: { "0": "Swarm", "1": "Early Bird", H: "Rattled" },
+        abilities: { "0": "Swarm", "1": "Rattled", H: "Prankster" },
         heightm: 1,
         weightkg: 10.8,
         color: "Red",
@@ -4076,9 +4074,9 @@
     ledian: {
         num: 166,
         name: "Ledian",
-        types: ["Bug", "Flying"],
-        baseStats: { hp: 55, atk: 35, def: 50, spa: 55, spd: 110, spe: 85 },
-        abilities: { "0": "Swarm", "1": "Early Bird", H: "Iron Fist" },
+        types: ["Bug", "Fighting"],
+        baseStats: { hp: 55, atk: 75, def: 75, spa: 55, spd: 110, spe: 100 },
+        abilities: { "0": "Swarm", "1": "Rattled", H: "Iron Fist" },
         heightm: 1.4,
         weightkg: 35.6,
         color: "Red",
@@ -4187,7 +4185,7 @@
         tags: ["True Past"],
         eggGroups: ["Undiscovered"],
         gen: 4,
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     cleffa: {
@@ -6169,7 +6167,7 @@
     masquerain: {
         num: 284,
         name: "Masquerain",
-        types: ["Bug", "Flying"],
+        types: ["Bug", "Water"],
         baseStats: { hp: 70, atk: 60, def: 62, spa: 100, spd: 82, spe: 80 },
         abilities: { "0": "Intimidate", H: "Unnerve" },
         heightm: 0.8,
@@ -7267,7 +7265,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         otherFormes: ["Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
         formeOrder: ["Castform", "Castform-Sunny", "Castform-Rainy", "Castform-Snowy"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     castformsunny: {
@@ -7923,7 +7921,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Kyogre-Primal"],
         formeOrder: ["Kyogre", "Kyogre-Primal"],
-        tier: "Uber"
+        tier: "Illegal"
     },
     kyogreprimal: {
         num: 382,
@@ -7956,7 +7954,7 @@
         eggGroups: ["Undiscovered"],
         otherFormes: ["Groudon-Primal"],
         formeOrder: ["Groudon", "Groudon-Primal"],
-        tier: "Uber"
+        tier: "Illegal"
     },
     groudonprimal: {
         num: 383,
@@ -8484,7 +8482,7 @@
         eggGroups: ["Bug"],
         cosmeticFormes: ["Burmy-Sandy", "Burmy-Trash"],
         formeOrder: ["Burmy", "Burmy-Sandy", "Burmy-Trash"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     burmysandy: {
@@ -8508,16 +8506,17 @@
         types: ["Bug", "Grass"],
         gender: "F",
         baseStats: { hp: 60, atk: 59, def: 85, spa: 79, spd: 105, spe: 36 },
-        abilities: { "0": "Anticipation", H: "Overcoat" },
+        abilities: { "0": "Leaf Guard", H: "Overcoat" },
         heightm: 0.5,
         weightkg: 6.5,
         color: "Green",
         prevo: "Burmy",
         evoLevel: 20,
+        evoCondition: "- Female",
         eggGroups: ["Bug"],
         otherFormes: ["Wormadam-Sandy", "Wormadam-Trash"],
         formeOrder: ["Wormadam", "Wormadam-Sandy", "Wormadam-Trash"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     wormadamsandy: {
@@ -8535,7 +8534,7 @@
         prevo: "Burmy",
         evoLevel: 20,
         eggGroups: ["Bug"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     wormadamtrash: {
@@ -8553,7 +8552,7 @@
         prevo: "Burmy",
         evoLevel: 20,
         eggGroups: ["Bug"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     mothim: {
@@ -8562,12 +8561,13 @@
         types: ["Bug", "Flying"],
         gender: "M",
         baseStats: { hp: 70, atk: 94, def: 50, spa: 94, spd: 50, spe: 66 },
-        abilities: { "0": "Swarm", H: "Tinted Lens" },
+        abilities: { "0": "Rivalry", H: "Tinted Lens" },
         heightm: 0.9,
         weightkg: 23.3,
         color: "Yellow",
         prevo: "Burmy",
         evoLevel: 20,
+        evoCondition: "- Male",
         eggGroups: ["Bug"],
         tier: "Illegal",
 
@@ -8702,7 +8702,7 @@
         eggGroups: ["Water 1", "Amorphous"],
         cosmeticFormes: ["Shellos-East"],
         formeOrder: ["Shellos", "Shellos-East"],
-        tier: "LC"
+        tier: "HCOU"
     },
     shelloseast: {
         isCosmeticForme: true,
@@ -10138,7 +10138,7 @@
             "Arceus-Dark",
             "Arceus-Fairy"
         ],
-        tier: "Uber"
+        tier: "HCOU"
     },
     arceusbug: {
         num: 493,
@@ -10836,7 +10836,7 @@
         name: "Pidove",
         types: ["Normal", "Flying"],
         baseStats: { hp: 50, atk: 55, def: 50, spa: 36, spd: 30, spe: 43 },
-        abilities: { "0": "Big Pecks", "1": "Super Luck", H: "Rivalry" },
+        abilities: { "0": "Big Pecks", "1": "Super Luck", H: "Sheer Force" },
         heightm: 0.3,
         weightkg: 2.1,
         color: "Gray",
@@ -10850,7 +10850,7 @@
         name: "Tranquill",
         types: ["Normal", "Flying"],
         baseStats: { hp: 62, atk: 77, def: 62, spa: 50, spd: 42, spe: 65 },
-        abilities: { "0": "Big Pecks", "1": "Super Luck", H: "Rivalry" },
+        abilities: { "0": "Big Pecks", "1": "Super Luck", H: "Sheer Force" },
         heightm: 0.6,
         weightkg: 15,
         color: "Gray",
@@ -10866,7 +10866,7 @@
         name: "Unfezant",
         types: ["Normal", "Flying"],
         baseStats: { hp: 80, atk: 115, def: 80, spa: 65, spd: 55, spe: 93 },
-        abilities: { "0": "Big Pecks", "1": "Super Luck", H: "Rivalry" },
+        abilities: { "0": "Big Pecks", "1": "Super Luck", H: "Sheer Force" },
         heightm: 1.2,
         weightkg: 29,
         color: "Gray",
@@ -11118,7 +11118,7 @@
         name: "Palpitoad",
         types: ["Water", "Ground"],
         baseStats: { hp: 75, atk: 65, def: 55, spa: 65, spd: 55, spe: 69 },
-        abilities: { "0": "Swift Swim", "1": "Hydration", H: "Water Absorb" },
+        abilities: { "0": "Swift Swim", "1": "Poison Heal", H: "Water Absorb" },
         heightm: 0.8,
         weightkg: 17,
         color: "Blue",
@@ -11134,7 +11134,7 @@
         name: "Seismitoad",
         types: ["Water", "Ground"],
         baseStats: { hp: 105, atk: 95, def: 75, spa: 85, spd: 75, spe: 74 },
-        abilities: { "0": "Swift Swim", "1": "Poison Touch", H: "Water Absorb" },
+        abilities: { "0": "Swift Swim", "1": "Poison Heal", H: "Water Absorb" },
         heightm: 1.5,
         weightkg: 62,
         color: "Blue",
@@ -11369,7 +11369,7 @@
         eggGroups: ["Water 2"],
         otherFormes: ["Basculin-Blue-Striped", "Basculin-White-Striped"],
         formeOrder: ["Basculin", "Basculin-Blue-Striped", "Basculin-White-Striped"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     basculinbluestriped: {
         num: 550,
@@ -11488,7 +11488,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Darmanitan-Zen", "Darmanitan-Galar", "Darmanitan-Galar-Zen"],
         formeOrder: ["Darmanitan", "Darmanitan-Zen", "Darmanitan-Galar", "Darmanitan-Galar-Zen"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     darmanitanzen: {
@@ -11522,7 +11522,7 @@
         evoType: "useItem",
         evoItem: "Ice Stone",
         eggGroups: ["Field"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     darmanitangalarzen: {
@@ -11795,7 +11795,7 @@
         eggGroups: ["Mineral"],
         changesFrom: "Garbodor",
         placeholderFor: "Garbodor",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     zorua: {
@@ -11986,7 +11986,7 @@
         name: "Ducklett",
         types: ["Water", "Flying"],
         baseStats: { hp: 62, atk: 44, def: 50, spa: 44, spd: 50, spe: 55 },
-        abilities: { "0": "Keen Eye", "1": "Big Pecks", H: "Hydration" },
+        abilities: { "0": "Keen Eye", "1": "Gale Wings", H: "Hydration" },
         heightm: 0.5,
         weightkg: 5.5,
         color: "Blue",
@@ -11999,7 +11999,7 @@
         name: "Swanna",
         types: ["Water", "Flying"],
         baseStats: { hp: 75, atk: 87, def: 63, spa: 87, spd: 63, spe: 98 },
-        abilities: { "0": "Keen Eye", "1": "Big Pecks", H: "Hydration" },
+        abilities: { "0": "Keen Eye", "1": "Gale Wings", H: "Hydration" },
         heightm: 1.3,
         weightkg: 24.2,
         color: "White",
@@ -12067,7 +12067,7 @@
         eggGroups: ["Field"],
         cosmeticFormes: ["Deerling-Summer", "Deerling-Autumn", "Deerling-Winter"],
         formeOrder: ["Deerling", "Deerling-Summer", "Deerling-Autumn", "Deerling-Winter"],
-        tier: "LC"
+        tier: "Illegal"
     },
     deerlingsummer: {
         isCosmeticForme: true,
@@ -13466,7 +13466,7 @@
         eggGroups: ["Water 1"],
         otherFormes: ["Greninja-Bond", "Greninja-Ash", "Greninja-Mega"],
         formeOrder: ["Greninja", "Greninja-Bond", "Greninja-Ash", "Greninja-Mega"],
-        tier: "UU"
+        tier: "HCOU"
     },
     greninjabond: {
         num: 658,
@@ -13674,7 +13674,7 @@
             "Vivillon-Fancy",
             "Vivillon-Pokeball"
         ],
-        tier: "ZU"
+        tier: "HCOU"
     },
     vivillonicysnow: {
         isCosmeticForme: true,
@@ -14100,7 +14100,7 @@
         eggGroups: ["Field"],
         otherFormes: ["Meowstic-F", "Meowstic-M-Mega", "Meowstic-F-Mega"],
         formeOrder: ["Meowstic", "Meowstic-F", "Meowstic-M-Mega", "Meowstic-F-Mega"],
-        tier: "ZU"
+        tier: "HC"
     },
     meowsticf: {
         num: 678,
@@ -14202,7 +14202,7 @@
         eggGroups: ["Mineral"],
         otherFormes: ["Aegislash-Blade"],
         formeOrder: ["Aegislash", "Aegislash-Blade"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     aegislashblade: {
@@ -14749,7 +14749,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Pumpkaboo-Small", "Pumpkaboo-Large", "Pumpkaboo-Super"],
         formeOrder: ["Pumpkaboo", "Pumpkaboo-Small", "Pumpkaboo-Large", "Pumpkaboo-Super"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     pumpkaboosmall: {
@@ -14812,7 +14812,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Gourgeist-Small", "Gourgeist-Large", "Gourgeist-Super"],
         formeOrder: ["Gourgeist", "Gourgeist-Small", "Gourgeist-Large", "Gourgeist-Super"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     gourgeistsmall: {
@@ -15700,7 +15700,7 @@
         eggGroups: ["Water 2"],
         otherFormes: ["Wishiwashi-School"],
         formeOrder: ["Wishiwashi", "Wishiwashi-School"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     wishiwashischool: {
@@ -16686,7 +16686,7 @@
         eggGroups: ["Amorphous"],
         otherFormes: ["Mimikyu-Busted", "Mimikyu-Totem", "Mimikyu-Busted-Totem"],
         formeOrder: ["Mimikyu", "Mimikyu-Busted", "Mimikyu-Totem", "Mimikyu-Busted-Totem"],
-        tier: "RU"
+        tier: "HCOU"
     },
     mimikyubusted: {
         num: 778,
@@ -17163,7 +17163,7 @@
         tags: ["Mythical"],
         otherFormes: ["Magearna-Original", "Magearna-Mega", "Magearna-Original-Mega"],
         formeOrder: ["Magearna", "Magearna-Original", "Magearna-Mega", "Magearna-Original-Mega"],
-        tier: "Uber"
+        tier: "HCOU"
     },
     magearnaoriginal: {
         num: 801,
@@ -17377,7 +17377,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Melmetal",
         placeholderFor: "Melmetal",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     grookey: {
@@ -17441,7 +17441,7 @@
         eggGroups: ["Field", "Grass"],
         changesFrom: "Rillaboom",
         placeholderFor: "Rillaboom",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     scorbunny: {
@@ -17505,7 +17505,7 @@
         eggGroups: ["Field", "Human-Like"],
         changesFrom: "Cinderace",
         placeholderFor: "Cinderace",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     sobble: {
@@ -17569,7 +17569,7 @@
         eggGroups: ["Water 1", "Field"],
         changesFrom: "Inteleon",
         placeholderFor: "Inteleon",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     skwovet: {
@@ -17656,7 +17656,7 @@
         eggGroups: ["Flying"],
         changesFrom: "Corviknight",
         placeholderFor: "Corviknight",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     blipbug: {
@@ -17719,7 +17719,7 @@
         eggGroups: ["Bug"],
         changesFrom: "Orbeetle",
         placeholderFor: "Orbeetle",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     nickit: {
@@ -17851,7 +17851,7 @@
         eggGroups: ["Monster", "Water 1"],
         changesFrom: "Drednaw",
         placeholderFor: "Drednaw",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     yamper: {
@@ -17940,7 +17940,7 @@
         eggGroups: ["Mineral"],
         changesFrom: "Coalossal",
         placeholderFor: "Coalossal",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     applin: {
@@ -17986,7 +17986,7 @@
         eggGroups: ["Grass", "Dragon"],
         changesFrom: "Flapple",
         placeholderFor: "Flapple",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     appletun: {
@@ -18019,7 +18019,7 @@
         eggGroups: ["Grass", "Dragon"],
         changesFrom: "Appletun",
         placeholderFor: "Appletun",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     silicobra: {
@@ -18064,7 +18064,7 @@
         eggGroups: ["Field", "Dragon"],
         changesFrom: "Sandaconda",
         placeholderFor: "Sandaconda",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     cramorant: {
@@ -18079,7 +18079,7 @@
         eggGroups: ["Water 1", "Flying"],
         otherFormes: ["Cramorant-Gulping", "Cramorant-Gorging"],
         formeOrder: ["Cramorant", "Cramorant-Gulping", "Cramorant-Gorging"],
-        tier: "PU"
+        tier: "HCOU"
     },
     cramorantgulping: {
         num: 845,
@@ -18168,7 +18168,7 @@
         otherFormes: ["Toxtricity-Low-Key"],
         formeOrder: ["Toxtricity", "Toxtricity-Low-Key"],
         canGigantamax: "G-Max Stun Shock",
-        tier: "RU"
+        tier: "HCOU"
     },
     toxtricitylowkey: {
         num: 849,
@@ -18200,7 +18200,7 @@
         eggGroups: ["Human-Like"],
         changesFrom: "Toxtricity",
         placeholderFor: "Toxtricity",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     toxtricitylowkeygmax: {
@@ -18218,7 +18218,7 @@
         battleOnly: "Toxtricity-Low-Key",
         changesFrom: "Toxtricity-Low-Key",
         placeholderFor: "Toxtricity-Low-Key",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     sizzlipede: {
@@ -18265,7 +18265,7 @@
         eggGroups: ["Bug"],
         changesFrom: "Centiskorch",
         placeholderFor: "Centiskorch",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     clobbopus: {
@@ -18313,7 +18313,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Sinistea-Antique"],
         formeOrder: ["Sinistea", "Sinistea-Antique"],
-        tier: "LC"
+        tier: "HCOU"
     },
     sinisteaantique: {
         num: 854,
@@ -18347,7 +18347,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Polteageist-Antique"],
         formeOrder: ["Polteageist", "Polteageist-Antique"],
-        tier: "UUBL"
+        tier: "HCOU"
     },
     polteageistantique: {
         num: 855,
@@ -18427,7 +18427,7 @@
         eggGroups: ["Fairy"],
         changesFrom: "Hatterene",
         placeholderFor: "Hatterene",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     impidimp: {
@@ -18491,7 +18491,7 @@
         eggGroups: ["Fairy", "Human-Like"],
         changesFrom: "Grimmsnarl",
         placeholderFor: "Grimmsnarl",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     obstagoon: {
@@ -18638,7 +18638,7 @@
             "Alcremie-Rainbow-Swirl"
         ],
         canGigantamax: "G-Max Finale",
-        tier: "ZUBL"
+        tier: "Illegal"
     },
     alcremierubycream: {
         isCosmeticForme: true,
@@ -18704,7 +18704,7 @@
         eggGroups: ["Fairy", "Amorphous"],
         changesFrom: "Alcremie",
         placeholderFor: "Alcremie",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     falinks: {
@@ -18805,7 +18805,7 @@
         eggGroups: ["Water 1", "Field"],
         otherFormes: ["Eiscue-Noice"],
         formeOrder: ["Eiscue", "Eiscue-Noice"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     eiscuenoice: {
         num: 875,
@@ -18867,7 +18867,7 @@
         eggGroups: ["Field", "Fairy"],
         otherFormes: ["Morpeko-Hangry"],
         formeOrder: ["Morpeko", "Morpeko-Hangry"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     morpekohangry: {
         num: 877,
@@ -18926,7 +18926,7 @@
         eggGroups: ["Field", "Mineral"],
         changesFrom: "Copperajah",
         placeholderFor: "Copperajah",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     dracozolt: {
@@ -19013,7 +19013,7 @@
         eggGroups: ["Mineral", "Dragon"],
         changesFrom: "Duraludon",
         placeholderFor: "Duraludon",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     dreepy: {
@@ -19235,7 +19235,7 @@
         eggGroups: ["Undiscovered"],
         changesFrom: "Urshifu",
         placeholderFor: "Urshifu",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     urshifurapidstrikegmax: {
@@ -19254,7 +19254,7 @@
         battleOnly: "Urshifu-Rapid-Strike",
         changesFrom: "Urshifu-Rapid-Strike",
         placeholderFor: "Urshifu-Rapid-Strike",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     zarude: {
@@ -19707,7 +19707,7 @@
         num: 916,
         name: "Oinkologne",
         baseForme: "M",
-        types: ["Normal"],
+        types: ["Normal", "Ground"],
         gender: "M",
         baseStats: { hp: 110, atk: 100, def: 75, spa: 59, spd: 80, spe: 65 },
         abilities: { "0": "Lingering Aroma", "1": "Gluttony", H: "Thick Fat" },
@@ -19726,7 +19726,7 @@
         name: "Oinkologne-F",
         baseSpecies: "Oinkologne",
         forme: "F",
-        types: ["Normal"],
+        types: ["Normal", "Ground"],
         gender: "F",
         baseStats: { hp: 115, atk: 90, def: 70, spa: 59, spd: 90, spe: 65 },
         abilities: { "0": "Aroma Veil", "1": "Gluttony", H: "Thick Fat" },
@@ -19743,7 +19743,7 @@
         name: "Tarountula",
         types: ["Bug"],
         baseStats: { hp: 35, atk: 41, def: 45, spa: 29, spd: 40, spe: 20 },
-        abilities: { "0": "Insomnia", H: "Stakeout" },
+        abilities: { "0": "Insomnia", "1": "Stakeout" },
         heightm: 0.3,
         weightkg: 4,
         color: "White",
@@ -19756,7 +19756,7 @@
         name: "Spidops",
         types: ["Bug"],
         baseStats: { hp: 60, atk: 79, def: 92, spa: 52, spd: 86, spe: 35 },
-        abilities: { "0": "Insomnia", H: "Stakeout" },
+        abilities: { "0": "Insomnia", "1": "Battle Armor", H: "Stakeout" },
         heightm: 1,
         weightkg: 16.5,
         color: "Green",
@@ -19770,27 +19770,27 @@
         name: "Nymble",
         types: ["Bug"],
         baseStats: { hp: 33, atk: 46, def: 40, spa: 21, spd: 25, spe: 45 },
-        abilities: { "0": "Swarm", H: "Tinted Lens" },
+        abilities: { "0": "Swarm", H: "Infiltrator" },
         heightm: 0.2,
         weightkg: 1,
         color: "Gray",
         evos: ["Lokix"],
         eggGroups: ["Bug"],
-        tier: "LC"
+        tier: "HCOU"
     },
     lokix: {
         num: 920,
         name: "Lokix",
         types: ["Bug", "Dark"],
         baseStats: { hp: 71, atk: 102, def: 78, spa: 52, spd: 55, spe: 92 },
-        abilities: { "0": "Swarm", H: "Tinted Lens" },
+        abilities: { "0": "Swarm", "1": "Tinted Lens", H: "Infiltrator" },
         heightm: 1,
         weightkg: 17.5,
         color: "Gray",
         prevo: "Nymble",
         evoLevel: 24,
         eggGroups: ["Bug"],
-        tier: "UU"
+        tier: "HCOU"
     },
     pawmi: {
         num: 921,
@@ -19865,7 +19865,7 @@
         otherFormes: ["Maushold-Four"],
         formeOrder: ["Maushold", "Maushold-Four"],
         eggGroups: ["Field", "Fairy"],
-        tier: "RU"
+        tier: "HCOU"
     },
     mausholdfour: {
         num: 925,
@@ -19965,7 +19965,7 @@
         otherFormes: ["Squawkabilly-Blue", "Squawkabilly-Yellow", "Squawkabilly-White"],
         formeOrder: ["Squawkabilly", "Squawkabilly-Blue", "Squawkabilly-Yellow", "Squawkabilly-White"],
         eggGroups: ["Flying"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     squawkabillyblue: {
         num: 931,
@@ -20711,7 +20711,7 @@
             "Tatsugiri-Droopy-Mega",
             "Tatsugiri-Stretchy-Mega"
         ],
-        tier: "PU"
+        tier: "HCOU"
     },
     tatsugiridroopy: {
         num: 978,
@@ -20850,7 +20850,7 @@
         otherFormes: ["Dudunsparce-Three-Segment"],
         formeOrder: ["Dudunsparce", "Dudunsparce-Three-Segment"],
         eggGroups: ["Field"],
-        tier: "NU"
+        tier: "HCOU"
     },
     dudunsparcethreesegment: {
         num: 982,
@@ -20878,8 +20878,7 @@
         weightkg: 120,
         color: "Black",
         prevo: "Bisharp",
-        evoType: "other",
-        evoCondition: "Defeat 3 Bisharp leading Pawniard and level-up",
+        evoLevel: 60,
         eggGroups: ["Human-Like"],
         tier: "OU"
     },
@@ -21331,7 +21330,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Poltchageist-Artisan"],
         formeOrder: ["Poltchageist", "Poltchageist-Artisan"],
-        tier: "LC"
+        tier: "HCOU"
     },
     poltchageistartisan: {
         num: 1012,
@@ -21365,7 +21364,7 @@
         eggGroups: ["Mineral", "Amorphous"],
         otherFormes: ["Sinistcha-Masterpiece"],
         formeOrder: ["Sinistcha", "Sinistcha-Masterpiece"],
-        tier: "UU"
+        tier: "HCOU"
     },
     sinistchamasterpiece: {
         num: 1013,
@@ -21678,7 +21677,7 @@
         otherFormes: ["Terapagos-Terastal", "Terapagos-Stellar"],
         formeOrder: ["Terapagos", "Terapagos-Terastal", "Terapagos-Stellar"],
         requiredTeraType: "Stellar",
-        tier: "Uber"
+        tier: "Unob"
     },
     terapagosterastal: {
         num: 1024,

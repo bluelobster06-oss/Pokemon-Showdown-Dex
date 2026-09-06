@@ -66,7 +66,10 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 
             if (i !== '0') buf += ' | ';
             if (i === 'H') ability = '<em>' + pokemon.abilities[i] + '</em>';
-            buf += '<a href="/abilities/' + toID(pokemon.abilities[i]) + '" data-target="push">' + ability + '</a>';
+            var bannedAbility = Dex.isBannedAbility(pokemon.abilities[i]);
+            var abilityClass = bannedAbility ? ' class="banned-ability"' : '';
+            var abilityTitle = bannedAbility ? ' title="' + Dex.bannedAbilityTitle + '"' : '';
+            buf += '<a' + abilityClass + abilityTitle + ' href="/abilities/' + toID(pokemon.abilities[i]) + '" data-target="push">' + ability + '</a>';
             if (i === 'H') buf += '<small> (H)</small>';
             if (i === 'S') buf += '<small> (special)</small>';
         }
@@ -472,7 +475,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
                         break;
                     case 'd': // tm/hm
                         if (lastChanged) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
-                        desc = '<img src="' + Dex.resourcePrefix + '/sprites/itemicons/tm-normal.png" style="margin-top:-3px;opacity:.7" width="24" height="24" alt="TM/HM" />';
+                        desc = '<span class="itemicon" style="margin-top:-3px;display:inline-block;' + (Dex.getTMIcon ? Dex.getTMIcon(move.type) : Dex.getItemIcon({ spritenum: 721 })) + '"></span>';
                         break;
                     case 'e': // tutor
                         if (lastChanged) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
@@ -623,7 +626,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
             for (var j = 0; j < groupMoves.length; j++) {
                 var addedMove = groupMoves[j];
                 var moveName = Dex.escapeHTML(addedMove.name);
-                if (groupInfo.id === 'level') moveName += addedMove.level ? ' Lv. ' + addedMove.level : ' upon evolution';
+                if (groupInfo.id === 'level') moveName += addedMove.level ? ' Lv. ' + addedMove.level : ' upon Evolution';
                 moveNames.push(moveName);
             }
             newMoveLines.push('<li><strong>' + groupInfo.label + ':</strong> ' + moveNames.join(', ') + '</li>');
