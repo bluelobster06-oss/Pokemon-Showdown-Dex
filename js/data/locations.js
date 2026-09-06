@@ -1,15 +1,15 @@
 var PokedexLocationIcons = {
     table: {
-        'Grass': '/images/Grass.png',
-        'Gift': '/images/Present.png',
+        'Grass': '../images/Grass.png',
+        'Gift': '../images/Present.png',
         'Old Rod': 'https://static.unboundwiki.com/wp-content/assets/images/2025/02/old-rod-x2.png',
         'Good Rod': 'https://static.unboundwiki.com/wp-content/assets/images/2025/02/good-rod-x2.png',
-        'Surf': '/images/Surf2.png',
-        'Rock Smash': '/images/RockSmash.png'
+        'Surf': '../images/Surf2.png',
+        'Rock Smash': '../images/RockSmash.png'
     },
     time: {
-        'Nighttime': '/images/MoonRR2.png',
-        'Daytime': '/images/SunRR2.jpg'
+        'Nighttime': '../images/MoonRR2.png',
+        'Daytime': '../images/SunRR2.jpg'
     }
 };
 
