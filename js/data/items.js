@@ -682,7 +682,7 @@ exports.BattleItems = {
     },
     chillorb: {
         name: "Chill Orb",
-        icon: "##BASE##/images/itemicons/chill-orb.png",
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/chill-orb.png",
         fling: { basePower: 30, status: "frz" },
         onResidualOrder: 28,
         onResidualSubOrder: 3,
@@ -3650,7 +3650,7 @@ exports.BattleItems = {
     },
     potion: {
         name: "Potion",
-        icon: "##BASE##/images/itemicons/potion.png",
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/potion.png",
         fling: { basePower: 30 },
         num: 807,
         gen: 1,
