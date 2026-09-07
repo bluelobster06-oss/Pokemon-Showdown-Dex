@@ -171,7 +171,6 @@ Dex.getItemIcon = function (item) {
         // a slot in Pokémon Showdown's shared item sprite sheet.
         if (it.icon || it.image || it.sprite) {
             var iconURL = it.icon || it.image || it.sprite;
-            if (!/^(?:[a-z]+:)?\/\//i.test(iconURL) && iconURL.charAt(0) !== '/') iconURL = '/' + iconURL;
             return "background:transparent url('" + iconURL + "') center center / contain no-repeat";
         }
         var type = it.type || it.tmType;
