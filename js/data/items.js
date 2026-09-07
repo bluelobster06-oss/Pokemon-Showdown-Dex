@@ -3989,7 +3989,7 @@ exports.BattleItems = {
     },
     revive: {
         name: "Revive",
-        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/revive.png",
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/revive.webp",
         fling: { basePower: 30 },
         num: 28,
         gen: 1,
