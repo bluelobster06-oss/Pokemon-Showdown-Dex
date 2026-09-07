@@ -682,7 +682,7 @@ exports.BattleItems = {
     },
     chillorb: {
         name: "Chill Orb",
-        icon: "/images/itemicons/Chill Orb 24x24.png",
+        icon: "/images/itemicons/chill-orb.png",
         fling: { basePower: 30, status: "frz" },
         onResidualOrder: 28,
         onResidualSubOrder: 3,
@@ -3650,7 +3650,7 @@ exports.BattleItems = {
     },
     potion: {
         name: "Potion",
-        icon: "/images/itemicons/Potion-4.80pct2.png",
+        icon: "/images/itemicons/potion.png",
         fling: { basePower: 30 },
         num: 807,
         gen: 1,
