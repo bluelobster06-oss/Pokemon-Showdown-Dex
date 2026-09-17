@@ -47,11 +47,57 @@ var PokedexChangesPanel = Panels.Panel.extend({
             }
         };
     },
+    getRenderableEntry: function (method, data) {
+        var id = toID(data && (data.id || data.name) || '');
+        var table = null;
+        if (method === 'renderPokemonRow') table = Dex.species;
+        else if (method === 'renderMoveRow') table = Dex.moves;
+        else if (method === 'renderAbilityRow') table = Dex.abilities;
+        else if (method === 'renderItemRow') table = Dex.items;
+
+        // The changes lists contain the raw entries from the local data files.
+        // Search rows need the Dex versions, which include IDs, text data, and
+        // the metadata expected by panel routing.
+        if (table && typeof table.get === 'function' && id) {
+            var resolved = table.get(id);
+            if (resolved && resolved.name) return resolved;
+        }
+        return Object.assign({id: id}, data);
+    },
+    getEntryRoute: function (method, data) {
+        var path = {
+            renderPokemonRow: 'pokemon',
+            renderMoveRow: 'moves',
+            renderAbilityRow: 'abilities',
+            renderItemRow: 'items'
+        }[method];
+        return path ? '/' + path + '/' + toID(data && (data.id || data.name) || '') : '';
+    },
+    ensureRowRoute: function (html, route) {
+        if (!route) return html;
+        return html.replace(/<a\b([^>]*)>/, function (match, attributes) {
+            if (!/\bhref=/.test(attributes)) attributes += ' href="' + route + '"';
+            if (!/\bdata-target=/.test(attributes)) attributes += ' data-target="push"';
+            return '<a' + attributes + '>';
+        });
+    },
     renderSearchRow: function (method, data) {
         if (typeof BattleSearch === 'undefined' || typeof BattleSearch[method] !== 'function') {
             return '<li class="notfound"><em>Unable to render this entry.</em></li>';
         }
-        return BattleSearch[method].call(this.getRowRendererContext(), data);
+        var entry = this.getRenderableEntry(method, data);
+        var html = BattleSearch[method].call(this.getRowRendererContext(), entry);
+
+        // A custom entry may not have a translated-text record yet. Prefer
+        // its own short description so changes always remain informative.
+        if (method !== 'renderPokemonRow') {
+            var description = (data && (data.shortDesc || data.desc)) || entry.shortDesc || entry.desc || '';
+            var descriptionClass = method === 'renderMoveRow' ? 'movedesccol' :
+                (method === 'renderAbilityRow' ? 'abilitydesccol' : 'itemdesccol');
+            html = html.replace(new RegExp('(<span class="col ' + descriptionClass + '")[^>]*>[\\s\\S]*?<\\/span>'),
+                '$1>' + Dex.escapeHTML(description) + '</span>');
+        }
+        return this.ensureRowRoute(html, this.getEntryRoute(method, entry));
     },
     getChangedPokemon: function () {
         var list = [];
