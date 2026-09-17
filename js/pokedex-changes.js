@@ -36,68 +36,60 @@ var PokedexChangesPanel = Panels.Panel.extend({
         $(e.currentTarget).addClass('cur');
         this.renderContent();
     },
-    // BattleSearch exposes static row renderers, but its move, ability, and
-    // item rows still expect the `dex()` method normally supplied by a live
-    // search instance. The Changes tab renders rows directly, so provide the
-    // same tiny context without creating a hidden search widget.
-    getRowRendererContext: function () {
-        return {
-            dex: function () {
-                return Dex;
-            }
-        };
+    // These deliberately do not use BattleSearch's static row templates.
+    // Those templates are tied to a live search widget and intercept clicks
+    // with `data-entry`; the Changes tab needs ordinary panel links instead.
+    getDescription: function (entry) {
+        return Dex.escapeHTML((entry && (entry.shortDesc || entry.desc)) || '');
     },
-    getRenderableEntry: function (method, data) {
-        var id = toID(data && (data.id || data.name) || '');
-        var table = null;
-        if (method === 'renderPokemonRow') table = Dex.species;
-        else if (method === 'renderMoveRow') table = Dex.moves;
-        else if (method === 'renderAbilityRow') table = Dex.abilities;
-        else if (method === 'renderItemRow') table = Dex.items;
-
-        // The changes lists contain the raw entries from the local data files.
-        // Search rows need the Dex versions, which include IDs, text data, and
-        // the metadata expected by panel routing.
-        if (table && typeof table.get === 'function' && id) {
-            var resolved = table.get(id);
-            if (resolved && resolved.name) return resolved;
-        }
-        return Object.assign({id: id}, data);
+    renderPokemonChange: function (pokemon) {
+        var id = toID(pokemon.id || pokemon.name);
+        var abilities = pokemon.abilities || {};
+        var stats = pokemon.baseStats || {};
+        var types = '';
+        for (var i = 0; i < (pokemon.types || []).length; i++) types += Dex.getTypeIcon(pokemon.types[i]);
+        var tier = typeof Dex.getPokemonTier === 'function' ? Dex.getPokemonTier(pokemon) : (pokemon.tier || '');
+        var abilityOne = abilities['0'] || '';
+        var abilityTwo = abilities['1'] || '';
+        var hiddenAbility = abilities.H || '';
+        return '<li class="result"><a href="/pokemon/' + id + '" data-target="push">' +
+            '<span class="col numcol">' + Dex.escapeHTML(tier) + '</span> ' +
+            '<span class="col iconcol"><span style="' + Dex.getPokemonIcon(pokemon.name) + '"></span></span> ' +
+            '<span class="col pokemonnamecol">' + Dex.escapeHTML(pokemon.name) + '</span> ' +
+            '<span class="col typecol">' + types + '</span> ' +
+            '<span class="col ' + (abilityTwo ? 'twoabilitycol' : 'abilitycol') + '">' + Dex.escapeHTML(abilityOne) + (abilityTwo ? '<br />' + Dex.escapeHTML(abilityTwo) : '') + '</span>' +
+            '<span class="col abilitycol">' + Dex.escapeHTML(hiddenAbility) + '</span> ' +
+            '<span class="col statcol"><em>HP</em><br />' + (stats.hp || 0) + '</span> ' +
+            '<span class="col statcol"><em>Atk</em><br />' + (stats.atk || 0) + '</span> ' +
+            '<span class="col statcol"><em>Def</em><br />' + (stats.def || 0) + '</span> ' +
+            '<span class="col statcol"><em>SpA</em><br />' + (stats.spa || 0) + '</span> ' +
+            '<span class="col statcol"><em>SpD</em><br />' + (stats.spd || 0) + '</span> ' +
+            '<span class="col statcol"><em>Spe</em><br />' + (stats.spe || 0) + '</span></a></li>';
     },
-    getEntryRoute: function (method, data) {
-        var path = {
-            renderPokemonRow: 'pokemon',
-            renderMoveRow: 'moves',
-            renderAbilityRow: 'abilities',
-            renderItemRow: 'items'
-        }[method];
-        return path ? '/' + path + '/' + toID(data && (data.id || data.name) || '') : '';
+    renderMoveChange: function (move) {
+        var id = toID(move.id || move.name);
+        var categoryIcon = typeof Dex.getCategoryIcon === 'function' ? Dex.getCategoryIcon(move.category) : '';
+        var pp = move.pp === 1 || move.noPPBoosts ? move.pp : Math.floor((move.pp || 0) * 8 / 5);
+        return '<li class="result"><a href="/moves/' + id + '" data-target="push">' +
+            '<span class="col movenamecol">' + Dex.escapeHTML(move.name) + '</span> ' +
+            '<span class="col typecol">' + Dex.getTypeIcon(move.type) + categoryIcon + '</span> ' +
+            '<span class="col labelcol">' + (move.category !== 'Status' ? '<em>Power</em><br />' + (move.basePower || '&mdash;') : '') + '</span> ' +
+            '<span class="col widelabelcol"><em>Accuracy</em><br />' + (move.accuracy && move.accuracy !== true ? move.accuracy + '%' : '&mdash;') + '</span> ' +
+            '<span class="col pplabelcol"><em>PP</em><br />' + pp + '</span> ' +
+            '<span class="col movedesccol">' + this.getDescription(move) + '</span></a></li>';
     },
-    ensureRowRoute: function (html, route) {
-        if (!route) return html;
-        return html.replace(/<a\b([^>]*)>/, function (match, attributes) {
-            if (!/\bhref=/.test(attributes)) attributes += ' href="' + route + '"';
-            if (!/\bdata-target=/.test(attributes)) attributes += ' data-target="push"';
-            return '<a' + attributes + '>';
-        });
+    renderAbilityChange: function (ability) {
+        var id = toID(ability.id || ability.name);
+        return '<li class="result"><a href="/abilities/' + id + '" data-target="push">' +
+            '<span class="col namecol">' + Dex.escapeHTML(ability.name) + '</span> ' +
+            '<span class="col abilitydesccol">' + this.getDescription(ability) + '</span></a></li>';
     },
-    renderSearchRow: function (method, data) {
-        if (typeof BattleSearch === 'undefined' || typeof BattleSearch[method] !== 'function') {
-            return '<li class="notfound"><em>Unable to render this entry.</em></li>';
-        }
-        var entry = this.getRenderableEntry(method, data);
-        var html = BattleSearch[method].call(this.getRowRendererContext(), entry);
-
-        // A custom entry may not have a translated-text record yet. Prefer
-        // its own short description so changes always remain informative.
-        if (method !== 'renderPokemonRow') {
-            var description = (data && (data.shortDesc || data.desc)) || entry.shortDesc || entry.desc || '';
-            var descriptionClass = method === 'renderMoveRow' ? 'movedesccol' :
-                (method === 'renderAbilityRow' ? 'abilitydesccol' : 'itemdesccol');
-            html = html.replace(new RegExp('(<span class="col ' + descriptionClass + '")[^>]*>[\\s\\S]*?<\\/span>'),
-                '$1>' + Dex.escapeHTML(description) + '</span>');
-        }
-        return this.ensureRowRoute(html, this.getEntryRoute(method, entry));
+    renderItemChange: function (item) {
+        var id = toID(item.id || item.name);
+        return '<li class="result"><a href="/items/' + id + '" data-target="push">' +
+            '<span class="col itemiconcol"><span style="' + Dex.getItemIcon(item) + '"></span></span> ' +
+            '<span class="col namecol">' + Dex.escapeHTML(item.name) + '</span> ' +
+            '<span class="col itemdesccol">' + this.getDescription(item) + '</span></a></li>';
     },
     getChangedPokemon: function () {
         var list = [];
@@ -328,7 +320,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
             if (changedPokemon.length) {
                 if (cat === 'all') buf += '<li class="resultheader"><h3>Pok&eacute;mon Changes (' + changedPokemon.length + ')</h3></li>';
                 for (var i = 0; i < changedPokemon.length; i++) {
-                    buf += this.renderSearchRow('renderPokemonRow', changedPokemon[i]);
+                    buf += this.renderPokemonChange(changedPokemon[i]);
                 }
             } else if (cat === 'pokemon') {
                 buf += '<li class="notfound"><em>No modified Pok&eacute;mon found.</em></li>';
@@ -346,7 +338,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
                     buf += '<li class="resultheader"><h3>' + moveTitle + ' (' + changedMoves.length + ')</h3></li>';
                 }
                 for (var j = 0; j < changedMoves.length; j++) {
-                    buf += this.renderSearchRow('renderMoveRow', changedMoves[j]);
+                    buf += this.renderMoveChange(changedMoves[j]);
                 }
             } else if (cat === 'moves') {
                 buf += '<li class="notfound"><em>No modified Moves found for this filter.</em></li>';
@@ -364,7 +356,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
                     buf += '<li class="resultheader"><h3>' + abilityTitle + ' (' + changedAbilities.length + ')</h3></li>';
                 }
                 for (var k = 0; k < changedAbilities.length; k++) {
-                    buf += this.renderSearchRow('renderAbilityRow', changedAbilities[k]);
+                    buf += this.renderAbilityChange(changedAbilities[k]);
                 }
             } else if (cat === 'abilities') {
                 buf += '<li class="notfound"><em>No modified Abilities found for this filter.</em></li>';
@@ -375,7 +367,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
             if (changedItems.length) {
                 if (cat === 'all') buf += '<li class="resultheader"><h3>Item Changes (' + changedItems.length + ')</h3></li>';
                 for (var l = 0; l < changedItems.length; l++) {
-                    buf += this.renderSearchRow('renderItemRow', changedItems[l]);
+                    buf += this.renderItemChange(changedItems[l]);
                 }
             } else if (cat === 'items') {
                 buf += '<li class="notfound"><em>No modified Items found.</em></li>';
