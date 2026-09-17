@@ -1055,7 +1055,7 @@ exports.BattleItems = {
     },
     dozeorb: {
         name: "Doze Orb",
-        icon: "", //temp
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/doze-orb.png",
         fling: { basePower: 30, status: "slp" },
         onResidualOrder: 28,
         onResidualSubOrder: 3,
@@ -3989,7 +3989,7 @@ exports.BattleItems = {
     },
     revive: {
         name: "Revive",
-        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/revive.webp",
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/revive.png",
         fling: { basePower: 30 },
         num: 28,
         gen: 1,
@@ -4028,7 +4028,7 @@ exports.BattleItems = {
     },
     repel: {
         name: "Repel",
-        icon: "", //temp
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/chill-orb.png",
         fling: { basePower: 30 },
         num: 830,
         gen: 1,
@@ -4268,8 +4268,8 @@ exports.BattleItems = {
         num: 807,
         gen: 6,
         new: 1,
-        desc: "Restores 1/4 of Ally's max HP upon switching in. Empties after one use.",
-        shortDesc: "Restores 1/4 of Ally's max HP upon switching in. Empties after one use."
+        desc: "Restores 1/3 of Ally's max HP upon switching in. Empties after one use.",
+        shortDesc: "Restores 1/3 of Ally's max HP upon switching in. Empties after one use."
     },
     sceptilite: {
         name: "Sceptilite",
@@ -4663,7 +4663,7 @@ exports.BattleItems = {
     },
     staticorb: {
         name: "Static Orb",
-        icon: "", //temp
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/static-orb.png",
         fling: { basePower: 30, status: "par" },
         onResidualOrder: 28,
         onResidualSubOrder: 3,

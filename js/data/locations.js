@@ -105,14 +105,14 @@ var PokedexLocations = {
                 name: 'Player\s House',
                 iconClass: '', //temp
                 summary: 'Starting Location.',
-                description: 'The Player\'s house is where the Player spawns in when a new game begins. A cutscene is also shown with the Player throwing their alarm clock at the wall, before waking up and gaining control of their own character after starting a new game, requiring the Player to fill in his or her Trainer Card in the process.',
+                description: 'The Player\'s house, every pokemon trainer starts their journey here and is asked to fill out their trainer card.',
             },
             {
                 id: 'jakeshouse',
                 name: 'Jake\s House',
                 iconClass: '', //temp
                 summary: 'Rival\s House.',
-                description: 'Rival Jake\'s house is diagonally opposite to the Player\'s in-game home. Jake\'s father asks the Player to keep an eye on Jake because he is not the brightest. Meanwhile Jake\'s mother reminds how her son and the Player stayed up all night talking about how their adventure would be.',
+                description: 'Rival Jake\'s house, diagonally opposite to the Player\s house.',
                 items: [
                     { name: 'Mail', details: 'In the middle of Jake\'s room.' },
                 ],
@@ -142,6 +142,13 @@ var PokedexLocations = {
         ],
         items: [
             { name: 'Potion', item_num: 1, details: 'Behind the fence near Picknicker Susie.' },
+            { name: 'Oran Berry', item_num: 10, details: 'In the trees connecting Route 1 and Cindering Grove.' },
+            { name: 'Pecha Berry', item_num: 10, details: 'In the trees connecting Route 1 and Cindering Grove.' },
+            { name: 'Cheri Berry', item_num: 10, details: 'In the trees connecting Route 1 and Cindering Grove.' },
+            { name: 'Chesto Berry', item_num: 10, details: 'In the trees connecting Route 1 and Cindering Grove.' },
+            { name: 'Rawst Berry', item_num: 10, details: 'In the trees connecting Route 1 and Cindering Grove.' },
+            { name: 'Aspear Berry', item_num: 10, details: 'In the trees connecting Route 1 and Cindering Grove.' },
+
         ]
     },
     cinderinggrove: {
@@ -188,7 +195,7 @@ var PokedexLocations = {
             { name: 'Poke Ball', item_num: 1, details: "Behind left trees near the entrance." },
             { name: 'Sawsbuck Coffee', item_num: 1, details: "In Sawsbuck Café." },
             { name: 'Nugget', item_num: 1, details: "In the Grass to the right of the Route 2 bridge." },
-            { name: 'Silver Wing', details: "Requires 3 Legendary Birds in party: Talk to the old man." },
+            { name: 'Silver Wing', details: "Requires 3 Legendary Birds in party; Talk to the old man." },
         ],
         notableAreas: [
             {
@@ -196,7 +203,7 @@ var PokedexLocations = {
                 name: 'Pokécenter & Pokémart',
                 iconClass: '', //temp
                 summary: 'Healing and store items.',
-                description: 'Allows the player to heal their Pokémon, buy items from the shopkeeper depending on the amount of badges they possess and exchange Bottle Caps for relearning moves, changing abilities, altering natures and changing IVs.',
+                description: 'Allows the player to heal their Pokémon, buy items from the shopkeeper depending on the amount of badges they possess and exchange Bottle Caps for relearning moves, changing abilities, altering natures and modifying IVs.',
                 items: [
                     { name: 'Poke Ball', details: '200$ - 0 badges required.' },
                     { name: 'Great Ball', details: '???% - 0 badges required.' },
@@ -224,7 +231,7 @@ var PokedexLocations = {
                 name: 'Sawsbuck Café',
                 iconClass: '', //temp
                 summary: 'Local business.',
-                description: 'This charming shop brings the hardworking residents of Cheshma Town together through refreshing cups of their signature Sawsbuck Coffee. In the events of wanting more Sawsbuck Coffee, the Player must battle the barista, this can only be done once after each gym badge.',
+                description: 'Serves signature Sawsbuck Coffee. In the event of wanting more refills of Sawsbuck Coffee, the Player must battle the barista, this can only be done once after each gym badge.',
                 items: [
                     { name: 'Sawsbuck Coffee', item_num: 1, details: 'Talk to the barista.' },
                 ],
@@ -244,8 +251,8 @@ var PokedexLocations = {
             { pokemon: 'nidoranf', name: 'Nidoran-F', rate: 7, minLevel: 3, maxLevel: 4, tags: ['Grass'] },
             { pokemon: 'nidoranm', name: 'Nidoran-M', rate: 7, minLevel: 3, maxLevel: 4, tags: ['Grass'] },
             { pokemon: 'pikipek', name: 'Pikipek', rate: 6, minLevel: 2, maxLevel: 3, tags: ['Grass', 'Daytime'] },
-            { pokemon: 'weedle', name: 'Weedle', rate: 6, minLevel: 2, maxLevel: 3, tags: ['Grass'] },
             { pokemon: 'caterpie', name: 'Caterpie', rate: 6, minLevel: 2, maxLevel: 3, tags: ['Grass'] },
+            { pokemon: 'weedle', name: 'Weedle', rate: 6, minLevel: 2, maxLevel: 3, tags: ['Grass'] },
             { pokemon: 'burmy', name: 'Burmy', rate: 5, minLevel: 2, maxLevel: 3, tags: ['Grass'] },
             { pokemon: 'hoothoot', name: 'Hoothoot', rate: 5, minLevel: 2, maxLevel: 3, tags: ['Grass', 'Nighttime'], heldItem: { name: 'Chesto Berry', rate: 5 } },
             { pokemon: 'nickit', name: 'Nickit', rate: 5, minLevel: 2, maxLevel: 3, tags: ['Grass', 'Nighttime'] },
@@ -284,6 +291,64 @@ var PokedexLocations = {
             { name: 'Big Pearl', item_num: 1 },
             { name: 'Shell Bell', item_num: 1 },
         ]
+    },
+    route2: {
+        name: 'Route 2',
+        connections: [
+            { name: 'Cheshma Town', direction: 'West' },
+            { name: 'Route 3', direction: 'East' },
+        ],
+        encounters: [
+            { pokemon: 'sneaselhisui', name: 'Sneasel', rate: 16, minLevel: 29, maxLevel: 34, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'bombirdier', name: 'Bombirdier', rate: 15, minLevel: 29, maxLevel: 34, tags: ['Grass'] },
+            { pokemon: 'shroodle', name: 'Shroodle', rate: 15, minLevel: 29, maxLevel: 34, tags: ['Grass', 'Nighttime'] },
+            { pokemon: 'rufflet', name: 'Rufflet', rate: 14, minLevel: 30, maxLevel: 35, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'vullaby', name: 'Vullaby', rate: 14, minLevel: 30, maxLevel: 35, tags: ['Grass', 'Nighttime'] },
+            { pokemon: 'mienfoo', name: 'Mienfoo', rate: 12, minLevel: 30, maxLevel: 35, tags: ['Grass'] },
+            { pokemon: 'spinda', name: 'Spinda', rate: 8, minLevel: 30, maxLevel: 35, tags: ['Grass'] },
+            { pokemon: 'hawlucha', name: 'Hawlucha', rate: 6, minLevel: 30, maxLevel: 35, tags: ['Grass'] },
+            { pokemon: 'chinchou', name: 'Chinchou', rate: 30, minLevel: 5, maxLevel: 10, tags: ['Old Rod', 'Nighttime'] },
+            { pokemon: 'barboach', name: 'Barboach', rate: 30, minLevel: 5, maxLevel: 10, tags: ['Old Rod'] },
+            { pokemon: 'wooper', name: 'Wooper', rate: 20, minLevel: 5, maxLevel: 10, tags: ['Old Rod'] },
+            { pokemon: 'wooperpaldea', name: 'Wooper', rate: 20, minLevel: 5, maxLevel: 10, tags: ['Old Rod', 'Daytime'] },
+            { pokemon: 'chinchou', name: 'Chinchou', rate: 25, minLevel: 25, maxLevel: 30, tags: ['Good Rod', 'Nighttime'] },
+            { pokemon: 'barboach', name: 'Barboach', rate: 25, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
+            { pokemon: 'quagsire', name: 'Quagsire', rate: 20, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
+            { pokemon: 'clodsire', name: 'Clodsire', rate: 20, minLevel: 25, maxLevel: 30, tags: ['Good Rod', 'Daytime'] },
+            { pokemon: 'gyarados', name: 'Gyarados', rate: 5, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
+            { pokemon: 'wimpod', name: 'Wimpod', rate: 5, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
+        ],
+        items: [
+            { name: 'TM03: Psyshock', item_num: 1, details: "Requires HM 04: Rock Climb; On top of the Rock Climb cliff." },
+            { name: 'TM52: Focus Blast', item_num: 1, details: "Requires HM 05: Surf; Near the grass accessible through the canal." },
+        ],
+    },
+    route3: {
+        name: 'Route 3',
+        connections: [
+            { name: 'Route 2', direction: 'West' },
+            { name: 'Silvent City', direction: 'Southeast' },
+        ],
+        encounters: [
+            { pokemon: 'electrike', name: 'Electrike', rate: 12, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'mareep', name: 'Mareep', rate: 12, minLevel: 5, maxLevel: 6, tags: ['Grass'] },
+            { pokemon: 'pawmi', name: 'Pawmi', rate: 12, minLevel: 5, maxLevel: 6, tags: ['Grass'] },
+            { pokemon: 'poochyena', name: 'Poochyena', rate: 12, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Nighttime'] },
+            { pokemon: 'shinx', name: 'Shinx', rate: 10, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Nighttime'] },
+            { pokemon: 'toedscool', name: 'Toedscool', rate: 10, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'grubbin', name: 'Grubbin', rate: 8, minLevel: 4, maxLevel: 5, tags: ['Grass'] },
+            { pokemon: 'nincada', name: 'Nincada', rate: 6, minLevel: 4, maxLevel: 5, tags: ['Grass', 'Nighttime'] },
+            { pokemon: 'emolga', name: 'Emolga', rate: 5, minLevel: 4, maxLevel: 5, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'pachirisu', name: 'Pachirisu', rate: 5, minLevel: 4, maxLevel: 5, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'voltorbhisui', name: 'Voltorb', rate: 4, minLevel: 4, maxLevel: 5, tags: ['Grass'] },
+            { pokemon: 'abra', name: 'Abra', rate: 4, minLevel: 4, maxLevel: 5, tags: ['Grass'] },
+        ],
+        items: [
+            { name: 'Paralyze Heal', item_num: 1, details: "Behind the fence opposite of Student Chase." },
+            { name: 'Berry Juice', item_num: 20, details: "Defeat Camper Jacob." },
+            { name: 'Quick Ball', item_num: 1, details: "Between the trees opposite to Camper Jacob." },
+            { name: 'TM 28: Dig', item_num: 1, details: "Requires HM 04: Rock Smash; On top of the Rock Climb cliff." },
+        ],
     },
 };
 

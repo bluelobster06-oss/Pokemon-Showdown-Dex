@@ -1227,7 +1227,7 @@ exports.BattleMovedex = {
     },
     bloodmoon: {
         num: 901,
-        accuracy: 100,
+        accuracy: true,
         basePower: 140,
         category: "Special",
         name: "Blood Moon",
@@ -2791,6 +2791,25 @@ exports.BattleMovedex = {
         desc: "Raises the target's Attack and Special Attack by 2 stages.",
         shortDesc: "Raises the target's Attack and Sp. Atk by 2."
     },
+    deepfog: {
+        num: 926,
+        accuracy: true,
+        basePower: 0,
+        category: "Status",
+        name: "Deep Fog",
+        pp: 5,
+        priority: 0,
+        flags: { metronome: 1 },
+        weather: "deepfog",
+        target: "all",
+        type: "Normal",
+        zMove: {
+            boost: { spe: 1 }
+        },
+        contestType: "Tough",
+        desc: "For 5 turns, the weather becomes Deep Fog. The accuracy of all moves is multiplied by 0.6. Fails if the current weather is Deep Fog. Lasts indefinitely or until the weather changes or is removed. Can be removed from the field if any Pokemon uses Defog successfully, or is hit by Defog.",
+        shortDesc: "For 5 turns, deep fog reduces visibility of targets."
+    },
     defendorder: {
         num: 455,
         accuracy: true,
@@ -2846,7 +2865,7 @@ exports.BattleMovedex = {
             boost: { accuracy: 1 }
         },
         contestType: "Cool",
-        desc: "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared.",
+        desc: "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared. If Deep Fog is present on the field and this move is successful, the weather will be cleared.",
         shortDesc: "-1 evasion; ends user and target hazards/terrain."
     },
     destinybond: {
@@ -9595,7 +9614,7 @@ exports.BattleMovedex = {
         type: "Fairy",
         zMove: { effect: "clearnegativeboost" },
         contestType: "Beautiful",
-        desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow, all rounded half down.",
+        desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, Snow or Deep Fog, all rounded half down.",
         shortDesc: "Heals the user by a weather-dependent amount."
     },
     morningsun: {
@@ -9611,7 +9630,7 @@ exports.BattleMovedex = {
         type: "Normal",
         zMove: { effect: "clearnegativeboost" },
         contestType: "Beautiful",
-        desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow, all rounded half down.",
+        desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, Snow or Deep Fog, all rounded half down.",
         shortDesc: "Heals the user by a weather-dependent amount."
     },
     mortalspin: {
@@ -11474,7 +11493,7 @@ exports.BattleMovedex = {
             boost: { spe: 1 }
         },
         contestType: "Beautiful",
-        desc: "For 5 turns, the weather becomes Rain Dance. The damage of Water-type attacks is multiplied by 1.5 and the damage of Fire-type attacks is multiplied by 0.5 during the effect. Lasts for 8 turns if the user is holding Damp Rock. Fails if the current weather is Rain Dance.",
+        desc: "For 5 turns, the weather becomes Rain Dance. The damage of Water-type attacks is multiplied by 1.5 and the damage of Fire-type attacks is multiplied by 0.5 during the effect. Lasts indefinitely or until the weather changes. Fails if the current weather is Rain Dance.",
         shortDesc: "For 5 turns, heavy rain powers Water moves."
     },
     rapidspin: {
@@ -12220,7 +12239,7 @@ exports.BattleMovedex = {
             boost: { spe: 1 }
         },
         contestType: "Tough",
-        desc: "For 5 turns, the weather becomes Sandstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Ground, Rock, or Steel type, or have the Magic Guard, Overcoat, Sand Force, Sand Rush, or Sand Veil Abilities. During the effect, the Special Defense of Rock-type Pokemon is multiplied by 1.5 when taking damage from a special attack. Lasts for 8 turns if the user is holding Smooth Rock. Fails if the current weather is Sandstorm.",
+        desc: "For 5 turns, the weather becomes Sandstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Ground, Rock, or Steel type, or have the Magic Guard, Overcoat, Sand Force, Sand Rush, or Sand Veil Abilities. During the effect, the Special Defense of Rock-type Pokemon is multiplied by 1.5 when taking damage from a special attack. Lasts indefinitely or until the weather changes. Fails if the current weather is Sandstorm.",
         shortDesc: "For 5 turns, a sandstorm rages. Rock: 1.5x SpD."
     },
     sandtomb: {
@@ -13419,7 +13438,7 @@ exports.BattleMovedex = {
         weather: "snowscape",
         target: "all",
         type: "Ice",
-        desc: "For 5 turns, the weather becomes Snow. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
+        desc: "For 5 turns, the weather becomes Snow. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts indefinitely or until the weather changes. Fails if the current weather is Snow.",
         shortDesc: "For 5 turns, snow falls. Ice: 1.5x Def."
     },
     soak: {
@@ -13469,7 +13488,7 @@ exports.BattleMovedex = {
         target: "normal",
         type: "Grass",
         contestType: "Cool",
-        desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+        desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Primordial Sea, Rain Dance, Sandstorm, Snow or Deep Fog and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
         shortDesc: "Charges turn 1. Hits turn 2. No charge in sunlight."
     },
     solarblade: {
@@ -13493,7 +13512,7 @@ exports.BattleMovedex = {
         target: "normal",
         type: "Grass",
         contestType: "Cool",
-        desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+        desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Primordial Sea, Rain Dance, Snow, Sandstorm or Deep Fog and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
         shortDesc: "Charges turn 1. Hits turn 2. No charge in sunlight."
     },
     sonicboom: {
@@ -14397,7 +14416,7 @@ exports.BattleMovedex = {
             boost: { spe: 1 }
         },
         contestType: "Beautiful",
-        desc: "For 5 turns, the weather becomes Sunny Day. The damage of Fire-type attacks is multiplied by 1.5 and the damage of Water-type attacks is multiplied by 0.5 during the effect. Lasts for 8 turns if the user is holding Heat Rock. Fails if the current weather is Sunny Day.",
+        desc: "For 5 turns, the weather becomes Sunny Day. The damage of Fire-type attacks is multiplied by 1.5 and the damage of Water-type attacks is multiplied by 0.5 during the effect. Lasts indefinitely or until the weather changes. Fails if the current weather is Sunny Day.",
         shortDesc: "For 5 turns, intense sunlight powers Fire moves."
     },
     sunsteelstrike: {
@@ -14682,7 +14701,7 @@ exports.BattleMovedex = {
         type: "Grass",
         zMove: { effect: "clearnegativeboost" },
         contestType: "Clever",
-        desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow, all rounded half down.",
+        desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, Snow or Deep Fog, all rounded half down.",
         shortDesc: "Heals the user by a weather-dependent amount."
     },
     syrupbomb: {
@@ -15032,7 +15051,7 @@ exports.BattleMovedex = {
         pp: 5,
         priority: 0,
         flags: { protect: 1, mirror: 1, noassist: 1, failcopycat: 1, failmimic: 1, nosketch: 1 },
-        target: "normal",
+        target: "allAdjacentFoes",
         type: "Normal",
         desc: "If the user is a Terapagos in Stellar Form, this move's type becomes Stellar, hits all opposing Pokemon, and becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes.",
         shortDesc: "Terapagos-Stellar: Stellar type, hits both foes."
@@ -16160,7 +16179,7 @@ exports.BattleMovedex = {
         zMove: { basePower: 160 },
         maxMove: { basePower: 130 },
         contestType: "Beautiful",
-        desc: "Power doubles if a weather condition other than Delta Stream is active, and this move's type changes to match. Ice type during Snow, Water type during Primordial Sea or Rain Dance, Rock type during Sandstorm, and Fire type during Desolate Land or Sunny Day. If the user is holding Utility Umbrella and uses Weather Ball during Primordial Sea, Rain Dance, Desolate Land, or Sunny Day, this move remains Normal type and does not double in power.",
+        desc: "Power doubles if a weather condition other than Delta Stream is active, and this move's type changes to match. Ice type during Snow, Water type during Primordial Sea or Rain Dance, Rock type during Sandstorm, Fire type during Desolate Land or Sunny Day and Normal type during Deep Fog. If the user is holding Utility Umbrella and uses Weather Ball during Primordial Sea, Rain Dance, Desolate Land, or Sunny Day, this move remains Normal type and does not double in power.",
         shortDesc: "Power doubles and type varies in each weather."
     },
     whirlpool: {

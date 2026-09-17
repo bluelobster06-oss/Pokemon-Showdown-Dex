@@ -22,7 +22,7 @@ exports.BattleAbilities = {
         flags: {},
         name: "Adrenaline",
         rating: 3.5,
-        num: 315,
+        num: 317,
         desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are boosted by 1.5.",
         shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are boosted by 1.5."
     },
@@ -1115,7 +1115,7 @@ exports.BattleAbilities = {
         flags: { breakable: 1 },
         name: "Inflate",
         rating: 2.5,
-        num: 316,
+        num: 318,
         desc: "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5. Immune to burn damage.",
         shortDesc: "Burn: Def is multiplied by 1.5. Immune to burn damage."
     },
@@ -1544,6 +1544,14 @@ exports.BattleAbilities = {
         num: 12,
         desc: "This Pokemon cannot be infatuated or taunted. Gaining this Ability while infatuated or taunted cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
         shortDesc: "This Pokemon cannot be infatuated or taunted. Immune to Intimidate."
+    },
+    obscure: {
+        flags: {},
+        name: "Obscure",
+        rating: 4,
+        num: 319,
+        desc: "On switch-in, this Pokemon summons Deep Fog.",
+        shortDesc: "On switch-in, this Pokemon summons Deep Fog."
     },
     opportunist: {
         onAnySwitchInPriority: -3,
