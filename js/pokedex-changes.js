@@ -36,6 +36,23 @@ var PokedexChangesPanel = Panels.Panel.extend({
         $(e.currentTarget).addClass('cur');
         this.renderContent();
     },
+    // BattleSearch exposes static row renderers, but its move, ability, and
+    // item rows still expect the `dex()` method normally supplied by a live
+    // search instance. The Changes tab renders rows directly, so provide the
+    // same tiny context without creating a hidden search widget.
+    getRowRendererContext: function () {
+        return {
+            dex: function () {
+                return Dex;
+            }
+        };
+    },
+    renderSearchRow: function (method, data) {
+        if (typeof BattleSearch === 'undefined' || typeof BattleSearch[method] !== 'function') {
+            return '<li class="notfound"><em>Unable to render this entry.</em></li>';
+        }
+        return BattleSearch[method].call(this.getRowRendererContext(), data);
+    },
     getChangedPokemon: function () {
         var list = [];
         var pokedex = typeof BattlePokedex !== 'undefined' ? BattlePokedex : {};
@@ -265,7 +282,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
             if (changedPokemon.length) {
                 if (cat === 'all') buf += '<li class="resultheader"><h3>Pok&eacute;mon Changes (' + changedPokemon.length + ')</h3></li>';
                 for (var i = 0; i < changedPokemon.length; i++) {
-                    buf += BattleSearch.renderPokemonRow(changedPokemon[i]);
+                    buf += this.renderSearchRow('renderPokemonRow', changedPokemon[i]);
                 }
             } else if (cat === 'pokemon') {
                 buf += '<li class="notfound"><em>No modified Pok&eacute;mon found.</em></li>';
@@ -283,7 +300,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
                     buf += '<li class="resultheader"><h3>' + moveTitle + ' (' + changedMoves.length + ')</h3></li>';
                 }
                 for (var j = 0; j < changedMoves.length; j++) {
-                    buf += BattleSearch.renderMoveRow(changedMoves[j]);
+                    buf += this.renderSearchRow('renderMoveRow', changedMoves[j]);
                 }
             } else if (cat === 'moves') {
                 buf += '<li class="notfound"><em>No modified Moves found for this filter.</em></li>';
@@ -301,7 +318,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
                     buf += '<li class="resultheader"><h3>' + abilityTitle + ' (' + changedAbilities.length + ')</h3></li>';
                 }
                 for (var k = 0; k < changedAbilities.length; k++) {
-                    buf += BattleSearch.renderAbilityRow(changedAbilities[k]);
+                    buf += this.renderSearchRow('renderAbilityRow', changedAbilities[k]);
                 }
             } else if (cat === 'abilities') {
                 buf += '<li class="notfound"><em>No modified Abilities found for this filter.</em></li>';
@@ -312,7 +329,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
             if (changedItems.length) {
                 if (cat === 'all') buf += '<li class="resultheader"><h3>Item Changes (' + changedItems.length + ')</h3></li>';
                 for (var l = 0; l < changedItems.length; l++) {
-                    buf += BattleSearch.renderItemRow(changedItems[l]);
+                    buf += this.renderSearchRow('renderItemRow', changedItems[l]);
                 }
             } else if (cat === 'items') {
                 buf += '<li class="notfound"><em>No modified Items found.</em></li>';
