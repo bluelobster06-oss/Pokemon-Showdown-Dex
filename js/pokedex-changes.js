@@ -42,6 +42,11 @@ var PokedexChangesPanel = Panels.Panel.extend({
     getDescription: function (entry) {
         return Dex.escapeHTML((entry && (entry.shortDesc || entry.desc)) || '');
     },
+    getPanelLink: function (section, entry) {
+        var root = this.app && this.app.root ? this.app.root : '/';
+        if (root.charAt(root.length - 1) !== '/') root += '/';
+        return root + section + '/' + toID(entry.id || entry.name);
+    },
     renderPokemonChange: function (pokemon) {
         var id = toID(pokemon.id || pokemon.name);
         var abilities = pokemon.abilities || {};
@@ -52,7 +57,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
         var abilityOne = abilities['0'] || '';
         var abilityTwo = abilities['1'] || '';
         var hiddenAbility = abilities.H || '';
-        return '<li class="result"><a href="/pokemon/' + id + '" data-target="push">' +
+        return '<li class="result"><a href="' + this.getPanelLink('pokemon', pokemon) + '" data-target="push">' +
             '<span class="col numcol">' + Dex.escapeHTML(tier) + '</span> ' +
             '<span class="col iconcol"><span style="' + Dex.getPokemonIcon(pokemon.name) + '"></span></span> ' +
             '<span class="col pokemonnamecol">' + Dex.escapeHTML(pokemon.name) + '</span> ' +
@@ -70,7 +75,7 @@ var PokedexChangesPanel = Panels.Panel.extend({
         var id = toID(move.id || move.name);
         var categoryIcon = typeof Dex.getCategoryIcon === 'function' ? Dex.getCategoryIcon(move.category) : '';
         var pp = move.pp === 1 || move.noPPBoosts ? move.pp : Math.floor((move.pp || 0) * 8 / 5);
-        return '<li class="result"><a href="/moves/' + id + '" data-target="push">' +
+        return '<li class="result"><a href="' + this.getPanelLink('moves', move) + '" data-target="push">' +
             '<span class="col movenamecol">' + Dex.escapeHTML(move.name) + '</span> ' +
             '<span class="col typecol">' + Dex.getTypeIcon(move.type) + categoryIcon + '</span> ' +
             '<span class="col labelcol">' + (move.category !== 'Status' ? '<em>Power</em><br />' + (move.basePower || '&mdash;') : '') + '</span> ' +
@@ -80,13 +85,13 @@ var PokedexChangesPanel = Panels.Panel.extend({
     },
     renderAbilityChange: function (ability) {
         var id = toID(ability.id || ability.name);
-        return '<li class="result"><a href="/abilities/' + id + '" data-target="push">' +
+        return '<li class="result"><a href="' + this.getPanelLink('abilities', ability) + '" data-target="push">' +
             '<span class="col namecol">' + Dex.escapeHTML(ability.name) + '</span> ' +
             '<span class="col abilitydesccol">' + this.getDescription(ability) + '</span></a></li>';
     },
     renderItemChange: function (item) {
         var id = toID(item.id || item.name);
-        return '<li class="result"><a href="/items/' + id + '" data-target="push">' +
+        return '<li class="result"><a href="' + this.getPanelLink('items', item) + '" data-target="push">' +
             '<span class="col itemiconcol"><span style="' + Dex.getItemIcon(item) + '"></span></span> ' +
             '<span class="col namecol">' + Dex.escapeHTML(item.name) + '</span> ' +
             '<span class="col itemdesccol">' + this.getDescription(item) + '</span></a></li>';
