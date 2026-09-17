@@ -238,6 +238,14 @@ Dex.escapeHTML = function (str, jsEscapeToo) {
     return str;
 };
 
+// Static BattleSearch row renderers are also used by detail panels. Unlike a
+// live search instance, the static helper has no `dex()` method by default.
+if (typeof BattleSearch !== 'undefined' && typeof BattleSearch.dex !== 'function') {
+    BattleSearch.dex = function () {
+        return Dex;
+    };
+}
+
 Dex.isBannedAbility = function (ability) {
     var banned = window.RomhackBannedAbilities || [];
     return banned.indexOf(toID(ability)) >= 0;
