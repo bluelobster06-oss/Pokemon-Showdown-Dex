@@ -158,7 +158,7 @@ exports.BattleFormatsData = {
     },
     raticatealolatotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     spearow: {
         isNonstandard: "Past",
@@ -819,7 +819,7 @@ exports.BattleFormatsData = {
     },
     marowakalolatotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     tyrogue: {
         tier: "HCOU"
@@ -4280,7 +4280,7 @@ exports.BattleFormatsData = {
     },
     gumshoostotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     grubbin: {
         tier: "HCOU"
@@ -4295,7 +4295,7 @@ exports.BattleFormatsData = {
     },
     vikavolttotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     crabrawler: {
         tier: "HCOU"
@@ -4339,7 +4339,7 @@ exports.BattleFormatsData = {
     },
     ribombeetotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     rockruff: {
         tier: "HCOU"
@@ -4396,7 +4396,7 @@ exports.BattleFormatsData = {
     },
     araquanidtotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     fomantis: {
         tier: "HCOU"
@@ -4408,7 +4408,7 @@ exports.BattleFormatsData = {
     },
     lurantistotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     morelull: {
         isNonstandard: "Past",
@@ -4430,7 +4430,7 @@ exports.BattleFormatsData = {
     },
     salazzletotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     stufful: {
         isNonstandard: "Past",
@@ -4612,7 +4612,7 @@ exports.BattleFormatsData = {
     },
     togedemarutotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     mimikyu: {
         tier: "HCOU",
@@ -4621,11 +4621,11 @@ exports.BattleFormatsData = {
     },
     mimikyutotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     mimikyubustedtotem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     bruxish: {
         tier: "HCOU",
@@ -4659,7 +4659,7 @@ exports.BattleFormatsData = {
     },
     kommoototem: {
         isNonstandard: "Past",
-        tier: "Illegal"
+        tier: "Unob"
     },
     tapukoko: {
         isNonstandard: "Past",

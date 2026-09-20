@@ -41,6 +41,9 @@ BattleSearch.urlRoot = '/';
     if (typeof BattleMovedex !== 'undefined') addCustom(BattleMovedex, 'move');
     if (typeof BattleAbilities !== 'undefined') addCustom(BattleAbilities, 'ability');
     if (typeof BattleItems !== 'undefined') addCustom(BattleItems, 'item');
+    // Add custom tiers before sorting and remapping aliases. Adding them later
+    // shifts the index positions used by Showdown's alias entries.
+    addCustom({hcou: true, illegal: true, unob: true}, 'tier');
 
     // Sort alphabetically by ID so binary search (DexSearch.getClosest) works perfectly
     items.sort(function (a, b) {
@@ -347,31 +350,8 @@ if (typeof BattleSearch !== 'undefined') {
     }
 }
 
-// ── Romhack custom tier search support ──────────────────────────────────────
-// Inject "hcou", "illegal", "unob" into BattleSearchIndex so they autocomplete
-// in the Pokemon tab search box just like Smogon tiers (uber, ou, lc, etc.).
-if (typeof BattleSearchIndex !== 'undefined') {
-    var romhackTierEntries = [
-        ['hcou', 'tier'],
-        ['illegal', 'tier'],
-        ['unob', 'tier']
-    ];
-    for (var rte = 0; rte < romhackTierEntries.length; rte++) {
-        var rEntry = romhackTierEntries[rte];
-        var rKey = rEntry[0];
-        // Binary-search insertion point to keep index sorted
-        var lo = 0, hi = BattleSearchIndex.length;
-        while (lo < hi) {
-            var mid = (lo + hi) >>> 1;
-            if (BattleSearchIndex[mid][0] < rKey) lo = mid + 1;
-            else hi = mid;
-        }
-        // Only insert if not already present
-        if (!BattleSearchIndex[lo] || BattleSearchIndex[lo][0] !== rKey) {
-            BattleSearchIndex.splice(lo, 0, rEntry);
-        }
-    }
-}
+// Custom tier entries are included in the initial search-index rebuild above.
+// They must not be inserted afterwards: alias entries store array positions.
 
 // Patch BattleSearch.prototype.renderRow so "tier" entries for hcou/unob/illegal
 // render properly (same pipeline as Uber, OU, LC, etc.)

@@ -533,7 +533,7 @@
         weightkg: 105,
         color: "Black",
         eggGroups: ["Field"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     spearow: {
@@ -2761,7 +2761,7 @@
         weightkg: 98,
         color: "Purple",
         eggGroups: ["Monster"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     hitmonlee: {
@@ -12068,7 +12068,7 @@
         eggGroups: ["Field"],
         cosmeticFormes: ["Deerling-Summer", "Deerling-Autumn", "Deerling-Winter"],
         formeOrder: ["Deerling", "Deerling-Summer", "Deerling-Autumn", "Deerling-Winter"],
-        tier: "Illegal"
+        tier: "Unob"
     },
     deerlingsummer: {
         isCosmeticForme: true,
@@ -15385,7 +15385,7 @@
         color: "Brown",
         tags: ["True Past"],
         eggGroups: ["Field"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     grubbin: {
@@ -15446,7 +15446,7 @@
         color: "Blue",
         tags: ["True Past"],
         eggGroups: ["Bug"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     crabrawler: {
@@ -15602,7 +15602,7 @@
         color: "Yellow",
         tags: ["True Past"],
         eggGroups: ["Bug", "Fairy"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     rockruff: {
@@ -15816,7 +15816,7 @@
         color: "Green",
         tags: ["True Past"],
         eggGroups: ["Water 1", "Bug"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     fomantis: {
@@ -15862,7 +15862,7 @@
         color: "Pink",
         tags: ["True Past"],
         eggGroups: ["Grass"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     morelull: {
@@ -15939,7 +15939,7 @@
         tags: ["True Past"],
         color: "Black",
         eggGroups: ["Monster", "Dragon"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     stufful: {
@@ -16671,7 +16671,7 @@
         color: "Gray",
         tags: ["True Past"],
         eggGroups: ["Field", "Fairy"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     mimikyu: {
@@ -16717,7 +16717,7 @@
         color: "Yellow",
         tags: ["True Past"],
         eggGroups: ["Amorphous"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     mimikyubustedtotem: {
@@ -16734,7 +16734,7 @@
         eggGroups: ["Amorphous"],
         requiredAbility: "Disguise",
         battleOnly: "Mimikyu-Totem",
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     bruxish: {
@@ -16852,7 +16852,7 @@
         color: "Gray",
         tags: ["True Past"],
         eggGroups: ["Dragon"],
-        tier: "Illegal",
+        tier: "Unob",
 
     },
     tapukoko: {
@@ -18639,7 +18639,7 @@
             "Alcremie-Rainbow-Swirl"
         ],
         canGigantamax: "G-Max Finale",
-        tier: "Illegal"
+        tier: "Unob"
     },
     alcremierubycream: {
         isCosmeticForme: true,

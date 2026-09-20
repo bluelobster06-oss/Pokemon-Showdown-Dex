@@ -93,9 +93,6 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 
 		buf += '<p>'+Dex.escapeHTML(move.desc||move.shortDesc)+'</p>';
 
-		if ('defrost' in move.flags) {
-			buf += '<p><a class="subtle" href="/tags/defrost" data-target="push">The user thaws out</a> if it is frozen.</p>';
-		}
 		if (!('protect' in move.flags) && move.target !== 'self') {
 			buf += '<p class="movetag"><a href="/tags/bypassprotect" data-target="push">Bypasses Protect</a> <small>(bypasses <a class="subtle" href="/moves/protect" data-target="push">Protect</a>, <a class="subtle" href="/moves/detect" data-target="push">Detect</a>, <a class="subtle" href="/moves/kingsshield" data-target="push">King\'s Shield</a>, and <a class="subtle" href="/moves/spikyshield" data-target="push">Spiky Shield</a>)</small></p>';
 		}
@@ -114,6 +111,12 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 
 		if ('contact' in move.flags) {
 			buf += '<p class="movetag"><a href="/tags/contact" data-target="push">&#x2713; Contact</a> <small>(affected by many abilities like Iron Barbs and moves like Spiky Shield)</small></p>';
+		}
+		if ('thawing' in move.flags) {
+			buf += '<p class="movetag"><a href="/tags/thawing" data-target="push">&#x2713; Thawing</a> <small>(thaws the user out if it is frostbitten)</small></p>';
+		}
+		if ('damping' in move.flags) {
+			buf += '<p class="movetag"><a href="/tags/damping" data-target="push">&#x2713; Damping</a> <small>(extinguishes the user if it is burned)</small></p>';
 		}
 		if ('sound' in move.flags) {
 			buf += '<p class="movetag"><a href="/tags/sound" data-target="push">&#x2713; Sound</a> <small>(bypasses <a class="subtle" href="/moves/substitute" data-target="push">Substitute</a>, doesn\'t affect <a class="subtle" href="/abilities/soundproof" data-target="push">Soundproof</a> pokemon)</small></p>';

@@ -466,13 +466,13 @@ exports.BattleMovedex = {
         name: "Aqua Tail",
         pp: 10,
         priority: 0,
-        flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+        flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, damping: 1 },
         critRatio: 2,
         target: "normal",
         type: "Water",
         contestType: "Beautiful",
         desc: "Has a higher chance for a critical hit.",
-        shortDesc: "High critical hit ratio."
+        shortDesc: "High critical hit ratio. Extinguishes user."
     },
     armorcannon: {
         num: 890,
@@ -1123,13 +1123,13 @@ exports.BattleMovedex = {
         name: "Blast Burn",
         pp: 5,
         priority: 0,
-        flags: { recharge: 1, protect: 1, mirror: 1, metronome: 1 },
+        flags: { recharge: 1, protect: 1, mirror: 1, metronome: 1, thawing: 1 },
         self: { volatileStatus: "mustrecharge" },
         target: "normal",
         type: "Fire",
         contestType: "Beautiful",
         desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-        shortDesc: "User cannot move next turn."
+        shortDesc: "User cannot move next turn. Thaws user."
     },
     blazekick: {
         num: 299,
@@ -1740,13 +1740,13 @@ exports.BattleMovedex = {
         name: "Burn Up",
         pp: 5,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, metronome: 1 },
         self: {},
         target: "normal",
         type: "Fire",
         contestType: "Clever",
         desc: "Fails unless the user is a Fire type. If this move is successful and the user is not Terastallized, the user's Fire type becomes typeless as long as it remains active.",
-        shortDesc: "User's Fire type becomes typeless; must be Fire."
+        shortDesc: "User's Fire type becomes typeless; must be Fire. Thaws user."
     },
     buzzybuzz: {
         num: 734,
@@ -1963,7 +1963,7 @@ exports.BattleMovedex = {
         name: "Chilling Nibble",
         pp: 20,
         priority: 0,
-        flags: { contact: 1, protect: 1, mirror: 1, defrost: 1 },
+        flags: { contact: 1, protect: 1, mirror: 1, thawing: 1 },
         secondary: { chance: 100, status: "frz" },
         target: "normal",
         type: "Ice",
@@ -2858,7 +2858,7 @@ exports.BattleMovedex = {
         name: "Defog",
         pp: 15,
         priority: 0,
-        flags: { protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1 },
+        flags: { protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1, damping: 1 },
         target: "normal",
         type: "Flying",
         zMove: {
@@ -2866,7 +2866,7 @@ exports.BattleMovedex = {
         },
         contestType: "Cool",
         desc: "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared. If Deep Fog is present on the field and this move is successful, the weather will be cleared.",
-        shortDesc: "-1 evasion; ends user and target hazards/terrain."
+        shortDesc: "-1 evasion; ends user and target hazards/terrain. Extinguishes user."
     },
     destinybond: {
         num: 194,
@@ -4030,8 +4030,8 @@ exports.BattleMovedex = {
     },
     extrasensory: {
         num: 326,
-        accuracy: 100,
-        basePower: 80,
+        accuracy: 95,
+        basePower: 75,
         category: "Special",
         name: "Extrasensory",
         pp: 15,
@@ -4573,7 +4573,7 @@ exports.BattleMovedex = {
         name: "Flame Wheel",
         pp: 25,
         priority: 0,
-        flags: { contact: 1, protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+        flags: { contact: 1, protect: 1, mirror: 1, thawing: 1, metronome: 1 },
         secondary: { chance: 10, status: "brn" },
         target: "normal",
         type: "Fire",
@@ -4589,7 +4589,7 @@ exports.BattleMovedex = {
         name: "Flare Blitz",
         pp: 15,
         priority: 0,
-        flags: { contact: 1, protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+        flags: { contact: 1, protect: 1, mirror: 1, thawing: 1, metronome: 1 },
         recoil: [33, 100],
         secondary: { chance: 10, status: "brn" },
         target: "normal",
@@ -5157,12 +5157,12 @@ exports.BattleMovedex = {
         name: "Fusion Flare",
         pp: 5,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, metronome: 1 },
         target: "normal",
         type: "Fire",
         contestType: "Beautiful",
-        desc: "Power doubles if the last move used by any Pokemon this turn was Fusion Bolt.",
-        shortDesc: "Power doubles if used after Fusion Bolt this turn."
+        desc: "Power doubles if the last move used by any Pokemon this turn was Fusion Bolt. Thaws the user out of the Frostbite status condition.",
+        shortDesc: "Power doubles if used after Fusion Bolt this turn. Thaws user."
     },
     futuresight: {
         num: 248,
@@ -7124,13 +7124,13 @@ exports.BattleMovedex = {
         name: "Hydro Cannon",
         pp: 5,
         priority: 0,
-        flags: { recharge: 1, protect: 1, mirror: 1, metronome: 1 },
+        flags: { recharge: 1, protect: 1, mirror: 1, metronome: 1, damping: 1 },
         self: { volatileStatus: "mustrecharge" },
         target: "normal",
         type: "Water",
         contestType: "Beautiful",
         desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-        shortDesc: "User cannot move next turn."
+        shortDesc: "User cannot move next turn. Extinguishes user."
     },
     hydropump: {
         num: 56,
@@ -7140,12 +7140,12 @@ exports.BattleMovedex = {
         name: "Hydro Pump",
         pp: 5,
         priority: 0,
-        flags: { protect: 1, mirror: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, metronome: 1, damping: 1 },
         target: "normal",
         type: "Water",
         contestType: "Beautiful",
         desc: "No additional effect.",
-        shortDesc: "No additional effect."
+        shortDesc: "Extinguishes user."
     },
     hydrosteam: {
         num: 876,
@@ -7155,7 +7155,7 @@ exports.BattleMovedex = {
         name: "Hydro Steam",
         pp: 15,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, metronome: 1 },
         thawsTarget: true,
         target: "normal",
         type: "Water",
@@ -7427,11 +7427,11 @@ exports.BattleMovedex = {
         name: "Ice Spinner",
         pp: 15,
         priority: 0,
-        flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+        flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, damping: 1 },
         target: "normal",
         type: "Ice",
         desc: "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain.",
-        shortDesc: "Ends the effects of terrain."
+        shortDesc: "Ends the effects of terrain. Extinguishes user."
     },
     iciclecrash: {
         num: 556,
@@ -8126,12 +8126,12 @@ exports.BattleMovedex = {
         name: "Life Dew",
         pp: 10,
         priority: 0,
-        flags: { snatch: 1, heal: 1, bypasssub: 1 },
+        flags: { snatch: 1, heal: 1, bypasssub: 1, damping: 1 },
         heal: [1, 4],
         target: "allies",
         type: "Water",
         desc: "Each Pokemon on the user's side restores 1/4 of its maximum HP, rounded half up.",
-        shortDesc: "Heals the user and its allies by 1/4 their max HP."
+        shortDesc: "Heals the user and its allies by 1/4 their max HP. Extinguishes user."
     },
     lightofruin: {
         num: 617,
@@ -8195,7 +8195,7 @@ exports.BattleMovedex = {
         name: "Liquidation",
         pp: 10,
         priority: 0,
-        flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+        flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, damping: 1 },
         secondary: {
             chance: 20,
             boosts: { def: -1 }
@@ -8204,7 +8204,7 @@ exports.BattleMovedex = {
         type: "Water",
         contestType: "Cool",
         desc: "Has a 20% chance to lower the target's Defense by 1 stage.",
-        shortDesc: "20% chance to lower the target's Defense by 1."
+        shortDesc: "20% chance to lower the target's Defense by 1. Extinguishes user."
     },
     lockon: {
         num: 199,
@@ -8661,14 +8661,14 @@ exports.BattleMovedex = {
         name: "Matcha Gotcha",
         pp: 15,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, heal: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, heal: 1, metronome: 1 },
         drain: [1, 2],
         thawsTarget: true,
         secondary: { chance: 20, status: "brn" },
         target: "allAdjacentFoes",
         type: "Grass",
-        desc: "Has a 20% chance to burn the target. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. The target thaws out if it is frozen.",
-        shortDesc: "20% burn. Recovers 50% dmg dealt. Thaws foe(s)."
+        desc: "Has a 20% chance to burn the target. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+        shortDesc: "20% burn. Recovers 50% dmg dealt. Thaws user."
     },
     maxairstream: {
         num: 766,
@@ -9671,7 +9671,7 @@ exports.BattleMovedex = {
         name: "Mud Bomb",
         pp: 10,
         priority: 0,
-        flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
+        flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1, damping: 1 },
         secondary: {
             chance: 30,
             boosts: { accuracy: -1 }
@@ -9680,7 +9680,7 @@ exports.BattleMovedex = {
         type: "Ground",
         contestType: "Cute",
         desc: "Has a 30% chance to lower the target's accuracy by 1 stage. This move becomes a special attack if the user's Attack is less than its Special Attack, including stat stage changes.",
-        shortDesc: "30% chance to lower the target's accuracy by 1. Special if user's Atk < Sp. Atk."
+        shortDesc: "30% chance to lower the target's accuracy by 1. Special if user's Atk < Sp. Atk. Extinguishes user."
     },
     muddywater: {
         num: 330,
@@ -9728,7 +9728,7 @@ exports.BattleMovedex = {
         name: "Mud-Slap",
         pp: 10,
         priority: 0,
-        flags: { protect: 1, mirror: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, metronome: 1, damping: 1 },
         secondary: {
             chance: 100,
             boosts: { accuracy: -1 }
@@ -9737,7 +9737,7 @@ exports.BattleMovedex = {
         type: "Ground",
         contestType: "Cute",
         desc: "HHas a 100% chance to lower the target's accuracy by 1 stage. This move becomes a special attack if the user's Attack is less than its Special Attack, including stat stage changes.",
-        shortDesc: "100% chance to lower the target's accuracy by 1. Special if user's Atk < Sp. Atk."
+        shortDesc: "100% chance to lower the target's accuracy by 1. Special if user's Atk < Sp. Atk. Extinguishes user."
     },
     mudsport: {
         num: 300,
@@ -11321,7 +11321,7 @@ exports.BattleMovedex = {
         name: "Pyro Ball",
         pp: 5,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, bullet: 1, striker: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, bullet: 1, striker: 1 },
         secondary: { chance: 10, status: "brn" },
         target: "normal",
         type: "Fire",
@@ -12128,7 +12128,7 @@ exports.BattleMovedex = {
         name: "Sacred Fire",
         pp: 5,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, metronome: 1 },
         secondary: { chance: 50, status: "brn" },
         target: "normal",
         type: "Fire",
@@ -12297,13 +12297,13 @@ exports.BattleMovedex = {
         name: "Scald",
         pp: 15,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, metronome: 1 },
         thawsTarget: true,
         secondary: { chance: 30, status: "brn" },
         target: "normal",
         type: "Water",
         contestType: "Tough",
-        desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
+        desc: "Has a 30% chance to burn the target.",
         shortDesc: "30% chance to burn the target. Thaws target."
     },
     scaleshot: {
@@ -12353,12 +12353,12 @@ exports.BattleMovedex = {
         name: "Scorching Sands",
         pp: 10,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, metronome: 1 },
         thawsTarget: true,
         secondary: { chance: 30, status: "brn" },
         target: "normal",
         type: "Ground",
-        desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
+        desc: "Has a 30% chance to burn the target.",
         shortDesc: "30% chance to burn the target. Thaws target."
     },
     scratch: {
@@ -12948,7 +12948,7 @@ exports.BattleMovedex = {
         name: "Sizzly Slide",
         pp: 10,
         priority: 0,
-        flags: { contact: 1, protect: 1, mirror: 1, defrost: 1 },
+        flags: { contact: 1, protect: 1, mirror: 1, thawing: 1 },
         secondary: { chance: 100, status: "brn" },
         target: "normal",
         type: "Fire",
@@ -13952,13 +13952,13 @@ exports.BattleMovedex = {
         name: "Steam Eruption",
         pp: 5,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1 },
         thawsTarget: true,
         secondary: { chance: 30, status: "brn" },
         target: "normal",
         type: "Water",
         contestType: "Beautiful",
-        desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
+        desc: "Has a 30% chance to burn the target.",
         shortDesc: "30% chance to burn the target. Thaws target."
     },
     steamroller: {
@@ -14531,7 +14531,7 @@ exports.BattleMovedex = {
         type: "Water",
         contestType: "Beautiful",
         desc: "Damage doubles if the target is using Dive.",
-        shortDesc: "Hits adjacent Pokemon. Double damage on Dive."
+        shortDesc: "Hits adjacent Pokemon. Double damage on Dive. Extinguishes user."
     },
     surgingstrikes: {
         num: 818,
@@ -16084,13 +16084,13 @@ exports.BattleMovedex = {
         name: "Water Pulse",
         pp: 20,
         priority: 0,
-        flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, pulse: 1 },
+        flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, pulse: 1, damping: 1 },
         secondary: { chance: 20, volatileStatus: "confusion" },
         target: "any",
         type: "Water",
         contestType: "Beautiful",
         desc: "Has a 20% chance to confuse the target.",
-        shortDesc: "20% chance to confuse the target."
+        shortDesc: "20% chance to confuse the target. Extinguishes user."
     },
     watershuriken: {
         num: 594,
@@ -16648,7 +16648,7 @@ exports.BattleMovedex = {
         name: "Polar Flare",
         pp: 10,
         priority: 0,
-        flags: { protect: 1, mirror: 1, defrost: 1, nosketch: 1 },
+        flags: { protect: 1, mirror: 1, thawing: 1, nosketch: 1 },
         secondary: { chance: 10, status: "frz" },
         target: "allAdjacentFoes",
         type: "Fire",

@@ -5,16 +5,68 @@ var PokedexLocationsPanel = Panels.Panel.extend({
     minWidth: 639,
     maxWidth: 639,
     events: {
-        'click .tabbar button': 'selectTab'
+        'click .tabbar button': 'selectTab',
+        'click button.location-group-toggle': 'toggleLocationGroup'
     },
     initialize: function () {
+        this.collapsedGroups = {};
+        this.render();
+    },
+    getLocationGroup: function (location) {
+        var group = location && location.group;
+        if (!group) return null;
+        if (typeof group === 'string') return { id: toID(group), name: group };
+        if (typeof group === 'object' && group.name) {
+            return { id: toID(group.id || group.name), name: group.name, collapsed: !!group.collapsed };
+        }
+        return null;
+    },
+    renderLocationLink: function (id, location) {
+        var totalBadge = location && location.total ? ' <span class="location-list-total">' + location.total + '</span>' : '';
+        return '<li><a href="/locations/' + id + '" data-target="push">' + Dex.escapeHTML(location.name) + totalBadge + '</a></li>';
+    },
+    render: function () {
         var buf = '<div class="pfx-body locations-panel">';
         buf += this.renderTabs();
         buf += '<h2>Locations</h2><ul class="location-list">';
+
+        var groups = {};
+        var orderedEntries = [];
         for (var id in PokedexLocations) {
             var loc = PokedexLocations[id];
-            var totalBadge = loc && loc.total ? ' <span class="location-list-total">' + loc.total + '</span>' : '';
-            buf += '<li><a href="/locations/' + id + '" data-target="push">' + Dex.escapeHTML(loc.name) + totalBadge + '</a></li>';
+            var group = this.getLocationGroup(loc);
+            if (!group) {
+                orderedEntries.push({ id: id, location: loc });
+                continue;
+            }
+            if (!groups[group.id]) {
+                groups[group.id] = { info: group, locations: [] };
+                orderedEntries.push({ groupID: group.id });
+            }
+            groups[group.id].locations.push({ id: id, location: loc });
+        }
+
+        for (var i = 0; i < orderedEntries.length; i++) {
+            var entry = orderedEntries[i];
+            if (!entry.groupID) {
+                buf += this.renderLocationLink(entry.id, entry.location);
+                continue;
+            }
+            var groupedLocations = groups[entry.groupID];
+            var isCollapsed = this.collapsedGroups[entry.groupID];
+            if (isCollapsed === undefined) isCollapsed = groupedLocations.info.collapsed;
+            buf += '<li class="location-group">' +
+                '<button type="button" class="location-group-toggle" data-group="' + Dex.escapeHTML(entry.groupID) + '" aria-expanded="' + (!isCollapsed) + '">' +
+                '<span class="location-group-triangle" aria-hidden="true">' + (isCollapsed ? '&#9654;' : '&#9660;') + '</span>' + Dex.escapeHTML(groupedLocations.info.name) + '</button>';
+            if (!isCollapsed) {
+                buf += '<ul class="location-group-list">';
+                for (var j = 0; j < groupedLocations.locations.length; j++) {
+                    var groupedEntry = groupedLocations.locations[j];
+                    buf += this.renderLocationLink(groupedEntry.id, groupedEntry.location);
+                }
+                buf += '</ul>';
+            }
+            buf += '</li>';
         }
         buf += '</ul></div>';
         this.html(buf);
@@ -26,6 +78,22 @@ var PokedexLocationsPanel = Panels.Panel.extend({
     selectTab: function (e) {
         e.preventDefault();
         this.app.go(e.currentTarget.value, this, true);
+    },
+    toggleLocationGroup: function (e) {
+        var groupID = $(e.currentTarget).data('group');
+        if (!groupID) return;
+        var isCollapsed = this.collapsedGroups[groupID];
+        if (isCollapsed === undefined) {
+            var groupInfo = null;
+            for (var id in PokedexLocations) {
+                groupInfo = this.getLocationGroup(PokedexLocations[id]);
+                if (groupInfo && groupInfo.id === groupID) break;
+                groupInfo = null;
+            }
+            isCollapsed = groupInfo && groupInfo.collapsed;
+        }
+        this.collapsedGroups[groupID] = !isCollapsed;
+        this.render();
     }
 });
 

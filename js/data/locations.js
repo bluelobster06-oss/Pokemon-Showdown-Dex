@@ -16,6 +16,7 @@ var PokedexLocationIcons = {
 var PokedexLocations = {
     excavationsite: {
         name: 'Excavation Site',
+        group: 'Chad Split',
         connections: [
             { name: 'Mitis Town', direction: 'Southeast' },
         ],
@@ -46,6 +47,7 @@ var PokedexLocations = {
     },
     mitislab: {
         name: 'Mitis Lab',
+        group: 'Chad Split',
         encounters: [
             { pokemon: 'bulbasaur', name: 'Bulbasaur', rate: 100, minLevel: 5, maxLevel: 5, tags: ['Gift'] },
             { pokemon: 'charmander', name: 'Charmander', rate: 100, minLevel: 5, maxLevel: 5, tags: ['Gift'] },
@@ -84,6 +86,7 @@ var PokedexLocations = {
     },
     mitistown: {
         name: 'Mitis Town',
+        group: 'Chad Split',
         connections: [
             { name: 'Excavation Site', direction: 'Northwest' },
             { name: 'Route 1', direction: 'South' },
@@ -121,6 +124,7 @@ var PokedexLocations = {
     },
     route1: {
         name: 'Route 1',
+        group: 'Chad Split',
         connections: [
             { name: 'Mitis Town', direction: 'North' },
             { name: 'Cindering Grove', direction: 'West' },
@@ -153,6 +157,7 @@ var PokedexLocations = {
     },
     cinderinggrove: {
         name: 'Cindering Grove',
+        group: 'Chad Split',
         connections: [
             { name: 'Route 1', direction: 'East' },
         ],
@@ -172,6 +177,7 @@ var PokedexLocations = {
     },
     cheshmatown: {
         name: 'Cheshma Town',
+        group: 'Chad Split',
         connections: [
             { name: 'Route 1', direction: 'North' },
             { name: 'Gale Forest', direction: 'South' },
@@ -240,6 +246,7 @@ var PokedexLocations = {
     },
     galeforest: {
         name: 'Gale Forest',
+        group: 'Chad Split',
         connections: [
             { name: 'Cheshma Town', direction: 'North' },
         ],
@@ -262,13 +269,14 @@ var PokedexLocations = {
             { pokemon: 'metapod', name: 'Metapod', rate: 2, minLevel: 3, maxLevel: 4, tags: ['Grass'] },
         ],
         items: [
-            { name: 'Antidote', details: "In the Grass in front of the entrance." },
+            { name: 'Antidote', item_num: 1, details: "In the Grass in front of the entrance." },
             { name: 'TM45: Grass Knot', details: "In the Grass near Picnicker Lucy." },
-            { name: 'Sharp Beak', details: "Behind the tree near Stundent Spencer." },
+            { name: 'Sharp Beak', item_num: 1, details: "Behind the tree near Stundent Spencer." },
         ]
     },
     crysaladit: {
         name: 'Crysal Adit',
+        group: 'Chad Split',
         connections: [
             { name: 'Excavation Site', direction: 'Northwest' },
         ],
@@ -294,6 +302,7 @@ var PokedexLocations = {
     },
     route2: {
         name: 'Route 2',
+        group: 'Chad Split',
         connections: [
             { name: 'Cheshma Town', direction: 'West' },
             { name: 'Route 3', direction: 'East' },
@@ -319,12 +328,13 @@ var PokedexLocations = {
             { pokemon: 'wimpod', name: 'Wimpod', rate: 5, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
         ],
         items: [
-            { name: 'TM03: Psyshock', item_num: 1, details: "Requires HM 04: Rock Climb; On top of the Rock Climb cliff." },
-            { name: 'TM52: Focus Blast', item_num: 1, details: "Requires HM 05: Surf; Near the grass accessible through the canal." },
+            { name: 'TM03: Psyshock', details: "Requires HM 04: Rock Climb; On top of the Rock Climb cliff." },
+            { name: 'TM52: Focus Blast', details: "Requires HM 05: Surf; Near the grass accessible through the canal." },
         ],
     },
     route3: {
         name: 'Route 3',
+        group: 'Chad Split',
         connections: [
             { name: 'Route 2', direction: 'West' },
             { name: 'Silvent City', direction: 'Southeast' },
@@ -347,7 +357,89 @@ var PokedexLocations = {
             { name: 'Paralyze Heal', item_num: 1, details: "Behind the fence opposite of Student Chase." },
             { name: 'Berry Juice', item_num: 20, details: "Defeat Camper Jacob." },
             { name: 'Quick Ball', item_num: 1, details: "Between the trees opposite to Camper Jacob." },
-            { name: 'TM 28: Dig', item_num: 1, details: "Requires HM 04: Rock Smash; On top of the Rock Climb cliff." },
+            { name: 'TM 28: Dig', details: "Requires HM 04: Rock Smash; On top of the Rock Climb cliff." },
+        ],
+    },
+    silventcity: {
+        name: 'Silvent City',
+        group: 'Chad Split',
+        connections: [
+            { name: 'Route 3', direction: 'Northwest' },
+            { name: 'Carnation Meadow', direction: 'West' },
+            { name: 'Route 4', direction: 'Southwest' },
+        ],
+        encounters: [
+            { pokemon: 'porygon', name: 'Porygon', rate: 100, minLevel: 10, maxLevel: 10, tags: ['Grass'] },
+            { pokemon: 'eevee', name: 'Eevee', rate: 100, minLevel: 5, maxLevel: 5, tags: ['Gift'] },
+            { pokemon: 'zeraora', name: 'Zeraora', rate: 100, minLevel: 70, maxLevel: 70, tags: ['Gift'] },
+        ],
+        items: [
+            { name: 'Dusk Ball', item_num: 1, details: "Behind the house left to the Pokécenter." },
+            { name: 'TM10: Hidden Power', item_num: 1, details: "In the house left to the Pokécenter." },
+            { name: 'Arc Badge', details: "Defeat Gym Leader Chad." },
+            { name: 'TM 34: Shock Wave', details: "Defeat Gym Leader Chad." },
+        ],
+        notableAreas: [
+            {
+                id: 'silventcitypokecenter&pokemart',
+                name: 'Silvent City Pokécenter & Pokémart',
+                iconClass: '', //temp
+                summary: 'Healing and store items.',
+                description: 'The PC in this location seems to be malfunctioning at the moment. Allows the player to heal their Pokémon, buy items from the shopkeeper depending on the amount of badges they possess and exchange Bottle Caps for relearning moves, changing abilities, altering natures and modifying IVs.',
+                items: [
+                    { name: 'Poke Ball', details: '200$ - 0 badges required.' },
+                    { name: 'Great Ball', details: '???% - 0 badges required.' },
+                    { name: 'Ultra Ball', details: '???% - 0 badges required.' },
+                    { name: 'Potion', details: '???% - 0 badges required.' },
+                    { name: 'Super Potion', details: '???% - 0 badges required.' },
+                    { name: 'Hyper Potion', details: '???% - 0 badges required.' },
+                    { name: 'Max Potion', details: '???% - 0 badges required.' },
+                    { name: 'Full Restore', details: '???% - 0 badges required.' },
+                    { name: 'Antidote', details: '???% - 0 badges required.' },
+                    { name: 'Awakening', details: '???% - 0 badges required.' },
+                    { name: 'Burn Heal', details: '???% - 0 badges required.' },
+                    { name: 'Paralyze Heal', details: '???% - 0 badges required.' },
+                    { name: 'Ice Heal', details: '???% - 0 badges required.' },
+                    { name: 'Full Heal', details: '???% - 0 badges required.' },
+                    { name: 'Revive', details: '???% - 0 badges required.' },
+                    { name: 'Escape Rope', details: '???% - 0 badges required.' },
+                    { name: 'Repel', details: '???% - 0 badges required.' },
+                    { name: 'Super Repel', details: '???% - 0 badges required.' },
+                    { name: 'Max Repel', details: '???% - 0 badges required.' },
+                ],
+            },
+            {
+                id: 'eeveehouse',
+                name: 'Eevee House',
+                iconClass: '', //temp
+                summary: 'Local business.',
+                description: 'The old man living here is offering to give the player Eevee as a gift. The player can only receive this gift once per save file.',
+            }
+        ]
+    },
+    carnationmeadow: {
+        name: 'Carnation Meadow',
+        group: 'Chad Split',
+        connections: [
+            { name: 'Silvent City', direction: 'East' },
+        ],
+        encounters: [
+            { pokemon: 'chingling', name: 'Chingling', rate: 12, minLevel: 6, maxLevel: 7, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'flabebe', name: 'Flabébé', rate: 6, minLevel: 6, maxLevel: 7, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'flabebewhite', name: 'Flabébé', rate: 6, minLevel: 6, maxLevel: 7, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'cottonee', name: 'Cottonee', rate: 12, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'hoppip', name: 'Hoppip', rate: 10, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'seedot', name: 'Seedot', rate: 10, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'natu', name: 'Natu', rate: 8, minLevel: 6, maxLevel: 7, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'deerling', name: 'Deerling', rate: 8, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'cherubi', name: 'Cherubi', rate: 7, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'petilil', name: 'Petilil', rate: 7, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'cutiefly', name: 'Cutiefly', rate: 5, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'kirlia', name: 'Kirlia', rate: 5, minLevel: 5, maxLevel: 6, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'clefairy', name: 'Clefairy', rate: 4, minLevel: 6, maxLevel: 7, tags: ['Grass', 'Daytime'] },
+        ],
+        items: [
+            { name: 'Doze Orb', item_num: 1, details: "Enter Carnation Meadow." },
         ],
     },
 };
