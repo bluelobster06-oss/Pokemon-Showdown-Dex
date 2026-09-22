@@ -1383,6 +1383,16 @@ exports.BattleItems = {
         desc: "Restores 1/4 max HP after holder is hit by a supereffective move. Single use.",
         shortDesc: "Restores 1/4 max HP after holder is hit by a supereffective move. Single use."
     },
+    emptysawsbuckcoffee: {
+        name: "Empty Sawsbuck Coffee",
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/empty-sawsbuck-coffee.png",
+        fling: { basePower: 10 },
+        num: 837,
+        gen: 6,
+        new: 1,
+        desc: "Can be refilled by battling the barista in Cheshma Town.",
+        shortDesc: "Can be refilled by battling the barista in Cheshma Town."
+    },
     ether: {
         name: "Ether",
         icon: "", //temp
@@ -4028,7 +4038,7 @@ exports.BattleItems = {
     },
     repel: {
         name: "Repel",
-        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/chill-orb.png",
+        icon: "", //temp
         fling: { basePower: 30 },
         num: 830,
         gen: 1,
@@ -4263,8 +4273,8 @@ exports.BattleItems = {
     },
     sawsbuckcoffee: {
         name: "Sawsbuck Coffee",
-        spritenum: 762,
-        fling: { basePower: 30 },
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/sawsbuck-coffee.png",
+        fling: { basePower: 20 },
         num: 807,
         gen: 6,
         new: 1,

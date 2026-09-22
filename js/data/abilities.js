@@ -415,8 +415,8 @@ exports.BattleAbilities = {
         name: "Damp",
         rating: 0.5,
         num: 6,
-        desc: "While this Pokemon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.",
-        shortDesc: "Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active."
+        desc: "While this Pokemon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+        shortDesc: "Prevents Self-Destruct movesAftermath while active. Cannot be burned."
     },
     dancer: {
         flags: {},
@@ -512,7 +512,6 @@ exports.BattleAbilities = {
         shortDesc: "On switch-in, Attack or Sp. Atk is raised 1 stage based on the foes' weaker Defense."
     },
     dragonize: {
-        isNonstandard: "Future",
         onModifyTypePriority: -1,
         onBasePowerPriority: 23,
         flags: {},
@@ -574,7 +573,6 @@ exports.BattleAbilities = {
         shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Ground moves; Ground immunity."
     },
     eelevate: {
-        isNonstandard: "Future",
         flags: { breakable: 1 },
         name: "Eelevate",
         rating: 4,
@@ -693,7 +691,6 @@ exports.BattleAbilities = {
         shortDesc: "This Pokemon receives 3/4 damage from supereffective attacks."
     },
     firemane: {
-        isNonstandard: "Future",
         onModifyAtkPriority: 5,
         onModifySpAPriority: 5,
         flags: {},
@@ -1344,7 +1341,6 @@ exports.BattleAbilities = {
         shortDesc: "This Pokemon's pulse moves have 1.5x power. Heal Pulse heals 3/4 target's max HP."
     },
     megasol: {
-        isNonstandard: "Future",
         onWeatherModifyDamagePriority: 1,
         flags: {},
         name: "Mega Sol",
@@ -1642,7 +1638,6 @@ exports.BattleAbilities = {
         shortDesc: "If this Pokemon has no item, it finds one used by an Ally this turn."
     },
     piercingdrill: {
-        isNonstandard: "Future",
         flags: {},
         name: "Piercing Drill",
         rating: 1,
@@ -2296,7 +2291,6 @@ exports.BattleAbilities = {
         shortDesc: "This Pokemon's Speed is raised 1 stage at the end of each full turn on the field."
     },
     spicyspray: {
-        isNonstandard: "Future",
         flags: {},
         name: "Spicy Spray",
         rating: 3,

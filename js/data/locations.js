@@ -5,7 +5,7 @@ var PokedexLocationIcons = {
         'Old Rod': 'https://static.unboundwiki.com/wp-content/assets/images/2025/02/old-rod-x2.png',
         'Good Rod': 'https://static.unboundwiki.com/wp-content/assets/images/2025/02/good-rod-x2.png',
         'Surf': '../images/Surf2.png',
-        'Rock Smash': '../images/RockSmash.png'
+        'Rock Smash': '../images/RockSmash.png',
     },
     time: {
         'Nighttime': '../images/MoonRR2.png',
@@ -100,6 +100,7 @@ var PokedexLocations = {
             { pokemon: 'goldeen', name: 'Goldeen', rate: 10, minLevel: 2, maxLevel: 5, tags: ['Old Rod'] },
             { pokemon: 'lotad', name: 'Lotad', rate: 10, minLevel: 2, maxLevel: 5, tags: ['Old Rod', 'Daytime'], heldItem: { name: 'Mental Herb', rate: 5 } },
             { pokemon: 'surskit', name: 'Surskit', rate: 10, minLevel: 2, maxLevel: 5, tags: ['Old Rod'] },
+
             { pokemon: 'gyarados', name: 'Gyarados', rate: 100, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
         ],
         notableAreas: [
@@ -212,24 +213,25 @@ var PokedexLocations = {
                 description: 'Allows the player to heal their Pokémon, buy items from the shopkeeper depending on the amount of badges they possess and exchange Bottle Caps for relearning moves, changing abilities, altering natures and modifying IVs.',
                 items: [
                     { name: 'Poke Ball', details: '200$ - 0 badges required.' },
-                    { name: 'Great Ball', details: '???% - 0 badges required.' },
-                    { name: 'Ultra Ball', details: '???% - 0 badges required.' },
-                    { name: 'Potion', details: '???% - 0 badges required.' },
-                    { name: 'Super Potion', details: '???% - 0 badges required.' },
-                    { name: 'Hyper Potion', details: '???% - 0 badges required.' },
-                    { name: 'Max Potion', details: '???% - 0 badges required.' },
-                    { name: 'Full Restore', details: '???% - 0 badges required.' },
-                    { name: 'Antidote', details: '???% - 0 badges required.' },
-                    { name: 'Awakening', details: '???% - 0 badges required.' },
-                    { name: 'Burn Heal', details: '???% - 0 badges required.' },
-                    { name: 'Paralyze Heal', details: '???% - 0 badges required.' },
-                    { name: 'Ice Heal', details: '???% - 0 badges required.' },
-                    { name: 'Full Heal', details: '???% - 0 badges required.' },
-                    { name: 'Revive', details: '???% - 0 badges required.' },
-                    { name: 'Escape Rope', details: '???% - 0 badges required.' },
-                    { name: 'Repel', details: '???% - 0 badges required.' },
-                    { name: 'Super Repel', details: '???% - 0 badges required.' },
-                    { name: 'Max Repel', details: '???% - 0 badges required.' },
+                    { name: 'Great Ball', details: '600$ - 0 badges required.' },
+                    { name: 'Ultra Ball', details: '1200$ - 0 badges required.' },
+                    { name: 'Potion', details: '300$ - 0 badges required.' },
+                    { name: 'Super Potion', details: '700$ - 0 badges required.' },
+                    { name: 'Hyper Potion', details: '1200$ - 0 badges required.' },
+                    { name: 'Max Potion', details: '2500$ - 0 badges required.' },
+                    { name: 'Full Restore', details: '3000$ - 0 badges required.' },
+                    { name: 'Revive', details: '1500$ - 0 badges required.' },
+                    { name: 'Antidote', details: '100$ - 0 badges required.' },
+                    { name: 'Paralyze Heal', details: '150$ - 0 badges required.' },
+                    { name: 'Awakening', details: '250$ - 0 badges required.' },
+                    { name: 'Burn Heal', details: '250$ - 0 badges required.' },
+                    { name: 'Ice Heal', details: '250$ - 0 badges required.' },
+                    { name: 'Full Heal', details: '600$ - 0 badges required.' },
+                    { name: 'Escape Rope', details: '550$ - 0 badges required.' },
+                    { name: 'Repel', details: '350$ - 0 badges required.' },
+                    { name: 'Super Repel', details: '500$ - 0 badges required.' },
+                    { name: 'Max Repel', details: '700$ - 0 badges required.' },
+                    { name: 'Rare Candy', details: '2500$ - 0 badges required.' },
                 ],
             },
             {
@@ -289,6 +291,7 @@ var PokedexLocations = {
             { pokemon: 'bergmite', name: 'Bergmite', rate: 11, minLevel: 4, maxLevel: 5, tags: ['Grass'] },
             { pokemon: 'snorunt', name: 'Snorunt', rate: 10, minLevel: 4, maxLevel: 5, tags: ['Grass'] },
             { pokemon: 'sneasel', name: 'Sneasel', rate: 9, minLevel: 3, maxLevel: 4, tags: ['Grass'], heldItem: { name: 'Quick Claw', rate: 5 } },
+
             { pokemon: 'seel', name: 'Seel', rate: 30, minLevel: 2, maxLevel: 5, tags: ['Old Rod'] },
             { pokemon: 'poliwag', name: 'Poliwag', rate: 30, minLevel: 2, maxLevel: 5, tags: ['Old Rod'] },
             { pokemon: 'clamperl', name: 'Clamperl', rate: 20, minLevel: 2, maxLevel: 5, tags: ['Old Rod'], heldItems: [{ name: 'Pearl', rate: 5 }, { name: 'Big Pearl', rate: 30 }] },
@@ -316,10 +319,12 @@ var PokedexLocations = {
             { pokemon: 'mienfoo', name: 'Mienfoo', rate: 12, minLevel: 30, maxLevel: 35, tags: ['Grass'] },
             { pokemon: 'spinda', name: 'Spinda', rate: 8, minLevel: 30, maxLevel: 35, tags: ['Grass'] },
             { pokemon: 'hawlucha', name: 'Hawlucha', rate: 6, minLevel: 30, maxLevel: 35, tags: ['Grass'] },
+
             { pokemon: 'chinchou', name: 'Chinchou', rate: 30, minLevel: 5, maxLevel: 10, tags: ['Old Rod', 'Nighttime'] },
             { pokemon: 'barboach', name: 'Barboach', rate: 30, minLevel: 5, maxLevel: 10, tags: ['Old Rod'] },
             { pokemon: 'wooper', name: 'Wooper', rate: 20, minLevel: 5, maxLevel: 10, tags: ['Old Rod'] },
             { pokemon: 'wooperpaldea', name: 'Wooper', rate: 20, minLevel: 5, maxLevel: 10, tags: ['Old Rod', 'Daytime'] },
+
             { pokemon: 'chinchou', name: 'Chinchou', rate: 25, minLevel: 25, maxLevel: 30, tags: ['Good Rod', 'Nighttime'] },
             { pokemon: 'barboach', name: 'Barboach', rate: 25, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
             { pokemon: 'quagsire', name: 'Quagsire', rate: 20, minLevel: 25, maxLevel: 30, tags: ['Good Rod'] },
@@ -370,12 +375,13 @@ var PokedexLocations = {
         ],
         encounters: [
             { pokemon: 'porygon', name: 'Porygon', rate: 100, minLevel: 10, maxLevel: 10, tags: ['Grass'] },
+
             { pokemon: 'eevee', name: 'Eevee', rate: 100, minLevel: 5, maxLevel: 5, tags: ['Gift'] },
             { pokemon: 'zeraora', name: 'Zeraora', rate: 100, minLevel: 70, maxLevel: 70, tags: ['Gift'] },
         ],
         items: [
             { name: 'Dusk Ball', item_num: 1, details: "Behind the house left to the Pokécenter." },
-            { name: 'TM10: Hidden Power', item_num: 1, details: "In the house left to the Pokécenter." },
+            { name: 'TM10: Hidden Power', details: "In the house left to the Pokécenter." },
             { name: 'Arc Badge', details: "Defeat Gym Leader Chad." },
             { name: 'TM 34: Shock Wave', details: "Defeat Gym Leader Chad." },
         ],
@@ -442,9 +448,96 @@ var PokedexLocations = {
             { name: 'Doze Orb', item_num: 1, details: "Enter Carnation Meadow." },
         ],
     },
+    route4: {
+        name: 'Route 4',
+        group: 'Sebastian Split',
+        connections: [
+            { name: 'Silvent City', direction: 'Northeast' },
+            { name: 'Route 5', direction: 'West' },
+        ],
+        encounters: [
+            { pokemon: 'pidgey', name: 'Pidgey', rate: 11, minLevel: 4, maxLevel: 5, tags: ['Grass'] },
+            { pokemon: 'shinx', name: 'Shinx', rate: 11, minLevel: 3, maxLevel: 4, tags: ['Grass', 'Nighttime'] },
+            { pokemon: 'stunky', name: 'Stunky', rate: 11, minLevel: 4, maxLevel: 5, tags: ['Grass', 'Nighttime'] },
+            { pokemon: 'skiddo', name: 'Skiddo', rate: 11, minLevel: 4, maxLevel: 5, tags: ['Grass'] },
+            { pokemon: 'yamper', name: 'Yamper', rate: 11, minLevel: 3, maxLevel: 4, tags: ['Grass'] },
+            { pokemon: 'wattrel', name: 'Wattrel', rate: 9, minLevel: 4, maxLevel: 5, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'plusle', name: 'Plusle', rate: 8, minLevel: 3, maxLevel: 4, tags: ['Grass'] },
+            { pokemon: 'minun', name: 'Minun', rate: 8, minLevel: 3, maxLevel: 4, tags: ['Grass'] },
+            { pokemon: 'farfetchd', name: 'Farfetch\'d', rate: 7, minLevel: 3, maxLevel: 4, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'marill', name: 'Marill', rate: 7, minLevel: 4, maxLevel: 5, tags: ['Grass'] },
+            { pokemon: 'tadbulb', name: 'Tadbulb', rate: 6, minLevel: 3, maxLevel: 4, tags: ['Grass'] },
+        ],
+        items: [
+            { name: 'HM01: Cut', details: "Talk to the lumberjack." },
+        ],
+    },
+    route5: {
+        name: 'Route 5',
+        group: 'Sebastian Split',
+        connections: [
+            { name: 'Route 4', direction: 'East' },
+            { name: 'Old Graveyard', direction: 'Northwest' },
+            { name: 'Brimber City', direction: 'North' },
+            { name: 'Glistenning Grotto', direction: 'West' },
+        ],
+        encounters: [
+            { pokemon: 'patrat', name: 'Patrat', rate: 17, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'phanpy', name: 'Phanpy', rate: 16, minLevel: 10, maxLevel: 12, tags: ['Grass'] },
+            { pokemon: 'blitzle', name: 'Blitzle', rate: 14, minLevel: 10, maxLevel: 12, tags: ['Grass'] },
+            { pokemon: 'litleo', name: 'Litleo', rate: 12, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'rolycoly', name: 'Rolycoly', rate: 11, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'hippopotas', name: 'Hippopotas', rate: 8, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'tandemaus', name: 'Tandemaus', rate: 8, minLevel: 10, maxLevel: 12, tags: ['Grass'] },
+            { pokemon: 'ekans', name: 'Ekans', rate: 6, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'girafarig', name: 'Girafarig', rate: 4, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'stantler', name: 'Stantler', rate: 4, minLevel: 10, maxLevel: 12, tags: ['Grass'] },
+
+            { pokemon: 'dwebble', name: 'Dwebble', rate: 25, minLevel: 15, maxLevel: 20, tags: ['Rock Smash'] },
+            { pokemon: 'geodude', name: 'Geodude', rate: 25, minLevel: 15, maxLevel: 20, tags: ['Rock Smash'] },
+            { pokemon: 'roggenrola', name: 'Roggenrola', rate: 25, minLevel: 15, maxLevel: 20, tags: ['Rock Smash'] },
+            { pokemon: 'shuckle', name: 'Shuckle', rate: 25, minLevel: 15, maxLevel: 20, tags: ['Rock Smash'] },
+
+
+        ],
+        items: [
+            { name: 'Running Shoes', details: "Talk to Wsly upon entering Route 5." },
+            { name: 'Black Belt', item_num: 1, details: "Defeat Black Belt Brian." },
+        ],
+    },
+    oldgraveyard: {
+        name: 'Old Graveyard',
+        group: 'Sebastian Split',
+        connections: [
+            { name: 'Route 5', direction: 'East' },
+        ],
+        encounters: [
+            { pokemon: 'golett', name: 'Golett', rate: 13, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'duskull', name: 'Duskull', rate: 12, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'cubone', name: 'Cubone', rate: 12, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'greavard', name: 'Greavard', rate: 11, minLevel: 12, maxLevel: 14, tags: ['Grass'] },
+            { pokemon: 'gothita', name: 'Gothita', rate: 11, minLevel: 12, maxLevel: 14, tags: ['Grass'] },
+            { pokemon: 'impidimp', name: 'Impidimp', rate: 9, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'murkrow', name: 'Murkrow', rate: 8, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'maschiff', name: 'Maschiff', rate: 7, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'yamask', name: 'Yamask', rate: 6, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'vulpix', name: 'Vulpix', rate: 6, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'gastly', name: 'Gastly', rate: 5, minLevel: 12, maxLevel: 14, tags: ['Grass'] },
+
+            { pokemon: 'golett', name: 'Golett', rate: 22, minLevel: 11, maxLevel: 13, tags: ['Graves'] },
+            { pokemon: 'duskull', name: 'Duskull', rate: 22, minLevel: 11, maxLevel: 13, tags: ['Graves'] },
+            { pokemon: 'greavard', name: 'Greavard', rate: 21, minLevel: 12, maxLevel: 14, tags: ['Graves'] },
+            { pokemon: 'yamask', name: 'Yamask', rate: 18, minLevel: 11, maxLevel: 13, tags: ['Graves'] },
+            { pokemon: 'gastly', name: 'Gastly', rate: 17, minLevel: 12, maxLevel: 14, tags: ['Graves'] },
+
+        ],
+        items: [
+            { name: 'Spell Tag', item_num: 1, details: "Behind a building at the end of the graveyard." },
+        ],
+    },
 };
 
-var LOCATION_TABLE_PRIORITY = ['Grass', 'Gift', 'Old Rod', 'Good Rod', 'Surf', 'Rock Smash'];
+var LOCATION_TABLE_PRIORITY = ['Grass', 'Gift', 'Old Rod', 'Good Rod', 'Surf', 'Rock Smash', 'Headbutt', 'Mounds', 'Graves'];
 var PokedexLocationTotals = {};
 
 function updateLocationTotals() {

@@ -1195,7 +1195,6 @@
         requiredItem: "Clefablite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     vulpix: {
         num: 37,
@@ -1943,7 +1942,6 @@
         requiredItem: "Victreebelite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     tentacool: {
         num: 72,
@@ -2743,8 +2741,7 @@
         color: "Purple",
         prevo: "Cubone",
         evoLevel: 28,
-        evoCondition: "at night in Lost Islands/Grove of Dreams",
-        evoRegion: "Alola",
+        evoCondition: "at night in Grove of Dreams/Lost Islands",
         eggGroups: ["Monster"],
         tier: "Illegal",
 
@@ -3057,7 +3054,6 @@
         requiredItem: "Starminite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     mrmime: {
         num: 122,
@@ -3743,7 +3739,6 @@
         requiredItem: "Dragoninite",
         gen: 9,
         tier: "HCOU",
-        isNonstandard: "Future"
     },
     mewtwo: {
         num: 150,
@@ -3872,7 +3867,6 @@
         requiredItem: "Meganiumite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     cyndaquil: {
         num: 155,
@@ -4001,7 +3995,6 @@
         requiredItem: "Feraligite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     sentret: {
         num: 161,
@@ -5013,7 +5006,7 @@
         color: "Brown",
         evos: ["Ursaring"],
         eggGroups: ["Field"],
-        tier: "LC"
+        tier: "HCOU"
     },
     ursaring: {
         num: 217,
@@ -5028,7 +5021,7 @@
         evoLevel: 30,
         evos: ["Ursaluna"],
         eggGroups: ["Field"],
-        tier: "NFE"
+        tier: "HCOU"
     },
     slugma: {
         num: 218,
@@ -5205,7 +5198,6 @@
         requiredItem: "Skarmorite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     houndour: {
         num: 228,
@@ -10843,7 +10835,7 @@
         color: "Gray",
         evos: ["Tranquill"],
         eggGroups: ["Flying"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     tranquill: {
@@ -10859,7 +10851,7 @@
         evoLevel: 21,
         evos: ["Unfezant"],
         eggGroups: ["Flying"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     unfezant: {
@@ -10874,7 +10866,7 @@
         prevo: "Tranquill",
         evoLevel: 32,
         eggGroups: ["Flying"],
-        tier: "Illegal",
+        tier: "HCOU",
 
     },
     blitzle: {
@@ -11022,7 +11014,6 @@
         requiredItem: "Excadrite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     audino: {
         num: 531,
@@ -11277,7 +11268,6 @@
         requiredItem: "Scolipite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     cottonee: {
         num: 546,
@@ -11628,7 +11618,6 @@
         requiredItem: "Scraftinite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     sigilyph: {
         num: 561,
@@ -12383,7 +12372,6 @@
         requiredItem: "Eelektrossite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     elgyem: {
         num: 605,
@@ -12474,7 +12462,6 @@
         requiredItem: "Chandelurite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     axew: {
         num: 610,
@@ -12705,7 +12692,6 @@
         requiredItem: "Golurkite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     pawniard: {
         num: 624,
@@ -13355,7 +13341,6 @@
         requiredItem: "Chesnaughtite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     fennekin: {
         num: 653,
@@ -13420,7 +13405,6 @@
         requiredItem: "Delphoxite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     froakie: {
         num: 656,
@@ -13519,7 +13503,6 @@
         requiredItem: "Greninjite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     bunnelby: {
         num: 659,
@@ -13871,7 +13854,6 @@
         requiredItem: "Pyroarite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     flabebe: {
         num: 669,
@@ -13957,7 +13939,6 @@
         battleOnly: "Floette-Eternal",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     florges: {
         num: 671,
@@ -14136,7 +14117,6 @@
         battleOnly: "Meowstic",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     meowsticfmega: {
         num: 678,
@@ -14155,7 +14135,6 @@
         battleOnly: "Meowstic-F",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     honedge: {
         num: 679,
@@ -14327,7 +14306,6 @@
         requiredItem: "Malamarite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     binacle: {
         num: 688,
@@ -14375,7 +14353,6 @@
         requiredItem: "Barbaracite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     skrelp: {
         num: 690,
@@ -14421,7 +14398,6 @@
         requiredItem: "Dragalgite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     clauncher: {
         num: 692,
@@ -14589,7 +14565,6 @@
         requiredItem: "Hawluchanite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     dedenne: {
         num: 702,
@@ -15064,7 +15039,6 @@
         battleOnly: ["Zygarde", "Zygarde-10%"],
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     diancie: {
         num: 719,
@@ -15494,7 +15468,6 @@
         requiredItem: "Crabominite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     oricorio: {
         num: 741,
@@ -16100,7 +16073,6 @@
         requiredItem: "Golisopite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     sandygast: {
         num: 769,
@@ -16779,7 +16751,6 @@
         requiredItem: "Drampanite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     dhelmise: {
         num: 781,
@@ -17196,7 +17167,6 @@
         requiredItem: "Magearnite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     magearnaoriginalmega: {
         num: 801,
@@ -17215,7 +17185,6 @@
         battleOnly: "Magearna-Original",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     marshadow: {
         num: 802,
@@ -17330,7 +17299,6 @@
         requiredItem: "Zeraorite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     meltan: {
         num: 808,
@@ -18739,7 +18707,6 @@
         requiredItem: "Falinksite",
         gen: 9,
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     pincurchin: {
         num: 871,
@@ -19432,12 +19399,12 @@
         weightkg: 290,
         color: "Brown",
         prevo: "Ursaring",
-        evoType: "other",
-        evoCondition: "Peat Block when there's a full moon",
+        evoLevel: 50,
+        evoCondition: "holding Peat Block",
         eggGroups: ["Field"],
         otherFormes: ["Ursaluna-Bloodmoon"],
         formeOrder: ["Ursaluna", "Ursaluna-Bloodmoon"],
-        tier: "UUBL"
+        tier: "HCOU"
     },
     ursalunabloodmoon: {
         num: 901,
@@ -19451,9 +19418,12 @@
         heightm: 2.7,
         weightkg: 333,
         color: "Brown",
+        prevo: "Ursaring",
+        evoLevel: 50,
+        evoCondition: "holding Peat Block in Grove of Dreams/Lost Islands",
         eggGroups: ["Field"],
         gen: 9,
-        tier: "Uber"
+        tier: "HCOU"
     },
     basculegion: {
         num: 902,
@@ -19702,7 +19672,7 @@
         color: "Gray",
         evos: ["Oinkologne", "Oinkologne-F"],
         eggGroups: ["Field"],
-        tier: "LC"
+        tier: "HCOU"
     },
     oinkologne: {
         num: 916,
@@ -19720,7 +19690,7 @@
         otherFormes: ["Oinkologne-F"],
         formeOrder: ["Oinkologne", "Oinkologne-F"],
         eggGroups: ["Field"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     oinkolognef: {
         num: 916,
@@ -19737,7 +19707,7 @@
         prevo: "Lechonk",
         evoLevel: 18,
         eggGroups: ["Field"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     tarountula: {
         num: 917,
@@ -19750,7 +19720,7 @@
         color: "White",
         evos: ["Spidops"],
         eggGroups: ["Bug"],
-        tier: "LC"
+        tier: "HCOU"
     },
     spidops: {
         num: 918,
@@ -19764,7 +19734,7 @@
         prevo: "Tarountula",
         evoLevel: 15,
         eggGroups: ["Bug"],
-        tier: "ZU"
+        tier: "HCOU"
     },
     nymble: {
         num: 919,
@@ -20312,7 +20282,6 @@
         eggGroups: ["Grass"],
         requiredItem: "Scovillainite",
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     rellor: {
         num: 953,
@@ -20592,7 +20561,6 @@
         eggGroups: ["Mineral"],
         requiredItem: "Glimmoranite",
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     greavard: {
         num: 971,
@@ -20755,7 +20723,6 @@
         requiredItem: "Tatsugirinite",
         battleOnly: "Tatsugiri",
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     tatsugiridroopymega: {
         num: 978,
@@ -20772,7 +20739,6 @@
         requiredItem: "Tatsugirinite",
         battleOnly: "Tatsugiri-Droopy",
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     tatsugiristretchymega: {
         num: 978,
@@ -20789,7 +20755,6 @@
         requiredItem: "Tatsugirinite",
         battleOnly: "Tatsugiri-Stretchy",
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     annihilape: {
         num: 979,
@@ -20874,7 +20839,7 @@
         name: "Kingambit",
         types: ["Dark", "Steel"],
         baseStats: { hp: 100, atk: 135, def: 120, spa: 60, spd: 85, spe: 50 },
-        abilities: { "0": "Hyper Cutter", "1": "Inner Focus", H: "Steely Spirit" },
+        abilities: { "0": "Hyper Cutter", "1": "Supreme Overlord", H: "Steely Spirit" },
         heightm: 2,
         weightkg: 120,
         color: "Black",
@@ -21109,7 +21074,6 @@
         eggGroups: ["Dragon", "Mineral"],
         requiredItem: "Baxcalibrite",
         tier: "Illegal",
-        isNonstandard: "Future"
     },
     gimmighoul: {
         num: 999,

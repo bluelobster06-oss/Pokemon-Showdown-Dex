@@ -579,7 +579,8 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			var desc = '';
 			switch (results[i].charAt(0)) {
 			case 'a': // level-up move
-				desc = results[i].substr(1,3) === '001' || results[i].substr(1,3) === '000' ? '&ndash;' : '<small>L</small>'+(parseInt(results[i].substr(1,3), 10) || '?');
+				var level = results[i].substr(1, 3);
+				desc = level === '000' ? 'Evo' : (level === '001' ? '&ndash;' : '<small>L</small>' + (parseInt(level, 10) || '?'));
 				break;
 			case 'b': // tm/hm
 				desc = '<span class="itemicon" style="margin-top:-3px;display:inline-block;' + (Dex.getTMIcon ? Dex.getTMIcon(this.move && this.move.type) : Dex.getItemIcon({ spritenum: 721 })) + '"></span>';

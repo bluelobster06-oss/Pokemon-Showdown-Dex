@@ -1,4 +1,4 @@
-var LOCATION_TABLES = ['Grass', 'Gift', 'Old Rod', 'Good Rod', 'Surf', 'Rock Smash'];
+var LOCATION_TABLES = ['Grass', 'Gift', 'Old Rod', 'Good Rod', 'Surf', 'Rock Smash', 'Headbutt', 'Mounds', 'Graves'];
 var LOCATION_TIMES = ['Any time', 'Daytime', 'Nighttime'];
 
 var PokedexLocationsPanel = Panels.Panel.extend({
@@ -15,9 +15,10 @@ var PokedexLocationsPanel = Panels.Panel.extend({
     getLocationGroup: function (location) {
         var group = location && location.group;
         if (!group) return null;
-        if (typeof group === 'string') return { id: toID(group), name: group };
+        if (typeof group === 'string') return { id: toID(group), name: group, collapsed: true };
         if (typeof group === 'object' && group.name) {
-            return { id: toID(group.id || group.name), name: group.name, collapsed: !!group.collapsed };
+            // Groups start collapsed unless this individual group explicitly opts out.
+            return { id: toID(group.id || group.name), name: group.name, collapsed: group.collapsed !== false };
         }
         return null;
     },
