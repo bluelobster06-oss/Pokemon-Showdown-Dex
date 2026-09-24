@@ -9998,7 +9998,7 @@ exports.BattleMovedex = {
     nihillight: {
         num: 920,
         accuracy: 100,
-        basePower: 100,
+        basePower: 200,
         category: "Special",
         name: "Nihil Light",
         pp: 10,
@@ -10008,7 +10008,10 @@ exports.BattleMovedex = {
         ignoreDefensive: true,
         ignoreImmunity: { Dragon: true },
         target: "allAdjacentFoes",
-        type: "Dragon"
+        type: "Dragon",
+        contestType: "Tough",
+        desc: "This move can hit Fairy-type Pokemon, dealing neutral damage. This move ignores the target's stat changes, including evasiveness.",
+        shortDesc: "Ignores target's stat changes. Hits Fairy for neutral damage."
     },
     nobleroar: {
         num: 568,

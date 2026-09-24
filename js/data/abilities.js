@@ -2896,7 +2896,7 @@ exports.BattleAbilities = {
         name: "Wind Rider",
         rating: 3.5,
         num: 274,
-        desc: "This Pokemon is immune to wind moves and raises its highest Attack stat by 1 stage when Tailwind begins on this Pokemon's side.",
+        desc: "This Pokemon raises its highest Attack stat by 1 stage when Tailwind begins on this Pokemon's side.",
         shortDesc: "Highest Attack stat raised by 1 if Tailwind begins."
     },
     wonderguard: {

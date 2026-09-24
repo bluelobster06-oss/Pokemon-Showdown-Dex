@@ -301,6 +301,7 @@ var PokedexLocations = {
             { name: 'Repel', item_num: 1 },
             { name: 'Big Pearl', item_num: 1 },
             { name: 'Shell Bell', item_num: 1 },
+            { name: 'Chill Orb', item_num: 1, details: "Defeat Construction Worker Shades." },
         ]
     },
     route2: {
@@ -418,9 +419,20 @@ var PokedexLocations = {
                 id: 'eeveehouse',
                 name: 'Eevee House',
                 iconClass: '', //temp
-                summary: 'Local business.',
+                summary: 'Home of an old caretaker.',
                 description: 'The old man living here is offering to give the player Eevee as a gift. The player can only receive this gift once per save file.',
-            }
+            },
+            {
+                id: 'silventcitygym',
+                name: 'Silvent City Gym',
+                iconClass: '', //temp
+                summary: 'Electric Type Gym.',
+                description: 'Ruled by the Electric-type gym leader Chad. The puzzle involves activating all pressure activated panels on the floor in any given section without stepping on the same panel twice, in which case the puzzle resets.',
+                items: [
+                    { name: 'Arc Badge', details: "Defeat Gym Leader Chad." },
+                    { name: 'TM 34: Shock Wave', details: "Defeat Gym Leader Chad." },
+                ],
+            },
         ]
     },
     carnationmeadow: {
@@ -482,16 +494,16 @@ var PokedexLocations = {
             { name: 'Glistenning Grotto', direction: 'West' },
         ],
         encounters: [
-            { pokemon: 'patrat', name: 'Patrat', rate: 17, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'patrat', name: 'Patrat', rate: 17, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Daytime'] },
             { pokemon: 'phanpy', name: 'Phanpy', rate: 16, minLevel: 10, maxLevel: 12, tags: ['Grass'] },
-            { pokemon: 'blitzle', name: 'Blitzle', rate: 14, minLevel: 10, maxLevel: 12, tags: ['Grass'] },
-            { pokemon: 'litleo', name: 'Litleo', rate: 12, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'blitzle', name: 'Blitzle', rate: 14, minLevel: 10, maxLevel: 12, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'litleo', name: 'Litleo', rate: 12, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Daytime'] },
             { pokemon: 'rolycoly', name: 'Rolycoly', rate: 11, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
             { pokemon: 'hippopotas', name: 'Hippopotas', rate: 8, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
             { pokemon: 'tandemaus', name: 'Tandemaus', rate: 8, minLevel: 10, maxLevel: 12, tags: ['Grass'] },
-            { pokemon: 'ekans', name: 'Ekans', rate: 6, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'ekans', name: 'Ekans', rate: 6, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Nighttime'] },
             { pokemon: 'girafarig', name: 'Girafarig', rate: 4, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
-            { pokemon: 'stantler', name: 'Stantler', rate: 4, minLevel: 10, maxLevel: 12, tags: ['Grass'] },
+            { pokemon: 'stantler', name: 'Stantler', rate: 4, minLevel: 10, maxLevel: 12, tags: ['Grass', 'Nighttime'] },
 
             { pokemon: 'dwebble', name: 'Dwebble', rate: 25, minLevel: 15, maxLevel: 20, tags: ['Rock Smash'] },
             { pokemon: 'geodude', name: 'Geodude', rate: 25, minLevel: 15, maxLevel: 20, tags: ['Rock Smash'] },
@@ -513,16 +525,16 @@ var PokedexLocations = {
         ],
         encounters: [
             { pokemon: 'golett', name: 'Golett', rate: 13, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
-            { pokemon: 'duskull', name: 'Duskull', rate: 12, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'duskull', name: 'Duskull', rate: 12, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Nighttime'] },
             { pokemon: 'cubone', name: 'Cubone', rate: 12, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
             { pokemon: 'greavard', name: 'Greavard', rate: 11, minLevel: 12, maxLevel: 14, tags: ['Grass'] },
             { pokemon: 'gothita', name: 'Gothita', rate: 11, minLevel: 12, maxLevel: 14, tags: ['Grass'] },
-            { pokemon: 'impidimp', name: 'Impidimp', rate: 9, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
-            { pokemon: 'murkrow', name: 'Murkrow', rate: 8, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'impidimp', name: 'Impidimp', rate: 9, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Nighttime'] },
+            { pokemon: 'murkrow', name: 'Murkrow', rate: 8, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Nighttime'] },
             { pokemon: 'maschiff', name: 'Maschiff', rate: 7, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
             { pokemon: 'yamask', name: 'Yamask', rate: 6, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
             { pokemon: 'vulpix', name: 'Vulpix', rate: 6, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
-            { pokemon: 'gastly', name: 'Gastly', rate: 5, minLevel: 12, maxLevel: 14, tags: ['Grass'] },
+            { pokemon: 'gastly', name: 'Gastly', rate: 5, minLevel: 12, maxLevel: 14, tags: ['Grass', 'Nighttime'] },
 
             { pokemon: 'golett', name: 'Golett', rate: 22, minLevel: 11, maxLevel: 13, tags: ['Graves'] },
             { pokemon: 'duskull', name: 'Duskull', rate: 22, minLevel: 11, maxLevel: 13, tags: ['Graves'] },
@@ -533,6 +545,161 @@ var PokedexLocations = {
         ],
         items: [
             { name: 'Spell Tag', item_num: 1, details: "Behind a building at the end of the graveyard." },
+        ],
+    },
+    brimbercity: {
+        name: 'Brimber City',
+        group: 'Sebastian Split',
+        connections: [
+            { name: 'Route 5', direction: 'South' },
+            { name: 'Steam Chamber', direction: 'Basement' },
+            { name: 'Route 6', direction: 'East' },
+            { name: 'Route 7', direction: 'West' },
+        ],
+        encounters: [
+            { pokemon: 'pansage', name: 'Pansage', rate: 100, minLevel: 10, maxLevel: 10, tags: ['Gift'] },
+            { pokemon: 'panpour', name: 'Panpour', rate: 100, minLevel: 10, maxLevel: 10, tags: ['Gift'] },
+            { pokemon: 'pansear', name: 'Pansear', rate: 100, minLevel: 10, maxLevel: 10, tags: ['Gift'] },
+        ],
+        items: [
+            { name: 'Charcoal', item_num: 1, details: "Behind the campfire." },
+            { name: 'Brimstone Badge', details: "Defeat Gym Leader Sebastian." },
+            { name: 'TM59: Incinerate', details: "Defeat Gym Leader Sebastian." },
+        ],
+        notableAreas: [
+            {
+                id: 'pokecenter&pokemart',
+                name: 'Pokécenter & Pokémart',
+                iconClass: '', //temp
+                summary: 'Healing and store items.',
+                description: 'Allows the player to heal their Pokémon, buy items from the shopkeeper depending on the amount of badges they possess and exchange Bottle Caps for relearning moves, changing abilities, altering natures and modifying IVs.',
+                items: [
+                    { name: 'Poke Ball', details: '200$ - 0 badges required.' },
+                    { name: 'Great Ball', details: '600$ - 0 badges required.' },
+                    { name: 'Ultra Ball', details: '1200$ - 0 badges required.' },
+                    { name: 'Potion', details: '300$ - 0 badges required.' },
+                    { name: 'Super Potion', details: '700$ - 0 badges required.' },
+                    { name: 'Hyper Potion', details: '1200$ - 0 badges required.' },
+                    { name: 'Max Potion', details: '2500$ - 0 badges required.' },
+                    { name: 'Full Restore', details: '3000$ - 0 badges required.' },
+                    { name: 'Revive', details: '1500$ - 0 badges required.' },
+                    { name: 'Antidote', details: '100$ - 0 badges required.' },
+                    { name: 'Paralyze Heal', details: '150$ - 0 badges required.' },
+                    { name: 'Awakening', details: '250$ - 0 badges required.' },
+                    { name: 'Burn Heal', details: '250$ - 0 badges required.' },
+                    { name: 'Ice Heal', details: '250$ - 0 badges required.' },
+                    { name: 'Full Heal', details: '600$ - 0 badges required.' },
+                    { name: 'Escape Rope', details: '550$ - 0 badges required.' },
+                    { name: 'Repel', details: '350$ - 0 badges required.' },
+                    { name: 'Super Repel', details: '500$ - 0 badges required.' },
+                    { name: 'Max Repel', details: '700$ - 0 badges required.' },
+                    { name: 'Rare Candy', details: '2500$ - 0 badges required.' },
+                ],
+            },
+            {
+                id: 'happinesschecker',
+                name: 'Happiness Checker',
+                iconClass: '', //temp
+                summary: 'Shows friendship level.',
+                description: 'A man living in this house can evaluate the happiness of your Pokémon.',
+            },
+            {
+                id: 'brimbercitygym',
+                name: 'Brimber City Gym',
+                iconClass: '', //temp
+                summary: 'Fire Type Gym.',
+                description: 'Ruled by the Fire-type gym leader Sebastian. The puzzle involves jumping over flaming obstacles and scaling walls to methodically climb up the volcano.',
+                items: [
+                    { name: 'Brimstone Badge', details: "Defeat Gym Leader Sebastian." },
+                    { name: 'TM59: Incinerate', details: "Defeat Gym Leader Sebastian." },
+                ],
+            },
+        ]
+    },
+    steamchamber: {
+        name: 'Steam Chamber',
+        group: 'Sebastian Split',
+        connections: [
+            { name: 'Brimber City', direction: 'Top Floor' },
+        ],
+        encounters: [
+            { pokemon: 'numel', name: 'Numel', rate: 17, minLevel: 9, maxLevel: 11, tags: ['Grass'] },
+            { pokemon: 'torkoal', name: 'Torkoal', rate: 14, minLevel: 9, maxLevel: 11, tags: ['Grass'] },
+            { pokemon: 'salandit', name: 'Salandit', rate: 14, minLevel: 9, maxLevel: 11, tags: ['Grass'] },
+            { pokemon: 'koffing', name: 'Koffing', rate: 14, minLevel: 9, maxLevel: 11, tags: ['Grass'] },
+            { pokemon: 'grimer', name: 'Grimer', rate: 13, minLevel: 9, maxLevel: 11, tags: ['Grass'] },
+            { pokemon: 'magby', name: 'Magby', rate: 13, minLevel: 9, maxLevel: 11, tags: ['Grass'] },
+            { pokemon: 'darumaka', name: 'Darumaka', rate: 10, minLevel: 9, maxLevel: 11, tags: ['Grass'] },
+            { pokemon: 'larvesta', name: 'Larvesta', rate: 5, minLevel: 9, maxLevel: 11, tags: ['Grass'] },
+        ],
+        items: [
+            { name: 'Toxic Orb', item_num: 1 },
+        ],
+    },
+    route6: {
+        name: 'Route 6',
+        group: 'Sebastian Split',
+        connections: [
+            { name: 'Brimber City', direction: 'Northwest' },
+            { name: 'Calcite Chamber', direction: 'East' },
+            { name: 'Mt. Igneus', direction: 'Southwest' },
+        ],
+        encounters: [
+            { pokemon: 'ponyta', name: 'Ponyta', rate: 18, minLevel: 12, maxLevel: 14, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'litleo', name: 'Litleo', rate: 15, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'blitzle', name: 'Blitzle', rate: 15, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'rhyhorn', name: 'Rhyhorn', rate: 12, minLevel: 12, maxLevel: 14, tags: ['Grass'] },
+            { pokemon: 'growlithehisui', name: 'Growlithe', rate: 10, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'yungoos', name: 'Yungoos', rate: 10, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Daytime'] },
+            { pokemon: 'stufful', name: 'Stufful', rate: 8, minLevel: 12, maxLevel: 14, tags: ['Grass'] },
+            { pokemon: 'rolycoly', name: 'Rolycoly', rate: 8, minLevel: 11, maxLevel: 13, tags: ['Grass'] },
+            { pokemon: 'flittle', name: 'Flittle', rate: 4, minLevel: 11, maxLevel: 13, tags: ['Grass', 'Daytime'] },
+        ],
+        items: [
+            { name: 'TM05: Roar', details: "On a ramp behind Calcite Chamber." },
+            { name: 'TM23: Smack Down', details: "Above a ledge opposite of Student Johnson." },
+        ],
+    },
+    calcitechamber: {
+        name: 'Calcite Chamber',
+        group: 'Sebastian Split',
+        connections: [
+            { name: 'Route 6', direction: 'West' },
+        ],
+        encounters: [
+            { pokemon: 'geodude', name: 'Geodude', rate: 18, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'sandshrew', name: 'Sandshrew', rate: 18, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'roggenrola', name: 'Roggenrola', rate: 14, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'diglettalola', name: 'Diglett', rate: 14, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'rolycoly', name: 'Rolycoly', rate: 8, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'aron', name: 'Aron', rate: 8, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'onix', name: 'Onix', rate: 8, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'larvitar', name: 'Larvitar', rate: 6, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'glimmet', name: 'Glimmet', rate: 6, minLevel: 15, maxLevel: 15, tags: ['Grass'] },
+        ],
+        items: [
+            { name: 'Hard Stone', item_num: 1, details: "At the bottom of the chamber." },
+        ],
+    },
+    mtigneus: {
+        name: 'Mt. Igneus',
+        group: 'Sebastian Split',
+        connections: [
+            { name: 'Route 6', direction: 'East' },
+            { name: 'Igneus Depths', direction: 'Basement' },
+        ],
+        encounters: [
+            { pokemon: 'houndour', name: 'Houndour', rate: 25, minLevel: 12, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'slugma', name: 'Slugma', rate: 20, minLevel: 11, maxLevel: 14, tags: ['Grass'] },
+            { pokemon: 'heatmor', name: 'Heatmor', rate: 15, minLevel: 12, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'sizzlipede', name: 'Sizzlipede', rate: 15, minLevel: 12, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'vulpix', name: 'Sizzlipede', rate: 10, minLevel: 12, maxLevel: 15, tags: ['Grass'] },
+            { pokemon: 'growlithe', name: 'Growlithe', rate: 10, minLevel: 11, maxLevel: 14, tags: ['Grass'] },
+            { pokemon: 'charcadet', name: 'Charcadet', rate: 5, minLevel: 11, maxLevel: 14, tags: ['Grass'] },
+        ],
+        items: [
+            { name: 'Flame Orb', item_num: 1, details: "Opposite to Hiker Darrel." },
+            { name: 'TM48: Round', details: "Inside a ledge accessible by jumping from the path leading to the summit." },
         ],
     },
 };

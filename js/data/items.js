@@ -682,7 +682,7 @@ exports.BattleItems = {
     },
     chillorb: {
         name: "Chill Orb",
-        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/chill-orb.png",
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/static-orb.png",
         fling: { basePower: 30, status: "frz" },
         onResidualOrder: 28,
         onResidualSubOrder: 3,
@@ -1055,7 +1055,7 @@ exports.BattleItems = {
     },
     dozeorb: {
         name: "Doze Orb",
-        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/doze-orb.png",
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/static-orb.png",
         fling: { basePower: 30, status: "slp" },
         onResidualOrder: 28,
         onResidualSubOrder: 3,
@@ -1390,7 +1390,7 @@ exports.BattleItems = {
         num: 837,
         gen: 6,
         new: 1,
-        desc: "Can be refilled by battling the barista in Cheshma Town.",
+        desc: "Obtained by using up a Sawsbuck Coffee in battle. Can be refilled by battling the barista in Cheshma Town.",
         shortDesc: "Can be refilled by battling the barista in Cheshma Town."
     },
     ether: {
