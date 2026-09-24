@@ -682,7 +682,7 @@ exports.BattleItems = {
     },
     chillorb: {
         name: "Chill Orb",
-        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/chillorb-orb.png",
+        icon: "https://bluelobster06-oss.github.io/Pokemon-Showdown-Dex/images/itemicons/chill-orb.png",
         fling: { basePower: 30, status: "frz" },
         onResidualOrder: 28,
         onResidualSubOrder: 3,
